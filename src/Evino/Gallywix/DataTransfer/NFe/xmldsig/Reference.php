@@ -123,7 +123,7 @@ class Reference
     /**
      * isset transforms
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetTransforms($index)
@@ -134,7 +134,7 @@ class Reference
     /**
      * unset transforms
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetTransforms($index)

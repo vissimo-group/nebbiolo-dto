@@ -215,7 +215,7 @@ class Transp
      *
      * Dados do reboque/Dolly (v2.0)
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetReboque($index)
@@ -228,7 +228,7 @@ class Transp
      *
      * Dados do reboque/Dolly (v2.0)
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetReboque($index)
@@ -333,7 +333,7 @@ class Transp
      *
      * Dados dos volumes
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetVol($index)
@@ -346,7 +346,7 @@ class Transp
      *
      * Dados dos volumes
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetVol($index)

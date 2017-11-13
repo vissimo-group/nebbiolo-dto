@@ -131,7 +131,7 @@ class InfAdic
      * informar o nome do campo no atributo xCampo
      * e o conteúdo do campo no xTexto
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetObsCont($index)
@@ -146,7 +146,7 @@ class InfAdic
      * informar o nome do campo no atributo xCampo
      * e o conteúdo do campo no xTexto
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetObsCont($index)
@@ -209,7 +209,7 @@ class InfAdic
      * informar o nome do campo no atributo xCampo
      * e o conteúdo do campo no xTexto
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetObsFisco($index)
@@ -224,7 +224,7 @@ class InfAdic
      * informar o nome do campo no atributo xCampo
      * e o conteúdo do campo no xTexto
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetObsFisco($index)
@@ -282,7 +282,7 @@ class InfAdic
      *
      * Grupo de informações do processo referenciado
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetProcRef($index)
@@ -295,7 +295,7 @@ class InfAdic
      *
      * Grupo de informações do processo referenciado
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetProcRef($index)

@@ -870,7 +870,7 @@ class Ide
      *
      * Grupo de infromações da NF referenciada
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetNFref($index)
@@ -883,7 +883,7 @@ class Ide
      *
      * Grupo de infromações da NF referenciada
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetNFref($index)

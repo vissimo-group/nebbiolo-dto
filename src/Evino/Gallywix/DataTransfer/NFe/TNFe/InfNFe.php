@@ -373,7 +373,7 @@ class InfNFe
      *
      * Pessoas autorizadas para o download do XML da NF-e
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetAutXML($index)
@@ -386,7 +386,7 @@ class InfNFe
      *
      * Pessoas autorizadas para o download do XML da NF-e
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetAutXML($index)
@@ -439,7 +439,7 @@ class InfNFe
      *
      * Dados dos detalhes da NF-e
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetDet($index)
@@ -452,7 +452,7 @@ class InfNFe
      *
      * Dados dos detalhes da NF-e
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetDet($index)

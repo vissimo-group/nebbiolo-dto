@@ -43,7 +43,7 @@ class Pag
      *
      * Grupo de detalhamento da forma de pagamento.
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetDetPag($index)
@@ -56,7 +56,7 @@ class Pag
      *
      * Grupo de detalhamento da forma de pagamento.
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetDetPag($index)

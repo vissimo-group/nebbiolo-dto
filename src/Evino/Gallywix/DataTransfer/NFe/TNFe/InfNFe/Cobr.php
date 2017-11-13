@@ -69,7 +69,7 @@ class Cobr
      *
      * Dados das duplicatas NT 2011/004
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetDup($index)
@@ -82,7 +82,7 @@ class Cobr
      *
      * Dados das duplicatas NT 2011/004
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetDup($index)

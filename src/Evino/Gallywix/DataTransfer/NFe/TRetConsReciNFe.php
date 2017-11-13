@@ -376,7 +376,7 @@ class TRetConsReciNFe
      *
      * Protocolo de status resultado do processamento da NF-e
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetProtNFe($index)
@@ -389,7 +389,7 @@ class TRetConsReciNFe
      *
      * Protocolo de status resultado do processamento da NF-e
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetProtNFe($index)

@@ -428,7 +428,7 @@ class Prod
      *
      * Nomenclatura de Valor aduaneio e Estatístico
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetNVE($index)
@@ -441,7 +441,7 @@ class Prod
      *
      * Nomenclatura de Valor aduaneio e Estatístico
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetNVE($index)
@@ -1002,7 +1002,7 @@ class Prod
      * Delcaração de Importação
      * (NT 2011/004)
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetDI($index)
@@ -1016,7 +1016,7 @@ class Prod
      * Delcaração de Importação
      * (NT 2011/004)
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetDI($index)
@@ -1072,7 +1072,7 @@ class Prod
      *
      * Detalhe da exportação
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetDetExport($index)
@@ -1085,7 +1085,7 @@ class Prod
      *
      * Detalhe da exportação
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetDetExport($index)
@@ -1217,7 +1217,7 @@ class Prod
     /**
      * isset rastro
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetRastro($index)
@@ -1228,7 +1228,7 @@ class Prod
     /**
      * unset rastro
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetRastro($index)
@@ -1331,7 +1331,7 @@ class Prod
      *
      * Armamentos
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetArma($index)
@@ -1344,7 +1344,7 @@ class Prod
      *
      * Armamentos
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetArma($index)

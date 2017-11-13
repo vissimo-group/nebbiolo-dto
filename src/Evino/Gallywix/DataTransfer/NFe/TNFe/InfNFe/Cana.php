@@ -153,7 +153,7 @@ class Cana
      *
      * Fornecimentos diários
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetForDia($index)
@@ -166,7 +166,7 @@ class Cana
      *
      * Fornecimentos diários
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetForDia($index)
@@ -297,7 +297,7 @@ class Cana
      *
      * Deduções - Taxas e Contribuições
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetDeduc($index)
@@ -310,7 +310,7 @@ class Cana
      *
      * Deduções - Taxas e Contribuições
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetDeduc($index)

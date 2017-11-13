@@ -60,7 +60,7 @@ class Transform
     /**
      * isset xPath
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetXPath($index)
@@ -71,7 +71,7 @@ class Transform
     /**
      * unset xPath
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetXPath($index)

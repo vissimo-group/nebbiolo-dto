@@ -120,7 +120,7 @@ class TEnviNFe
     /**
      * isset nFe
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetNFe($index)
@@ -131,7 +131,7 @@ class TEnviNFe
     /**
      * unset nFe
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetNFe($index)

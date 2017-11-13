@@ -418,7 +418,7 @@ class DI
      *
      * Adições (NT 2011/004)
      *
-     * @param scalar $index
+     * @param int $index
      * @return boolean
      */
     public function issetAdi($index)
@@ -431,7 +431,7 @@ class DI
      *
      * Adições (NT 2011/004)
      *
-     * @param scalar $index
+     * @param int $index
      * @return void
      */
     public function unsetAdi($index)
