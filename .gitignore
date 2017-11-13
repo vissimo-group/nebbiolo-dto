@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# Emacs
+*~
+
+# Visual Studio Code
+.vscode/
+
+# IntelliJ
+.idea
+/out/
+.idea_modules/
+
+# Composer libs
+vendor
+
+# Vagrant dir
+.vagrant
+
+# Tests reports
+tests/_reports
+
+# Config
+resources/config/config.yml
+
+# Logs
+web/logs/app.log
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
