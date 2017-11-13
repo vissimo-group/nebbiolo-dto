@@ -17,12 +17,12 @@ class TNfeProc
     private $versao = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe $nFe
+     * @property TNFe $nFe
      */
     private $nFe = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TProtNFe $protNFe
+     * @property TProtNFe $protNFe
      */
     private $protNFe = null;
 
@@ -51,7 +51,7 @@ class TNfeProc
     /**
      * Gets as nFe
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe
+     * @return TNFe
      */
     public function getNFe()
     {
@@ -61,10 +61,10 @@ class TNfeProc
     /**
      * Sets a new nFe
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe $nFe
+     * @param TNFe $nFe
      * @return self
      */
-    public function setNFe(\Evino\Gallywix\DataTransfer\Nfe\TNFe $nFe)
+    public function setNFe(TNFe $nFe)
     {
         $this->nFe = $nFe;
         return $this;
@@ -73,7 +73,7 @@ class TNfeProc
     /**
      * Gets as protNFe
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TProtNFe
+     * @return TProtNFe
      */
     public function getProtNFe()
     {
@@ -83,10 +83,10 @@ class TNfeProc
     /**
      * Sets a new protNFe
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TProtNFe $protNFe
+     * @param TProtNFe $protNFe
      * @return self
      */
-    public function setProtNFe(\Evino\Gallywix\DataTransfer\Nfe\TProtNFe $protNFe)
+    public function setProtNFe(TProtNFe $protNFe)
     {
         $this->protNFe = $protNFe;
         return $this;

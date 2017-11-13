@@ -11,7 +11,7 @@ class Pag
     /**
      * Grupo de detalhamento da forma de pagamento.
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag\DetPag[] $detPag
+     * @property Pag\DetPag[] $detPag
      */
     private $detPag = array(
 
@@ -30,9 +30,9 @@ class Pag
      * Grupo de detalhamento da forma de pagamento.
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag\DetPag $detPag
+     * @param Pag\DetPag $detPag
      */
-    public function addToDetPag(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag\DetPag $detPag)
+    public function addToDetPag(Pag\DetPag $detPag)
     {
         $this->detPag[] = $detPag;
         return $this;
@@ -69,7 +69,7 @@ class Pag
      *
      * Grupo de detalhamento da forma de pagamento.
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag\DetPag[]
+     * @return Pag\DetPag[]
      */
     public function getDetPag()
     {
@@ -81,7 +81,7 @@ class Pag
      *
      * Grupo de detalhamento da forma de pagamento.
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag\DetPag[] $detPag
+     * @param Pag\DetPag[] $detPag
      * @return self
      */
     public function setDetPag(array $detPag)

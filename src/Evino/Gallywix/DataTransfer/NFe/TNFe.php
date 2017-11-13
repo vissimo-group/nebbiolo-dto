@@ -14,19 +14,19 @@ class TNFe
     /**
      * Informações da Nota Fiscal eletrônica
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe $infNFe
+     * @property TNFe\InfNFe $infNFe
      */
     private $infNFe = null;
 
     /**
      * Informações suplementares Nota Fiscal
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFeSupl $infNFeSupl
+     * @property TNFe\InfNFeSupl $infNFeSupl
      */
     private $infNFeSupl = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Signature $signature
+     * @property xmldsig\Signature $signature
      */
     private $signature = null;
 
@@ -35,7 +35,7 @@ class TNFe
      *
      * Informações da Nota Fiscal eletrônica
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe
+     * @return TNFe\InfNFe
      */
     public function getInfNFe()
     {
@@ -47,10 +47,10 @@ class TNFe
      *
      * Informações da Nota Fiscal eletrônica
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe $infNFe
+     * @param TNFe\InfNFe $infNFe
      * @return self
      */
-    public function setInfNFe(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe $infNFe)
+    public function setInfNFe(TNFe\InfNFe $infNFe)
     {
         $this->infNFe = $infNFe;
         return $this;
@@ -61,7 +61,7 @@ class TNFe
      *
      * Informações suplementares Nota Fiscal
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFeSupl
+     * @return TNFe\InfNFeSupl
      */
     public function getInfNFeSupl()
     {
@@ -73,10 +73,10 @@ class TNFe
      *
      * Informações suplementares Nota Fiscal
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFeSupl $infNFeSupl
+     * @param TNFe\InfNFeSupl $infNFeSupl
      * @return self
      */
-    public function setInfNFeSupl(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFeSupl $infNFeSupl)
+    public function setInfNFeSupl(TNFe\InfNFeSupl $infNFeSupl)
     {
         $this->infNFeSupl = $infNFeSupl;
         return $this;
@@ -85,7 +85,7 @@ class TNFe
     /**
      * Gets as signature
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Signature
+     * @return xmldsig\Signature
      */
     public function getSignature()
     {
@@ -95,10 +95,10 @@ class TNFe
     /**
      * Sets a new signature
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Signature $signature
+     * @param xmldsig\Signature $signature
      * @return self
      */
-    public function setSignature(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\Signature $signature)
+    public function setSignature(xmldsig\Signature $signature)
     {
         $this->signature = $signature;
         return $this;

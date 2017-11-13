@@ -31,12 +31,11 @@ class SignatureValue
         $this->value($value);
     }
 
-    /**
-     * Gets or sets the inner value
-     *
-     * @param mixed $value
-     * @return mixed
-     */
+	/**
+	 * Gets or sets the inner value
+	 * @return mixed
+	 * @internal param mixed $value
+	 */
     public function value()
     {
         if ($args = func_get_args()) {

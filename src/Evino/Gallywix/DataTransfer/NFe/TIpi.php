@@ -41,12 +41,12 @@ class TIpi
     private $cEnq = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TIpi\IPITrib $iPITrib
+     * @property TIpi\IPITrib $iPITrib
      */
     private $iPITrib = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TIpi\IPINT $iPINT
+     * @property TIpi\IPINT $iPINT
      */
     private $iPINT = null;
 
@@ -159,7 +159,7 @@ class TIpi
     /**
      * Gets as iPITrib
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TIpi\IPITrib
+     * @return TIpi\IPITrib
      */
     public function getIPITrib()
     {
@@ -169,10 +169,10 @@ class TIpi
     /**
      * Sets a new iPITrib
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TIpi\IPITrib $iPITrib
+     * @param TIpi\IPITrib $iPITrib
      * @return self
      */
-    public function setIPITrib(\Evino\Gallywix\DataTransfer\Nfe\TIpi\IPITrib $iPITrib)
+    public function setIPITrib(TIpi\IPITrib $iPITrib)
     {
         $this->iPITrib = $iPITrib;
         return $this;
@@ -181,7 +181,7 @@ class TIpi
     /**
      * Gets as iPINT
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TIpi\IPINT
+     * @return TIpi\IPINT
      */
     public function getIPINT()
     {
@@ -191,10 +191,10 @@ class TIpi
     /**
      * Sets a new iPINT
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TIpi\IPINT $iPINT
+     * @param TIpi\IPINT $iPINT
      * @return self
      */
-    public function setIPINT(\Evino\Gallywix\DataTransfer\Nfe\TIpi\IPINT $iPINT)
+    public function setIPINT(TIpi\IPINT $iPINT)
     {
         $this->iPINT = $iPINT;
         return $this;

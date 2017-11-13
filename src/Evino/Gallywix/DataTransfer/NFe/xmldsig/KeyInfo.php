@@ -17,7 +17,7 @@ class KeyInfo
     private $id = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\X509Data $x509Data
+     * @property X509Data $x509Data
      */
     private $x509Data = null;
 
@@ -46,7 +46,7 @@ class KeyInfo
     /**
      * Gets as x509Data
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\X509Data
+     * @return X509Data
      */
     public function getX509Data()
     {
@@ -56,10 +56,10 @@ class KeyInfo
     /**
      * Sets a new x509Data
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\xmldsig\X509Data $x509Data
+     * @param X509Data $x509Data
      * @return self
      */
-    public function setX509Data(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\X509Data $x509Data)
+    public function setX509Data(X509Data $x509Data)
     {
         $this->x509Data = $x509Data;
         return $this;

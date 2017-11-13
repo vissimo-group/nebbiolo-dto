@@ -29,7 +29,7 @@ class DetPag
     /**
      * Grupo de Cartões
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag\DetPag\Card
+     * @property DetPag\Card
      * $card
      */
     private $card = null;
@@ -99,7 +99,7 @@ class DetPag
      *
      * Grupo de Cartões
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag\DetPag\Card
+     * @return DetPag\Card
      */
     public function getCard()
     {
@@ -115,7 +115,7 @@ class DetPag
      * $card
      * @return self
      */
-    public function setCard(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag\DetPag\Card $card)
+    public function setCard(DetPag\Card $card)
     {
         $this->card = $card;
         return $this;

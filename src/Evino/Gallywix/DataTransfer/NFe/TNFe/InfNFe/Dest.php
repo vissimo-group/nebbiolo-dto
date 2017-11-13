@@ -2,6 +2,8 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Nfe\TEndereco;
+
 /**
  * Class representing Dest
  */
@@ -39,7 +41,7 @@ class Dest
     /**
      * Dados do endereço
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TEndereco $enderDest
+     * @property TEndereco $enderDest
      */
     private $enderDest = null;
 
@@ -194,7 +196,7 @@ class Dest
      *
      * Dados do endereço
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TEndereco
+     * @return TEndereco
      */
     public function getEnderDest()
     {
@@ -206,10 +208,10 @@ class Dest
      *
      * Dados do endereço
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TEndereco $enderDest
+     * @param TEndereco $enderDest
      * @return self
      */
-    public function setEnderDest(\Evino\Gallywix\DataTransfer\Nfe\TEndereco $enderDest)
+    public function setEnderDest(TEndereco $enderDest)
     {
         $this->enderDest = $enderDest;
         return $this;

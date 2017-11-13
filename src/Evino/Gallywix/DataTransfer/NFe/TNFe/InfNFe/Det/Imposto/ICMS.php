@@ -198,18 +198,18 @@ class ICMS
         return $this->iCMS00;
     }
 
-    /**
-     * Sets a new iCMS00
-     *
-     * Tributação pelo ICMS
-     * 00 - Tributada integralmente
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS00
-     * $iCMS00
-     * @return self
-     */
-    public function setICMS00(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS00 $iCMS00)
+	/**
+	 * Sets a new iCMS00
+	 *
+	 * Tributação pelo ICMS
+	 * 00 - Tributada integralmente
+	 *
+	 * @param ICMS\ICMS00 $iCMS00
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS00* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS00
+	 * $iCMS00
+	 */
+    public function setICMS00(ICMS\ICMS00 $iCMS00)
     {
         $this->iCMS00 = $iCMS00;
         return $this;
@@ -229,18 +229,18 @@ class ICMS
         return $this->iCMS10;
     }
 
-    /**
-     * Sets a new iCMS10
-     *
-     * Tributação pelo ICMS
-     * 10 - Tributada e com cobrança do ICMS por substituição tributária
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS10
-     * $iCMS10
-     * @return self
-     */
-    public function setICMS10(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS10 $iCMS10)
+	/**
+	 * Sets a new iCMS10
+	 *
+	 * Tributação pelo ICMS
+	 * 10 - Tributada e com cobrança do ICMS por substituição tributária
+	 *
+	 * @param ICMS\ICMS10 $iCMS10
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS10* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS10
+	 * $iCMS10
+	 */
+    public function setICMS10(ICMS\ICMS10 $iCMS10)
     {
         $this->iCMS10 = $iCMS10;
         return $this;
@@ -260,18 +260,18 @@ class ICMS
         return $this->iCMS20;
     }
 
-    /**
-     * Sets a new iCMS20
-     *
-     * Tributção pelo ICMS
-     * 20 - Com redução de base de cálculo
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS20
-     * $iCMS20
-     * @return self
-     */
-    public function setICMS20(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS20 $iCMS20)
+	/**
+	 * Sets a new iCMS20
+	 *
+	 * Tributção pelo ICMS
+	 * 20 - Com redução de base de cálculo
+	 *
+	 * @param ICMS\ICMS20 $iCMS20
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS20* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS20
+	 * $iCMS20
+	 */
+    public function setICMS20(ICMS\ICMS20 $iCMS20)
     {
         $this->iCMS20 = $iCMS20;
         return $this;
@@ -292,19 +292,19 @@ class ICMS
         return $this->iCMS30;
     }
 
-    /**
-     * Sets a new iCMS30
-     *
-     * Tributação pelo ICMS
-     * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
-     * tributária
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS30
-     * $iCMS30
-     * @return self
-     */
-    public function setICMS30(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS30 $iCMS30)
+	/**
+	 * Sets a new iCMS30
+	 *
+	 * Tributação pelo ICMS
+	 * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
+	 * tributária
+	 *
+	 * @param ICMS\ICMS30 $iCMS30
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS30* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS30
+	 * $iCMS30
+	 */
+    public function setICMS30(ICMS\ICMS30 $iCMS30)
     {
         $this->iCMS30 = $iCMS30;
         return $this;
@@ -326,20 +326,20 @@ class ICMS
         return $this->iCMS40;
     }
 
-    /**
-     * Sets a new iCMS40
-     *
-     * Tributação pelo ICMS
-     * 40 - Isenta
-     * 41 - Não tributada
-     * 50 - Suspensão
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS40
-     * $iCMS40
-     * @return self
-     */
-    public function setICMS40(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS40 $iCMS40)
+	/**
+	 * Sets a new iCMS40
+	 *
+	 * Tributação pelo ICMS
+	 * 40 - Isenta
+	 * 41 - Não tributada
+	 * 50 - Suspensão
+	 *
+	 * @param ICMS\ICMS40 $iCMS40
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS40* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS40
+	 * $iCMS40
+	 */
+    public function setICMS40(ICMS\ICMS40 $iCMS40)
     {
         $this->iCMS40 = $iCMS40;
         return $this;
@@ -361,20 +361,20 @@ class ICMS
         return $this->iCMS51;
     }
 
-    /**
-     * Sets a new iCMS51
-     *
-     * Tributção pelo ICMS
-     * 51 - Diferimento
-     * A exigência do preenchimento das informações do ICMS diferido fica à
-     * critério de cada UF.
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS51
-     * $iCMS51
-     * @return self
-     */
-    public function setICMS51(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS51 $iCMS51)
+	/**
+	 * Sets a new iCMS51
+	 *
+	 * Tributção pelo ICMS
+	 * 51 - Diferimento
+	 * A exigência do preenchimento das informações do ICMS diferido fica à
+	 * critério de cada UF.
+	 *
+	 * @param ICMS\ICMS51 $iCMS51
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS51* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS51
+	 * $iCMS51
+	 */
+    public function setICMS51(ICMS\ICMS51 $iCMS51)
     {
         $this->iCMS51 = $iCMS51;
         return $this;
@@ -394,18 +394,18 @@ class ICMS
         return $this->iCMS60;
     }
 
-    /**
-     * Sets a new iCMS60
-     *
-     * Tributação pelo ICMS
-     * 60 - ICMS cobrado anteriormente por substituição tributária
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS60
-     * $iCMS60
-     * @return self
-     */
-    public function setICMS60(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS60 $iCMS60)
+	/**
+	 * Sets a new iCMS60
+	 *
+	 * Tributação pelo ICMS
+	 * 60 - ICMS cobrado anteriormente por substituição tributária
+	 *
+	 * @param ICMS\ICMS60 $iCMS60
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS60* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS60
+	 * $iCMS60
+	 */
+    public function setICMS60(ICMS\ICMS60 $iCMS60)
     {
         $this->iCMS60 = $iCMS60;
         return $this;
@@ -426,19 +426,19 @@ class ICMS
         return $this->iCMS70;
     }
 
-    /**
-     * Sets a new iCMS70
-     *
-     * Tributação pelo ICMS
-     * 70 - Com redução de base de cálculo e cobrança do ICMS por substituição
-     * tributária
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS70
-     * $iCMS70
-     * @return self
-     */
-    public function setICMS70(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS70 $iCMS70)
+	/**
+	 * Sets a new iCMS70
+	 *
+	 * Tributação pelo ICMS
+	 * 70 - Com redução de base de cálculo e cobrança do ICMS por substituição
+	 * tributária
+	 *
+	 * @param ICMS\ICMS70 $iCMS70
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS70* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS70
+	 * $iCMS70
+	 */
+    public function setICMS70(ICMS\ICMS70 $iCMS70)
     {
         $this->iCMS70 = $iCMS70;
         return $this;
@@ -458,18 +458,18 @@ class ICMS
         return $this->iCMS90;
     }
 
-    /**
-     * Sets a new iCMS90
-     *
-     * Tributação pelo ICMS
-     * 90 - Outras
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS90
-     * $iCMS90
-     * @return self
-     */
-    public function setICMS90(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS90 $iCMS90)
+	/**
+	 * Sets a new iCMS90
+	 *
+	 * Tributação pelo ICMS
+	 * 90 - Outras
+	 *
+	 * @param ICMS\ICMS90 $iCMS90
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS90* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS90
+	 * $iCMS90
+	 */
+    public function setICMS90(ICMS\ICMS90 $iCMS90)
     {
         $this->iCMS90 = $iCMS90;
         return $this;
@@ -492,21 +492,21 @@ class ICMS
         return $this->iCMSPart;
     }
 
-    /**
-     * Sets a new iCMSPart
-     *
-     * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na
-     * legislação
-     * Operação interestadual para consumidor final com partilha do ICMS devido na
-     * operação entre a UF de origem e a UF do destinatário ou ou a UF definida na
-     * legislação. (Ex. UF da concessionária de entrega do veículos)
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSPart
-     * $iCMSPart
-     * @return self
-     */
-    public function setICMSPart(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSPart $iCMSPart)
+	/**
+	 * Sets a new iCMSPart
+	 *
+	 * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na
+	 * legislação
+	 * Operação interestadual para consumidor final com partilha do ICMS devido na
+	 * operação entre a UF de origem e a UF do destinatário ou ou a UF definida na
+	 * legislação. (Ex. UF da concessionária de entrega do veículos)
+	 *
+	 * @param ICMS\ICMSPart $iCMSPart
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSPart* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSPart
+	 * $iCMSPart
+	 */
+    public function setICMSPart(ICMS\ICMSPart $iCMSPart)
     {
         $this->iCMSPart = $iCMSPart;
         return $this;
@@ -527,19 +527,19 @@ class ICMS
         return $this->iCMSST;
     }
 
-    /**
-     * Sets a new iCMSST
-     *
-     * Grupo de informação do ICMSST devido para a UF de destino, nas operações
-     * interestaduais de produtos que tiveram retenção antecipada de ICMS por ST na
-     * UF do remetente. Repasse via Substituto Tributário.
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSST
-     * $iCMSST
-     * @return self
-     */
-    public function setICMSST(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSST $iCMSST)
+	/**
+	 * Sets a new iCMSST
+	 *
+	 * Grupo de informação do ICMSST devido para a UF de destino, nas operações
+	 * interestaduais de produtos que tiveram retenção antecipada de ICMS por ST na
+	 * UF do remetente. Repasse via Substituto Tributário.
+	 *
+	 * @param ICMS\ICMSST $iCMSST
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSST* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSST
+	 * $iCMSST
+	 */
+    public function setICMSST(ICMS\ICMSST $iCMSST)
     {
         $this->iCMSST = $iCMSST;
         return $this;
@@ -558,17 +558,17 @@ class ICMS
         return $this->iCMSSN101;
     }
 
-    /**
-     * Sets a new iCMSSN101
-     *
-     * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=101 (v.2.0)
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN101
-     * $iCMSSN101
-     * @return self
-     */
-    public function setICMSSN101(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN101 $iCMSSN101)
+	/**
+	 * Sets a new iCMSSN101
+	 *
+	 * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=101 (v.2.0)
+	 *
+	 * @param ICMS\ICMSSN101 $iCMSSN101
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN101* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN101
+	 * $iCMSSN101
+	 */
+    public function setICMSSN101(ICMS\ICMSSN101 $iCMSSN101)
     {
         $this->iCMSSN101 = $iCMSSN101;
         return $this;
@@ -587,17 +587,17 @@ class ICMS
         return $this->iCMSSN102;
     }
 
-    /**
-     * Sets a new iCMSSN102
-     *
-     * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=102, 103, 300 ou 400 (v.2.0))
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN102
-     * $iCMSSN102
-     * @return self
-     */
-    public function setICMSSN102(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN102 $iCMSSN102)
+	/**
+	 * Sets a new iCMSSN102
+	 *
+	 * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=102, 103, 300 ou 400 (v.2.0))
+	 *
+	 * @param ICMS\ICMSSN102 $iCMSSN102
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN102* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN102
+	 * $iCMSSN102
+	 */
+    public function setICMSSN102(ICMS\ICMSSN102 $iCMSSN102)
     {
         $this->iCMSSN102 = $iCMSSN102;
         return $this;
@@ -616,17 +616,17 @@ class ICMS
         return $this->iCMSSN201;
     }
 
-    /**
-     * Sets a new iCMSSN201
-     *
-     * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=201 (v.2.0)
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN201
-     * $iCMSSN201
-     * @return self
-     */
-    public function setICMSSN201(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN201 $iCMSSN201)
+	/**
+	 * Sets a new iCMSSN201
+	 *
+	 * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=201 (v.2.0)
+	 *
+	 * @param ICMS\ICMSSN201 $iCMSSN201
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN201* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN201
+	 * $iCMSSN201
+	 */
+    public function setICMSSN201(ICMS\ICMSSN201 $iCMSSN201)
     {
         $this->iCMSSN201 = $iCMSSN201;
         return $this;
@@ -645,17 +645,17 @@ class ICMS
         return $this->iCMSSN202;
     }
 
-    /**
-     * Sets a new iCMSSN202
-     *
-     * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=202 ou 203 (v.2.0)
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN202
-     * $iCMSSN202
-     * @return self
-     */
-    public function setICMSSN202(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN202 $iCMSSN202)
+	/**
+	 * Sets a new iCMSSN202
+	 *
+	 * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=202 ou 203 (v.2.0)
+	 *
+	 * @param ICMS\ICMSSN202 $iCMSSN202
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN202* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN202
+	 * $iCMSSN202
+	 */
+    public function setICMSSN202(ICMS\ICMSSN202 $iCMSSN202)
     {
         $this->iCMSSN202 = $iCMSSN202;
         return $this;
@@ -675,18 +675,18 @@ class ICMS
         return $this->iCMSSN500;
     }
 
-    /**
-     * Sets a new iCMSSN500
-     *
-     * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e
-     * CSOSN=500 (v.2.0)
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN500
-     * $iCMSSN500
-     * @return self
-     */
-    public function setICMSSN500(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN500 $iCMSSN500)
+	/**
+	 * Sets a new iCMSSN500
+	 *
+	 * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e
+	 * CSOSN=500 (v.2.0)
+	 *
+	 * @param ICMS\ICMSSN500 $iCMSSN500
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN500* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN500
+	 * $iCMSSN500
+	 */
+    public function setICMSSN500(ICMS\ICMSSN500 $iCMSSN500)
     {
         $this->iCMSSN500 = $iCMSSN500;
         return $this;
@@ -706,18 +706,18 @@ class ICMS
         return $this->iCMSSN900;
     }
 
-    /**
-     * Sets a new iCMSSN900
-     *
-     * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e
-     * CSOSN=900 (v2.0)
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN900
-     * $iCMSSN900
-     * @return self
-     */
-    public function setICMSSN900(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN900 $iCMSSN900)
+	/**
+	 * Sets a new iCMSSN900
+	 *
+	 * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e
+	 * CSOSN=900 (v2.0)
+	 *
+	 * @param ICMS\ICMSSN900 $iCMSSN900
+	 * @return ICMS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN900* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN900
+	 * $iCMSSN900
+	 */
+    public function setICMSSN900(ICMS\ICMSSN900 $iCMSSN900)
     {
         $this->iCMSSN900 = $iCMSSN900;
         return $this;

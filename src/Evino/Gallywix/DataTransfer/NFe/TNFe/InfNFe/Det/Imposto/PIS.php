@@ -73,21 +73,21 @@ class PIS
         return $this->pISAliq;
     }
 
-    /**
-     * Sets a new pISAliq
-     *
-     * Código de Situação Tributária do PIS.
-     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-     * Alíquota Normal (Cumulativo/Não Cumulativo);
-     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-     * Diferenciada);
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq
-     * $pISAliq
-     * @return self
-     */
-    public function setPISAliq(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq $pISAliq)
+	/**
+	 * Sets a new pISAliq
+	 *
+	 * Código de Situação Tributária do PIS.
+	 *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
+	 * Alíquota Normal (Cumulativo/Não Cumulativo);
+	 * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
+	 * Diferenciada);
+	 *
+	 * @param PIS\PISAliq $pISAliq
+	 * @return PIS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq
+	 * $pISAliq
+	 */
+    public function setPISAliq(PIS\PISAliq $pISAliq)
     {
         $this->pISAliq = $pISAliq;
         return $this;
@@ -108,19 +108,19 @@ class PIS
         return $this->pISQtde;
     }
 
-    /**
-     * Sets a new pISQtde
-     *
-     * Código de Situação Tributária do PIS.
-     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-     * por Unidade de Produto;
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde
-     * $pISQtde
-     * @return self
-     */
-    public function setPISQtde(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde $pISQtde)
+	/**
+	 * Sets a new pISQtde
+	 *
+	 * Código de Situação Tributária do PIS.
+	 * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
+	 * por Unidade de Produto;
+	 *
+	 * @param PIS\PISQtde $pISQtde
+	 * @return PIS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde
+	 * $pISQtde
+	 */
+    public function setPISQtde(PIS\PISQtde $pISQtde)
     {
         $this->pISQtde = $pISQtde;
         return $this;
@@ -144,22 +144,22 @@ class PIS
         return $this->pISNT;
     }
 
-    /**
-     * Sets a new pISNT
-     *
-     * Código de Situação Tributária do PIS.
-     * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
-     * 06 - Operação Tributável - Alíquota Zero;
-     * 07 - Operação Isenta da contribuição;
-     * 08 - Operação Sem Incidência da contribuição;
-     * 09 - Operação com suspensão da contribuição;
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT
-     * $pISNT
-     * @return self
-     */
-    public function setPISNT(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT $pISNT)
+	/**
+	 * Sets a new pISNT
+	 *
+	 * Código de Situação Tributária do PIS.
+	 * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+	 * 06 - Operação Tributável - Alíquota Zero;
+	 * 07 - Operação Isenta da contribuição;
+	 * 08 - Operação Sem Incidência da contribuição;
+	 * 09 - Operação com suspensão da contribuição;
+	 *
+	 * @param PIS\PISNT $pISNT
+	 * @return PIS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT
+	 * $pISNT
+	 */
+    public function setPISNT(PIS\PISNT $pISNT)
     {
         $this->pISNT = $pISNT;
         return $this;
@@ -179,18 +179,18 @@ class PIS
         return $this->pISOutr;
     }
 
-    /**
-     * Sets a new pISOutr
-     *
-     * Código de Situação Tributária do PIS.
-     * 99 - Outras Operações.
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr
-     * $pISOutr
-     * @return self
-     */
-    public function setPISOutr(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr $pISOutr)
+	/**
+	 * Sets a new pISOutr
+	 *
+	 * Código de Situação Tributária do PIS.
+	 * 99 - Outras Operações.
+	 *
+	 * @param PIS\PISOutr $pISOutr
+	 * @return PIS
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr
+	 * $pISOutr
+	 */
+    public function setPISOutr(PIS\PISOutr $pISOutr)
     {
         $this->pISOutr = $pISOutr;
         return $this;

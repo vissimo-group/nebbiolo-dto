@@ -18,19 +18,19 @@ class Det
     /**
      * Dados dos produtos e serviços da NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod $prod
+     * @property Det\Prod $prod
      */
     private $prod = null;
 
     /**
      * Tributos incidentes nos produtos ou serviços da NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto $imposto
+     * @property Det\Imposto $imposto
      */
     private $imposto = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol
+     * @property Det\ImpostoDevol
      * $impostoDevol
      */
     private $impostoDevol = null;
@@ -74,7 +74,7 @@ class Det
      *
      * Dados dos produtos e serviços da NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod
+     * @return Det\Prod
      */
     public function getProd()
     {
@@ -86,10 +86,10 @@ class Det
      *
      * Dados dos produtos e serviços da NF-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod $prod
+     * @param Det\Prod $prod
      * @return self
      */
-    public function setProd(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod $prod)
+    public function setProd(Det\Prod $prod)
     {
         $this->prod = $prod;
         return $this;
@@ -100,7 +100,7 @@ class Det
      *
      * Tributos incidentes nos produtos ou serviços da NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto
+     * @return Det\Imposto
      */
     public function getImposto()
     {
@@ -112,10 +112,10 @@ class Det
      *
      * Tributos incidentes nos produtos ou serviços da NF-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto $imposto
+     * @param Det\Imposto $imposto
      * @return self
      */
-    public function setImposto(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto $imposto)
+    public function setImposto(Det\Imposto $imposto)
     {
         $this->imposto = $imposto;
         return $this;
@@ -124,7 +124,7 @@ class Det
     /**
      * Gets as impostoDevol
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol
+     * @return Det\ImpostoDevol
      */
     public function getImpostoDevol()
     {
@@ -138,7 +138,7 @@ class Det
      * $impostoDevol
      * @return self
      */
-    public function setImpostoDevol(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol $impostoDevol)
+    public function setImpostoDevol(Det\ImpostoDevol $impostoDevol)
     {
         $this->impostoDevol = $impostoDevol;
         return $this;

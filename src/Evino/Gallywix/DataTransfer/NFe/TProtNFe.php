@@ -19,12 +19,12 @@ class TProtNFe
     /**
      * Dados do protocolo de status
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TProtNFe\InfProt $infProt
+     * @property TProtNFe\InfProt $infProt
      */
     private $infProt = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Signature $signature
+     * @property xmldsig\Signature $signature
      */
     private $signature = null;
 
@@ -55,7 +55,7 @@ class TProtNFe
      *
      * Dados do protocolo de status
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TProtNFe\InfProt
+     * @return TProtNFe\InfProt
      */
     public function getInfProt()
     {
@@ -67,10 +67,10 @@ class TProtNFe
      *
      * Dados do protocolo de status
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TProtNFe\InfProt $infProt
+     * @param TProtNFe\InfProt $infProt
      * @return self
      */
-    public function setInfProt(\Evino\Gallywix\DataTransfer\Nfe\TProtNFe\InfProt $infProt)
+    public function setInfProt(TProtNFe\InfProt $infProt)
     {
         $this->infProt = $infProt;
         return $this;
@@ -79,7 +79,7 @@ class TProtNFe
     /**
      * Gets as signature
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Signature
+     * @return xmldsig\Signature
      */
     public function getSignature()
     {
@@ -89,10 +89,10 @@ class TProtNFe
     /**
      * Sets a new signature
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Signature $signature
+     * @param xmldsig\Signature $signature
      * @return self
      */
-    public function setSignature(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\Signature $signature)
+    public function setSignature(xmldsig\Signature $signature)
     {
         $this->signature = $signature;
         return $this;

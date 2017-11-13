@@ -397,16 +397,17 @@ class DI
         return $this;
     }
 
-    /**
-     * Adds as adi
-     *
-     * Adições (NT 2011/004)
-     *
-     * @return self
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi $adi
-     */
-    public function addToAdi(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi $adi)
+	/**
+	 * Adds as adi
+	 *
+	 * Adições (NT 2011/004)
+	 *
+	 *
+	 * @param DI\Adi $adi
+	 * @return DI
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi $adi* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi $adi
+	 */
+    public function addToAdi(DI\Adi $adi)
     {
         $this->adi[] = $adi;
         return $this;
@@ -438,29 +439,28 @@ class DI
         unset($this->adi[$index]);
     }
 
-    /**
-     * Gets as adi
-     *
-     * Adições (NT 2011/004)
-     *
-     * @return
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
-     */
+	/**
+	 * Gets as adi
+	 *
+	 * Adições (NT 2011/004)
+	 * @return array \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
+	 * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
+	 */
     public function getAdi()
     {
         return $this->adi;
     }
 
-    /**
-     * Sets a new adi
-     *
-     * Adições (NT 2011/004)
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
-     * $adi
-     * @return self
-     */
+	/**
+	 * Sets a new adi
+	 *
+	 * Adições (NT 2011/004)
+	 *
+	 * @param array $adi
+	 * @return DI
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
+	 * $adi
+	 */
     public function setAdi(array $adi)
     {
         $this->adi = $adi;

@@ -17,19 +17,19 @@ class SignedInfo
     private $id = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo\CanonicalizationMethod
+     * @property SignedInfo\CanonicalizationMethod
      * $canonicalizationMethod
      */
     private $canonicalizationMethod = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo\SignatureMethod
+     * @property SignedInfo\SignatureMethod
      * $signatureMethod
      */
     private $signatureMethod = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Reference $reference
+     * @property Reference $reference
      */
     private $reference = null;
 
@@ -58,7 +58,7 @@ class SignedInfo
     /**
      * Gets as canonicalizationMethod
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo\CanonicalizationMethod
+     * @return SignedInfo\CanonicalizationMethod
      */
     public function getCanonicalizationMethod()
     {
@@ -72,7 +72,7 @@ class SignedInfo
      * $canonicalizationMethod
      * @return self
      */
-    public function setCanonicalizationMethod(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo\CanonicalizationMethod $canonicalizationMethod)
+    public function setCanonicalizationMethod(SignedInfo\CanonicalizationMethod $canonicalizationMethod)
     {
         $this->canonicalizationMethod = $canonicalizationMethod;
         return $this;
@@ -81,7 +81,7 @@ class SignedInfo
     /**
      * Gets as signatureMethod
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo\SignatureMethod
+     * @return SignedInfo\SignatureMethod
      */
     public function getSignatureMethod()
     {
@@ -95,7 +95,7 @@ class SignedInfo
      * $signatureMethod
      * @return self
      */
-    public function setSignatureMethod(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo\SignatureMethod $signatureMethod)
+    public function setSignatureMethod(SignedInfo\SignatureMethod $signatureMethod)
     {
         $this->signatureMethod = $signatureMethod;
         return $this;
@@ -104,7 +104,7 @@ class SignedInfo
     /**
      * Gets as reference
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Reference
+     * @return Reference
      */
     public function getReference()
     {
@@ -114,10 +114,10 @@ class SignedInfo
     /**
      * Sets a new reference
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Reference $reference
+     * @param Reference $reference
      * @return self
      */
-    public function setReference(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\Reference $reference)
+    public function setReference(Reference $reference)
     {
         $this->reference = $reference;
         return $this;

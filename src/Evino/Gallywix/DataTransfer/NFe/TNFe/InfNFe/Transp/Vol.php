@@ -222,7 +222,7 @@ class Vol
      * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres
      * $lacres
      */
-    public function addToLacres(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres $lacres)
+    public function addToLacres(Vol\Lacres $lacres)
     {
         $this->lacres[] = $lacres;
         return $this;
@@ -250,12 +250,11 @@ class Vol
         unset($this->lacres[$index]);
     }
 
-    /**
-     * Gets as lacres
-     *
-     * @return
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres[]
-     */
+	/**
+	 * Gets as lacres
+	 * @return array \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres[]
+	 * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres[]
+	 */
     public function getLacres()
     {
         return $this->lacres;

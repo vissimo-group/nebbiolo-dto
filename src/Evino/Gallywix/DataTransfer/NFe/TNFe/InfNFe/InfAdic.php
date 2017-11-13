@@ -27,7 +27,7 @@ class InfAdic
      * informar o nome do campo no atributo xCampo
      * e o conteúdo do campo no xTexto
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsCont[]
+     * @property InfAdic\ObsCont[]
      * $obsCont
      */
     private $obsCont = array(
@@ -39,7 +39,7 @@ class InfAdic
      * informar o nome do campo no atributo xCampo
      * e o conteúdo do campo no xTexto
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsFisco[]
+     * @property InfAdic\ObsFisco[]
      * $obsFisco
      */
     private $obsFisco = array(
@@ -49,7 +49,7 @@ class InfAdic
     /**
      * Grupo de informações do processo referenciado
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ProcRef[]
+     * @property InfAdic\ProcRef[]
      * $procRef
      */
     private $procRef = array(
@@ -116,9 +116,9 @@ class InfAdic
      * e o conteúdo do campo no xTexto
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsCont $obsCont
+     * @param InfAdic\ObsCont $obsCont
      */
-    public function addToObsCont(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsCont $obsCont)
+    public function addToObsCont(InfAdic\ObsCont $obsCont)
     {
         $this->obsCont[] = $obsCont;
         return $this;
@@ -161,7 +161,7 @@ class InfAdic
      * informar o nome do campo no atributo xCampo
      * e o conteúdo do campo no xTexto
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsCont[]
+     * @return InfAdic\ObsCont[]
      */
     public function getObsCont()
     {
@@ -196,7 +196,7 @@ class InfAdic
      * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsFisco
      * $obsFisco
      */
-    public function addToObsFisco(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsFisco $obsFisco)
+    public function addToObsFisco(InfAdic\ObsFisco $obsFisco)
     {
         $this->obsFisco[] = $obsFisco;
         return $this;
@@ -239,7 +239,7 @@ class InfAdic
      * informar o nome do campo no atributo xCampo
      * e o conteúdo do campo no xTexto
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsFisco[]
+     * @return InfAdic\ObsFisco[]
      */
     public function getObsFisco()
     {
@@ -269,9 +269,9 @@ class InfAdic
      * Grupo de informações do processo referenciado
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ProcRef $procRef
+     * @param InfAdic\ProcRef $procRef
      */
-    public function addToProcRef(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ProcRef $procRef)
+    public function addToProcRef(InfAdic\ProcRef $procRef)
     {
         $this->procRef[] = $procRef;
         return $this;
@@ -308,7 +308,7 @@ class InfAdic
      *
      * Grupo de informações do processo referenciado
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ProcRef[]
+     * @return InfAdic\ProcRef[]
      */
     public function getProcRef()
     {

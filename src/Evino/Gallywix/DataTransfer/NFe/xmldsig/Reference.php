@@ -27,12 +27,12 @@ class Reference
     private $type = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Transform[] $transforms
+     * @property Transform[] $transforms
      */
     private $transforms = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Reference\DigestMethod
+     * @property Reference\DigestMethod
      * $digestMethod
      */
     private $digestMethod = null;
@@ -112,9 +112,9 @@ class Reference
      * Adds as transform
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Transform $transform
+     * @param Transform $transform
      */
-    public function addToTransforms(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\Transform $transform)
+    public function addToTransforms(Transform $transform)
     {
         $this->transforms[] = $transform;
         return $this;
@@ -145,7 +145,7 @@ class Reference
     /**
      * Gets as transforms
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Transform[]
+     * @return Transform[]
      */
     public function getTransforms()
     {
@@ -155,7 +155,7 @@ class Reference
     /**
      * Sets a new transforms
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Transform[] $transforms
+     * @param Transform[] $transforms
      * @return self
      */
     public function setTransforms(array $transforms)
@@ -167,7 +167,7 @@ class Reference
     /**
      * Gets as digestMethod
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Reference\DigestMethod
+     * @return Reference\DigestMethod
      */
     public function getDigestMethod()
     {
@@ -177,10 +177,10 @@ class Reference
     /**
      * Sets a new digestMethod
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\xmldsig\Reference\DigestMethod $digestMethod
+     * @param Reference\DigestMethod $digestMethod
      * @return self
      */
-    public function setDigestMethod(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\Reference\DigestMethod $digestMethod)
+    public function setDigestMethod(Reference\DigestMethod $digestMethod)
     {
         $this->digestMethod = $digestMethod;
         return $this;

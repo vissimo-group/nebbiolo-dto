@@ -62,16 +62,16 @@ class ImpostoDevol
         return $this->iPI;
     }
 
-    /**
-     * Sets a new iPI
-     *
-     * Informação de IPI devolvido
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $iPI
-     * @return self
-     */
-    public function setIPI(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $iPI)
+	/**
+	 * Sets a new iPI
+	 *
+	 * Informação de IPI devolvido
+	 *
+	 * @param ImpostoDevol\IPI $iPI
+	 * @return ImpostoDevol
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $iPI* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $iPI
+	 */
+    public function setIPI(ImpostoDevol\IPI $iPI)
     {
         $this->iPI = $iPI;
         return $this;

@@ -2,6 +2,8 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Nfe\TEnderEmi;
+
 /**
  * Class representing Emit
  */
@@ -39,7 +41,7 @@ class Emit
     /**
      * Endereço do emitente
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TEnderEmi $enderEmit
+     * @property TEnderEmi $enderEmit
      */
     private $enderEmit = null;
 
@@ -191,7 +193,7 @@ class Emit
      *
      * Endereço do emitente
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TEnderEmi
+     * @return TEnderEmi
      */
     public function getEnderEmit()
     {
@@ -203,10 +205,10 @@ class Emit
      *
      * Endereço do emitente
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TEnderEmi $enderEmit
+     * @param TEnderEmi $enderEmit
      * @return self
      */
-    public function setEnderEmit(\Evino\Gallywix\DataTransfer\Nfe\TEnderEmi $enderEmit)
+    public function setEnderEmit(TEnderEmi $enderEmit)
     {
         $this->enderEmit = $enderEmit;
         return $this;

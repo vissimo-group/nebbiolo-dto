@@ -1,6 +1,7 @@
 <?php
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det;
+use Evino\Gallywix\DataTransfer\Nfe\TIpi;
 
 /**
  * Class representing Imposto
@@ -18,20 +19,20 @@ class Imposto
     /**
      * Dados do ICMS Normal e ST
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS
+     * @property Imposto\ICMS
      * $iCMS
      */
     private $iCMS = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TIpi $iPI
+     * @property TIpi $iPI
      */
     private $iPI = null;
 
     /**
      * Dados do Imposto de Importação
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\II
+     * @property Imposto\II
      * $iI
      */
     private $iI = null;
@@ -47,7 +48,7 @@ class Imposto
     /**
      * Dados do PIS
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS
+     * @property Imposto\PIS
      * $pIS
      */
     private $pIS = null;
@@ -119,7 +120,7 @@ class Imposto
      *
      * Dados do ICMS Normal e ST
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS
+     * @return Imposto\ICMS
      */
     public function getICMS()
     {
@@ -135,7 +136,7 @@ class Imposto
      * $iCMS
      * @return self
      */
-    public function setICMS(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS $iCMS)
+    public function setICMS(Imposto\ICMS $iCMS)
     {
         $this->iCMS = $iCMS;
         return $this;
@@ -144,7 +145,7 @@ class Imposto
     /**
      * Gets as iPI
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TIpi
+     * @return TIpi
      */
     public function getIPI()
     {
@@ -154,10 +155,10 @@ class Imposto
     /**
      * Sets a new iPI
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TIpi $iPI
+     * @param TIpi $iPI
      * @return self
      */
-    public function setIPI(\Evino\Gallywix\DataTransfer\Nfe\TIpi $iPI)
+    public function setIPI(TIpi $iPI)
     {
         $this->iPI = $iPI;
         return $this;
@@ -168,7 +169,7 @@ class Imposto
      *
      * Dados do Imposto de Importação
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\II
+     * @return Imposto\II
      */
     public function getII()
     {
@@ -180,10 +181,10 @@ class Imposto
      *
      * Dados do Imposto de Importação
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\II $iI
+     * @param Imposto\II $iI
      * @return self
      */
-    public function setII(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\II $iI)
+    public function setII(Imposto\II $iI)
     {
         $this->iI = $iI;
         return $this;
@@ -194,7 +195,7 @@ class Imposto
      *
      * ISSQN
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ISSQN
+     * @return Imposto\ISSQN
      */
     public function getISSQN()
     {
@@ -210,7 +211,7 @@ class Imposto
      * $iSSQN
      * @return self
      */
-    public function setISSQN(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ISSQN $iSSQN)
+    public function setISSQN(Imposto\ISSQN $iSSQN)
     {
         $this->iSSQN = $iSSQN;
         return $this;
@@ -221,7 +222,7 @@ class Imposto
      *
      * Dados do PIS
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS
+     * @return Imposto\PIS
      */
     public function getPIS()
     {
@@ -237,7 +238,7 @@ class Imposto
      * $pIS
      * @return self
      */
-    public function setPIS(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS $pIS)
+    public function setPIS(Imposto\PIS $pIS)
     {
         $this->pIS = $pIS;
         return $this;
@@ -248,7 +249,7 @@ class Imposto
      *
      * Dados do PIS Substituição Tributária
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PISST
+     * @return Imposto\PISST
      */
     public function getPISST()
     {
@@ -264,7 +265,7 @@ class Imposto
      * $pISST
      * @return self
      */
-    public function setPISST(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PISST $pISST)
+    public function setPISST(Imposto\PISST $pISST)
     {
         $this->pISST = $pISST;
         return $this;
@@ -275,7 +276,7 @@ class Imposto
      *
      * Dados do COFINS
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS
+     * @return Imposto\COFINS
      */
     public function getCOFINS()
     {
@@ -291,7 +292,7 @@ class Imposto
      * $cOFINS
      * @return self
      */
-    public function setCOFINS(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS $cOFINS)
+    public function setCOFINS(Imposto\COFINS $cOFINS)
     {
         $this->cOFINS = $cOFINS;
         return $this;
@@ -311,18 +312,18 @@ class Imposto
         return $this->cOFINSST;
     }
 
-    /**
-     * Sets a new cOFINSST
-     *
-     * Dados do COFINS da
-     * Substituição Tributaria;
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST
-     * $cOFINSST
-     * @return self
-     */
-    public function setCOFINSST(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST $cOFINSST)
+	/**
+	 * Sets a new cOFINSST
+	 *
+	 * Dados do COFINS da
+	 * Substituição Tributaria;
+	 *
+	 * @param Imposto\COFINSST $cOFINSST
+	 * @return Imposto
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST
+	 * $cOFINSST
+	 */
+    public function setCOFINSST(Imposto\COFINSST $cOFINSST)
     {
         $this->cOFINSST = $cOFINSST;
         return $this;
@@ -342,18 +343,18 @@ class Imposto
         return $this->iCMSUFDest;
     }
 
-    /**
-     * Sets a new iCMSUFDest
-     *
-     * Grupo a ser informado nas vendas interestarduais para consumidor final, não
-     * contribuinte de ICMS
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest
-     * $iCMSUFDest
-     * @return self
-     */
-    public function setICMSUFDest(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest $iCMSUFDest)
+	/**
+	 * Sets a new iCMSUFDest
+	 *
+	 * Grupo a ser informado nas vendas interestarduais para consumidor final, não
+	 * contribuinte de ICMS
+	 *
+	 * @param Imposto\ICMSUFDest $iCMSUFDest
+	 * @return Imposto
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest
+	 * $iCMSUFDest
+	 */
+    public function setICMSUFDest(Imposto\ICMSUFDest $iCMSUFDest)
     {
         $this->iCMSUFDest = $iCMSUFDest;
         return $this;

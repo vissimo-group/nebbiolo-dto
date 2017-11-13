@@ -11,7 +11,7 @@ class Total
     /**
      * Totais referentes ao ICMS
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\ICMSTot
+     * @property Total\ICMSTot
      * $iCMSTot
      */
     private $iCMSTot = null;
@@ -19,7 +19,7 @@ class Total
     /**
      * Totais referentes ao ISSQN
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\ISSQNtot
+     * @property Total\ISSQNtot
      * $iSSQNtot
      */
     private $iSSQNtot = null;
@@ -27,7 +27,7 @@ class Total
     /**
      * Retenção de Tributos Federais
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\RetTrib
+     * @property Total\RetTrib
      * $retTrib
      */
     private $retTrib = null;
@@ -37,7 +37,7 @@ class Total
      *
      * Totais referentes ao ICMS
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\ICMSTot
+     * @return Total\ICMSTot
      */
     public function getICMSTot()
     {
@@ -49,10 +49,10 @@ class Total
      *
      * Totais referentes ao ICMS
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\ICMSTot $iCMSTot
+     * @param Total\ICMSTot $iCMSTot
      * @return self
      */
-    public function setICMSTot(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\ICMSTot $iCMSTot)
+    public function setICMSTot(Total\ICMSTot $iCMSTot)
     {
         $this->iCMSTot = $iCMSTot;
         return $this;
@@ -63,7 +63,7 @@ class Total
      *
      * Totais referentes ao ISSQN
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\ISSQNtot
+     * @return Total\ISSQNtot
      */
     public function getISSQNtot()
     {
@@ -75,10 +75,10 @@ class Total
      *
      * Totais referentes ao ISSQN
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\ISSQNtot $iSSQNtot
+     * @param Total\ISSQNtot $iSSQNtot
      * @return self
      */
-    public function setISSQNtot(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\ISSQNtot $iSSQNtot)
+    public function setISSQNtot(Total\ISSQNtot $iSSQNtot)
     {
         $this->iSSQNtot = $iSSQNtot;
         return $this;
@@ -89,7 +89,7 @@ class Total
      *
      * Retenção de Tributos Federais
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\RetTrib
+     * @return Total\RetTrib
      */
     public function getRetTrib()
     {
@@ -101,10 +101,10 @@ class Total
      *
      * Retenção de Tributos Federais
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\RetTrib $retTrib
+     * @param Total\RetTrib $retTrib
      * @return self
      */
-    public function setRetTrib(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total\RetTrib $retTrib)
+    public function setRetTrib(Total\RetTrib $retTrib)
     {
         $this->retTrib = $retTrib;
         return $this;

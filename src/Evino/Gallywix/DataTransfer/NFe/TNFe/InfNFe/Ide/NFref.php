@@ -20,7 +20,7 @@ class NFref
     /**
      * Dados da NF modelo 1/1A referenciada ou NF modelo 2 referenciada
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefNF
+     * @property NFref\RefNF
      * $refNF
      */
     private $refNF = null;
@@ -28,7 +28,7 @@ class NFref
     /**
      * Grupo com as informações NF de produtor referenciada
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefNFP
+     * @property NFref\RefNFP
      * $refNFP
      */
     private $refNFP = null;
@@ -44,7 +44,7 @@ class NFref
     /**
      * Grupo do Cupom Fiscal vinculado à NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefECF
+     * @property NFref\RefECF
      * $refECF
      */
     private $refECF = null;
@@ -84,7 +84,7 @@ class NFref
      *
      * Dados da NF modelo 1/1A referenciada ou NF modelo 2 referenciada
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefNF
+     * @return NFref\RefNF
      */
     public function getRefNF()
     {
@@ -100,7 +100,7 @@ class NFref
      * $refNF
      * @return self
      */
-    public function setRefNF(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefNF $refNF)
+    public function setRefNF(NFref\RefNF $refNF)
     {
         $this->refNF = $refNF;
         return $this;
@@ -111,7 +111,7 @@ class NFref
      *
      * Grupo com as informações NF de produtor referenciada
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefNFP
+     * @return NFref\RefNFP
      */
     public function getRefNFP()
     {
@@ -127,7 +127,7 @@ class NFref
      * $refNFP
      * @return self
      */
-    public function setRefNFP(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefNFP $refNFP)
+    public function setRefNFP(NFref\RefNFP $refNFP)
     {
         $this->refNFP = $refNFP;
         return $this;
@@ -166,7 +166,7 @@ class NFref
      *
      * Grupo do Cupom Fiscal vinculado à NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefECF
+     * @return NFref\RefECF
      */
     public function getRefECF()
     {
@@ -182,7 +182,7 @@ class NFref
      * $refECF
      * @return self
      */
-    public function setRefECF(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefECF $refECF)
+    public function setRefECF(NFref\RefECF $refECF)
     {
         $this->refECF = $refECF;
         return $this;

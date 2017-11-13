@@ -63,17 +63,17 @@ class DetExport
         return $this->exportInd;
     }
 
-    /**
-     * Sets a new exportInd
-     *
-     * Exportação indireta
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd
-     * $exportInd
-     * @return self
-     */
-    public function setExportInd(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd $exportInd)
+	/**
+	 * Sets a new exportInd
+	 *
+	 * Exportação indireta
+	 *
+	 * @param DetExport\ExportInd $exportInd
+	 * @return DetExport
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd
+	 * $exportInd
+	 */
+    public function setExportInd(DetExport\ExportInd $exportInd)
     {
         $this->exportInd = $exportInd;
         return $this;

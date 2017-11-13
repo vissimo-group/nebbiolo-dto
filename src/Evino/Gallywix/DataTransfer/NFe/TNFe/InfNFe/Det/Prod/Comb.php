@@ -390,17 +390,17 @@ class Comb
         return $this->cIDE;
     }
 
-    /**
-     * Sets a new cIDE
-     *
-     * CIDE Combustíveis
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE
-     * $cIDE
-     * @return self
-     */
-    public function setCIDE(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE $cIDE)
+	/**
+	 * Sets a new cIDE
+	 *
+	 * CIDE Combustíveis
+	 *
+	 * @param Comb\CIDE $cIDE
+	 * @return Comb
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE
+	 * $cIDE
+	 */
+    public function setCIDE(Comb\CIDE $cIDE)
     {
         $this->cIDE = $cIDE;
         return $this;
@@ -419,17 +419,17 @@ class Comb
         return $this->encerrante;
     }
 
-    /**
-     * Sets a new encerrante
-     *
-     * Informações do grupo de "encerrante"
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante
-     * $encerrante
-     * @return self
-     */
-    public function setEncerrante(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante $encerrante)
+	/**
+	 * Sets a new encerrante
+	 *
+	 * Informações do grupo de "encerrante"
+	 *
+	 * @param Comb\Encerrante $encerrante
+	 * @return Comb
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante
+	 * $encerrante
+	 */
+    public function setEncerrante(Comb\Encerrante $encerrante)
     {
         $this->encerrante = $encerrante;
         return $this;

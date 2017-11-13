@@ -17,17 +17,17 @@ class Signature
     private $id = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo $signedInfo
+     * @property SignedInfo $signedInfo
      */
     private $signedInfo = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignatureValue $signatureValue
+     * @property SignatureValue $signatureValue
      */
     private $signatureValue = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\xmldsig\KeyInfo $keyInfo
+     * @property KeyInfo $keyInfo
      */
     private $keyInfo = null;
 
@@ -56,7 +56,7 @@ class Signature
     /**
      * Gets as signedInfo
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo
+     * @return SignedInfo
      */
     public function getSignedInfo()
     {
@@ -66,10 +66,10 @@ class Signature
     /**
      * Sets a new signedInfo
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo $signedInfo
+     * @param SignedInfo $signedInfo
      * @return self
      */
-    public function setSignedInfo(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo $signedInfo)
+    public function setSignedInfo(SignedInfo $signedInfo)
     {
         $this->signedInfo = $signedInfo;
         return $this;
@@ -78,7 +78,7 @@ class Signature
     /**
      * Gets as signatureValue
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignatureValue
+     * @return SignatureValue
      */
     public function getSignatureValue()
     {
@@ -88,10 +88,10 @@ class Signature
     /**
      * Sets a new signatureValue
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignatureValue $signatureValue
+     * @param SignatureValue $signatureValue
      * @return self
      */
-    public function setSignatureValue(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignatureValue $signatureValue)
+    public function setSignatureValue(SignatureValue $signatureValue)
     {
         $this->signatureValue = $signatureValue;
         return $this;
@@ -100,7 +100,7 @@ class Signature
     /**
      * Gets as keyInfo
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\xmldsig\KeyInfo
+     * @return KeyInfo
      */
     public function getKeyInfo()
     {
@@ -110,10 +110,10 @@ class Signature
     /**
      * Sets a new keyInfo
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\xmldsig\KeyInfo $keyInfo
+     * @param KeyInfo $keyInfo
      * @return self
      */
-    public function setKeyInfo(\Evino\Gallywix\DataTransfer\Nfe\xmldsig\KeyInfo $keyInfo)
+    public function setKeyInfo(KeyInfo $keyInfo)
     {
         $this->keyInfo = $keyInfo;
         return $this;

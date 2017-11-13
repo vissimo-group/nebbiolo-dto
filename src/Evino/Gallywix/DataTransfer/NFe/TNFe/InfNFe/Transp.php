@@ -2,6 +2,8 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Nfe\TVeiculo;
+
 /**
  * Class representing Transp
  */
@@ -24,7 +26,7 @@ class Transp
     /**
      * Dados do transportador
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Transporta
+     * @property Transp\Transporta
      * $transporta
      */
     private $transporta = null;
@@ -32,7 +34,7 @@ class Transp
     /**
      * Dados da retenção ICMS do Transporte
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\RetTransp
+     * @property Transp\RetTransp
      * $retTransp
      */
     private $retTransp = null;
@@ -40,14 +42,14 @@ class Transp
     /**
      * Dados do veículo
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TVeiculo $veicTransp
+     * @property TVeiculo $veicTransp
      */
     private $veicTransp = null;
 
     /**
      * Dados do reboque/Dolly (v2.0)
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TVeiculo[] $reboque
+     * @property TVeiculo[] $reboque
      */
     private $reboque = array(
 
@@ -70,7 +72,7 @@ class Transp
     /**
      * Dados dos volumes
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol[] $vol
+     * @property Transp\Vol[] $vol
      */
     private $vol = array(
 
@@ -119,7 +121,7 @@ class Transp
      *
      * Dados do transportador
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Transporta
+     * @return Transp\Transporta
      */
     public function getTransporta()
     {
@@ -135,7 +137,7 @@ class Transp
      * $transporta
      * @return self
      */
-    public function setTransporta(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Transporta $transporta)
+    public function setTransporta(Transp\Transporta $transporta)
     {
         $this->transporta = $transporta;
         return $this;
@@ -146,7 +148,7 @@ class Transp
      *
      * Dados da retenção ICMS do Transporte
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\RetTransp
+     * @return Transp\RetTransp
      */
     public function getRetTransp()
     {
@@ -162,7 +164,7 @@ class Transp
      * $retTransp
      * @return self
      */
-    public function setRetTransp(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\RetTransp $retTransp)
+    public function setRetTransp(Transp\RetTransp $retTransp)
     {
         $this->retTransp = $retTransp;
         return $this;
@@ -173,7 +175,7 @@ class Transp
      *
      * Dados do veículo
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TVeiculo
+     * @return TVeiculo
      */
     public function getVeicTransp()
     {
@@ -185,10 +187,10 @@ class Transp
      *
      * Dados do veículo
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TVeiculo $veicTransp
+     * @param TVeiculo $veicTransp
      * @return self
      */
-    public function setVeicTransp(\Evino\Gallywix\DataTransfer\Nfe\TVeiculo $veicTransp)
+    public function setVeicTransp(TVeiculo $veicTransp)
     {
         $this->veicTransp = $veicTransp;
         return $this;
@@ -200,9 +202,9 @@ class Transp
      * Dados do reboque/Dolly (v2.0)
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TVeiculo $reboque
+     * @param TVeiculo $reboque
      */
-    public function addToReboque(\Evino\Gallywix\DataTransfer\Nfe\TVeiculo $reboque)
+    public function addToReboque(TVeiculo $reboque)
     {
         $this->reboque[] = $reboque;
         return $this;
@@ -239,7 +241,7 @@ class Transp
      *
      * Dados do reboque/Dolly (v2.0)
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TVeiculo[]
+     * @return TVeiculo[]
      */
     public function getReboque()
     {
@@ -251,7 +253,7 @@ class Transp
      *
      * Dados do reboque/Dolly (v2.0)
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TVeiculo[] $reboque
+     * @param TVeiculo[] $reboque
      * @return self
      */
     public function setReboque(array $reboque)
@@ -318,9 +320,9 @@ class Transp
      * Dados dos volumes
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol $vol
+     * @param Transp\Vol $vol
      */
-    public function addToVol(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol $vol)
+    public function addToVol(Transp\Vol $vol)
     {
         $this->vol[] = $vol;
         return $this;
@@ -357,7 +359,7 @@ class Transp
      *
      * Dados dos volumes
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol[]
+     * @return Transp\Vol[]
      */
     public function getVol()
     {
@@ -369,7 +371,7 @@ class Transp
      *
      * Dados dos volumes
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol[] $vol
+     * @param Transp\Vol[] $vol
      * @return self
      */
     public function setVol(array $vol)

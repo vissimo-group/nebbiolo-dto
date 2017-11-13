@@ -2,6 +2,8 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe;
 
+use Evino\Gallywix\DataTransfer\Nfe\TLocal;
+
 /**
  * Class representing InfNFe
  */
@@ -25,28 +27,28 @@ class InfNFe
     /**
      * identificação da NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide $ide
+     * @property InfNFe\Ide $ide
      */
     private $ide = null;
 
     /**
      * Identificação do emitente
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Emit $emit
+     * @property InfNFe\Emit $emit
      */
     private $emit = null;
 
     /**
      * Emissão de avulsa, informar os dados do Fisco emitente
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Avulsa $avulsa
+     * @property InfNFe\Avulsa $avulsa
      */
     private $avulsa = null;
 
     /**
      * Identificação do Destinatário
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Dest $dest
+     * @property InfNFe\Dest $dest
      */
     private $dest = null;
 
@@ -54,7 +56,7 @@ class InfNFe
      * Identificação do Local de Retirada (informar apenas quando for diferente do
      * endereço do remetente)
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TLocal $retirada
+     * @property TLocal $retirada
      */
     private $retirada = null;
 
@@ -62,14 +64,14 @@ class InfNFe
      * Identificação do Local de Entrega (informar apenas quando for diferente do
      * endereço do destinatário)
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TLocal $entrega
+     * @property TLocal $entrega
      */
     private $entrega = null;
 
     /**
      * Pessoas autorizadas para o download do XML da NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\AutXML[] $autXML
+     * @property InfNFe\AutXML[] $autXML
      */
     private $autXML = array(
 
@@ -78,7 +80,7 @@ class InfNFe
     /**
      * Dados dos detalhes da NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det[] $det
+     * @property InfNFe\Det[] $det
      */
     private $det = array(
 
@@ -87,56 +89,56 @@ class InfNFe
     /**
      * Dados dos totais da NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total $total
+     * @property InfNFe\Total $total
      */
     private $total = null;
 
     /**
      * Dados dos transportes da NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp $transp
+     * @property InfNFe\Transp $transp
      */
     private $transp = null;
 
     /**
      * Dados da cobrança da NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr $cobr
+     * @property InfNFe\Cobr $cobr
      */
     private $cobr = null;
 
     /**
      * Dados de Pagamento. Obrigatório apenas para (NFC-e) NT 2012/004
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag $pag
+     * @property InfNFe\Pag $pag
      */
     private $pag = null;
 
     /**
      * Informações adicionais da NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic $infAdic
+     * @property InfNFe\InfAdic $infAdic
      */
     private $infAdic = null;
 
     /**
      * Informações de exportação
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Exporta $exporta
+     * @property InfNFe\Exporta $exporta
      */
     private $exporta = null;
 
     /**
      * Informações de compras (Nota de Empenho, Pedido e Contrato)
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Compra $compra
+     * @property InfNFe\Compra $compra
      */
     private $compra = null;
 
     /**
      * Informações de registro aquisições de cana
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana $cana
+     * @property InfNFe\Cana $cana
      */
     private $cana = null;
 
@@ -197,7 +199,7 @@ class InfNFe
      *
      * identificação da NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide
+     * @return InfNFe\Ide
      */
     public function getIde()
     {
@@ -209,10 +211,10 @@ class InfNFe
      *
      * identificação da NF-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide $ide
+     * @param InfNFe\Ide $ide
      * @return self
      */
-    public function setIde(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide $ide)
+    public function setIde(InfNFe\Ide $ide)
     {
         $this->ide = $ide;
         return $this;
@@ -223,7 +225,7 @@ class InfNFe
      *
      * Identificação do emitente
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Emit
+     * @return InfNFe\Emit
      */
     public function getEmit()
     {
@@ -235,10 +237,10 @@ class InfNFe
      *
      * Identificação do emitente
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Emit $emit
+     * @param InfNFe\Emit $emit
      * @return self
      */
-    public function setEmit(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Emit $emit)
+    public function setEmit(InfNFe\Emit $emit)
     {
         $this->emit = $emit;
         return $this;
@@ -249,7 +251,7 @@ class InfNFe
      *
      * Emissão de avulsa, informar os dados do Fisco emitente
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Avulsa
+     * @return InfNFe\Avulsa
      */
     public function getAvulsa()
     {
@@ -261,10 +263,10 @@ class InfNFe
      *
      * Emissão de avulsa, informar os dados do Fisco emitente
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Avulsa $avulsa
+     * @param InfNFe\Avulsa $avulsa
      * @return self
      */
-    public function setAvulsa(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Avulsa $avulsa)
+    public function setAvulsa(InfNFe\Avulsa $avulsa)
     {
         $this->avulsa = $avulsa;
         return $this;
@@ -275,7 +277,7 @@ class InfNFe
      *
      * Identificação do Destinatário
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Dest
+     * @return InfNFe\Dest
      */
     public function getDest()
     {
@@ -287,10 +289,10 @@ class InfNFe
      *
      * Identificação do Destinatário
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Dest $dest
+     * @param InfNFe\Dest $dest
      * @return self
      */
-    public function setDest(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Dest $dest)
+    public function setDest(InfNFe\Dest $dest)
     {
         $this->dest = $dest;
         return $this;
@@ -302,7 +304,7 @@ class InfNFe
      * Identificação do Local de Retirada (informar apenas quando for diferente do
      * endereço do remetente)
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TLocal
+     * @return TLocal
      */
     public function getRetirada()
     {
@@ -315,10 +317,10 @@ class InfNFe
      * Identificação do Local de Retirada (informar apenas quando for diferente do
      * endereço do remetente)
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TLocal $retirada
+     * @param TLocal $retirada
      * @return self
      */
-    public function setRetirada(\Evino\Gallywix\DataTransfer\Nfe\TLocal $retirada)
+    public function setRetirada(TLocal $retirada)
     {
         $this->retirada = $retirada;
         return $this;
@@ -330,7 +332,7 @@ class InfNFe
      * Identificação do Local de Entrega (informar apenas quando for diferente do
      * endereço do destinatário)
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TLocal
+     * @return TLocal
      */
     public function getEntrega()
     {
@@ -343,10 +345,10 @@ class InfNFe
      * Identificação do Local de Entrega (informar apenas quando for diferente do
      * endereço do destinatário)
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TLocal $entrega
+     * @param TLocal $entrega
      * @return self
      */
-    public function setEntrega(\Evino\Gallywix\DataTransfer\Nfe\TLocal $entrega)
+    public function setEntrega(TLocal $entrega)
     {
         $this->entrega = $entrega;
         return $this;
@@ -358,9 +360,9 @@ class InfNFe
      * Pessoas autorizadas para o download do XML da NF-e
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\AutXML $autXML
+     * @param InfNFe\AutXML $autXML
      */
-    public function addToAutXML(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\AutXML $autXML)
+    public function addToAutXML(InfNFe\AutXML $autXML)
     {
         $this->autXML[] = $autXML;
         return $this;
@@ -397,7 +399,7 @@ class InfNFe
      *
      * Pessoas autorizadas para o download do XML da NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\AutXML[]
+     * @return InfNFe\AutXML[]
      */
     public function getAutXML()
     {
@@ -409,7 +411,7 @@ class InfNFe
      *
      * Pessoas autorizadas para o download do XML da NF-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\AutXML[] $autXML
+     * @param InfNFe\AutXML[] $autXML
      * @return self
      */
     public function setAutXML(array $autXML)
@@ -424,9 +426,9 @@ class InfNFe
      * Dados dos detalhes da NF-e
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det $det
+     * @param InfNFe\Det $det
      */
-    public function addToDet(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det $det)
+    public function addToDet(InfNFe\Det $det)
     {
         $this->det[] = $det;
         return $this;
@@ -463,7 +465,7 @@ class InfNFe
      *
      * Dados dos detalhes da NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det[]
+     * @return InfNFe\Det[]
      */
     public function getDet()
     {
@@ -475,7 +477,7 @@ class InfNFe
      *
      * Dados dos detalhes da NF-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det[] $det
+     * @param InfNFe\Det[] $det
      * @return self
      */
     public function setDet(array $det)
@@ -489,7 +491,7 @@ class InfNFe
      *
      * Dados dos totais da NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total
+     * @return InfNFe\Total
      */
     public function getTotal()
     {
@@ -501,10 +503,10 @@ class InfNFe
      *
      * Dados dos totais da NF-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total $total
+     * @param InfNFe\Total $total
      * @return self
      */
-    public function setTotal(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total $total)
+    public function setTotal(InfNFe\Total $total)
     {
         $this->total = $total;
         return $this;
@@ -515,7 +517,7 @@ class InfNFe
      *
      * Dados dos transportes da NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp
+     * @return InfNFe\Transp
      */
     public function getTransp()
     {
@@ -527,10 +529,10 @@ class InfNFe
      *
      * Dados dos transportes da NF-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp $transp
+     * @param InfNFe\Transp $transp
      * @return self
      */
-    public function setTransp(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp $transp)
+    public function setTransp(InfNFe\Transp $transp)
     {
         $this->transp = $transp;
         return $this;
@@ -541,7 +543,7 @@ class InfNFe
      *
      * Dados da cobrança da NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr
+     * @return InfNFe\Cobr
      */
     public function getCobr()
     {
@@ -553,10 +555,10 @@ class InfNFe
      *
      * Dados da cobrança da NF-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr $cobr
+     * @param InfNFe\Cobr $cobr
      * @return self
      */
-    public function setCobr(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr $cobr)
+    public function setCobr(InfNFe\Cobr $cobr)
     {
         $this->cobr = $cobr;
         return $this;
@@ -567,7 +569,7 @@ class InfNFe
      *
      * Dados de Pagamento. Obrigatório apenas para (NFC-e) NT 2012/004
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag
+     * @return InfNFe\Pag
      */
     public function getPag()
     {
@@ -579,10 +581,10 @@ class InfNFe
      *
      * Dados de Pagamento. Obrigatório apenas para (NFC-e) NT 2012/004
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag $pag
+     * @param InfNFe\Pag $pag
      * @return self
      */
-    public function setPag(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag $pag)
+    public function setPag(InfNFe\Pag $pag)
     {
         $this->pag = $pag;
         return $this;
@@ -593,7 +595,7 @@ class InfNFe
      *
      * Informações adicionais da NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic
+     * @return InfNFe\InfAdic
      */
     public function getInfAdic()
     {
@@ -605,10 +607,10 @@ class InfNFe
      *
      * Informações adicionais da NF-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic $infAdic
+     * @param InfNFe\InfAdic $infAdic
      * @return self
      */
-    public function setInfAdic(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic $infAdic)
+    public function setInfAdic(InfNFe\InfAdic $infAdic)
     {
         $this->infAdic = $infAdic;
         return $this;
@@ -619,7 +621,7 @@ class InfNFe
      *
      * Informações de exportação
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Exporta
+     * @return InfNFe\Exporta
      */
     public function getExporta()
     {
@@ -631,10 +633,10 @@ class InfNFe
      *
      * Informações de exportação
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Exporta $exporta
+     * @param InfNFe\Exporta $exporta
      * @return self
      */
-    public function setExporta(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Exporta $exporta)
+    public function setExporta(InfNFe\Exporta $exporta)
     {
         $this->exporta = $exporta;
         return $this;
@@ -645,7 +647,7 @@ class InfNFe
      *
      * Informações de compras (Nota de Empenho, Pedido e Contrato)
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Compra
+     * @return InfNFe\Compra
      */
     public function getCompra()
     {
@@ -657,10 +659,10 @@ class InfNFe
      *
      * Informações de compras (Nota de Empenho, Pedido e Contrato)
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Compra $compra
+     * @param InfNFe\Compra $compra
      * @return self
      */
-    public function setCompra(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Compra $compra)
+    public function setCompra(InfNFe\Compra $compra)
     {
         $this->compra = $compra;
         return $this;
@@ -671,7 +673,7 @@ class InfNFe
      *
      * Informações de registro aquisições de cana
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana
+     * @return InfNFe\Cana
      */
     public function getCana()
     {
@@ -683,10 +685,10 @@ class InfNFe
      *
      * Informações de registro aquisições de cana
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana $cana
+     * @param InfNFe\Cana $cana
      * @return self
      */
-    public function setCana(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana $cana)
+    public function setCana(InfNFe\Cana $cana)
     {
         $this->cana = $cana;
         return $this;

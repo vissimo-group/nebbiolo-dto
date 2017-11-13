@@ -25,7 +25,7 @@ class Cana
     /**
      * Fornecimentos diários
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana\ForDia[] $forDia
+     * @property Cana\ForDia[] $forDia
      */
     private $forDia = array(
 
@@ -55,7 +55,7 @@ class Cana
     /**
      * Deduções - Taxas e Contribuições
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana\Deduc[] $deduc
+     * @property Cana\Deduc[] $deduc
      */
     private $deduc = array(
 
@@ -140,9 +140,9 @@ class Cana
      * Fornecimentos diários
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana\ForDia $forDia
+     * @param Cana\ForDia $forDia
      */
-    public function addToForDia(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana\ForDia $forDia)
+    public function addToForDia(Cana\ForDia $forDia)
     {
         $this->forDia[] = $forDia;
         return $this;
@@ -179,7 +179,7 @@ class Cana
      *
      * Fornecimentos diários
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana\ForDia[]
+     * @return Cana\ForDia[]
      */
     public function getForDia()
     {
@@ -191,7 +191,7 @@ class Cana
      *
      * Fornecimentos diários
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana\ForDia[] $forDia
+     * @param Cana\ForDia[] $forDia
      * @return self
      */
     public function setForDia(array $forDia)
@@ -284,9 +284,9 @@ class Cana
      * Deduções - Taxas e Contribuições
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana\Deduc $deduc
+     * @param Cana\Deduc $deduc
      */
-    public function addToDeduc(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana\Deduc $deduc)
+    public function addToDeduc(Cana\Deduc $deduc)
     {
         $this->deduc[] = $deduc;
         return $this;
@@ -323,7 +323,7 @@ class Cana
      *
      * Deduções - Taxas e Contribuições
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana\Deduc[]
+     * @return Cana\Deduc[]
      */
     public function getDeduc()
     {
@@ -335,7 +335,7 @@ class Cana
      *
      * Deduções - Taxas e Contribuições
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana\Deduc[] $deduc
+     * @param Cana\Deduc[] $deduc
      * @return self
      */
     public function setDeduc(array $deduc)

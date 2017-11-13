@@ -87,7 +87,7 @@ class TRetConsReciNFe
     /**
      * Protocolo de status resultado do processamento da NF-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TProtNFe[] $protNFe
+     * @property TProtNFe[] $protNFe
      */
     private $protNFe = array(
 
@@ -363,9 +363,9 @@ class TRetConsReciNFe
      * Protocolo de status resultado do processamento da NF-e
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TProtNFe $protNFe
+     * @param TProtNFe $protNFe
      */
-    public function addToProtNFe(\Evino\Gallywix\DataTransfer\Nfe\TProtNFe $protNFe)
+    public function addToProtNFe(TProtNFe $protNFe)
     {
         $this->protNFe[] = $protNFe;
         return $this;
@@ -402,7 +402,7 @@ class TRetConsReciNFe
      *
      * Protocolo de status resultado do processamento da NF-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TProtNFe[]
+     * @return TProtNFe[]
      */
     public function getProtNFe()
     {
@@ -414,7 +414,7 @@ class TRetConsReciNFe
      *
      * Protocolo de status resultado do processamento da NF-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TProtNFe[] $protNFe
+     * @param TProtNFe[] $protNFe
      * @return self
      */
     public function setProtNFe(array $protNFe)

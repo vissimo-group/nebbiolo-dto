@@ -29,7 +29,7 @@ class TEnviNFe
     private $indSinc = null;
 
     /**
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe[] $nFe
+     * @property TNFe[] $nFe
      */
     private $nFe = array(
 
@@ -109,9 +109,9 @@ class TEnviNFe
      * Adds as nFe
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe $nFe
+     * @param TNFe $nFe
      */
-    public function addToNFe(\Evino\Gallywix\DataTransfer\Nfe\TNFe $nFe)
+    public function addToNFe(TNFe $nFe)
     {
         $this->nFe[] = $nFe;
         return $this;
@@ -142,7 +142,7 @@ class TEnviNFe
     /**
      * Gets as nFe
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe[]
+     * @return TNFe[]
      */
     public function getNFe()
     {
@@ -152,7 +152,7 @@ class TEnviNFe
     /**
      * Sets a new nFe
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe[] $nFe
+     * @param TNFe[] $nFe
      * @return self
      */
     public function setNFe(array $nFe)

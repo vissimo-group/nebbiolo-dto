@@ -11,14 +11,14 @@ class Cobr
     /**
      * Dados da fatura
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr\Fat $fat
+     * @property Cobr\Fat $fat
      */
     private $fat = null;
 
     /**
      * Dados das duplicatas NT 2011/004
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr\Dup[] $dup
+     * @property Cobr\Dup[] $dup
      */
     private $dup = array(
 
@@ -29,7 +29,7 @@ class Cobr
      *
      * Dados da fatura
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr\Fat
+     * @return Cobr\Fat
      */
     public function getFat()
     {
@@ -41,10 +41,10 @@ class Cobr
      *
      * Dados da fatura
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr\Fat $fat
+     * @param Cobr\Fat $fat
      * @return self
      */
-    public function setFat(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr\Fat $fat)
+    public function setFat(Cobr\Fat $fat)
     {
         $this->fat = $fat;
         return $this;
@@ -56,9 +56,9 @@ class Cobr
      * Dados das duplicatas NT 2011/004
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr\Dup $dup
+     * @param Cobr\Dup $dup
      */
-    public function addToDup(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr\Dup $dup)
+    public function addToDup(Cobr\Dup $dup)
     {
         $this->dup[] = $dup;
         return $this;
@@ -95,7 +95,7 @@ class Cobr
      *
      * Dados das duplicatas NT 2011/004
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr\Dup[]
+     * @return Cobr\Dup[]
      */
     public function getDup()
     {
@@ -107,7 +107,7 @@ class Cobr
      *
      * Dados das duplicatas NT 2011/004
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr\Dup[] $dup
+     * @param Cobr\Dup[] $dup
      * @return self
      */
     public function setDup(array $dup)

@@ -197,7 +197,7 @@ class Prod
      * Delcaração de Importação
      * (NT 2011/004)
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI[]
+     * @property Prod\DI[]
      * $dI
      */
     private $dI = array(
@@ -257,7 +257,7 @@ class Prod
     /**
      * grupo do detalhamento de Medicamentos e de matérias-primas farmacêuticas
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Med
+     * @property Prod\Med
      * $med
      */
     private $med = null;
@@ -265,7 +265,7 @@ class Prod
     /**
      * Armamentos
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Arma[]
+     * @property Prod\Arma[]
      * $arma
      */
     private $arma = array(
@@ -275,7 +275,7 @@ class Prod
     /**
      * Informar apenas para operações com combustíveis líquidos
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb
+     * @property Prod\Comb
      * $comb
      */
     private $comb = null;
@@ -461,14 +461,14 @@ class Prod
         return $this->nVE;
     }
 
-    /**
-     * Sets a new nVE
-     *
-     * Nomenclatura de Valor aduaneio e Estatístico
-     *
-     * @param string $nVE
-     * @return self
-     */
+	/**
+	 * Sets a new nVE
+	 *
+	 * Nomenclatura de Valor aduaneio e Estatístico
+	 *
+	 * @param array|string $nVE
+	 * @return Prod
+	 */
     public function setNVE(array $nVE)
     {
         $this->nVE = $nVE;
@@ -988,9 +988,9 @@ class Prod
      * (NT 2011/004)
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI $dI
+     * @param Prod\DI $dI
      */
-    public function addToDI(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI $dI)
+    public function addToDI(Prod\DI $dI)
     {
         $this->dI[] = $dI;
         return $this;
@@ -1030,7 +1030,7 @@ class Prod
      * Delcaração de Importação
      * (NT 2011/004)
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI[]
+     * @return Prod\DI[]
      */
     public function getDI()
     {
@@ -1043,7 +1043,7 @@ class Prod
      * Delcaração de Importação
      * (NT 2011/004)
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI[] $dI
+     * @param Prod\DI[] $dI
      * @return self
      */
     public function setDI(array $dI)
@@ -1061,7 +1061,7 @@ class Prod
      * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport
      * $detExport
      */
-    public function addToDetExport(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport $detExport)
+    public function addToDetExport(Prod\DetExport $detExport)
     {
         $this->detExport[] = $detExport;
         return $this;
@@ -1093,29 +1093,28 @@ class Prod
         unset($this->detExport[$index]);
     }
 
-    /**
-     * Gets as detExport
-     *
-     * Detalhe da exportação
-     *
-     * @return
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
-     */
+	/**
+	 * Gets as detExport
+	 *
+	 * Detalhe da exportação
+	 * @return array \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
+	 * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
+	 */
     public function getDetExport()
     {
         return $this->detExport;
     }
 
-    /**
-     * Sets a new detExport
-     *
-     * Detalhe da exportação
-     *
-     * @param
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
-     * $detExport
-     * @return self
-     */
+	/**
+	 * Sets a new detExport
+	 *
+	 * Detalhe da exportação
+	 *
+	 * @param array $detExport
+	 * @return Prod
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
+	 * $detExport
+	 */
     public function setDetExport(array $detExport)
     {
         $this->detExport = $detExport;
@@ -1209,7 +1208,7 @@ class Prod
      * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Rastro
      * $rastro
      */
-    public function addToRastro(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Rastro $rastro)
+    public function addToRastro(Prod\Rastro $rastro)
     {
         $this->rastro[] = $rastro;
         return $this;
@@ -1240,7 +1239,7 @@ class Prod
     /**
      * Gets as rastro
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Rastro[]
+     * @return Prod\Rastro[]
      */
     public function getRastro()
     {
@@ -1265,7 +1264,7 @@ class Prod
      *
      * Veículos novos
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\VeicProd
+     * @return Prod\VeicProd
      */
     public function getVeicProd()
     {
@@ -1281,7 +1280,7 @@ class Prod
      * $veicProd
      * @return self
      */
-    public function setVeicProd(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\VeicProd $veicProd)
+    public function setVeicProd(Prod\VeicProd $veicProd)
     {
         $this->veicProd = $veicProd;
         return $this;
@@ -1292,7 +1291,7 @@ class Prod
      *
      * grupo do detalhamento de Medicamentos e de matérias-primas farmacêuticas
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Med
+     * @return Prod\Med
      */
     public function getMed()
     {
@@ -1304,10 +1303,10 @@ class Prod
      *
      * grupo do detalhamento de Medicamentos e de matérias-primas farmacêuticas
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Med $med
+     * @param Prod\Med $med
      * @return self
      */
-    public function setMed(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Med $med)
+    public function setMed(Prod\Med $med)
     {
         $this->med = $med;
         return $this;
@@ -1319,9 +1318,9 @@ class Prod
      * Armamentos
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Arma $arma
+     * @param Prod\Arma $arma
      */
-    public function addToArma(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Arma $arma)
+    public function addToArma(Prod\Arma $arma)
     {
         $this->arma[] = $arma;
         return $this;
@@ -1358,7 +1357,7 @@ class Prod
      *
      * Armamentos
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Arma[]
+     * @return Prod\Arma[]
      */
     public function getArma()
     {
@@ -1385,7 +1384,7 @@ class Prod
      *
      * Informar apenas para operações com combustíveis líquidos
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb
+     * @return Prod\Comb
      */
     public function getComb()
     {
@@ -1397,10 +1396,10 @@ class Prod
      *
      * Informar apenas para operações com combustíveis líquidos
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb $comb
+     * @param Prod\Comb $comb
      * @return self
      */
-    public function setComb(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb $comb)
+    public function setComb(Prod\Comb $comb)
     {
         $this->comb = $comb;
         return $this;

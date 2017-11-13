@@ -201,7 +201,7 @@ class Ide
     /**
      * Grupo de infromações da NF referenciada
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref[] $nFref
+     * @property Ide\NFref[] $nFref
      */
     private $nFref = array(
 
@@ -857,9 +857,9 @@ class Ide
      * Grupo de infromações da NF referenciada
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref $nFref
+     * @param Ide\NFref $nFref
      */
-    public function addToNFref(\Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref $nFref)
+    public function addToNFref(Ide\NFref $nFref)
     {
         $this->nFref[] = $nFref;
         return $this;
@@ -896,7 +896,7 @@ class Ide
      *
      * Grupo de infromações da NF referenciada
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref[]
+     * @return Ide\NFref[]
      */
     public function getNFref()
     {
@@ -908,7 +908,7 @@ class Ide
      *
      * Grupo de infromações da NF referenciada
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref[] $nFref
+     * @param Ide\NFref[] $nFref
      * @return self
      */
     public function setNFref(array $nFref)

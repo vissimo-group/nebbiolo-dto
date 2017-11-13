@@ -63,14 +63,14 @@ class TRetEnviNFe
     /**
      * Dados do Recibo do Lote
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TRetEnviNFe\InfRec $infRec
+     * @property TRetEnviNFe\InfRec $infRec
      */
     private $infRec = null;
 
     /**
      * Protocolo de status resultado do processamento sincrono da NFC-e
      *
-     * @property \Evino\Gallywix\DataTransfer\Nfe\TProtNFe $protNFe
+     * @property TProtNFe $protNFe
      */
     private $protNFe = null;
 
@@ -261,7 +261,7 @@ class TRetEnviNFe
      *
      * Dados do Recibo do Lote
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TRetEnviNFe\InfRec
+     * @return TRetEnviNFe\InfRec
      */
     public function getInfRec()
     {
@@ -273,10 +273,10 @@ class TRetEnviNFe
      *
      * Dados do Recibo do Lote
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TRetEnviNFe\InfRec $infRec
+     * @param TRetEnviNFe\InfRec $infRec
      * @return self
      */
-    public function setInfRec(\Evino\Gallywix\DataTransfer\Nfe\TRetEnviNFe\InfRec $infRec)
+    public function setInfRec(TRetEnviNFe\InfRec $infRec)
     {
         $this->infRec = $infRec;
         return $this;
@@ -287,7 +287,7 @@ class TRetEnviNFe
      *
      * Protocolo de status resultado do processamento sincrono da NFC-e
      *
-     * @return \Evino\Gallywix\DataTransfer\Nfe\TProtNFe
+     * @return TProtNFe
      */
     public function getProtNFe()
     {
@@ -299,10 +299,10 @@ class TRetEnviNFe
      *
      * Protocolo de status resultado do processamento sincrono da NFC-e
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TProtNFe $protNFe
+     * @param TProtNFe $protNFe
      * @return self
      */
-    public function setProtNFe(\Evino\Gallywix\DataTransfer\Nfe\TProtNFe $protNFe)
+    public function setProtNFe(TProtNFe $protNFe)
     {
         $this->protNFe = $protNFe;
         return $this;
