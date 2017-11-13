@@ -1,0 +1,11 @@
+{
+    "name": "evino/gallywix-models",
+    "description": "Models for Gallywix (Brazilian electronic invoice - NFe gateway)",
+    "authors": [
+        {
+            "name": "Evino",
+            "email": "oss@evino.com.br"
+        }
+    ],
+    "require": {}
+}
