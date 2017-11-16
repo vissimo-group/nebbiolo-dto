@@ -2,31 +2,33 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TProtNFe
  *
  * Tipo Protocolo de status resultado do processamento da NF-e
  * XSD Type: TProtNFe
  */
-class TProtNFe
+class TProtNFe extends AbstractJsonSerializable
 {
 
     /**
      * @property string $versao
      */
-    private $versao = null;
+    protected $versao = null;
 
     /**
      * Dados do protocolo de status
      *
      * @property TProtNFe\InfProt $infProt
      */
-    private $infProt = null;
+    protected $infProt = null;
 
     /**
      * @property xmldsig\Signature $signature
      */
-    private $signature = null;
+    protected $signature = null;
 
     /**
      * Gets as versao

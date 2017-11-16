@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Deduc
  */
-class Deduc
+class Deduc extends AbstractJsonSerializable
 {
 
     /**
@@ -13,14 +15,14 @@ class Deduc
      *
      * @property string $xDed
      */
-    private $xDed = null;
+    protected $xDed = null;
 
     /**
      * valor da dedução
      *
      * @property string $vDed
      */
-    private $vDed = null;
+    protected $vDed = null;
 
     /**
      * Gets as xDed

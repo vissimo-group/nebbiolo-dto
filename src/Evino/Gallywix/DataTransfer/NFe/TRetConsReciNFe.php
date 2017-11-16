@@ -2,6 +2,8 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TRetConsReciNFe
  *
@@ -9,13 +11,13 @@ namespace Evino\Gallywix\DataTransfer\Nfe;
  * Eletrônicas
  * XSD Type: TRetConsReciNFe
  */
-class TRetConsReciNFe
+class TRetConsReciNFe extends AbstractJsonSerializable
 {
 
     /**
      * @property string $versao
      */
-    private $versao = null;
+    protected $versao = null;
 
     /**
      * Identificação do Ambiente:
@@ -24,42 +26,42 @@ class TRetConsReciNFe
      *
      * @property string $tpAmb
      */
-    private $tpAmb = null;
+    protected $tpAmb = null;
 
     /**
      * Versão do Aplicativo que processou a NF-e
      *
      * @property string $verAplic
      */
-    private $verAplic = null;
+    protected $verAplic = null;
 
     /**
      * Número do Recibo Consultado
      *
      * @property string $nRec
      */
-    private $nRec = null;
+    protected $nRec = null;
 
     /**
      * Código do status da mensagem enviada.
      *
      * @property string $cStat
      */
-    private $cStat = null;
+    protected $cStat = null;
 
     /**
      * Descrição literal do status do serviço solicitado.
      *
      * @property string $xMotivo
      */
-    private $xMotivo = null;
+    protected $xMotivo = null;
 
     /**
      * código da UF de atendimento
      *
      * @property string $cUF
      */
-    private $cUF = null;
+    protected $cUF = null;
 
     /**
      * Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SSTZD. Em caso de
@@ -67,7 +69,7 @@ class TRetConsReciNFe
      *
      * @property string $dhRecbto
      */
-    private $dhRecbto = null;
+    protected $dhRecbto = null;
 
     /**
      * Código da Mensagem (v2.0)
@@ -75,21 +77,21 @@ class TRetConsReciNFe
      *
      * @property string $cMsg
      */
-    private $cMsg = null;
+    protected $cMsg = null;
 
     /**
      * Mensagem da SEFAZ para o emissor. (v2.0)
      *
      * @property string $xMsg
      */
-    private $xMsg = null;
+    protected $xMsg = null;
 
     /**
      * Protocolo de status resultado do processamento da NF-e
      *
      * @property TProtNFe[] $protNFe
      */
-    private $protNFe = array(
+    protected $protNFe = array(
 
     );
 

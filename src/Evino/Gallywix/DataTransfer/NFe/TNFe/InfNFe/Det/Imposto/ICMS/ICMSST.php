@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMSST
  */
-class ICMSST
+class ICMSST extends AbstractJsonSerializable
 {
 
     /**
@@ -15,7 +17,7 @@ class ICMSST
      *
      * @property string $orig
      */
-    private $orig = null;
+    protected $orig = null;
 
     /**
      * Tributção pelo ICMS
@@ -24,35 +26,35 @@ class ICMSST
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * Informar o valor da BC do ICMS ST retido na UF remetente
      *
      * @property string $vBCSTRet
      */
-    private $vBCSTRet = null;
+    protected $vBCSTRet = null;
 
     /**
      * Informar o valor do ICMS ST retido na UF remetente (iv2.0))
      *
      * @property string $vICMSSTRet
      */
-    private $vICMSSTRet = null;
+    protected $vICMSSTRet = null;
 
     /**
      * Informar o valor da BC do ICMS ST da UF destino
      *
      * @property string $vBCSTDest
      */
-    private $vBCSTDest = null;
+    protected $vBCSTDest = null;
 
     /**
      * Informar o valor da BC do ICMS ST da UF destino (v2.0)
      *
      * @property string $vICMSSTDest
      */
-    private $vICMSSTDest = null;
+    protected $vICMSSTDest = null;
 
     /**
      * Gets as orig

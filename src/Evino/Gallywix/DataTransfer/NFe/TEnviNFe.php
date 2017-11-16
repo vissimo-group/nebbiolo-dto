@@ -2,36 +2,38 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TEnviNFe
  *
  * Tipo Pedido de Concessão de Autorização da Nota Fiscal Eletrônica
  * XSD Type: TEnviNFe
  */
-class TEnviNFe
+class TEnviNFe extends AbstractJsonSerializable
 {
 
     /**
      * @property string $versao
      */
-    private $versao = null;
+    protected $versao = null;
 
     /**
      * @property string $idLote
      */
-    private $idLote = null;
+    protected $idLote = null;
 
     /**
      * Indicador de processamento síncrono. 0=NÃO; 1=SIM=Síncrono
      *
      * @property string $indSinc
      */
-    private $indSinc = null;
+    protected $indSinc = null;
 
     /**
      * @property TNFe[] $nFe
      */
-    private $nFe = array(
+    protected $nFe = array(
 
     );
 

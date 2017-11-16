@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Encerrante
  */
-class Encerrante
+class Encerrante extends AbstractJsonSerializable
 {
 
     /**
@@ -13,35 +15,35 @@ class Encerrante
      *
      * @property string $nBico
      */
-    private $nBico = null;
+    protected $nBico = null;
 
     /**
      * Numero de identificação da bomba ao qual o bico está interligado
      *
      * @property string $nBomba
      */
-    private $nBomba = null;
+    protected $nBomba = null;
 
     /**
      * Numero de identificação do tanque ao qual o bico está interligado
      *
      * @property string $nTanque
      */
-    private $nTanque = null;
+    protected $nTanque = null;
 
     /**
      * Valor do Encerrante no ínicio do abastecimento
      *
      * @property string $vEncIni
      */
-    private $vEncIni = null;
+    protected $vEncIni = null;
 
     /**
      * Valor do Encerrante no final do abastecimento
      *
      * @property string $vEncFin
      */
-    private $vEncFin = null;
+    protected $vEncFin = null;
 
     /**
      * Gets as nBico

@@ -2,13 +2,15 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TIpi
  *
  * Tipo: Dados do IPI
  * XSD Type: TIpi
  */
-class TIpi
+class TIpi extends AbstractJsonSerializable
 {
 
     /**
@@ -17,38 +19,38 @@ class TIpi
      *
      * @property string $cNPJProd
      */
-    private $cNPJProd = null;
+    protected $cNPJProd = null;
 
     /**
      * Código do selo de controle do IPI
      *
      * @property string $cSelo
      */
-    private $cSelo = null;
+    protected $cSelo = null;
 
     /**
      * Quantidade de selo de controle do IPI
      *
      * @property string $qSelo
      */
-    private $qSelo = null;
+    protected $qSelo = null;
 
     /**
      * Código de Enquadramento Legal do IPI (tabela a ser criada pela RFB)
      *
      * @property string $cEnq
      */
-    private $cEnq = null;
+    protected $cEnq = null;
 
     /**
      * @property TIpi\IPITrib $iPITrib
      */
-    private $iPITrib = null;
+    protected $iPITrib = null;
 
     /**
      * @property TIpi\IPINT $iPINT
      */
-    private $iPINT = null;
+    protected $iPINT = null;
 
     /**
      * Gets as cNPJProd

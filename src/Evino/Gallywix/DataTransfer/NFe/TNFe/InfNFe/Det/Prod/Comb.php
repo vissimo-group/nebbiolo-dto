@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Comb
  */
-class Comb
+class Comb extends AbstractJsonSerializable
 {
 
     /**
@@ -14,7 +16,7 @@ class Comb
      *
      * @property string $cProdANP
      */
-    private $cProdANP = null;
+    protected $cProdANP = null;
 
     /**
      * Descrição do Produto conforme ANP. Utilizar a descrição de produtos do
@@ -23,7 +25,7 @@ class Comb
      *
      * @property string $descANP
      */
-    private $descANP = null;
+    protected $descANP = null;
 
     /**
      * Percentual do GLP derivado do petróleo no produto GLP (cProdANP=210203001).
@@ -32,7 +34,7 @@ class Comb
      *
      * @property string $pGLP
      */
-    private $pGLP = null;
+    protected $pGLP = null;
 
     /**
      * Percentual de gás natural nacional - GLGNn para o produto GLP
@@ -41,7 +43,7 @@ class Comb
      *
      * @property string $pGNn
      */
-    private $pGNn = null;
+    protected $pGNn = null;
 
     /**
      * Percentual de gás natural importado GLGNi para o produto GLP
@@ -50,7 +52,7 @@ class Comb
      *
      * @property string $pGNi
      */
-    private $pGNi = null;
+    protected $pGNi = null;
 
     /**
      * Valor de partida (cProdANP=210203001). Deve ser informado neste campo o valor
@@ -58,7 +60,7 @@ class Comb
      *
      * @property string $vPart
      */
-    private $vPart = null;
+    protected $vPart = null;
 
     /**
      * Código de autorização / registro do CODIF. Informar apenas quando a UF
@@ -67,7 +69,7 @@ class Comb
      *
      * @property string $cODIF
      */
-    private $cODIF = null;
+    protected $cODIF = null;
 
     /**
      * Quantidade de combustível
@@ -80,14 +82,14 @@ class Comb
      *
      * @property string $qTemp
      */
-    private $qTemp = null;
+    protected $qTemp = null;
 
     /**
      * Sigla da UF de Consumo
      *
      * @property string $uFCons
      */
-    private $uFCons = null;
+    protected $uFCons = null;
 
     /**
      * CIDE Combustíveis
@@ -96,7 +98,7 @@ class Comb
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE
      * $cIDE
      */
-    private $cIDE = null;
+    protected $cIDE = null;
 
     /**
      * Informações do grupo de "encerrante"
@@ -105,7 +107,7 @@ class Comb
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante
      * $encerrante
      */
-    private $encerrante = null;
+    protected $encerrante = null;
 
     /**
      * Gets as cProdANP

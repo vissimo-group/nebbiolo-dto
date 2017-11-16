@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Vol
  */
-class Vol
+class Vol extends AbstractJsonSerializable
 {
 
     /**
@@ -13,49 +15,49 @@ class Vol
      *
      * @property string $qVol
      */
-    private $qVol = null;
+    protected $qVol = null;
 
     /**
      * Espécie dos volumes transportados
      *
      * @property string $esp
      */
-    private $esp = null;
+    protected $esp = null;
 
     /**
      * Marca dos volumes transportados
      *
      * @property string $marca
      */
-    private $marca = null;
+    protected $marca = null;
 
     /**
      * Numeração dos volumes transportados
      *
      * @property string $nVol
      */
-    private $nVol = null;
+    protected $nVol = null;
 
     /**
      * Peso líquido (em kg)
      *
      * @property string $pesoL
      */
-    private $pesoL = null;
+    protected $pesoL = null;
 
     /**
      * Peso bruto (em kg)
      *
      * @property string $pesoB
      */
-    private $pesoB = null;
+    protected $pesoB = null;
 
     /**
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres[]
      * $lacres
      */
-    private $lacres = array(
+    protected $lacres = array(
 
     );
 

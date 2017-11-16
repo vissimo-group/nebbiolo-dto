@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing CIDE
  */
-class CIDE
+class CIDE extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class CIDE
      *
      * @property string $qBCProd
      */
-    private $qBCProd = null;
+    protected $qBCProd = null;
 
     /**
      * Alíquota do CIDE (em reais)
      *
      * @property string $vAliqProd
      */
-    private $vAliqProd = null;
+    protected $vAliqProd = null;
 
     /**
      * Valor do CIDE
      *
      * @property string $vCIDE
      */
-    private $vCIDE = null;
+    protected $vCIDE = null;
 
     /**
      * Gets as qBCProd

@@ -2,12 +2,13 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
 use Evino\Gallywix\DataTransfer\Nfe\TEndereco;
 
 /**
  * Class representing Dest
  */
-class Dest
+class Dest extends AbstractJsonSerializable
 {
 
     /**
@@ -15,35 +16,35 @@ class Dest
      *
      * @property string $cNPJ
      */
-    private $cNPJ = null;
+    protected $cNPJ = null;
 
     /**
      * Número do CPF
      *
      * @property string $cPF
      */
-    private $cPF = null;
+    protected $cPF = null;
 
     /**
      * Identificador do destinatário, em caso de comprador estrangeiro
      *
      * @property string $idEstrangeiro
      */
-    private $idEstrangeiro = null;
+    protected $idEstrangeiro = null;
 
     /**
      * Razão Social ou nome do destinatário
      *
      * @property string $xNome
      */
-    private $xNome = null;
+    protected $xNome = null;
 
     /**
      * Dados do endereço
      *
      * @property TEndereco $enderDest
      */
-    private $enderDest = null;
+    protected $enderDest = null;
 
     /**
      * Indicador da IE do destinatário:
@@ -53,14 +54,14 @@ class Dest
      *
      * @property string $indIEDest
      */
-    private $indIEDest = null;
+    protected $indIEDest = null;
 
     /**
      * Inscrição Estadual (obrigatório nas operações com contribuintes do ICMS)
      *
      * @property string $iE
      */
-    private $iE = null;
+    protected $iE = null;
 
     /**
      * Inscrição na SUFRAMA (Obrigatório nas operações com as áreas com
@@ -69,14 +70,14 @@ class Dest
      *
      * @property string $iSUF
      */
-    private $iSUF = null;
+    protected $iSUF = null;
 
     /**
      * Inscrição Municipal do tomador do serviço
      *
      * @property string $iM
      */
-    private $iM = null;
+    protected $iM = null;
 
     /**
      * Informar o e-mail do destinatário. O campo pode ser utilizado para informar o
@@ -85,7 +86,7 @@ class Dest
      *
      * @property string $email
      */
-    private $email = null;
+    protected $email = null;
 
     /**
      * Gets as cNPJ

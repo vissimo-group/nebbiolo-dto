@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag\DetPag;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Card
  */
-class Card
+class Card extends AbstractJsonSerializable
 {
 
     /**
@@ -18,14 +20,14 @@ class Card
      *
      * @property string $tpIntegra
      */
-    private $tpIntegra = null;
+    protected $tpIntegra = null;
 
     /**
      * CNPJ da credenciadora de cartão de crédito/débito
      *
      * @property string $cNPJ
      */
-    private $cNPJ = null;
+    protected $cNPJ = null;
 
     /**
      * Bandeira da operadora de cartão de crédito/débito:01–Visa; 02–Mastercard;
@@ -34,14 +36,14 @@ class Card
      *
      * @property string $tBand
      */
-    private $tBand = null;
+    protected $tBand = null;
 
     /**
      * Número de autorização da operação cartão de crédito/débito
      *
      * @property string $cAut
      */
-    private $cAut = null;
+    protected $cAut = null;
 
     /**
      * Gets as tpIntegra

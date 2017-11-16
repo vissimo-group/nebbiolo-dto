@@ -2,21 +2,23 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ObsFisco
  */
-class ObsFisco
+class ObsFisco extends AbstractJsonSerializable
 {
 
     /**
      * @property string $xCampo
      */
-    private $xCampo = null;
+    protected $xCampo = null;
 
     /**
      * @property string $xTexto
      */
-    private $xTexto = null;
+    protected $xTexto = null;
 
     /**
      * Gets as xCampo

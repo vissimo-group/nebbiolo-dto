@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMSSN102
  */
-class ICMSSN102
+class ICMSSN102 extends AbstractJsonSerializable
 {
 
     /**
@@ -16,7 +18,7 @@ class ICMSSN102
      *
      * @property string $orig
      */
-    private $orig = null;
+    protected $orig = null;
 
     /**
      * 102- Tributada pelo Simples Nacional sem permissão de crédito.
@@ -26,7 +28,7 @@ class ICMSSN102
      *
      * @property string $cSOSN
      */
-    private $cSOSN = null;
+    protected $cSOSN = null;
 
     /**
      * Gets as orig

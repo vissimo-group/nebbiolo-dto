@@ -2,13 +2,15 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TEnderEmi
  *
  * Tipo Dados do Endereço do Emitente // 24/10/08 - desmembrado / tamanho mínimo
  * XSD Type: TEnderEmi
  */
-class TEnderEmi
+class TEnderEmi extends AbstractJsonSerializable
 {
 
     /**
@@ -16,77 +18,77 @@ class TEnderEmi
      *
      * @property string $xLgr
      */
-    private $xLgr = null;
+    protected $xLgr = null;
 
     /**
      * Número
      *
      * @property string $nro
      */
-    private $nro = null;
+    protected $nro = null;
 
     /**
      * Complemento
      *
      * @property string $xCpl
      */
-    private $xCpl = null;
+    protected $xCpl = null;
 
     /**
      * Bairro
      *
      * @property string $xBairro
      */
-    private $xBairro = null;
+    protected $xBairro = null;
 
     /**
      * Código do município
      *
      * @property string $cMun
      */
-    private $cMun = null;
+    protected $cMun = null;
 
     /**
      * Nome do município
      *
      * @property string $xMun
      */
-    private $xMun = null;
+    protected $xMun = null;
 
     /**
      * Sigla da UF
      *
      * @property string $uF
      */
-    private $uF = null;
+    protected $uF = null;
 
     /**
      * CEP - NT 2011/004
      *
      * @property string $cEP
      */
-    private $cEP = null;
+    protected $cEP = null;
 
     /**
      * Código do país
      *
      * @property string $cPais
      */
-    private $cPais = null;
+    protected $cPais = null;
 
     /**
      * Nome do país
      *
      * @property string $xPais
      */
-    private $xPais = null;
+    protected $xPais = null;
 
     /**
      * Preencher com Código DDD + número do telefone (v.2.0)
      *
      * @property string $fone
      */
-    private $fone = null;
+    protected $fone = null;
 
     /**
      * Gets as xLgr

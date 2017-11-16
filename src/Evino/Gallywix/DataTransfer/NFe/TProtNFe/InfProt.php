@@ -2,16 +2,18 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TProtNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing InfProt
  */
-class InfProt
+class InfProt extends AbstractJsonSerializable
 {
 
     /**
      * @property string $id
      */
-    private $id = null;
+    protected $id = null;
 
     /**
      * Identificação do Ambiente:
@@ -20,14 +22,14 @@ class InfProt
      *
      * @property string $tpAmb
      */
-    private $tpAmb = null;
+    protected $tpAmb = null;
 
     /**
      * Versão do Aplicativo que processou a NF-e
      *
      * @property string $verAplic
      */
-    private $verAplic = null;
+    protected $verAplic = null;
 
     /**
      * Chaves de acesso da NF-e, compostas por: UF do emitente, AAMM da emissão da
@@ -35,7 +37,7 @@ class InfProt
      *
      * @property string $chNFe
      */
-    private $chNFe = null;
+    protected $chNFe = null;
 
     /**
      * Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SSTZD. Deve ser
@@ -44,7 +46,7 @@ class InfProt
      *
      * @property string $dhRecbto
      */
-    private $dhRecbto = null;
+    protected $dhRecbto = null;
 
     /**
      * Número do Protocolo de Status da NF-e. 1 posição (1 – Secretaria de Fazenda
@@ -53,7 +55,7 @@ class InfProt
      *
      * @property string $nProt
      */
-    private $nProt = null;
+    protected $nProt = null;
 
     /**
      * Digest Value da NF-e processada. Utilizado para conferir a integridade da NF-e
@@ -61,21 +63,21 @@ class InfProt
      *
      * @property mixed $digVal
      */
-    private $digVal = null;
+    protected $digVal = null;
 
     /**
      * Código do status da mensagem enviada.
      *
      * @property string $cStat
      */
-    private $cStat = null;
+    protected $cStat = null;
 
     /**
      * Descrição literal do status do serviço solicitado.
      *
      * @property string $xMotivo
      */
-    private $xMotivo = null;
+    protected $xMotivo = null;
 
     /**
      * Gets as id

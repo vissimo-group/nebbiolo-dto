@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Pag
  */
-class Pag
+class Pag extends AbstractJsonSerializable
 {
 
     /**
@@ -13,7 +15,7 @@ class Pag
      *
      * @property Pag\DetPag[] $detPag
      */
-    private $detPag = array(
+    protected $detPag = array(
 
     );
 
@@ -22,7 +24,7 @@ class Pag
      *
      * @property string $vTroco
      */
-    private $vTroco = null;
+    protected $vTroco = null;
 
     /**
      * Adds as detPag

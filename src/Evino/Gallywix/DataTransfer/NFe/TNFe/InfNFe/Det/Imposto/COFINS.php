@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing COFINS
  */
-class COFINS
+class COFINS extends AbstractJsonSerializable
 {
 
     /**
@@ -19,7 +21,7 @@ class COFINS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSAliq
      * $cOFINSAliq
      */
-    private $cOFINSAliq = null;
+    protected $cOFINSAliq = null;
 
     /**
      * Código de Situação Tributária do COFINS.
@@ -30,7 +32,7 @@ class COFINS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSQtde
      * $cOFINSQtde
      */
-    private $cOFINSQtde = null;
+    protected $cOFINSQtde = null;
 
     /**
      * Código de Situação Tributária do COFINS:
@@ -44,7 +46,7 @@ class COFINS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSNT
      * $cOFINSNT
      */
-    private $cOFINSNT = null;
+    protected $cOFINSNT = null;
 
     /**
      * Código de Situação Tributária do COFINS:
@@ -91,7 +93,7 @@ class COFINS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSOutr
      * $cOFINSOutr
      */
-    private $cOFINSOutr = null;
+    protected $cOFINSOutr = null;
 
     /**
      * Gets as cOFINSAliq

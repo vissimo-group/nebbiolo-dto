@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ISSQNtot
  */
-class ISSQNtot
+class ISSQNtot extends AbstractJsonSerializable
 {
 
     /**
@@ -13,84 +15,84 @@ class ISSQNtot
      *
      * @property string $vServ
      */
-    private $vServ = null;
+    protected $vServ = null;
 
     /**
      * Base de Cálculo do ISS
      *
      * @property string $vBC
      */
-    private $vBC = null;
+    protected $vBC = null;
 
     /**
      * Valor Total do ISS
      *
      * @property string $vISS
      */
-    private $vISS = null;
+    protected $vISS = null;
 
     /**
      * Valor do PIS sobre serviços
      *
      * @property string $vPIS
      */
-    private $vPIS = null;
+    protected $vPIS = null;
 
     /**
      * Valor do COFINS sobre serviços
      *
      * @property string $vCOFINS
      */
-    private $vCOFINS = null;
+    protected $vCOFINS = null;
 
     /**
      * Data da prestação do serviço (AAAA-MM-DD)
      *
      * @property string $dCompet
      */
-    private $dCompet = null;
+    protected $dCompet = null;
 
     /**
      * Valor dedução para redução da base de cálculo
      *
      * @property string $vDeducao
      */
-    private $vDeducao = null;
+    protected $vDeducao = null;
 
     /**
      * Valor outras retenções
      *
      * @property string $vOutro
      */
-    private $vOutro = null;
+    protected $vOutro = null;
 
     /**
      * Valor desconto incondicionado
      *
      * @property string $vDescIncond
      */
-    private $vDescIncond = null;
+    protected $vDescIncond = null;
 
     /**
      * Valor desconto condicionado
      *
      * @property string $vDescCond
      */
-    private $vDescCond = null;
+    protected $vDescCond = null;
 
     /**
      * Valor Total Retenção ISS
      *
      * @property string $vISSRet
      */
-    private $vISSRet = null;
+    protected $vISSRet = null;
 
     /**
      * Código do regime especial de tributação
      *
      * @property string $cRegTrib
      */
-    private $cRegTrib = null;
+    protected $cRegTrib = null;
 
     /**
      * Gets as vServ

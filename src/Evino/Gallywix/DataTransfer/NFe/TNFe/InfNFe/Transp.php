@@ -2,12 +2,13 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
 use Evino\Gallywix\DataTransfer\Nfe\TVeiculo;
 
 /**
  * Class representing Transp
  */
-class Transp
+class Transp extends AbstractJsonSerializable
 {
 
     /**
@@ -21,7 +22,7 @@ class Transp
      *
      * @property string $modFrete
      */
-    private $modFrete = null;
+    protected $modFrete = null;
 
     /**
      * Dados do transportador
@@ -29,7 +30,7 @@ class Transp
      * @property Transp\Transporta
      * $transporta
      */
-    private $transporta = null;
+    protected $transporta = null;
 
     /**
      * Dados da retenção ICMS do Transporte
@@ -37,21 +38,21 @@ class Transp
      * @property Transp\RetTransp
      * $retTransp
      */
-    private $retTransp = null;
+    protected $retTransp = null;
 
     /**
      * Dados do veículo
      *
      * @property TVeiculo $veicTransp
      */
-    private $veicTransp = null;
+    protected $veicTransp = null;
 
     /**
      * Dados do reboque/Dolly (v2.0)
      *
      * @property TVeiculo[] $reboque
      */
-    private $reboque = array(
+    protected $reboque = array(
 
     );
 
@@ -60,21 +61,21 @@ class Transp
      *
      * @property string $vagao
      */
-    private $vagao = null;
+    protected $vagao = null;
 
     /**
      * Identificação da balsa (v2.0)
      *
      * @property string $balsa
      */
-    private $balsa = null;
+    protected $balsa = null;
 
     /**
      * Dados dos volumes
      *
      * @property Transp\Vol[] $vol
      */
-    private $vol = array(
+    protected $vol = array(
 
     );
 

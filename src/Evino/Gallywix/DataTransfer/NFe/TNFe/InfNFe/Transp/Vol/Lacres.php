@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Lacres
  */
-class Lacres
+class Lacres extends AbstractJsonSerializable
 {
 
     /**
@@ -13,7 +15,7 @@ class Lacres
      *
      * @property string $nLacre
      */
-    private $nLacre = null;
+    protected $nLacre = null;
 
     /**
      * Gets as nLacre

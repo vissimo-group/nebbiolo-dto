@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Adi
  */
-class Adi
+class Adi extends AbstractJsonSerializable
 {
 
     /**
@@ -13,14 +15,14 @@ class Adi
      *
      * @property string $nAdicao
      */
-    private $nAdicao = null;
+    protected $nAdicao = null;
 
     /**
      * Número seqüencial do item dentro da Adição
      *
      * @property string $nSeqAdic
      */
-    private $nSeqAdic = null;
+    protected $nSeqAdic = null;
 
     /**
      * Código do fabricante estrangeiro (usado nos sistemas internos de informação
@@ -28,21 +30,21 @@ class Adi
      *
      * @property string $cFabricante
      */
-    private $cFabricante = null;
+    protected $cFabricante = null;
 
     /**
      * Valor do desconto do item da DI – adição
      *
      * @property string $vDescDI
      */
-    private $vDescDI = null;
+    protected $vDescDI = null;
 
     /**
      * Número do ato concessório de Drawback
      *
      * @property string $nDraw
      */
-    private $nDraw = null;
+    protected $nDraw = null;
 
     /**
      * Gets as nAdicao

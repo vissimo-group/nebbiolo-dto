@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Med
  */
-class Med
+class Med extends AbstractJsonSerializable
 {
 
     /**
@@ -14,14 +16,14 @@ class Med
      *
      * @property string $cProdANVISA
      */
-    private $cProdANVISA = null;
+    protected $cProdANVISA = null;
 
     /**
      * Preço Máximo ao Consumidor.
      *
      * @property string $vPMC
      */
-    private $vPMC = null;
+    protected $vPMC = null;
 
     /**
      * Gets as cProdANVISA

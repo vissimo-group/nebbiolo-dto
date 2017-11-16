@@ -2,12 +2,13 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
 use Evino\Gallywix\DataTransfer\Nfe\TLocal;
 
 /**
  * Class representing InfNFe
  */
-class InfNFe
+class InfNFe extends AbstractJsonSerializable
 {
 
     /**
@@ -15,42 +16,42 @@ class InfNFe
      *
      * @property string $versao
      */
-    private $versao = null;
+    protected $versao = null;
 
     /**
      * PL_005d - 11/08/09 - validação do Id
      *
      * @property string $id
      */
-    private $id = null;
+    protected $id = null;
 
     /**
      * identificação da NF-e
      *
      * @property InfNFe\Ide $ide
      */
-    private $ide = null;
+    protected $ide = null;
 
     /**
      * Identificação do emitente
      *
      * @property InfNFe\Emit $emit
      */
-    private $emit = null;
+    protected $emit = null;
 
     /**
      * Emissão de avulsa, informar os dados do Fisco emitente
      *
      * @property InfNFe\Avulsa $avulsa
      */
-    private $avulsa = null;
+    protected $avulsa = null;
 
     /**
      * Identificação do Destinatário
      *
      * @property InfNFe\Dest $dest
      */
-    private $dest = null;
+    protected $dest = null;
 
     /**
      * Identificação do Local de Retirada (informar apenas quando for diferente do
@@ -58,7 +59,7 @@ class InfNFe
      *
      * @property TLocal $retirada
      */
-    private $retirada = null;
+    protected $retirada = null;
 
     /**
      * Identificação do Local de Entrega (informar apenas quando for diferente do
@@ -66,14 +67,14 @@ class InfNFe
      *
      * @property TLocal $entrega
      */
-    private $entrega = null;
+    protected $entrega = null;
 
     /**
      * Pessoas autorizadas para o download do XML da NF-e
      *
      * @property InfNFe\AutXML[] $autXML
      */
-    private $autXML = array(
+    protected $autXML = array(
 
     );
 
@@ -82,7 +83,7 @@ class InfNFe
      *
      * @property InfNFe\Det[] $det
      */
-    private $det = array(
+    protected $det = array(
 
     );
 
@@ -91,56 +92,56 @@ class InfNFe
      *
      * @property InfNFe\Total $total
      */
-    private $total = null;
+    protected $total = null;
 
     /**
      * Dados dos transportes da NF-e
      *
      * @property InfNFe\Transp $transp
      */
-    private $transp = null;
+    protected $transp = null;
 
     /**
      * Dados da cobrança da NF-e
      *
      * @property InfNFe\Cobr $cobr
      */
-    private $cobr = null;
+    protected $cobr = null;
 
     /**
      * Dados de Pagamento. Obrigatório apenas para (NFC-e) NT 2012/004
      *
      * @property InfNFe\Pag $pag
      */
-    private $pag = null;
+    protected $pag = null;
 
     /**
      * Informações adicionais da NF-e
      *
      * @property InfNFe\InfAdic $infAdic
      */
-    private $infAdic = null;
+    protected $infAdic = null;
 
     /**
      * Informações de exportação
      *
      * @property InfNFe\Exporta $exporta
      */
-    private $exporta = null;
+    protected $exporta = null;
 
     /**
      * Informações de compras (Nota de Empenho, Pedido e Contrato)
      *
      * @property InfNFe\Compra $compra
      */
-    private $compra = null;
+    protected $compra = null;
 
     /**
      * Informações de registro aquisições de cana
      *
      * @property InfNFe\Cana $cana
      */
-    private $cana = null;
+    protected $cana = null;
 
     /**
      * Gets as versao

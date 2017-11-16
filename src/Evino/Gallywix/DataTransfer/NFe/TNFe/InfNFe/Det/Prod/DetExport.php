@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing DetExport
  */
-class DetExport
+class DetExport extends AbstractJsonSerializable
 {
 
     /**
@@ -13,7 +15,7 @@ class DetExport
      *
      * @property string $nDraw
      */
-    private $nDraw = null;
+    protected $nDraw = null;
 
     /**
      * Exportação indireta
@@ -22,7 +24,7 @@ class DetExport
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd
      * $exportInd
      */
-    private $exportInd = null;
+    protected $exportInd = null;
 
     /**
      * Gets as nDraw

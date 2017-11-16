@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing RefNF
  */
-class RefNF
+class RefNF extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class RefNF
      *
      * @property string $cUF
      */
-    private $cUF = null;
+    protected $cUF = null;
 
     /**
      * AAMM da emissão
      *
      * @property string $aAMM
      */
-    private $aAMM = null;
+    protected $aAMM = null;
 
     /**
      * CNPJ do emitente do documento fiscal referenciado
      *
      * @property string $cNPJ
      */
-    private $cNPJ = null;
+    protected $cNPJ = null;
 
     /**
      * Código do modelo do Documento Fiscal. Utilizar 01 para NF modelo 1/1A e 02 para
@@ -35,21 +37,21 @@ class RefNF
      *
      * @property string $mod
      */
-    private $mod = null;
+    protected $mod = null;
 
     /**
      * Série do Documento Fiscal, informar zero se inexistente
      *
      * @property string $serie
      */
-    private $serie = null;
+    protected $serie = null;
 
     /**
      * Número do Documento Fiscal
      *
      * @property string $nNF
      */
-    private $nNF = null;
+    protected $nNF = null;
 
     /**
      * Gets as cUF

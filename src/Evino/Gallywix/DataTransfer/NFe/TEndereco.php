@@ -2,13 +2,15 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TEndereco
  *
  * Tipo Dados do Endereço // 24/10/08 - tamanho mínimo
  * XSD Type: TEndereco
  */
-class TEndereco
+class TEndereco extends AbstractJsonSerializable
 {
 
     /**
@@ -16,28 +18,28 @@ class TEndereco
      *
      * @property string $xLgr
      */
-    private $xLgr = null;
+    protected $xLgr = null;
 
     /**
      * Número
      *
      * @property string $nro
      */
-    private $nro = null;
+    protected $nro = null;
 
     /**
      * Complemento
      *
      * @property string $xCpl
      */
-    private $xCpl = null;
+    protected $xCpl = null;
 
     /**
      * Bairro
      *
      * @property string $xBairro
      */
-    private $xBairro = null;
+    protected $xBairro = null;
 
     /**
      * Código do município (utilizar a tabela do IBGE), informar 9999999 para
@@ -45,42 +47,42 @@ class TEndereco
      *
      * @property string $cMun
      */
-    private $cMun = null;
+    protected $cMun = null;
 
     /**
      * Nome do município, informar EXTERIOR para operações com o exterior.
      *
      * @property string $xMun
      */
-    private $xMun = null;
+    protected $xMun = null;
 
     /**
      * Sigla da UF, informar EX para operações com o exterior.
      *
      * @property string $uF
      */
-    private $uF = null;
+    protected $uF = null;
 
     /**
      * CEP
      *
      * @property string $cEP
      */
-    private $cEP = null;
+    protected $cEP = null;
 
     /**
      * Código de Pais
      *
      * @property string $cPais
      */
-    private $cPais = null;
+    protected $cPais = null;
 
     /**
      * Nome do país
      *
      * @property string $xPais
      */
-    private $xPais = null;
+    protected $xPais = null;
 
     /**
      * Telefone, preencher com Código DDD + número do telefone , nas operações com
@@ -89,7 +91,7 @@ class TEndereco
      *
      * @property string $fone
      */
-    private $fone = null;
+    protected $fone = null;
 
     /**
      * Gets as xLgr

@@ -2,36 +2,38 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\xmldsig;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing SignedInfo
  *
  *
  * XSD Type: SignedInfo
  */
-class SignedInfo
+class SignedInfo extends AbstractJsonSerializable
 {
 
     /**
      * @property string $id
      */
-    private $id = null;
+    protected $id = null;
 
     /**
      * @property SignedInfo\CanonicalizationMethod
      * $canonicalizationMethod
      */
-    private $canonicalizationMethod = null;
+    protected $canonicalizationMethod = null;
 
     /**
      * @property SignedInfo\SignatureMethod
      * $signatureMethod
      */
-    private $signatureMethod = null;
+    protected $signatureMethod = null;
 
     /**
      * @property Reference $reference
      */
-    private $reference = null;
+    protected $reference = null;
 
     /**
      * Gets as id

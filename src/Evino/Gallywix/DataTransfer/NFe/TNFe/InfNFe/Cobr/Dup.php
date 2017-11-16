@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Dup
  */
-class Dup
+class Dup extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class Dup
      *
      * @property string $nDup
      */
-    private $nDup = null;
+    protected $nDup = null;
 
     /**
      * Data de vencimento da duplicata (AAAA-MM-DD)
      *
      * @property string $dVenc
      */
-    private $dVenc = null;
+    protected $dVenc = null;
 
     /**
      * Valor da duplicata
      *
      * @property string $vDup
      */
-    private $vDup = null;
+    protected $vDup = null;
 
     /**
      * Gets as nDup

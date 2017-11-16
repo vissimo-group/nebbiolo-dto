@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing PISOutr
  */
-class PISOutr
+class PISOutr extends AbstractJsonSerializable
 {
 
     /**
@@ -14,42 +16,42 @@ class PISOutr
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * Valor da BC do PIS
      *
      * @property string $vBC
      */
-    private $vBC = null;
+    protected $vBC = null;
 
     /**
      * Alíquota do PIS (em percentual)
      *
      * @property string $pPIS
      */
-    private $pPIS = null;
+    protected $pPIS = null;
 
     /**
      * Quantidade Vendida (NT2011/004)
      *
      * @property string $qBCProd
      */
-    private $qBCProd = null;
+    protected $qBCProd = null;
 
     /**
      * Alíquota do PIS (em reais) (NT2011/004)
      *
      * @property string $vAliqProd
      */
-    private $vAliqProd = null;
+    protected $vAliqProd = null;
 
     /**
      * Valor do PIS
      *
      * @property string $vPIS
      */
-    private $vPIS = null;
+    protected $vPIS = null;
 
     /**
      * Gets as cST

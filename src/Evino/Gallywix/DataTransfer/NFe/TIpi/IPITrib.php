@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TIpi;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing IPITrib
  */
-class IPITrib
+class IPITrib extends AbstractJsonSerializable
 {
 
     /**
@@ -17,28 +19,28 @@ class IPITrib
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * Valor da BC do IPI
      *
      * @property string $vBC
      */
-    private $vBC = null;
+    protected $vBC = null;
 
     /**
      * Alíquota do IPI
      *
      * @property string $pIPI
      */
-    private $pIPI = null;
+    protected $pIPI = null;
 
     /**
      * Quantidade total na unidade padrão para tributação
      *
      * @property string $qUnid
      */
-    private $qUnid = null;
+    protected $qUnid = null;
 
     /**
      * Valor por Unidade Tributável. Informar o valor do imposto Pauta por unidade de
@@ -46,14 +48,14 @@ class IPITrib
      *
      * @property string $vUnid
      */
-    private $vUnid = null;
+    protected $vUnid = null;
 
     /**
      * Valor do IPI
      *
      * @property string $vIPI
      */
-    private $vIPI = null;
+    protected $vIPI = null;
 
     /**
      * Gets as cST

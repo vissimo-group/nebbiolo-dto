@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Ide
  */
-class Ide
+class Ide extends AbstractJsonSerializable
 {
 
     /**
@@ -13,7 +15,7 @@ class Ide
      *
      * @property string $cUF
      */
-    private $cUF = null;
+    protected $cUF = null;
 
     /**
      * Código numérico que compõe a Chave de Acesso. Número aleatório gerado pelo
@@ -21,21 +23,21 @@ class Ide
      *
      * @property string $cNF
      */
-    private $cNF = null;
+    protected $cNF = null;
 
     /**
      * Descrição da Natureza da Operação
      *
      * @property string $natOp
      */
-    private $natOp = null;
+    protected $natOp = null;
 
     /**
      * Código do modelo do Documento Fiscal. 55 = NF-e; 65 = NFC-e.
      *
      * @property string $mod
      */
-    private $mod = null;
+    protected $mod = null;
 
     /**
      * Série do Documento Fiscal
@@ -45,14 +47,14 @@ class Ide
      *
      * @property string $serie
      */
-    private $serie = null;
+    protected $serie = null;
 
     /**
      * Número do Documento Fiscal
      *
      * @property string $nNF
      */
-    private $nNF = null;
+    protected $nNF = null;
 
     /**
      * Data e Hora de emissão do Documento Fiscal (AAAA-MM-DDThh:mm:ssTZD) ex.:
@@ -60,7 +62,7 @@ class Ide
      *
      * @property string $dhEmi
      */
-    private $dhEmi = null;
+    protected $dhEmi = null;
 
     /**
      * Data e Hora da saída ou de entrada da mercadoria / produto
@@ -68,14 +70,14 @@ class Ide
      *
      * @property string $dhSaiEnt
      */
-    private $dhSaiEnt = null;
+    protected $dhSaiEnt = null;
 
     /**
      * Tipo do Documento Fiscal (0 - entrada; 1 - saída)
      *
      * @property string $tpNF
      */
-    private $tpNF = null;
+    protected $tpNF = null;
 
     /**
      * Identificador de Local de destino da operação
@@ -83,14 +85,14 @@ class Ide
      *
      * @property string $idDest
      */
-    private $idDest = null;
+    protected $idDest = null;
 
     /**
      * Código do Município de Ocorrência do Fato Gerador (utilizar a tabela do IBGE)
      *
      * @property string $cMunFG
      */
-    private $cMunFG = null;
+    protected $cMunFG = null;
 
     /**
      * Formato de impressão do DANFE (0-sem DANFE;1-DANFe Retrato; 2-DANFe
@@ -99,7 +101,7 @@ class Ide
      *
      * @property string $tpImp
      */
-    private $tpImp = null;
+    protected $tpImp = null;
 
     /**
      * Forma de emissão da NF-e
@@ -114,14 +116,14 @@ class Ide
      *
      * @property string $tpEmis
      */
-    private $tpEmis = null;
+    protected $tpEmis = null;
 
     /**
      * Digito Verificador da Chave de Acesso da NF-e
      *
      * @property string $cDV
      */
-    private $cDV = null;
+    protected $cDV = null;
 
     /**
      * Identificação do Ambiente:
@@ -130,7 +132,7 @@ class Ide
      *
      * @property string $tpAmb
      */
-    private $tpAmb = null;
+    protected $tpAmb = null;
 
     /**
      * Finalidade da emissão da NF-e:
@@ -141,14 +143,14 @@ class Ide
      *
      * @property string $finNFe
      */
-    private $finNFe = null;
+    protected $finNFe = null;
 
     /**
      * Indica operação com consumidor final (0-Não;1-Consumidor Final)
      *
      * @property string $indFinal
      */
-    private $indFinal = null;
+    protected $indFinal = null;
 
     /**
      * Indicador de presença do comprador no estabelecimento comercial no momento da
@@ -160,7 +162,7 @@ class Ide
      *
      * @property string $indPres
      */
-    private $indPres = null;
+    protected $indPres = null;
 
     /**
      * Processo de emissão utilizado com a seguinte codificação:
@@ -173,7 +175,7 @@ class Ide
      *
      * @property string $procEmi
      */
-    private $procEmi = null;
+    protected $procEmi = null;
 
     /**
      * versão do aplicativo utilizado no processo de
@@ -181,7 +183,7 @@ class Ide
      *
      * @property string $verProc
      */
-    private $verProc = null;
+    protected $verProc = null;
 
     /**
      * Informar a data e hora de entrada em contingência contingência no formato
@@ -189,21 +191,21 @@ class Ide
      *
      * @property string $dhCont
      */
-    private $dhCont = null;
+    protected $dhCont = null;
 
     /**
      * Informar a Justificativa da entrada
      *
      * @property string $xJust
      */
-    private $xJust = null;
+    protected $xJust = null;
 
     /**
      * Grupo de infromações da NF referenciada
      *
      * @property Ide\NFref[] $nFref
      */
-    private $nFref = array(
+    protected $nFref = array(
 
     );
 

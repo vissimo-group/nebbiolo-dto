@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMS40
  */
-class ICMS40
+class ICMS40 extends AbstractJsonSerializable
 {
 
     /**
@@ -15,7 +17,7 @@ class ICMS40
      *
      * @property string $orig
      */
-    private $orig = null;
+    protected $orig = null;
 
     /**
      * Tributação pelo ICMS
@@ -26,7 +28,7 @@ class ICMS40
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * O valor do ICMS será informado apenas nas operações com veículos
@@ -34,7 +36,7 @@ class ICMS40
      *
      * @property string $vICMSDeson
      */
-    private $vICMSDeson = null;
+    protected $vICMSDeson = null;
 
     /**
      * Este campo será preenchido quando o campo anterior estiver preenchido.
@@ -54,7 +56,7 @@ class ICMS40
      *
      * @property string $motDesICMS
      */
-    private $motDesICMS = null;
+    protected $motDesICMS = null;
 
     /**
      * Gets as orig

@@ -2,29 +2,31 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TNfeProc
  *
  * Tipo da NF-e processada
  * XSD Type: TNfeProc
  */
-class TNfeProc
+class TNfeProc extends AbstractJsonSerializable
 {
 
     /**
      * @property string $versao
      */
-    private $versao = null;
+    protected $versao = null;
 
     /**
      * @property TNFe $nFe
      */
-    private $nFe = null;
+    protected $nFe = null;
 
     /**
      * @property TProtNFe $protNFe
      */
-    private $protNFe = null;
+    protected $protNFe = null;
 
     /**
      * Gets as versao

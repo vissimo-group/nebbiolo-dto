@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMS
  */
-class ICMS
+class ICMS extends AbstractJsonSerializable
 {
 
     /**
@@ -16,7 +18,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS00
      * $iCMS00
      */
-    private $iCMS00 = null;
+    protected $iCMS00 = null;
 
     /**
      * Tributação pelo ICMS
@@ -26,7 +28,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS10
      * $iCMS10
      */
-    private $iCMS10 = null;
+    protected $iCMS10 = null;
 
     /**
      * Tributção pelo ICMS
@@ -36,7 +38,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS20
      * $iCMS20
      */
-    private $iCMS20 = null;
+    protected $iCMS20 = null;
 
     /**
      * Tributação pelo ICMS
@@ -47,7 +49,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS30
      * $iCMS30
      */
-    private $iCMS30 = null;
+    protected $iCMS30 = null;
 
     /**
      * Tributação pelo ICMS
@@ -59,7 +61,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS40
      * $iCMS40
      */
-    private $iCMS40 = null;
+    protected $iCMS40 = null;
 
     /**
      * Tributção pelo ICMS
@@ -71,7 +73,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS51
      * $iCMS51
      */
-    private $iCMS51 = null;
+    protected $iCMS51 = null;
 
     /**
      * Tributação pelo ICMS
@@ -81,7 +83,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS60
      * $iCMS60
      */
-    private $iCMS60 = null;
+    protected $iCMS60 = null;
 
     /**
      * Tributação pelo ICMS
@@ -92,7 +94,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS70
      * $iCMS70
      */
-    private $iCMS70 = null;
+    protected $iCMS70 = null;
 
     /**
      * Tributação pelo ICMS
@@ -102,7 +104,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS90
      * $iCMS90
      */
-    private $iCMS90 = null;
+    protected $iCMS90 = null;
 
     /**
      * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na
@@ -115,7 +117,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSPart
      * $iCMSPart
      */
-    private $iCMSPart = null;
+    protected $iCMSPart = null;
 
     /**
      * Grupo de informação do ICMSST devido para a UF de destino, nas operações
@@ -126,7 +128,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSST
      * $iCMSST
      */
-    private $iCMSST = null;
+    protected $iCMSST = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=101 (v.2.0)
@@ -135,7 +137,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN101
      * $iCMSSN101
      */
-    private $iCMSSN101 = null;
+    protected $iCMSSN101 = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=102, 103, 300 ou 400 (v.2.0))
@@ -144,7 +146,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN102
      * $iCMSSN102
      */
-    private $iCMSSN102 = null;
+    protected $iCMSSN102 = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=201 (v.2.0)
@@ -153,7 +155,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN201
      * $iCMSSN201
      */
-    private $iCMSSN201 = null;
+    protected $iCMSSN201 = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=202 ou 203 (v.2.0)
@@ -162,7 +164,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN202
      * $iCMSSN202
      */
-    private $iCMSSN202 = null;
+    protected $iCMSSN202 = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e
@@ -172,7 +174,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN500
      * $iCMSSN500
      */
-    private $iCMSSN500 = null;
+    protected $iCMSSN500 = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e
@@ -182,7 +184,7 @@ class ICMS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN900
      * $iCMSSN900
      */
-    private $iCMSSN900 = null;
+    protected $iCMSSN900 = null;
 
     /**
      * Gets as iCMS00

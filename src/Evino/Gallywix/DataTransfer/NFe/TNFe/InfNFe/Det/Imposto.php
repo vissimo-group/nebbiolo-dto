@@ -1,12 +1,14 @@
 <?php
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det;
+
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
 use Evino\Gallywix\DataTransfer\Nfe\TIpi;
 
 /**
  * Class representing Imposto
  */
-class Imposto
+class Imposto extends AbstractJsonSerializable
 {
 
     /**
@@ -14,7 +16,7 @@ class Imposto
      *
      * @property string $vTotTrib
      */
-    private $vTotTrib = null;
+    protected $vTotTrib = null;
 
     /**
      * Dados do ICMS Normal e ST
@@ -22,12 +24,12 @@ class Imposto
      * @property Imposto\ICMS
      * $iCMS
      */
-    private $iCMS = null;
+    protected $iCMS = null;
 
     /**
      * @property TIpi $iPI
      */
-    private $iPI = null;
+    protected $iPI = null;
 
     /**
      * Dados do Imposto de Importação
@@ -35,7 +37,7 @@ class Imposto
      * @property Imposto\II
      * $iI
      */
-    private $iI = null;
+    protected $iI = null;
 
     /**
      * ISSQN
@@ -43,7 +45,7 @@ class Imposto
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ISSQN $iSSQN
      */
-    private $iSSQN = null;
+    protected $iSSQN = null;
 
     /**
      * Dados do PIS
@@ -51,7 +53,7 @@ class Imposto
      * @property Imposto\PIS
      * $pIS
      */
-    private $pIS = null;
+    protected $pIS = null;
 
     /**
      * Dados do PIS Substituição Tributária
@@ -59,7 +61,7 @@ class Imposto
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PISST $pISST
      */
-    private $pISST = null;
+    protected $pISST = null;
 
     /**
      * Dados do COFINS
@@ -67,7 +69,7 @@ class Imposto
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS $cOFINS
      */
-    private $cOFINS = null;
+    protected $cOFINS = null;
 
     /**
      * Dados do COFINS da
@@ -77,7 +79,7 @@ class Imposto
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST
      * $cOFINSST
      */
-    private $cOFINSST = null;
+    protected $cOFINSST = null;
 
     /**
      * Grupo a ser informado nas vendas interestarduais para consumidor final, não
@@ -87,7 +89,7 @@ class Imposto
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest
      * $iCMSUFDest
      */
-    private $iCMSUFDest = null;
+    protected $iCMSUFDest = null;
 
     /**
      * Gets as vTotTrib

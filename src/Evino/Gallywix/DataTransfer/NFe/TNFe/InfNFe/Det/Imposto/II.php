@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing II
  */
-class II
+class II extends AbstractJsonSerializable
 {
 
     /**
@@ -13,28 +15,28 @@ class II
      *
      * @property string $vBC
      */
-    private $vBC = null;
+    protected $vBC = null;
 
     /**
      * Valor das despesas aduaneiras
      *
      * @property string $vDespAdu
      */
-    private $vDespAdu = null;
+    protected $vDespAdu = null;
 
     /**
      * Valor do Imposto de Importação
      *
      * @property string $vII
      */
-    private $vII = null;
+    protected $vII = null;
 
     /**
      * Valor do Imposto sobre Operações Financeiras
      *
      * @property string $vIOF
      */
-    private $vIOF = null;
+    protected $vIOF = null;
 
     /**
      * Gets as vBC

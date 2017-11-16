@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Total
  */
-class Total
+class Total extends AbstractJsonSerializable
 {
 
     /**
@@ -14,7 +16,7 @@ class Total
      * @property Total\ICMSTot
      * $iCMSTot
      */
-    private $iCMSTot = null;
+    protected $iCMSTot = null;
 
     /**
      * Totais referentes ao ISSQN
@@ -22,7 +24,7 @@ class Total
      * @property Total\ISSQNtot
      * $iSSQNtot
      */
-    private $iSSQNtot = null;
+    protected $iSSQNtot = null;
 
     /**
      * Retenção de Tributos Federais
@@ -30,7 +32,7 @@ class Total
      * @property Total\RetTrib
      * $retTrib
      */
-    private $retTrib = null;
+    protected $retTrib = null;
 
     /**
      * Gets as iCMSTot

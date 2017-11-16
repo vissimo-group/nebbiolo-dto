@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing InfNFeSupl
  */
-class InfNFeSupl
+class InfNFeSupl extends AbstractJsonSerializable
 {
 
     /**
@@ -13,7 +15,7 @@ class InfNFeSupl
      *
      * @property string $qrCode
      */
-    private $qrCode = null;
+    protected $qrCode = null;
 
     /**
      * Informar a URL da "Consulta por chave de acesso da NFC-e". A mesma URL que deve
@@ -21,7 +23,7 @@ class InfNFeSupl
      *
      * @property string $urlChave
      */
-    private $urlChave = null;
+    protected $urlChave = null;
 
     /**
      * Gets as qrCode

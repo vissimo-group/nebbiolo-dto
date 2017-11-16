@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Rastro
  */
-class Rastro
+class Rastro extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class Rastro
      *
      * @property string $nLote
      */
-    private $nLote = null;
+    protected $nLote = null;
 
     /**
      * Quantidade de produto no lote.
      *
      * @property string $qLote
      */
-    private $qLote = null;
+    protected $qLote = null;
 
     /**
      * Data de fabricação/produção. Formato "AAAA-MM-DD".
      *
      * @property string $dFab
      */
-    private $dFab = null;
+    protected $dFab = null;
 
     /**
      * Data de validade. Informar o último dia do mês caso a validade não
@@ -35,12 +37,12 @@ class Rastro
      *
      * @property string $dVal
      */
-    private $dVal = null;
+    protected $dVal = null;
 
     /**
      * @property string $cAgreg
      */
-    private $cAgreg = null;
+    protected $cAgreg = null;
 
     /**
      * Gets as nLote

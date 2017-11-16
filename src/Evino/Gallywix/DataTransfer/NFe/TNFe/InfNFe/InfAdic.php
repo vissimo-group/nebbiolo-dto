@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing InfAdic
  */
-class InfAdic
+class InfAdic extends AbstractJsonSerializable
 {
 
     /**
@@ -13,14 +15,14 @@ class InfAdic
      *
      * @property string $infAdFisco
      */
-    private $infAdFisco = null;
+    protected $infAdFisco = null;
 
     /**
      * Informações complementares de interesse do Contribuinte
      *
      * @property string $infCpl
      */
-    private $infCpl = null;
+    protected $infCpl = null;
 
     /**
      * Campo de uso livre do contribuinte
@@ -30,7 +32,7 @@ class InfAdic
      * @property InfAdic\ObsCont[]
      * $obsCont
      */
-    private $obsCont = array(
+    protected $obsCont = array(
 
     );
 
@@ -42,7 +44,7 @@ class InfAdic
      * @property InfAdic\ObsFisco[]
      * $obsFisco
      */
-    private $obsFisco = array(
+    protected $obsFisco = array(
 
     );
 
@@ -52,7 +54,7 @@ class InfAdic
      * @property InfAdic\ProcRef[]
      * $procRef
      */
-    private $procRef = array(
+    protected $procRef = array(
 
     );
 

@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Det
  */
-class Det
+class Det extends AbstractJsonSerializable
 {
 
     /**
@@ -13,27 +15,27 @@ class Det
      *
      * @property string $nItem
      */
-    private $nItem = null;
+    protected $nItem = null;
 
     /**
      * Dados dos produtos e serviços da NF-e
      *
      * @property Det\Prod $prod
      */
-    private $prod = null;
+    protected $prod = null;
 
     /**
      * Tributos incidentes nos produtos ou serviços da NF-e
      *
      * @property Det\Imposto $imposto
      */
-    private $imposto = null;
+    protected $imposto = null;
 
     /**
      * @property Det\ImpostoDevol
      * $impostoDevol
      */
-    private $impostoDevol = null;
+    protected $impostoDevol = null;
 
     /**
      * Informações adicionais do produto (norma referenciada, informações
@@ -41,7 +43,7 @@ class Det
      *
      * @property string $infAdProd
      */
-    private $infAdProd = null;
+    protected $infAdProd = null;
 
     /**
      * Gets as nItem

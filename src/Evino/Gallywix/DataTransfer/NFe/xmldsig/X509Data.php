@@ -2,19 +2,21 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\xmldsig;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing X509Data
  *
  *
  * XSD Type: X509Data
  */
-class X509Data
+class X509Data extends AbstractJsonSerializable
 {
 
     /**
      * @property mixed $x509Certificate
      */
-    private $x509Certificate = null;
+    protected $x509Certificate = null;
 
     /**
      * Gets as x509Certificate

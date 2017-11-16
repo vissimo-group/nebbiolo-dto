@@ -2,12 +2,13 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
 use Evino\Gallywix\DataTransfer\Nfe\TEnderEmi;
 
 /**
  * Class representing Emit
  */
-class Emit
+class Emit extends AbstractJsonSerializable
 {
 
     /**
@@ -15,63 +16,63 @@ class Emit
      *
      * @property string $cNPJ
      */
-    private $cNPJ = null;
+    protected $cNPJ = null;
 
     /**
      * Número do CPF do emitente
      *
      * @property string $cPF
      */
-    private $cPF = null;
+    protected $cPF = null;
 
     /**
      * Razão Social ou Nome do emitente
      *
      * @property string $xNome
      */
-    private $xNome = null;
+    protected $xNome = null;
 
     /**
      * Nome fantasia
      *
      * @property string $xFant
      */
-    private $xFant = null;
+    protected $xFant = null;
 
     /**
      * Endereço do emitente
      *
      * @property TEnderEmi $enderEmit
      */
-    private $enderEmit = null;
+    protected $enderEmit = null;
 
     /**
      * Inscrição Estadual do Emitente
      *
      * @property string $iE
      */
-    private $iE = null;
+    protected $iE = null;
 
     /**
      * Inscricao Estadual do Substituto Tributário
      *
      * @property string $iEST
      */
-    private $iEST = null;
+    protected $iEST = null;
 
     /**
      * Inscrição Municipal
      *
      * @property string $iM
      */
-    private $iM = null;
+    protected $iM = null;
 
     /**
      * CNAE Fiscal
      *
      * @property string $cNAE
      */
-    private $cNAE = null;
+    protected $cNAE = null;
 
     /**
      * Código de Regime Tributário.
@@ -82,7 +83,7 @@ class Emit
      *
      * @property string $cRT
      */
-    private $cRT = null;
+    protected $cRT = null;
 
     /**
      * Gets as cNPJ

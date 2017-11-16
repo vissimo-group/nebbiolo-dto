@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing IPI
  */
-class IPI
+class IPI extends AbstractJsonSerializable
 {
 
     /**
@@ -13,7 +15,7 @@ class IPI
      *
      * @property string $vIPIDevol
      */
-    private $vIPIDevol = null;
+    protected $vIPIDevol = null;
 
     /**
      * Gets as vIPIDevol
