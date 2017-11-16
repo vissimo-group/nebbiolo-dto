@@ -2,45 +2,47 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\xmldsig;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Reference
  *
  *
  * XSD Type: Reference
  */
-class Reference
+class Reference extends AbstractJsonSerializable
 {
 
     /**
      * @property string $id
      */
-    private $id = null;
+    protected $id = null;
 
     /**
      * @property string $uRI
      */
-    private $uRI = null;
+    protected $uRI = null;
 
     /**
      * @property string $type
      */
-    private $type = null;
+    protected $type = null;
 
     /**
      * @property Transform[] $transforms
      */
-    private $transforms = null;
+    protected $transforms = null;
 
     /**
      * @property Reference\DigestMethod
      * $digestMethod
      */
-    private $digestMethod = null;
+    protected $digestMethod = null;
 
     /**
      * @property mixed $digestValue
      */
-    private $digestValue = null;
+    protected $digestValue = null;
 
     /**
      * Gets as id

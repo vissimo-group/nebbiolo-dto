@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Prod
  */
-class Prod
+class Prod extends AbstractJsonSerializable
 {
 
     /**
@@ -16,7 +18,7 @@ class Prod
      *
      * @property string $cProd
      */
-    private $cProd = null;
+    protected $cProd = null;
 
     /**
      * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de
@@ -24,14 +26,14 @@ class Prod
      *
      * @property string $cEAN
      */
-    private $cEAN = null;
+    protected $cEAN = null;
 
     /**
      * Descrição do produto ou serviço
      *
      * @property string $xProd
      */
-    private $xProd = null;
+    protected $xProd = null;
 
     /**
      * Código NCM (8 posições), será permitida a informação do gênero (posição
@@ -43,14 +45,14 @@ class Prod
      *
      * @property string $nCM
      */
-    private $nCM = null;
+    protected $nCM = null;
 
     /**
      * Nomenclatura de Valor aduaneio e Estatístico
      *
      * @property string[] $nVE
      */
-    private $nVE = array(
+    protected $nVE = array(
 
     );
 
@@ -61,12 +63,12 @@ class Prod
      *
      * @property string $cEST
      */
-    private $cEST = null;
+    protected $cEST = null;
 
     /**
      * @property string $indEscala
      */
-    private $indEscala = null;
+    protected $indEscala = null;
 
     /**
      * CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO
@@ -74,33 +76,33 @@ class Prod
      *
      * @property string $cNPJFab
      */
-    private $cNPJFab = null;
+    protected $cNPJFab = null;
 
     /**
      * @property string $cBenef
      */
-    private $cBenef = null;
+    protected $cBenef = null;
 
     /**
      * Código EX TIPI (3 posições)
      *
      * @property string $eXTIPI
      */
-    private $eXTIPI = null;
+    protected $eXTIPI = null;
 
     /**
      * Cfop
      *
      * @property string $cFOP
      */
-    private $cFOP = null;
+    protected $cFOP = null;
 
     /**
      * Unidade comercial
      *
      * @property string $uCom
      */
-    private $uCom = null;
+    protected $uCom = null;
 
     /**
      * Quantidade Comercial do produto, alterado para aceitar de 0 a 4 casas decimais e
@@ -108,7 +110,7 @@ class Prod
      *
      * @property string $qCom
      */
-    private $qCom = null;
+    protected $qCom = null;
 
     /**
      * Valor unitário de comercialização - alterado para aceitar 0 a 10 casas
@@ -116,14 +118,14 @@ class Prod
      *
      * @property string $vUnCom
      */
-    private $vUnCom = null;
+    protected $vUnCom = null;
 
     /**
      * Valor bruto do produto ou serviço.
      *
      * @property string $vProd
      */
-    private $vProd = null;
+    protected $vProd = null;
 
     /**
      * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou
@@ -131,14 +133,14 @@ class Prod
      *
      * @property string $cEANTrib
      */
-    private $cEANTrib = null;
+    protected $cEANTrib = null;
 
     /**
      * Unidade Tributável
      *
      * @property string $uTrib
      */
-    private $uTrib = null;
+    protected $uTrib = null;
 
     /**
      * Quantidade Tributável - alterado para aceitar de 0 a 4 casas decimais e 11
@@ -146,7 +148,7 @@ class Prod
      *
      * @property string $qTrib
      */
-    private $qTrib = null;
+    protected $qTrib = null;
 
     /**
      * Valor unitário de tributação - - alterado para aceitar 0 a 10 casas decimais
@@ -154,35 +156,35 @@ class Prod
      *
      * @property string $vUnTrib
      */
-    private $vUnTrib = null;
+    protected $vUnTrib = null;
 
     /**
      * Valor Total do Frete
      *
      * @property string $vFrete
      */
-    private $vFrete = null;
+    protected $vFrete = null;
 
     /**
      * Valor Total do Seguro
      *
      * @property string $vSeg
      */
-    private $vSeg = null;
+    protected $vSeg = null;
 
     /**
      * Valor do Desconto
      *
      * @property string $vDesc
      */
-    private $vDesc = null;
+    protected $vDesc = null;
 
     /**
      * Outras despesas acessórias
      *
      * @property string $vOutro
      */
-    private $vOutro = null;
+    protected $vOutro = null;
 
     /**
      * Este campo deverá ser preenchido com:
@@ -191,7 +193,7 @@ class Prod
      *
      * @property string $indTot
      */
-    private $indTot = null;
+    protected $indTot = null;
 
     /**
      * Delcaração de Importação
@@ -200,7 +202,7 @@ class Prod
      * @property Prod\DI[]
      * $dI
      */
-    private $dI = array(
+    protected $dI = array(
 
     );
 
@@ -211,7 +213,7 @@ class Prod
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
      * $detExport
      */
-    private $detExport = array(
+    protected $detExport = array(
 
     );
 
@@ -220,7 +222,7 @@ class Prod
      *
      * @property string $xPed
      */
-    private $xPed = null;
+    protected $xPed = null;
 
     /**
      * Número do Item do Pedido de Compra - Identificação do número do item do
@@ -228,20 +230,20 @@ class Prod
      *
      * @property string $nItemPed
      */
-    private $nItemPed = null;
+    protected $nItemPed = null;
 
     /**
      * Número de controle da FCI - Ficha de Conteúdo de Importação.
      *
      * @property string $nFCI
      */
-    private $nFCI = null;
+    protected $nFCI = null;
 
     /**
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Rastro[] $rastro
      */
-    private $rastro = array(
+    protected $rastro = array(
 
     );
 
@@ -252,7 +254,7 @@ class Prod
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\VeicProd
      * $veicProd
      */
-    private $veicProd = null;
+    protected $veicProd = null;
 
     /**
      * grupo do detalhamento de Medicamentos e de matérias-primas farmacêuticas
@@ -260,7 +262,7 @@ class Prod
      * @property Prod\Med
      * $med
      */
-    private $med = null;
+    protected $med = null;
 
     /**
      * Armamentos
@@ -268,7 +270,7 @@ class Prod
      * @property Prod\Arma[]
      * $arma
      */
-    private $arma = array(
+    protected $arma = array(
 
     );
 
@@ -278,14 +280,14 @@ class Prod
      * @property Prod\Comb
      * $comb
      */
-    private $comb = null;
+    protected $comb = null;
 
     /**
      * Número do RECOPI
      *
      * @property string $nRECOPI
      */
-    private $nRECOPI = null;
+    protected $nRECOPI = null;
 
     /**
      * Gets as cProd
@@ -466,7 +468,7 @@ class Prod
 	 *
 	 * Nomenclatura de Valor aduaneio e Estatístico
 	 *
-	 * @param array|string $nVE
+	 * @param array $nVE
 	 * @return Prod
 	 */
     public function setNVE(array $nVE)

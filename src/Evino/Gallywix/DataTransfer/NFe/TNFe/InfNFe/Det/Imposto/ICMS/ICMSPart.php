@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMSPart
  */
-class ICMSPart
+class ICMSPart extends AbstractJsonSerializable
 {
 
     /**
@@ -15,7 +17,7 @@ class ICMSPart
      *
      * @property string $orig
      */
-    private $orig = null;
+    protected $orig = null;
 
     /**
      * Tributação pelo ICMS
@@ -24,7 +26,7 @@ class ICMSPart
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * Modalidade de determinação da BC do ICMS:
@@ -35,35 +37,35 @@ class ICMSPart
      *
      * @property string $modBC
      */
-    private $modBC = null;
+    protected $modBC = null;
 
     /**
      * Valor da BC do ICMS
      *
      * @property string $vBC
      */
-    private $vBC = null;
+    protected $vBC = null;
 
     /**
      * Percentual de redução da BC
      *
      * @property string $pRedBC
      */
-    private $pRedBC = null;
+    protected $pRedBC = null;
 
     /**
      * Alíquota do ICMS
      *
      * @property string $pICMS
      */
-    private $pICMS = null;
+    protected $pICMS = null;
 
     /**
      * Valor do ICMS
      *
      * @property string $vICMS
      */
-    private $vICMS = null;
+    protected $vICMS = null;
 
     /**
      * Modalidade de determinação da BC do ICMS ST:
@@ -76,42 +78,42 @@ class ICMSPart
      *
      * @property string $modBCST
      */
-    private $modBCST = null;
+    protected $modBCST = null;
 
     /**
      * Percentual da Margem de Valor Adicionado ICMS ST
      *
      * @property string $pMVAST
      */
-    private $pMVAST = null;
+    protected $pMVAST = null;
 
     /**
      * Percentual de redução da BC ICMS ST
      *
      * @property string $pRedBCST
      */
-    private $pRedBCST = null;
+    protected $pRedBCST = null;
 
     /**
      * Valor da BC do ICMS ST
      *
      * @property string $vBCST
      */
-    private $vBCST = null;
+    protected $vBCST = null;
 
     /**
      * Alíquota do ICMS ST
      *
      * @property string $pICMSST
      */
-    private $pICMSST = null;
+    protected $pICMSST = null;
 
     /**
      * Valor do ICMS ST
      *
      * @property string $vICMSST
      */
-    private $vICMSST = null;
+    protected $vICMSST = null;
 
     /**
      * Percentual para determinação do valor da Base de Cálculo da operação
@@ -119,14 +121,14 @@ class ICMSPart
      *
      * @property string $pBCOp
      */
-    private $pBCOp = null;
+    protected $pBCOp = null;
 
     /**
      * Sigla da UF para qual é devido o ICMS ST da operação.
      *
      * @property string $uFST
      */
-    private $uFST = null;
+    protected $uFST = null;
 
     /**
      * Gets as orig

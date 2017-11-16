@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing VeicProd
  */
-class VeicProd
+class VeicProd extends AbstractJsonSerializable
 {
 
     /**
@@ -14,28 +16,28 @@ class VeicProd
      *
      * @property string $tpOp
      */
-    private $tpOp = null;
+    protected $tpOp = null;
 
     /**
      * Chassi do veículo - VIN (código-identificação-veículo)
      *
      * @property string $chassi
      */
-    private $chassi = null;
+    protected $chassi = null;
 
     /**
      * Cor do veículo (código de cada montadora)
      *
      * @property string $cCor
      */
-    private $cCor = null;
+    protected $cCor = null;
 
     /**
      * Descrição da cor
      *
      * @property string $xCor
      */
-    private $xCor = null;
+    protected $xCor = null;
 
     /**
      * Potência máxima do motor do veículo em cavalo vapor (CV).
@@ -43,7 +45,7 @@ class VeicProd
      *
      * @property string $pot
      */
-    private $pot = null;
+    protected $pot = null;
 
     /**
      * Capacidade voluntária do motor expressa em centímetros cúbicos (CC).
@@ -51,28 +53,28 @@ class VeicProd
      *
      * @property string $cilin
      */
-    private $cilin = null;
+    protected $cilin = null;
 
     /**
      * Peso líquido
      *
      * @property string $pesoL
      */
-    private $pesoL = null;
+    protected $pesoL = null;
 
     /**
      * Peso bruto
      *
      * @property string $pesoB
      */
-    private $pesoB = null;
+    protected $pesoB = null;
 
     /**
      * Serial (série)
      *
      * @property string $nSerie
      */
-    private $nSerie = null;
+    protected $nSerie = null;
 
     /**
      * Tipo de combustível-Tabela RENAVAM: 01-Álcool; 02-Gasolina; 03-Diesel;
@@ -80,63 +82,63 @@ class VeicProd
      *
      * @property string $tpComb
      */
-    private $tpComb = null;
+    protected $tpComb = null;
 
     /**
      * Número do motor
      *
      * @property string $nMotor
      */
-    private $nMotor = null;
+    protected $nMotor = null;
 
     /**
      * CMT-Capacidade Máxima de Tração - em Toneladas 4 casas decimais
      *
      * @property string $cMT
      */
-    private $cMT = null;
+    protected $cMT = null;
 
     /**
      * Distância entre eixos
      *
      * @property string $dist
      */
-    private $dist = null;
+    protected $dist = null;
 
     /**
      * Ano Modelo de Fabricação
      *
      * @property string $anoMod
      */
-    private $anoMod = null;
+    protected $anoMod = null;
 
     /**
      * Ano de Fabricação
      *
      * @property string $anoFab
      */
-    private $anoFab = null;
+    protected $anoFab = null;
 
     /**
      * Tipo de pintura
      *
      * @property string $tpPint
      */
-    private $tpPint = null;
+    protected $tpPint = null;
 
     /**
      * Tipo de veículo (utilizar tabela RENAVAM)
      *
      * @property string $tpVeic
      */
-    private $tpVeic = null;
+    protected $tpVeic = null;
 
     /**
      * Espécie de veículo (utilizar tabela RENAVAM)
      *
      * @property string $espVeic
      */
-    private $espVeic = null;
+    protected $espVeic = null;
 
     /**
      * Informa-se o veículo tem VIN (chassi) remarcado.
@@ -145,21 +147,21 @@ class VeicProd
      *
      * @property string $vIN
      */
-    private $vIN = null;
+    protected $vIN = null;
 
     /**
      * Condição do veículo (1 - acabado; 2 - inacabado; 3 - semi-acabado)
      *
      * @property string $condVeic
      */
-    private $condVeic = null;
+    protected $condVeic = null;
 
     /**
      * Código Marca Modelo (utilizar tabela RENAVAM)
      *
      * @property string $cMod
      */
-    private $cMod = null;
+    protected $cMod = null;
 
     /**
      * Código da Cor Segundo as regras de pré-cadastro do DENATRAN:
@@ -168,14 +170,14 @@ class VeicProd
      *
      * @property string $cCorDENATRAN
      */
-    private $cCorDENATRAN = null;
+    protected $cCorDENATRAN = null;
 
     /**
      * Quantidade máxima de permitida de passageiros sentados, inclusive motorista.
      *
      * @property string $lota
      */
-    private $lota = null;
+    protected $lota = null;
 
     /**
      * Restrição
@@ -188,7 +190,7 @@ class VeicProd
      *
      * @property string $tpRest
      */
-    private $tpRest = null;
+    protected $tpRest = null;
 
     /**
      * Gets as tpOp

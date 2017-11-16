@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing RetTrib
  */
-class RetTrib
+class RetTrib extends AbstractJsonSerializable
 {
 
     /**
@@ -13,49 +15,49 @@ class RetTrib
      *
      * @property string $vRetPIS
      */
-    private $vRetPIS = null;
+    protected $vRetPIS = null;
 
     /**
      * Valor Retido de COFINS
      *
      * @property string $vRetCOFINS
      */
-    private $vRetCOFINS = null;
+    protected $vRetCOFINS = null;
 
     /**
      * Valor Retido de CSLL
      *
      * @property string $vRetCSLL
      */
-    private $vRetCSLL = null;
+    protected $vRetCSLL = null;
 
     /**
      * Base de Cálculo do IRRF
      *
      * @property string $vBCIRRF
      */
-    private $vBCIRRF = null;
+    protected $vBCIRRF = null;
 
     /**
      * Valor Retido de IRRF
      *
      * @property string $vIRRF
      */
-    private $vIRRF = null;
+    protected $vIRRF = null;
 
     /**
      * Base de Cálculo da Retenção da Previdêncica Social
      *
      * @property string $vBCRetPrev
      */
-    private $vBCRetPrev = null;
+    protected $vBCRetPrev = null;
 
     /**
      * Valor da Retenção da Previdêncica Social
      *
      * @property string $vRetPrev
      */
-    private $vRetPrev = null;
+    protected $vRetPrev = null;
 
     /**
      * Gets as vRetPIS

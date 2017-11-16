@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cobr;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Fat
  */
-class Fat
+class Fat extends AbstractJsonSerializable
 {
 
     /**
@@ -13,28 +15,28 @@ class Fat
      *
      * @property string $nFat
      */
-    private $nFat = null;
+    protected $nFat = null;
 
     /**
      * Valor original da fatura
      *
      * @property string $vOrig
      */
-    private $vOrig = null;
+    protected $vOrig = null;
 
     /**
      * Valor do desconto da fatura
      *
      * @property string $vDesc
      */
-    private $vDesc = null;
+    protected $vDesc = null;
 
     /**
      * Valor líquido da fatura
      *
      * @property string $vLiq
      */
-    private $vLiq = null;
+    protected $vLiq = null;
 
     /**
      * Gets as nFat

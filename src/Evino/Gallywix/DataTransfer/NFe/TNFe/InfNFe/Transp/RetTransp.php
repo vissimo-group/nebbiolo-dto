@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing RetTransp
  */
-class RetTransp
+class RetTransp extends AbstractJsonSerializable
 {
 
     /**
@@ -13,42 +15,42 @@ class RetTransp
      *
      * @property string $vServ
      */
-    private $vServ = null;
+    protected $vServ = null;
 
     /**
      * BC da Retenção do ICMS
      *
      * @property string $vBCRet
      */
-    private $vBCRet = null;
+    protected $vBCRet = null;
 
     /**
      * Alíquota da Retenção
      *
      * @property string $pICMSRet
      */
-    private $pICMSRet = null;
+    protected $pICMSRet = null;
 
     /**
      * Valor do ICMS Retido
      *
      * @property string $vICMSRet
      */
-    private $vICMSRet = null;
+    protected $vICMSRet = null;
 
     /**
      * Código Fiscal de Operações e Prestações
      *
      * @property string $cFOP
      */
-    private $cFOP = null;
+    protected $cFOP = null;
 
     /**
      * Código do Município de Ocorrência do Fato Gerador (utilizar a tabela do IBGE)
      *
      * @property string $cMunFG
      */
-    private $cMunFG = null;
+    protected $cMunFG = null;
 
     /**
      * Gets as vServ

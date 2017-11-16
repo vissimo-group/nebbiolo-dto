@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing DI
  */
-class DI
+class DI extends AbstractJsonSerializable
 {
 
     /**
@@ -14,35 +16,35 @@ class DI
      *
      * @property string $nDI
      */
-    private $nDI = null;
+    protected $nDI = null;
 
     /**
      * Data de registro da DI/DSI/DA (AAAA-MM-DD)
      *
      * @property string $dDI
      */
-    private $dDI = null;
+    protected $dDI = null;
 
     /**
      * Local do desembaraço aduaneiro
      *
      * @property string $xLocDesemb
      */
-    private $xLocDesemb = null;
+    protected $xLocDesemb = null;
 
     /**
      * UF onde ocorreu o desembaraço aduaneiro
      *
      * @property string $uFDesemb
      */
-    private $uFDesemb = null;
+    protected $uFDesemb = null;
 
     /**
      * Data do desembaraço aduaneiro (AAAA-MM-DD)
      *
      * @property string $dDesemb
      */
-    private $dDesemb = null;
+    protected $dDesemb = null;
 
     /**
      * Via de transporte internacional informada na DI
@@ -51,14 +53,14 @@ class DI
      *
      * @property string $tpViaTransp
      */
-    private $tpViaTransp = null;
+    protected $tpViaTransp = null;
 
     /**
      * Valor Adicional ao frete para renovação de marinha mercante
      *
      * @property string $vAFRMM
      */
-    private $vAFRMM = null;
+    protected $vAFRMM = null;
 
     /**
      * Forma de Importação quanto a intermediação
@@ -66,21 +68,21 @@ class DI
      *
      * @property string $tpIntermedio
      */
-    private $tpIntermedio = null;
+    protected $tpIntermedio = null;
 
     /**
      * CNPJ do adquirente ou do encomendante
      *
      * @property string $cNPJ
      */
-    private $cNPJ = null;
+    protected $cNPJ = null;
 
     /**
      * Sigla da UF do adquirente ou do encomendante
      *
      * @property string $uFTerceiro
      */
-    private $uFTerceiro = null;
+    protected $uFTerceiro = null;
 
     /**
      * Código do exportador (usado nos sistemas internos de informação do emitente
@@ -88,7 +90,7 @@ class DI
      *
      * @property string $cExportador
      */
-    private $cExportador = null;
+    protected $cExportador = null;
 
     /**
      * Adições (NT 2011/004)
@@ -97,7 +99,7 @@ class DI
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
      * $adi
      */
-    private $adi = array(
+    protected $adi = array(
 
     );
 

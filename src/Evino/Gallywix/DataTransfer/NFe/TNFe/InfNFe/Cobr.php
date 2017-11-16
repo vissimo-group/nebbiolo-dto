@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Cobr
  */
-class Cobr
+class Cobr extends AbstractJsonSerializable
 {
 
     /**
@@ -13,14 +15,14 @@ class Cobr
      *
      * @property Cobr\Fat $fat
      */
-    private $fat = null;
+    protected $fat = null;
 
     /**
      * Dados das duplicatas NT 2011/004
      *
      * @property Cobr\Dup[] $dup
      */
-    private $dup = array(
+    protected $dup = array(
 
     );
 

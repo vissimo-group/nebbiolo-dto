@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ProcRef
  */
-class ProcRef
+class ProcRef extends AbstractJsonSerializable
 {
 
     /**
@@ -14,7 +16,7 @@ class ProcRef
      *
      * @property string $nProc
      */
-    private $nProc = null;
+    protected $nProc = null;
 
     /**
      * Origem do processo, informar com:
@@ -26,7 +28,7 @@ class ProcRef
      *
      * @property string $indProc
      */
-    private $indProc = null;
+    protected $indProc = null;
 
     /**
      * Gets as nProc

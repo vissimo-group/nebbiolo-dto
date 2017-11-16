@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMSSN500
  */
-class ICMSSN500
+class ICMSSN500 extends AbstractJsonSerializable
 {
 
     /**
@@ -15,7 +17,7 @@ class ICMSSN500
      *
      * @property string $orig
      */
-    private $orig = null;
+    protected $orig = null;
 
     /**
      * 500 – ICMS cobrado anterirmente por substituição tributária (substituído)
@@ -24,49 +26,49 @@ class ICMSSN500
      *
      * @property string $cSOSN
      */
-    private $cSOSN = null;
+    protected $cSOSN = null;
 
     /**
      * Valor da BC do ICMS ST retido anteriormente (v2.0)
      *
      * @property string $vBCSTRet
      */
-    private $vBCSTRet = null;
+    protected $vBCSTRet = null;
 
     /**
      * Aliquota suportada pelo consumidor final.
      *
      * @property string $pST
      */
-    private $pST = null;
+    protected $pST = null;
 
     /**
      * Valor do ICMS ST retido anteriormente (v2.0)
      *
      * @property string $vICMSSTRet
      */
-    private $vICMSSTRet = null;
+    protected $vICMSSTRet = null;
 
     /**
      * Valor da Base de cálculo do FCP retido anteriormente.
      *
      * @property string $vBCFCPSTRet
      */
-    private $vBCFCPSTRet = null;
+    protected $vBCFCPSTRet = null;
 
     /**
      * Percentual de FCP retido anteriormente por substituição tributária.
      *
      * @property string $pFCPSTRet
      */
-    private $pFCPSTRet = null;
+    protected $pFCPSTRet = null;
 
     /**
      * Valor do FCP retido por substituição tributária.
      *
      * @property string $vFCPSTRet
      */
-    private $vFCPSTRet = null;
+    protected $vFCPSTRet = null;
 
     /**
      * Gets as orig

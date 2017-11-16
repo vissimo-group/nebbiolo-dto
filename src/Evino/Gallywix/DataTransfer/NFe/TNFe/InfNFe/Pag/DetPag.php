@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing DetPag
  */
-class DetPag
+class DetPag extends AbstractJsonSerializable
 {
 
     /**
@@ -16,7 +18,7 @@ class DetPag
      *
      * @property string $tPag
      */
-    private $tPag = null;
+    protected $tPag = null;
 
     /**
      * Valor do Pagamento. Esta tag poderá ser omitida quando a tag tPag=90 (Sem
@@ -24,7 +26,7 @@ class DetPag
      *
      * @property string $vPag
      */
-    private $vPag = null;
+    protected $vPag = null;
 
     /**
      * Grupo de Cartões
@@ -32,7 +34,7 @@ class DetPag
      * @property DetPag\Card
      * $card
      */
-    private $card = null;
+    protected $card = null;
 
     /**
      * Gets as tPag

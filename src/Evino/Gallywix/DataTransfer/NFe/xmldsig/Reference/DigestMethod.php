@@ -2,16 +2,18 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\xmldsig\Reference;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing DigestMethod
  */
-class DigestMethod
+class DigestMethod extends AbstractJsonSerializable
 {
 
     /**
      * @property string $algorithm
      */
-    private $algorithm = null;
+    protected $algorithm = null;
 
     /**
      * Gets as algorithm

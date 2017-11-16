@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing COFINSST
  */
-class COFINSST
+class COFINSST extends AbstractJsonSerializable
 {
 
     /**
@@ -13,35 +15,35 @@ class COFINSST
      *
      * @property string $vBC
      */
-    private $vBC = null;
+    protected $vBC = null;
 
     /**
      * Alíquota do COFINS ST(em percentual)
      *
      * @property string $pCOFINS
      */
-    private $pCOFINS = null;
+    protected $pCOFINS = null;
 
     /**
      * Quantidade Vendida
      *
      * @property string $qBCProd
      */
-    private $qBCProd = null;
+    protected $qBCProd = null;
 
     /**
      * Alíquota do COFINS ST(em reais)
      *
      * @property string $vAliqProd
      */
-    private $vAliqProd = null;
+    protected $vAliqProd = null;
 
     /**
      * Valor do COFINS ST
      *
      * @property string $vCOFINS
      */
-    private $vCOFINS = null;
+    protected $vCOFINS = null;
 
     /**
      * Gets as vBC

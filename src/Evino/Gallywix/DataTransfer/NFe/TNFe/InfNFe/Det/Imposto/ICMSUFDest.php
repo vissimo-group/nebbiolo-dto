@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMSUFDest
  */
-class ICMSUFDest
+class ICMSUFDest extends AbstractJsonSerializable
 {
 
     /**
@@ -13,14 +15,14 @@ class ICMSUFDest
      *
      * @property string $vBCUFDest
      */
-    private $vBCUFDest = null;
+    protected $vBCUFDest = null;
 
     /**
      * Valor da Base de Cálculo do FCP na UF do destinatário.
      *
      * @property string $vBCFCPUFDest
      */
-    private $vBCFCPUFDest = null;
+    protected $vBCFCPUFDest = null;
 
     /**
      * Percentual adicional inserido na alíquota interna da UF de destino, relativo ao
@@ -28,7 +30,7 @@ class ICMSUFDest
      *
      * @property string $pFCPUFDest
      */
-    private $pFCPUFDest = null;
+    protected $pFCPUFDest = null;
 
     /**
      * Alíquota adotada nas operações internas na UF do destinatário para o produto
@@ -36,7 +38,7 @@ class ICMSUFDest
      *
      * @property string $pICMSUFDest
      */
-    private $pICMSUFDest = null;
+    protected $pICMSUFDest = null;
 
     /**
      * Alíquota interestadual das UF envolvidas: - 4% alíquota interestadual para
@@ -46,7 +48,7 @@ class ICMSUFDest
      *
      * @property string $pICMSInter
      */
-    private $pICMSInter = null;
+    protected $pICMSInter = null;
 
     /**
      * Percentual de partilha para a UF do destinatário: - 40% em 2016; - 60% em 2017;
@@ -54,21 +56,21 @@ class ICMSUFDest
      *
      * @property string $pICMSInterPart
      */
-    private $pICMSInterPart = null;
+    protected $pICMSInterPart = null;
 
     /**
      * Valor do ICMS relativo ao Fundo de Combate à Pobreza (FCP) da UF de destino.
      *
      * @property string $vFCPUFDest
      */
-    private $vFCPUFDest = null;
+    protected $vFCPUFDest = null;
 
     /**
      * Valor do ICMS de partilha para a UF do destinatário.
      *
      * @property string $vICMSUFDest
      */
-    private $vICMSUFDest = null;
+    protected $vICMSUFDest = null;
 
     /**
      * Valor do ICMS de partilha para a UF do remetente. Nota: A partir de 2019, este
@@ -76,7 +78,7 @@ class ICMSUFDest
      *
      * @property string $vICMSUFRemet
      */
-    private $vICMSUFRemet = null;
+    protected $vICMSUFRemet = null;
 
     /**
      * Gets as vBCUFDest

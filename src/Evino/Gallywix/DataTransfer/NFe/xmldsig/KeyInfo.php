@@ -2,24 +2,26 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\xmldsig;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing KeyInfo
  *
  *
  * XSD Type: KeyInfo
  */
-class KeyInfo
+class KeyInfo extends AbstractJsonSerializable
 {
 
     /**
      * @property string $id
      */
-    private $id = null;
+    protected $id = null;
 
     /**
      * @property X509Data $x509Data
      */
-    private $x509Data = null;
+    protected $x509Data = null;
 
     /**
      * Gets as id

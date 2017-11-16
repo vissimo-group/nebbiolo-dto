@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Arma
  */
-class Arma
+class Arma extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class Arma
      *
      * @property string $tpArma
      */
-    private $tpArma = null;
+    protected $tpArma = null;
 
     /**
      * Número de série da arma
      *
      * @property string $nSerie
      */
-    private $nSerie = null;
+    protected $nSerie = null;
 
     /**
      * Número de série do cano
      *
      * @property string $nCano
      */
-    private $nCano = null;
+    protected $nCano = null;
 
     /**
      * Descrição completa da arma, compreendendo: calibre, marca, capacidade, tipo de
@@ -36,7 +38,7 @@ class Arma
      *
      * @property string $descr
      */
-    private $descr = null;
+    protected $descr = null;
 
     /**
      * Gets as tpArma

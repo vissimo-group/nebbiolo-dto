@@ -2,19 +2,21 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TRetEnviNFe
  *
  * Tipo Retorno do Pedido de Autorização da Nota Fiscal Eletrônica
  * XSD Type: TRetEnviNFe
  */
-class TRetEnviNFe
+class TRetEnviNFe extends AbstractJsonSerializable
 {
 
     /**
      * @property string $versao
      */
-    private $versao = null;
+    protected $versao = null;
 
     /**
      * Identificação do Ambiente:
@@ -23,56 +25,56 @@ class TRetEnviNFe
      *
      * @property string $tpAmb
      */
-    private $tpAmb = null;
+    protected $tpAmb = null;
 
     /**
      * Versão do Aplicativo que recebeu o Lote.
      *
      * @property string $verAplic
      */
-    private $verAplic = null;
+    protected $verAplic = null;
 
     /**
      * Código do status da mensagem enviada.
      *
      * @property string $cStat
      */
-    private $cStat = null;
+    protected $cStat = null;
 
     /**
      * Descrição literal do status do serviço solicitado.
      *
      * @property string $xMotivo
      */
-    private $xMotivo = null;
+    protected $xMotivo = null;
 
     /**
      * código da UF de atendimento
      *
      * @property string $cUF
      */
-    private $cUF = null;
+    protected $cUF = null;
 
     /**
      * Data e hora do recebimento, no formato AAAA-MM-DDTHH:MM:SSTZD
      *
      * @property string $dhRecbto
      */
-    private $dhRecbto = null;
+    protected $dhRecbto = null;
 
     /**
      * Dados do Recibo do Lote
      *
      * @property TRetEnviNFe\InfRec $infRec
      */
-    private $infRec = null;
+    protected $infRec = null;
 
     /**
      * Protocolo de status resultado do processamento sincrono da NFC-e
      *
      * @property TProtNFe $protNFe
      */
-    private $protNFe = null;
+    protected $protNFe = null;
 
     /**
      * Gets as versao

@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing AutXML
  */
-class AutXML
+class AutXML extends AbstractJsonSerializable
 {
 
     /**
@@ -13,14 +15,14 @@ class AutXML
      *
      * @property string $cNPJ
      */
-    private $cNPJ = null;
+    protected $cNPJ = null;
 
     /**
      * CPF Autorizado
      *
      * @property string $cPF
      */
-    private $cPF = null;
+    protected $cPF = null;
 
     /**
      * Gets as cNPJ

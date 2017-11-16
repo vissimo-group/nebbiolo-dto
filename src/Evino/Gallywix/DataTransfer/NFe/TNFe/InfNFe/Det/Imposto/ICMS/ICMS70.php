@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMS70
  */
-class ICMS70
+class ICMS70 extends AbstractJsonSerializable
 {
 
     /**
@@ -15,7 +17,7 @@ class ICMS70
      *
      * @property string $orig
      */
-    private $orig = null;
+    protected $orig = null;
 
     /**
      * Tributção pelo ICMS
@@ -24,7 +26,7 @@ class ICMS70
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * Modalidade de determinação da BC do ICMS:
@@ -35,56 +37,56 @@ class ICMS70
      *
      * @property string $modBC
      */
-    private $modBC = null;
+    protected $modBC = null;
 
     /**
      * Percentual de redução da BC
      *
      * @property string $pRedBC
      */
-    private $pRedBC = null;
+    protected $pRedBC = null;
 
     /**
      * Valor da BC do ICMS
      *
      * @property string $vBC
      */
-    private $vBC = null;
+    protected $vBC = null;
 
     /**
      * Alíquota do ICMS
      *
      * @property string $pICMS
      */
-    private $pICMS = null;
+    protected $pICMS = null;
 
     /**
      * Valor do ICMS
      *
      * @property string $vICMS
      */
-    private $vICMS = null;
+    protected $vICMS = null;
 
     /**
      * Valor da Base de cálculo do FCP.
      *
      * @property string $vBCFCP
      */
-    private $vBCFCP = null;
+    protected $vBCFCP = null;
 
     /**
      * Percentual de ICMS relativo ao Fundo de Combate à Pobreza (FCP).
      *
      * @property string $pFCP
      */
-    private $pFCP = null;
+    protected $pFCP = null;
 
     /**
      * Valor do ICMS relativo ao Fundo de Combate à Pobreza (FCP).
      *
      * @property string $vFCP
      */
-    private $vFCP = null;
+    protected $vFCP = null;
 
     /**
      * Modalidade de determinação da BC do ICMS ST:
@@ -97,70 +99,70 @@ class ICMS70
      *
      * @property string $modBCST
      */
-    private $modBCST = null;
+    protected $modBCST = null;
 
     /**
      * Percentual da Margem de Valor Adicionado ICMS ST
      *
      * @property string $pMVAST
      */
-    private $pMVAST = null;
+    protected $pMVAST = null;
 
     /**
      * Percentual de redução da BC ICMS ST
      *
      * @property string $pRedBCST
      */
-    private $pRedBCST = null;
+    protected $pRedBCST = null;
 
     /**
      * Valor da BC do ICMS ST
      *
      * @property string $vBCST
      */
-    private $vBCST = null;
+    protected $vBCST = null;
 
     /**
      * Alíquota do ICMS ST
      *
      * @property string $pICMSST
      */
-    private $pICMSST = null;
+    protected $pICMSST = null;
 
     /**
      * Valor do ICMS ST
      *
      * @property string $vICMSST
      */
-    private $vICMSST = null;
+    protected $vICMSST = null;
 
     /**
      * Valor da Base de cálculo do FCP retido por substituição tributária.
      *
      * @property string $vBCFCPST
      */
-    private $vBCFCPST = null;
+    protected $vBCFCPST = null;
 
     /**
      * Percentual de FCP retido por substituição tributária.
      *
      * @property string $pFCPST
      */
-    private $pFCPST = null;
+    protected $pFCPST = null;
 
     /**
      * Valor do FCP retido por substituição tributária.
      *
      * @property string $vFCPST
      */
-    private $vFCPST = null;
+    protected $vFCPST = null;
 
     /**
      * Valor do ICMS de desoneração
      *
      * @property string $vICMSDeson
      */
-    private $vICMSDeson = null;
+    protected $vICMSDeson = null;
 
     /**
      * Motivo da desoneração do ICMS:3-Uso na agropecuária;9-Outros;12-Fomento
@@ -168,7 +170,7 @@ class ICMS70
      *
      * @property string $motDesICMS
      */
-    private $motDesICMS = null;
+    protected $motDesICMS = null;
 
     /**
      * Gets as orig

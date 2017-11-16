@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMSSN101
  */
-class ICMSSN101
+class ICMSSN101 extends AbstractJsonSerializable
 {
 
     /**
@@ -16,21 +18,21 @@ class ICMSSN101
      *
      * @property string $orig
      */
-    private $orig = null;
+    protected $orig = null;
 
     /**
      * 101- Tributada pelo Simples Nacional com permissão de crédito. (v.2.0)
      *
      * @property string $cSOSN
      */
-    private $cSOSN = null;
+    protected $cSOSN = null;
 
     /**
      * Alíquota aplicável de cálculo do crédito (Simples Nacional). (v2.0)
      *
      * @property string $pCredSN
      */
-    private $pCredSN = null;
+    protected $pCredSN = null;
 
     /**
      * Valor crédito do ICMS que pode ser aproveitado nos termos do art. 23 da LC 123
@@ -38,7 +40,7 @@ class ICMSSN101
      *
      * @property string $vCredICMSSN
      */
-    private $vCredICMSSN = null;
+    protected $vCredICMSSN = null;
 
     /**
      * Gets as orig

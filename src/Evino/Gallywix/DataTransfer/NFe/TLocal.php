@@ -2,13 +2,15 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TLocal
  *
  * Tipo Dados do Local de Retirada ou Entrega // 24/10/08 - tamanho mínimo // v2.0
  * XSD Type: TLocal
  */
-class TLocal
+class TLocal extends AbstractJsonSerializable
 {
 
     /**
@@ -16,63 +18,63 @@ class TLocal
      *
      * @property string $cNPJ
      */
-    private $cNPJ = null;
+    protected $cNPJ = null;
 
     /**
      * CPF (v2.0)
      *
      * @property string $cPF
      */
-    private $cPF = null;
+    protected $cPF = null;
 
     /**
      * Logradouro
      *
      * @property string $xLgr
      */
-    private $xLgr = null;
+    protected $xLgr = null;
 
     /**
      * Número
      *
      * @property string $nro
      */
-    private $nro = null;
+    protected $nro = null;
 
     /**
      * Complemento
      *
      * @property string $xCpl
      */
-    private $xCpl = null;
+    protected $xCpl = null;
 
     /**
      * Bairro
      *
      * @property string $xBairro
      */
-    private $xBairro = null;
+    protected $xBairro = null;
 
     /**
      * Código do município (utilizar a tabela do IBGE)
      *
      * @property string $cMun
      */
-    private $cMun = null;
+    protected $cMun = null;
 
     /**
      * Nome do município
      *
      * @property string $xMun
      */
-    private $xMun = null;
+    protected $xMun = null;
 
     /**
      * Sigla da UF
      *
      * @property string $uF
      */
-    private $uF = null;
+    protected $uF = null;
 
     /**
      * Gets as cNPJ

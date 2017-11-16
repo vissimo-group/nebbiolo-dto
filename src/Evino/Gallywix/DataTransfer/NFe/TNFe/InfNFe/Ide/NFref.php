@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing NFref
  */
-class NFref
+class NFref extends AbstractJsonSerializable
 {
 
     /**
@@ -15,7 +17,7 @@ class NFref
      *
      * @property string $refNFe
      */
-    private $refNFe = null;
+    protected $refNFe = null;
 
     /**
      * Dados da NF modelo 1/1A referenciada ou NF modelo 2 referenciada
@@ -23,7 +25,7 @@ class NFref
      * @property NFref\RefNF
      * $refNF
      */
-    private $refNF = null;
+    protected $refNF = null;
 
     /**
      * Grupo com as informações NF de produtor referenciada
@@ -31,7 +33,7 @@ class NFref
      * @property NFref\RefNFP
      * $refNFP
      */
-    private $refNFP = null;
+    protected $refNFP = null;
 
     /**
      * Utilizar esta TAG para referenciar um CT-e emitido anteriormente, vinculada a
@@ -39,7 +41,7 @@ class NFref
      *
      * @property string $refCTe
      */
-    private $refCTe = null;
+    protected $refCTe = null;
 
     /**
      * Grupo do Cupom Fiscal vinculado à NF-e
@@ -47,7 +49,7 @@ class NFref
      * @property NFref\RefECF
      * $refECF
      */
-    private $refECF = null;
+    protected $refECF = null;
 
     /**
      * Gets as refNFe

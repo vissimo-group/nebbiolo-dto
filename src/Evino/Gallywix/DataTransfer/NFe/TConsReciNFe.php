@@ -2,19 +2,21 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TConsReciNFe
  *
  * Tipo Pedido de Consulta do Recido do Lote de Notas Fiscais Eletrônicas
  * XSD Type: TConsReciNFe
  */
-class TConsReciNFe
+class TConsReciNFe extends AbstractJsonSerializable
 {
 
     /**
      * @property string $versao
      */
-    private $versao = null;
+    protected $versao = null;
 
     /**
      * Identificação do Ambiente:
@@ -23,14 +25,14 @@ class TConsReciNFe
      *
      * @property string $tpAmb
      */
-    private $tpAmb = null;
+    protected $tpAmb = null;
 
     /**
      * Número do Recibo
      *
      * @property string $nRec
      */
-    private $nRec = null;
+    protected $nRec = null;
 
     /**
      * Gets as versao

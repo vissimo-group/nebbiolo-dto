@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TIpi;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing IPINT
  */
-class IPINT
+class IPINT extends AbstractJsonSerializable
 {
 
     /**
@@ -23,7 +25,7 @@ class IPINT
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * Gets as cST

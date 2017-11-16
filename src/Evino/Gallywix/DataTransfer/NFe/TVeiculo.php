@@ -2,13 +2,15 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TVeiculo
  *
  * Tipo Dados do Veículo
  * XSD Type: TVeiculo
  */
-class TVeiculo
+class TVeiculo extends AbstractJsonSerializable
 {
 
     /**
@@ -16,21 +18,21 @@ class TVeiculo
      *
      * @property string $placa
      */
-    private $placa = null;
+    protected $placa = null;
 
     /**
      * Sigla da UF
      *
      * @property string $uF
      */
-    private $uF = null;
+    protected $uF = null;
 
     /**
      * Registro Nacional de Transportador de Carga (ANTT)
      *
      * @property string $rNTC
      */
-    private $rNTC = null;
+    protected $rNTC = null;
 
     /**
      * Gets as placa

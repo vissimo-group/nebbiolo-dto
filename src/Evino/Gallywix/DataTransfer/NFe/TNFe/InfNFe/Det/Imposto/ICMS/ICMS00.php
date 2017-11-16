@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMS00
  */
-class ICMS00
+class ICMS00 extends AbstractJsonSerializable
 {
 
     /**
@@ -15,7 +17,7 @@ class ICMS00
      *
      * @property string $orig
      */
-    private $orig = null;
+    protected $orig = null;
 
     /**
      * Tributção pelo ICMS
@@ -23,7 +25,7 @@ class ICMS00
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * Modalidade de determinação da BC do ICMS:
@@ -34,42 +36,42 @@ class ICMS00
      *
      * @property string $modBC
      */
-    private $modBC = null;
+    protected $modBC = null;
 
     /**
      * Valor da BC do ICMS
      *
      * @property string $vBC
      */
-    private $vBC = null;
+    protected $vBC = null;
 
     /**
      * Alíquota do ICMS
      *
      * @property string $pICMS
      */
-    private $pICMS = null;
+    protected $pICMS = null;
 
     /**
      * Valor do ICMS
      *
      * @property string $vICMS
      */
-    private $vICMS = null;
+    protected $vICMS = null;
 
     /**
      * Percentual de ICMS relativo ao Fundo de Combate à Pobreza (FCP).
      *
      * @property string $pFCP
      */
-    private $pFCP = null;
+    protected $pFCP = null;
 
     /**
      * Valor do ICMS relativo ao Fundo de Combate à Pobreza (FCP).
      *
      * @property string $vFCP
      */
-    private $vFCP = null;
+    protected $vFCP = null;
 
     /**
      * Gets as orig

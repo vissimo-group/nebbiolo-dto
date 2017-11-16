@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Avulsa
  */
-class Avulsa
+class Avulsa extends AbstractJsonSerializable
 {
 
     /**
@@ -13,77 +15,77 @@ class Avulsa
      *
      * @property string $cNPJ
      */
-    private $cNPJ = null;
+    protected $cNPJ = null;
 
     /**
      * Órgão emitente
      *
      * @property string $xOrgao
      */
-    private $xOrgao = null;
+    protected $xOrgao = null;
 
     /**
      * Matrícula do agente
      *
      * @property string $matr
      */
-    private $matr = null;
+    protected $matr = null;
 
     /**
      * Nome do agente
      *
      * @property string $xAgente
      */
-    private $xAgente = null;
+    protected $xAgente = null;
 
     /**
      * Telefone
      *
      * @property string $fone
      */
-    private $fone = null;
+    protected $fone = null;
 
     /**
      * Sigla da Unidade da Federação
      *
      * @property string $uF
      */
-    private $uF = null;
+    protected $uF = null;
 
     /**
      * Número do Documento de Arrecadação de Receita
      *
      * @property string $nDAR
      */
-    private $nDAR = null;
+    protected $nDAR = null;
 
     /**
      * Data de emissão do DAR (AAAA-MM-DD)
      *
      * @property string $dEmi
      */
-    private $dEmi = null;
+    protected $dEmi = null;
 
     /**
      * Valor Total constante no DAR
      *
      * @property string $vDAR
      */
-    private $vDAR = null;
+    protected $vDAR = null;
 
     /**
      * Repartição Fiscal emitente
      *
      * @property string $repEmi
      */
-    private $repEmi = null;
+    protected $repEmi = null;
 
     /**
      * Data de pagamento do DAR (AAAA-MM-DD)
      *
      * @property string $dPag
      */
-    private $dPag = null;
+    protected $dPag = null;
 
     /**
      * Gets as cNPJ

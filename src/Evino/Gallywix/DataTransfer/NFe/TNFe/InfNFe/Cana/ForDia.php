@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Cana;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ForDia
  */
-class ForDia
+class ForDia extends AbstractJsonSerializable
 {
 
     /**
@@ -13,14 +15,14 @@ class ForDia
      *
      * @property string $dia
      */
-    private $dia = null;
+    protected $dia = null;
 
     /**
      * Quantidade em quilogramas - peso líquido
      *
      * @property string $qtde
      */
-    private $qtde = null;
+    protected $qtde = null;
 
     /**
      * Gets as dia

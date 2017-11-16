@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ExportInd
  */
-class ExportInd
+class ExportInd extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class ExportInd
      *
      * @property string $nRE
      */
-    private $nRE = null;
+    protected $nRE = null;
 
     /**
      * Chave de acesso da NF-e recebida para exportação
      *
      * @property string $chNFe
      */
-    private $chNFe = null;
+    protected $chNFe = null;
 
     /**
      * Quantidade do item efetivamente exportado
      *
      * @property string $qExport
      */
-    private $qExport = null;
+    protected $qExport = null;
 
     /**
      * Gets as nRE

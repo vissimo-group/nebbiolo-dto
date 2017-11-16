@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing PISNT
  */
-class PISNT
+class PISNT extends AbstractJsonSerializable
 {
 
     /**
@@ -19,7 +21,7 @@ class PISNT
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * Gets as cST

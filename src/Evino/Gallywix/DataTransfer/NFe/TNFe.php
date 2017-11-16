@@ -2,13 +2,15 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing TNFe
  *
  * Tipo Nota Fiscal Eletrônica
  * XSD Type: TNFe
  */
-class TNFe
+class TNFe extends AbstractJsonSerializable
 {
 
     /**
@@ -16,19 +18,19 @@ class TNFe
      *
      * @property TNFe\InfNFe $infNFe
      */
-    private $infNFe = null;
+    protected $infNFe = null;
 
     /**
      * Informações suplementares Nota Fiscal
      *
      * @property TNFe\InfNFeSupl $infNFeSupl
      */
-    private $infNFeSupl = null;
+    protected $infNFeSupl = null;
 
     /**
      * @property xmldsig\Signature $signature
      */
-    private $signature = null;
+    protected $signature = null;
 
     /**
      * Gets as infNFe

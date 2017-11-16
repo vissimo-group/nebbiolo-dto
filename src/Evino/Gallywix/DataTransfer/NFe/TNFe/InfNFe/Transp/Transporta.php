@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Transporta
  */
-class Transporta
+class Transporta extends AbstractJsonSerializable
 {
 
     /**
@@ -13,49 +15,49 @@ class Transporta
      *
      * @property string $cNPJ
      */
-    private $cNPJ = null;
+    protected $cNPJ = null;
 
     /**
      * CPF do transportador
      *
      * @property string $cPF
      */
-    private $cPF = null;
+    protected $cPF = null;
 
     /**
      * Razão Social ou nome do transportador
      *
      * @property string $xNome
      */
-    private $xNome = null;
+    protected $xNome = null;
 
     /**
      * Inscrição Estadual (v2.0)
      *
      * @property string $iE
      */
-    private $iE = null;
+    protected $iE = null;
 
     /**
      * Endereço completo
      *
      * @property string $xEnder
      */
-    private $xEnder = null;
+    protected $xEnder = null;
 
     /**
      * Nome do munícipio
      *
      * @property string $xMun
      */
-    private $xMun = null;
+    protected $xMun = null;
 
     /**
      * Sigla da UF
      *
      * @property string $uF
      */
-    private $uF = null;
+    protected $uF = null;
 
     /**
      * Gets as cNPJ

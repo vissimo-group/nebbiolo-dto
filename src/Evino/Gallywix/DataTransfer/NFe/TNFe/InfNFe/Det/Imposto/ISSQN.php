@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ISSQN
  */
-class ISSQN
+class ISSQN extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class ISSQN
      *
      * @property string $vBC
      */
-    private $vBC = null;
+    protected $vBC = null;
 
     /**
      * Alíquota do ISSQN
      *
      * @property string $vAliq
      */
-    private $vAliq = null;
+    protected $vAliq = null;
 
     /**
      * Valor da do ISSQN
      *
      * @property string $vISSQN
      */
-    private $vISSQN = null;
+    protected $vISSQN = null;
 
     /**
      * Informar o município de ocorrência do fato gerador do ISSQN. Utilizar a Tabela
@@ -36,7 +38,7 @@ class ISSQN
      *
      * @property string $cMunFG
      */
-    private $cMunFG = null;
+    protected $cMunFG = null;
 
     /**
      * Informar o Item da lista de serviços da LC 116/03 em que se classifica o
@@ -44,42 +46,42 @@ class ISSQN
      *
      * @property string $cListServ
      */
-    private $cListServ = null;
+    protected $cListServ = null;
 
     /**
      * Valor dedução para redução da base de cálculo
      *
      * @property string $vDeducao
      */
-    private $vDeducao = null;
+    protected $vDeducao = null;
 
     /**
      * Valor outras retenções
      *
      * @property string $vOutro
      */
-    private $vOutro = null;
+    protected $vOutro = null;
 
     /**
      * Valor desconto incondicionado
      *
      * @property string $vDescIncond
      */
-    private $vDescIncond = null;
+    protected $vDescIncond = null;
 
     /**
      * Valor desconto condicionado
      *
      * @property string $vDescCond
      */
-    private $vDescCond = null;
+    protected $vDescCond = null;
 
     /**
      * Valor Retenção ISS
      *
      * @property string $vISSRet
      */
-    private $vISSRet = null;
+    protected $vISSRet = null;
 
     /**
      * Exibilidade do ISS:1-Exigível;2-Não
@@ -88,42 +90,42 @@ class ISSQN
      *
      * @property string $indISS
      */
-    private $indISS = null;
+    protected $indISS = null;
 
     /**
      * Código do serviço prestado dentro do município
      *
      * @property string $cServico
      */
-    private $cServico = null;
+    protected $cServico = null;
 
     /**
      * Código do Município de Incidência do Imposto
      *
      * @property string $cMun
      */
-    private $cMun = null;
+    protected $cMun = null;
 
     /**
      * Código de Pais
      *
      * @property string $cPais
      */
-    private $cPais = null;
+    protected $cPais = null;
 
     /**
      * Número do Processo administrativo ou judicial de suspenção do processo
      *
      * @property string $nProcesso
      */
-    private $nProcesso = null;
+    protected $nProcesso = null;
 
     /**
      * Indicador de Incentivo Fiscal. 1=Sim; 2=Não
      *
      * @property string $indIncentivo
      */
-    private $indIncentivo = null;
+    protected $indIncentivo = null;
 
     /**
      * Gets as vBC

@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing RefECF
  */
-class RefECF
+class RefECF extends AbstractJsonSerializable
 {
 
     /**
@@ -16,7 +18,7 @@ class RefECF
      *
      * @property string $mod
      */
-    private $mod = null;
+    protected $mod = null;
 
     /**
      * Informar o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal
@@ -24,14 +26,14 @@ class RefECF
      *
      * @property string $nECF
      */
-    private $nECF = null;
+    protected $nECF = null;
 
     /**
      * Informar o Número do Contador de Ordem de Operação - COO vinculado à NF-e
      *
      * @property string $nCOO
      */
-    private $nCOO = null;
+    protected $nCOO = null;
 
     /**
      * Gets as mod

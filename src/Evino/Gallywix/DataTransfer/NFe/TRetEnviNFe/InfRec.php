@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TRetEnviNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing InfRec
  */
-class InfRec
+class InfRec extends AbstractJsonSerializable
 {
 
     /**
@@ -13,14 +15,14 @@ class InfRec
      *
      * @property string $nRec
      */
-    private $nRec = null;
+    protected $nRec = null;
 
     /**
      * Tempo médio de resposta do serviço (em segundos) dos últimos 5 minutos
      *
      * @property string $tMed
      */
-    private $tMed = null;
+    protected $tMed = null;
 
     /**
      * Gets as nRec

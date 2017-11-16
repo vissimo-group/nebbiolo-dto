@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMSTot
  */
-class ICMSTot
+class ICMSTot extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class ICMSTot
      *
      * @property string $vBC
      */
-    private $vBC = null;
+    protected $vBC = null;
 
     /**
      * Valor Total do ICMS
      *
      * @property string $vICMS
      */
-    private $vICMS = null;
+    protected $vICMS = null;
 
     /**
      * Valor Total do ICMS desonerado
      *
      * @property string $vICMSDeson
      */
-    private $vICMSDeson = null;
+    protected $vICMSDeson = null;
 
     /**
      * Valor total do ICMS relativo ao Fundo de Combate à Pobreza (FCP) para a UF de
@@ -35,42 +37,42 @@ class ICMSTot
      *
      * @property string $vFCPUFDest
      */
-    private $vFCPUFDest = null;
+    protected $vFCPUFDest = null;
 
     /**
      * Valor total do ICMS de partilha para a UF do destinatário
      *
      * @property string $vICMSUFDest
      */
-    private $vICMSUFDest = null;
+    protected $vICMSUFDest = null;
 
     /**
      * Valor total do ICMS de partilha para a UF do remetente
      *
      * @property string $vICMSUFRemet
      */
-    private $vICMSUFRemet = null;
+    protected $vICMSUFRemet = null;
 
     /**
      * Valor Total do FCP (Fundo de Combate à Pobreza).
      *
      * @property string $vFCP
      */
-    private $vFCP = null;
+    protected $vFCP = null;
 
     /**
      * BC do ICMS ST
      *
      * @property string $vBCST
      */
-    private $vBCST = null;
+    protected $vBCST = null;
 
     /**
      * Valor Total do ICMS ST
      *
      * @property string $vST
      */
-    private $vST = null;
+    protected $vST = null;
 
     /**
      * Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição
@@ -78,7 +80,7 @@ class ICMSTot
      *
      * @property string $vFCPST
      */
-    private $vFCPST = null;
+    protected $vFCPST = null;
 
     /**
      * Valor Total do FCP (Fundo de Combate à Pobreza) retido anteriormente por
@@ -86,49 +88,49 @@ class ICMSTot
      *
      * @property string $vFCPSTRet
      */
-    private $vFCPSTRet = null;
+    protected $vFCPSTRet = null;
 
     /**
      * Valor Total dos produtos e serviços
      *
      * @property string $vProd
      */
-    private $vProd = null;
+    protected $vProd = null;
 
     /**
      * Valor Total do Frete
      *
      * @property string $vFrete
      */
-    private $vFrete = null;
+    protected $vFrete = null;
 
     /**
      * Valor Total do Seguro
      *
      * @property string $vSeg
      */
-    private $vSeg = null;
+    protected $vSeg = null;
 
     /**
      * Valor Total do Desconto
      *
      * @property string $vDesc
      */
-    private $vDesc = null;
+    protected $vDesc = null;
 
     /**
      * Valor Total do II
      *
      * @property string $vII
      */
-    private $vII = null;
+    protected $vII = null;
 
     /**
      * Valor Total do IPI
      *
      * @property string $vIPI
      */
-    private $vIPI = null;
+    protected $vIPI = null;
 
     /**
      * Valor Total do IPI devolvido. Deve ser informado quando preenchido o Grupo
@@ -137,42 +139,42 @@ class ICMSTot
      *
      * @property string $vIPIDevol
      */
-    private $vIPIDevol = null;
+    protected $vIPIDevol = null;
 
     /**
      * Valor do PIS
      *
      * @property string $vPIS
      */
-    private $vPIS = null;
+    protected $vPIS = null;
 
     /**
      * Valor do COFINS
      *
      * @property string $vCOFINS
      */
-    private $vCOFINS = null;
+    protected $vCOFINS = null;
 
     /**
      * Outras Despesas acessórias
      *
      * @property string $vOutro
      */
-    private $vOutro = null;
+    protected $vOutro = null;
 
     /**
      * Valor Total da NF-e
      *
      * @property string $vNF
      */
-    private $vNF = null;
+    protected $vNF = null;
 
     /**
      * Valor estimado total de impostos federais, estaduais e municipais
      *
      * @property string $vTotTrib
      */
-    private $vTotTrib = null;
+    protected $vTotTrib = null;
 
     /**
      * Gets as vBC

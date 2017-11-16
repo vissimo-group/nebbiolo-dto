@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Compra
  */
-class Compra
+class Compra extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class Compra
      *
      * @property string $xNEmp
      */
-    private $xNEmp = null;
+    protected $xNEmp = null;
 
     /**
      * Informação do pedido
      *
      * @property string $xPed
      */
-    private $xPed = null;
+    protected $xPed = null;
 
     /**
      * Informação do contrato
      *
      * @property string $xCont
      */
-    private $xCont = null;
+    protected $xCont = null;
 
     /**
      * Gets as xNEmp

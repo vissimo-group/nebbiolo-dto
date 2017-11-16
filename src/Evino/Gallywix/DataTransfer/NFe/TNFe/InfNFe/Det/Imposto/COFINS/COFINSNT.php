@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing COFINSNT
  */
-class COFINSNT
+class COFINSNT extends AbstractJsonSerializable
 {
 
     /**
@@ -19,7 +21,7 @@ class COFINSNT
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * Gets as cST

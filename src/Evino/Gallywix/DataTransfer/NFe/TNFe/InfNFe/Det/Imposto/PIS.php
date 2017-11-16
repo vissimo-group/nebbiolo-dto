@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing PIS
  */
-class PIS
+class PIS extends AbstractJsonSerializable
 {
 
     /**
@@ -19,7 +21,7 @@ class PIS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq
      * $pISAliq
      */
-    private $pISAliq = null;
+    protected $pISAliq = null;
 
     /**
      * Código de Situação Tributária do PIS.
@@ -30,7 +32,7 @@ class PIS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde
      * $pISQtde
      */
-    private $pISQtde = null;
+    protected $pISQtde = null;
 
     /**
      * Código de Situação Tributária do PIS.
@@ -44,7 +46,7 @@ class PIS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT
      * $pISNT
      */
-    private $pISNT = null;
+    protected $pISNT = null;
 
     /**
      * Código de Situação Tributária do PIS.
@@ -54,7 +56,7 @@ class PIS
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr
      * $pISOutr
      */
-    private $pISOutr = null;
+    protected $pISOutr = null;
 
     /**
      * Gets as pISAliq

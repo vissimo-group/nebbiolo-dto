@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Cana
  */
-class Cana
+class Cana extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class Cana
      *
      * @property string $safra
      */
-    private $safra = null;
+    protected $safra = null;
 
     /**
      * Mês e Ano de Referência, formato: MM/AAAA
      *
      * @property string $ref
      */
-    private $ref = null;
+    protected $ref = null;
 
     /**
      * Fornecimentos diários
      *
      * @property Cana\ForDia[] $forDia
      */
-    private $forDia = array(
+    protected $forDia = array(
 
     );
 
@@ -36,28 +38,28 @@ class Cana
      *
      * @property string $qTotMes
      */
-    private $qTotMes = null;
+    protected $qTotMes = null;
 
     /**
      * Total Anterior
      *
      * @property string $qTotAnt
      */
-    private $qTotAnt = null;
+    protected $qTotAnt = null;
 
     /**
      * Total Geral
      *
      * @property string $qTotGer
      */
-    private $qTotGer = null;
+    protected $qTotGer = null;
 
     /**
      * Deduções - Taxas e Contribuições
      *
      * @property Cana\Deduc[] $deduc
      */
-    private $deduc = array(
+    protected $deduc = array(
 
     );
 
@@ -66,21 +68,21 @@ class Cana
      *
      * @property string $vFor
      */
-    private $vFor = null;
+    protected $vFor = null;
 
     /**
      * Valor Total das Deduções
      *
      * @property string $vTotDed
      */
-    private $vTotDed = null;
+    protected $vTotDed = null;
 
     /**
      * Valor Líquido dos fornecimentos
      *
      * @property string $vLiqFor
      */
-    private $vLiqFor = null;
+    protected $vLiqFor = null;
 
     /**
      * Gets as safra

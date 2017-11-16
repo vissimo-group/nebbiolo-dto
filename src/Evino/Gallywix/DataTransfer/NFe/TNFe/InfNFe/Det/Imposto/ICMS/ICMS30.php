@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMS30
  */
-class ICMS30
+class ICMS30 extends AbstractJsonSerializable
 {
 
     /**
@@ -15,7 +17,7 @@ class ICMS30
      *
      * @property string $orig
      */
-    private $orig = null;
+    protected $orig = null;
 
     /**
      * Tributção pelo ICMS
@@ -24,7 +26,7 @@ class ICMS30
      *
      * @property string $cST
      */
-    private $cST = null;
+    protected $cST = null;
 
     /**
      * Modalidade de determinação da BC do ICMS ST:
@@ -37,70 +39,70 @@ class ICMS30
      *
      * @property string $modBCST
      */
-    private $modBCST = null;
+    protected $modBCST = null;
 
     /**
      * Percentual da Margem de Valor Adicionado ICMS ST
      *
      * @property string $pMVAST
      */
-    private $pMVAST = null;
+    protected $pMVAST = null;
 
     /**
      * Percentual de redução da BC ICMS ST
      *
      * @property string $pRedBCST
      */
-    private $pRedBCST = null;
+    protected $pRedBCST = null;
 
     /**
      * Valor da BC do ICMS ST
      *
      * @property string $vBCST
      */
-    private $vBCST = null;
+    protected $vBCST = null;
 
     /**
      * Alíquota do ICMS ST
      *
      * @property string $pICMSST
      */
-    private $pICMSST = null;
+    protected $pICMSST = null;
 
     /**
      * Valor do ICMS ST
      *
      * @property string $vICMSST
      */
-    private $vICMSST = null;
+    protected $vICMSST = null;
 
     /**
      * Valor da Base de cálculo do FCP.
      *
      * @property string $vBCFCPST
      */
-    private $vBCFCPST = null;
+    protected $vBCFCPST = null;
 
     /**
      * Percentual de FCP retido por substituição tributária.
      *
      * @property string $pFCPST
      */
-    private $pFCPST = null;
+    protected $pFCPST = null;
 
     /**
      * Valor do FCP retido por substituição tributária.
      *
      * @property string $vFCPST
      */
-    private $vFCPST = null;
+    protected $vFCPST = null;
 
     /**
      * Valor do ICMS de desoneração
      *
      * @property string $vICMSDeson
      */
-    private $vICMSDeson = null;
+    protected $vICMSDeson = null;
 
     /**
      * Motivo da desoneração do ICMS:6-Utilitários Motocicleta AÁrea
@@ -108,7 +110,7 @@ class ICMS30
      *
      * @property string $motDesICMS
      */
-    private $motDesICMS = null;
+    protected $motDesICMS = null;
 
     /**
      * Gets as orig

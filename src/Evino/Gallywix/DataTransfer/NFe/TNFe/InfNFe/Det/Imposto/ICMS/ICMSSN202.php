@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing ICMSSN202
  */
-class ICMSSN202
+class ICMSSN202 extends AbstractJsonSerializable
 {
 
     /**
@@ -16,7 +18,7 @@ class ICMSSN202
      *
      * @property string $orig
      */
-    private $orig = null;
+    protected $orig = null;
 
     /**
      * 202- Tributada pelo Simples Nacional sem permissão de crédito e com cobrança
@@ -26,7 +28,7 @@ class ICMSSN202
      *
      * @property string $cSOSN
      */
-    private $cSOSN = null;
+    protected $cSOSN = null;
 
     /**
      * Modalidade de determinação da BC do ICMS ST:
@@ -39,63 +41,63 @@ class ICMSSN202
      *
      * @property string $modBCST
      */
-    private $modBCST = null;
+    protected $modBCST = null;
 
     /**
      * Percentual da Margem de Valor Adicionado ICMS ST (v2.0)
      *
      * @property string $pMVAST
      */
-    private $pMVAST = null;
+    protected $pMVAST = null;
 
     /**
      * Percentual de redução da BC ICMS ST (v2.0)
      *
      * @property string $pRedBCST
      */
-    private $pRedBCST = null;
+    protected $pRedBCST = null;
 
     /**
      * Valor da BC do ICMS ST (v2.0)
      *
      * @property string $vBCST
      */
-    private $vBCST = null;
+    protected $vBCST = null;
 
     /**
      * Alíquota do ICMS ST (v2.0)
      *
      * @property string $pICMSST
      */
-    private $pICMSST = null;
+    protected $pICMSST = null;
 
     /**
      * Valor do ICMS ST (v2.0)
      *
      * @property string $vICMSST
      */
-    private $vICMSST = null;
+    protected $vICMSST = null;
 
     /**
      * Valor da Base de cálculo do FCP.
      *
      * @property string $vBCFCPST
      */
-    private $vBCFCPST = null;
+    protected $vBCFCPST = null;
 
     /**
      * Percentual de FCP retido por substituição tributária.
      *
      * @property string $pFCPST
      */
-    private $pFCPST = null;
+    protected $pFCPST = null;
 
     /**
      * Valor do FCP retido por substituição tributária.
      *
      * @property string $vFCPST
      */
-    private $vFCPST = null;
+    protected $vFCPST = null;
 
     /**
      * Gets as orig

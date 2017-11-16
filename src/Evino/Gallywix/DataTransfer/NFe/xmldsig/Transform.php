@@ -2,24 +2,26 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\xmldsig;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Transform
  *
  *
  * XSD Type: Transform
  */
-class Transform
+class Transform extends AbstractJsonSerializable
 {
 
     /**
      * @property string $algorithm
      */
-    private $algorithm = null;
+    protected $algorithm = null;
 
     /**
      * @property string[] $xPath
      */
-    private $xPath = array(
+    protected $xPath = array(
 
     );
 

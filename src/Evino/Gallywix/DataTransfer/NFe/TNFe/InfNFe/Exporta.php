@@ -2,10 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
+use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+
 /**
  * Class representing Exporta
  */
-class Exporta
+class Exporta extends AbstractJsonSerializable
 {
 
     /**
@@ -13,21 +15,21 @@ class Exporta
      *
      * @property string $uFSaidaPais
      */
-    private $uFSaidaPais = null;
+    protected $uFSaidaPais = null;
 
     /**
      * Local de Embarque ou de transposição de fronteira
      *
      * @property string $xLocExporta
      */
-    private $xLocExporta = null;
+    protected $xLocExporta = null;
 
     /**
      * Descrição do local de despacho
      *
      * @property string $xLocDespacho
      */
-    private $xLocDespacho = null;
+    protected $xLocDespacho = null;
 
     /**
      * Gets as uFSaidaPais
