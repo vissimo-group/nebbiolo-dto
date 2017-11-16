@@ -2,6 +2,8 @@
 
 namespace Evino\Gallywix\DataTransfer\Base;
 
+use JsonMapper;
+
 abstract class AbstractJsonSerializable implements \JsonSerializable {
     /**
      * Specify data which should be serialized to JSON
@@ -13,5 +15,20 @@ abstract class AbstractJsonSerializable implements \JsonSerializable {
     public function jsonSerialize()
     {
         return get_object_vars($this);
+    }
+
+    /**
+     * @param \stdClass $json
+     * @return AbstractJsonSerializable
+     */
+    public static function fromJson(\stdClass $json): AbstractJsonSerializable {
+        $instance = new static();
+
+        $mapper = new JsonMapper();
+        $mapper->bStrictNullTypes = false;
+
+        $mapper->map($json, $instance);
+
+        return $instance;
     }
 }

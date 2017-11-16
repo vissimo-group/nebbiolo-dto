@@ -468,7 +468,7 @@ class Prod extends AbstractJsonSerializable
 	 *
 	 * Nomenclatura de Valor aduaneio e Estatístico
 	 *
-	 * @param array|string $nVE
+	 * @param array $nVE
 	 * @return Prod
 	 */
     public function setNVE(array $nVE)

@@ -7,5 +7,7 @@
             "email": "oss@evino.com.br"
         }
     ],
-    "require": {}
+    "require": {
+        "netresearch/jsonmapper": "^1.3"
+    }
 }
