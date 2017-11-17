@@ -16,7 +16,7 @@ class InfNFe extends AbstractJsonSerializable
      *
      * @property string $versao
      */
-    protected $versao = null;
+    protected $versao = "4.00";
 
     /**
      * PL_005d - 11/08/09 - validação do Id
