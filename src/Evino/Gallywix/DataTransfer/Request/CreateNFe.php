@@ -24,19 +24,6 @@ class CreateNFe extends AbstractJsonSerializable
     protected $nfe;
 
     /**
-     * CreateNFe constructor.
-     * @param string $orderReference
-     * @param string $callbackUrl
-     * @param NFe $nfe
-     */
-    public function __construct(string $orderReference, string $callbackUrl, NFe $nfe)
-    {
-        $this->setOrderReference($orderReference);
-        $this->setCallbackUrl($callbackUrl);
-        $this->setNfe($nfe);
-    }
-
-    /**
      * @return string
      */
     public function getOrderReference(): string
