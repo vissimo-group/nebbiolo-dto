@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\xmldsig;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing X509Data
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  *
  * XSD Type: X509Data
  */
-class X509Data extends AbstractJsonSerializable
+class X509Data extends BaseGallywixDataTransfer
 {
 
     /**

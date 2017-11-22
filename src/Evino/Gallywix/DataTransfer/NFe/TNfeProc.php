@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TNfeProc
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo da NF-e processada
  * XSD Type: TNfeProc
  */
-class TNfeProc extends AbstractJsonSerializable
+class TNfeProc extends BaseGallywixDataTransfer
 {
 
     /**

@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TIpi;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing IPINT
  */
-class IPINT extends AbstractJsonSerializable
+class IPINT extends BaseGallywixDataTransfer
 {
 
     /**

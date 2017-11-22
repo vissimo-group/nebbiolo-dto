@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TProtNFe
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo Protocolo de status resultado do processamento da NF-e
  * XSD Type: TProtNFe
  */
-class TProtNFe extends AbstractJsonSerializable
+class TProtNFe extends BaseGallywixDataTransfer
 {
 
     /**

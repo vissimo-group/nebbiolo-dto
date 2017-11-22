@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing COFINSAliq
  */
-class COFINSAliq extends AbstractJsonSerializable
+class COFINSAliq extends BaseGallywixDataTransfer
 {
 
     /**

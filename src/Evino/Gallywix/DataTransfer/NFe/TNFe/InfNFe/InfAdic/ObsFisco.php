@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\InfAdic;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing ObsFisco
  */
-class ObsFisco extends AbstractJsonSerializable
+class ObsFisco extends BaseGallywixDataTransfer
 {
 
     /**

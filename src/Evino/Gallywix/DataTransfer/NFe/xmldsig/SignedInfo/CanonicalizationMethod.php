@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\xmldsig\SignedInfo;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing CanonicalizationMethod
  */
-class CanonicalizationMethod extends AbstractJsonSerializable
+class CanonicalizationMethod extends BaseGallywixDataTransfer
 {
 
     /**

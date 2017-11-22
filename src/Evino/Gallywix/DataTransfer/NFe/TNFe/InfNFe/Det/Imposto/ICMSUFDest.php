@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing ICMSUFDest
  */
-class ICMSUFDest extends AbstractJsonSerializable
+class ICMSUFDest extends BaseGallywixDataTransfer
 {
 
     /**

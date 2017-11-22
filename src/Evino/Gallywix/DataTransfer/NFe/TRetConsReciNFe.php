@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TRetConsReciNFe
@@ -11,7 +11,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Eletrônicas
  * XSD Type: TRetConsReciNFe
  */
-class TRetConsReciNFe extends AbstractJsonSerializable
+class TRetConsReciNFe extends BaseGallywixDataTransfer
 {
 
     /**

@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TEnviNFe
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo Pedido de Concessão de Autorização da Nota Fiscal Eletrônica
  * XSD Type: TEnviNFe
  */
-class TEnviNFe extends AbstractJsonSerializable
+class TEnviNFe extends BaseGallywixDataTransfer
 {
 
     /**

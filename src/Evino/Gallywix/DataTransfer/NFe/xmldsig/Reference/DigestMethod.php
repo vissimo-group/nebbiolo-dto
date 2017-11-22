@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\xmldsig\Reference;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing DigestMethod
  */
-class DigestMethod extends AbstractJsonSerializable
+class DigestMethod extends BaseGallywixDataTransfer
 {
 
     /**

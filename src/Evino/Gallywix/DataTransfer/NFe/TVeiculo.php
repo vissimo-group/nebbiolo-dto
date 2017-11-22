@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TVeiculo
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo Dados do Veículo
  * XSD Type: TVeiculo
  */
-class TVeiculo extends AbstractJsonSerializable
+class TVeiculo extends BaseGallywixDataTransfer
 {
 
     /**

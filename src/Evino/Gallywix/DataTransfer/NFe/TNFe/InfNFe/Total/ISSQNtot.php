@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Total;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing ISSQNtot
  */
-class ISSQNtot extends AbstractJsonSerializable
+class ISSQNtot extends BaseGallywixDataTransfer
 {
 
     /**

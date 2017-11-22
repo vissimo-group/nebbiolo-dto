@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TEnderEmi
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo Dados do Endereço do Emitente // 24/10/08 - desmembrado / tamanho mínimo
  * XSD Type: TEnderEmi
  */
-class TEnderEmi extends AbstractJsonSerializable
+class TEnderEmi extends BaseGallywixDataTransfer
 {
 
     /**
