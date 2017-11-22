@@ -68,9 +68,9 @@ class Ide extends AbstractJsonSerializable
      * Data e Hora da saída ou de entrada da mercadoria / produto
      * (AAAA-MM-DDTHH:mm:ssTZD)
      *
-     * @property string $dhSaiEnt
+     * @property string $dhSaIEnt
      */
-    protected $dhSaiEnt = null;
+    protected $dhSaIEnt = null;
 
     /**
      * Tipo do Documento Fiscal (0 - entrada; 1 - saída)
@@ -402,30 +402,30 @@ class Ide extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as dhSaiEnt
+     * Gets as dhSaIEnt
      *
      * Data e Hora da saída ou de entrada da mercadoria / produto
      * (AAAA-MM-DDTHH:mm:ssTZD)
      *
      * @return string
      */
-    public function getDhSaiEnt()
+    public function getDhSaIEnt()
     {
-        return $this->dhSaiEnt;
+        return $this->dhSaIEnt;
     }
 
     /**
-     * Sets a new dhSaiEnt
+     * Sets a new dhSaIEnt
      *
      * Data e Hora da saída ou de entrada da mercadoria / produto
      * (AAAA-MM-DDTHH:mm:ssTZD)
      *
-     * @param string $dhSaiEnt
+     * @param string $dhSaIEnt
      * @return self
      */
-    public function setDhSaiEnt($dhSaiEnt)
+    public function setDhSaIEnt($dhSaIEnt)
     {
-        $this->dhSaiEnt = $dhSaiEnt;
+        $this->dhSaIEnt = $dhSaIEnt;
         return $this;
     }
 

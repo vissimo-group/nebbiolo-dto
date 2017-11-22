@@ -13,9 +13,9 @@ class Avulsa extends AbstractJsonSerializable
     /**
      * CNPJ do Órgão emissor
      *
-     * @property string $cNPJ
+     * @property string $CNPJ
      */
-    protected $cNPJ = null;
+    protected $CNPJ = null;
 
     /**
      * Órgão emitente
@@ -48,9 +48,9 @@ class Avulsa extends AbstractJsonSerializable
     /**
      * Sigla da Unidade da Federação
      *
-     * @property string $uF
+     * @property string $UF
      */
-    protected $uF = null;
+    protected $UF = null;
 
     /**
      * Número do Documento de Arrecadação de Receita
@@ -88,7 +88,7 @@ class Avulsa extends AbstractJsonSerializable
     protected $dPag = null;
 
     /**
-     * Gets as cNPJ
+     * Gets as CNPJ
      *
      * CNPJ do Órgão emissor
      *
@@ -96,20 +96,20 @@ class Avulsa extends AbstractJsonSerializable
      */
     public function getCNPJ()
     {
-        return $this->cNPJ;
+        return $this->CNPJ;
     }
 
     /**
-     * Sets a new cNPJ
+     * Sets a new CNPJ
      *
      * CNPJ do Órgão emissor
      *
-     * @param string $cNPJ
+     * @param string $CNPJ
      * @return self
      */
-    public function setCNPJ($cNPJ)
+    public function setCNPJ($CNPJ)
     {
-        $this->cNPJ = $cNPJ;
+        $this->CNPJ = $CNPJ;
         return $this;
     }
 
@@ -218,7 +218,7 @@ class Avulsa extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as uF
+     * Gets as UF
      *
      * Sigla da Unidade da Federação
      *
@@ -226,20 +226,20 @@ class Avulsa extends AbstractJsonSerializable
      */
     public function getUF()
     {
-        return $this->uF;
+        return $this->UF;
     }
 
     /**
-     * Sets a new uF
+     * Sets a new UF
      *
      * Sigla da Unidade da Federação
      *
-     * @param string $uF
+     * @param string $UF
      * @return self
      */
-    public function setUF($uF)
+    public function setUF($UF)
     {
-        $this->uF = $uF;
+        $this->UF = $UF;
         return $this;
     }
 

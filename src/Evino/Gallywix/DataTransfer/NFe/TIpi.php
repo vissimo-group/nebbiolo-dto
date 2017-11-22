@@ -17,9 +17,9 @@ class TIpi extends AbstractJsonSerializable
      * CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os
      * casos de exportação direta ou indireta.
      *
-     * @property string $cNPJProd
+     * @property string $CNPJProd
      */
-    protected $cNPJProd = null;
+    protected $CNPJProd = null;
 
     /**
      * Código do selo de controle do IPI
@@ -43,17 +43,17 @@ class TIpi extends AbstractJsonSerializable
     protected $cEnq = null;
 
     /**
-     * @property TIpi\IPITrib $iPITrib
+     * @property TIpi\IPITrib $IPITrib
      */
-    protected $iPITrib = null;
+    protected $IPITrib = null;
 
     /**
-     * @property TIpi\IPINT $iPINT
+     * @property TIpi\IPINT $IPINT
      */
-    protected $iPINT = null;
+    protected $IPINT = null;
 
     /**
-     * Gets as cNPJProd
+     * Gets as CNPJProd
      *
      * CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os
      * casos de exportação direta ou indireta.
@@ -62,21 +62,21 @@ class TIpi extends AbstractJsonSerializable
      */
     public function getCNPJProd()
     {
-        return $this->cNPJProd;
+        return $this->CNPJProd;
     }
 
     /**
-     * Sets a new cNPJProd
+     * Sets a new CNPJProd
      *
      * CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os
      * casos de exportação direta ou indireta.
      *
-     * @param string $cNPJProd
+     * @param string $CNPJProd
      * @return self
      */
-    public function setCNPJProd($cNPJProd)
+    public function setCNPJProd($CNPJProd)
     {
-        $this->cNPJProd = $cNPJProd;
+        $this->CNPJProd = $CNPJProd;
         return $this;
     }
 
@@ -159,46 +159,46 @@ class TIpi extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as iPITrib
+     * Gets as IPITrib
      *
      * @return TIpi\IPITrib
      */
     public function getIPITrib()
     {
-        return $this->iPITrib;
+        return $this->IPITrib;
     }
 
     /**
-     * Sets a new iPITrib
+     * Sets a new IPITrib
      *
-     * @param TIpi\IPITrib $iPITrib
+     * @param TIpi\IPITrib $IPITrib
      * @return self
      */
-    public function setIPITrib(TIpi\IPITrib $iPITrib)
+    public function setIPITrib(TIpi\IPITrib $IPITrib)
     {
-        $this->iPITrib = $iPITrib;
+        $this->IPITrib = $IPITrib;
         return $this;
     }
 
     /**
-     * Gets as iPINT
+     * Gets as IPINT
      *
      * @return TIpi\IPINT
      */
     public function getIPINT()
     {
-        return $this->iPINT;
+        return $this->IPINT;
     }
 
     /**
-     * Sets a new iPINT
+     * Sets a new IPINT
      *
-     * @param TIpi\IPINT $iPINT
+     * @param TIpi\IPINT $IPINT
      * @return self
      */
-    public function setIPINT(TIpi\IPINT $iPINT)
+    public function setIPINT(TIpi\IPINT $IPINT)
     {
-        $this->iPINT = $iPINT;
+        $this->IPINT = $IPINT;
         return $this;
     }
 

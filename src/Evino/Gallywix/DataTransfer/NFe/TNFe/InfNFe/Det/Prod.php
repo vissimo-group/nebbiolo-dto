@@ -24,9 +24,9 @@ class Prod extends AbstractJsonSerializable
      * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de
      * barras
      *
-     * @property string $cEAN
+     * @property string $CEAN
      */
-    protected $cEAN = null;
+    protected $CEAN = null;
 
     /**
      * Descrição do produto ou serviço
@@ -61,9 +61,9 @@ class Prod extends AbstractJsonSerializable
      * mercadoria sujeita aos regimes de substituicao tributária e de antecipação do
      * recolhimento do imposto
      *
-     * @property string $cEST
+     * @property string $CEST
      */
-    protected $cEST = null;
+    protected $CEST = null;
 
     /**
      * @property string $indEscala
@@ -74,9 +74,9 @@ class Prod extends AbstractJsonSerializable
      * CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO
      * relevante.
      *
-     * @property string $cNPJFab
+     * @property string $CNPJFab
      */
-    protected $cNPJFab = null;
+    protected $CNPJFab = null;
 
     /**
      * @property string $cBenef
@@ -93,9 +93,9 @@ class Prod extends AbstractJsonSerializable
     /**
      * Cfop
      *
-     * @property string $cFOP
+     * @property string $CFOP
      */
-    protected $cFOP = null;
+    protected $CFOP = null;
 
     /**
      * Unidade comercial
@@ -131,9 +131,9 @@ class Prod extends AbstractJsonSerializable
      * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou
      * código de barras
      *
-     * @property string $cEANTrib
+     * @property string $CEANTrib
      */
-    protected $cEANTrib = null;
+    protected $CEANTrib = null;
 
     /**
      * Unidade Tributável
@@ -322,7 +322,7 @@ class Prod extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cEAN
+     * Gets as CEAN
      *
      * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de
      * barras
@@ -331,21 +331,21 @@ class Prod extends AbstractJsonSerializable
      */
     public function getCEAN()
     {
-        return $this->cEAN;
+        return $this->CEAN;
     }
 
     /**
-     * Sets a new cEAN
+     * Sets a new CEAN
      *
      * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de
      * barras
      *
-     * @param string $cEAN
+     * @param string $CEAN
      * @return self
      */
-    public function setCEAN($cEAN)
+    public function setCEAN($CEAN)
     {
-        $this->cEAN = $cEAN;
+        $this->CEAN = $CEAN;
         return $this;
     }
 
@@ -478,7 +478,7 @@ class Prod extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cEST
+     * Gets as CEST
      *
      * Codigo especificador da Substuicao Tributaria - CEST, que identifica a
      * mercadoria sujeita aos regimes de substituicao tributária e de antecipação do
@@ -488,22 +488,22 @@ class Prod extends AbstractJsonSerializable
      */
     public function getCEST()
     {
-        return $this->cEST;
+        return $this->CEST;
     }
 
     /**
-     * Sets a new cEST
+     * Sets a new CEST
      *
      * Codigo especificador da Substuicao Tributaria - CEST, que identifica a
      * mercadoria sujeita aos regimes de substituicao tributária e de antecipação do
      * recolhimento do imposto
      *
-     * @param string $cEST
+     * @param string $CEST
      * @return self
      */
-    public function setCEST($cEST)
+    public function setCEST($CEST)
     {
-        $this->cEST = $cEST;
+        $this->CEST = $CEST;
         return $this;
     }
 
@@ -530,7 +530,7 @@ class Prod extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cNPJFab
+     * Gets as CNPJFab
      *
      * CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO
      * relevante.
@@ -539,21 +539,21 @@ class Prod extends AbstractJsonSerializable
      */
     public function getCNPJFab()
     {
-        return $this->cNPJFab;
+        return $this->CNPJFab;
     }
 
     /**
-     * Sets a new cNPJFab
+     * Sets a new CNPJFab
      *
      * CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO
      * relevante.
      *
-     * @param string $cNPJFab
+     * @param string $CNPJFab
      * @return self
      */
-    public function setCNPJFab($cNPJFab)
+    public function setCNPJFab($CNPJFab)
     {
-        $this->cNPJFab = $cNPJFab;
+        $this->CNPJFab = $CNPJFab;
         return $this;
     }
 
@@ -606,7 +606,7 @@ class Prod extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cFOP
+     * Gets as CFOP
      *
      * Cfop
      *
@@ -614,20 +614,20 @@ class Prod extends AbstractJsonSerializable
      */
     public function getCFOP()
     {
-        return $this->cFOP;
+        return $this->CFOP;
     }
 
     /**
-     * Sets a new cFOP
+     * Sets a new CFOP
      *
      * Cfop
      *
-     * @param string $cFOP
+     * @param string $CFOP
      * @return self
      */
-    public function setCFOP($cFOP)
+    public function setCFOP($CFOP)
     {
-        $this->cFOP = $cFOP;
+        $this->CFOP = $CFOP;
         return $this;
     }
 
@@ -740,7 +740,7 @@ class Prod extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cEANTrib
+     * Gets as CEANTrib
      *
      * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou
      * código de barras
@@ -749,21 +749,21 @@ class Prod extends AbstractJsonSerializable
      */
     public function getCEANTrib()
     {
-        return $this->cEANTrib;
+        return $this->CEANTrib;
     }
 
     /**
-     * Sets a new cEANTrib
+     * Sets a new CEANTrib
      *
      * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou
      * código de barras
      *
-     * @param string $cEANTrib
+     * @param string $CEANTrib
      * @return self
      */
-    public function setCEANTrib($cEANTrib)
+    public function setCEANTrib($CEANTrib)
     {
-        $this->cEANTrib = $cEANTrib;
+        $this->CEANTrib = $CEANTrib;
         return $this;
     }
 

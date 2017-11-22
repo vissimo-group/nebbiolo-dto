@@ -59,16 +59,16 @@ class TEndereco extends AbstractJsonSerializable
     /**
      * Sigla da UF, informar EX para operações com o exterior.
      *
-     * @property string $uF
+     * @property string $UF
      */
-    protected $uF = null;
+    protected $UF = null;
 
     /**
      * CEP
      *
-     * @property string $cEP
+     * @property string $CEP
      */
-    protected $cEP = null;
+    protected $CEP = null;
 
     /**
      * Código de Pais
@@ -252,7 +252,7 @@ class TEndereco extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as uF
+     * Gets as UF
      *
      * Sigla da UF, informar EX para operações com o exterior.
      *
@@ -260,25 +260,25 @@ class TEndereco extends AbstractJsonSerializable
      */
     public function getUF()
     {
-        return $this->uF;
+        return $this->UF;
     }
 
     /**
-     * Sets a new uF
+     * Sets a new UF
      *
      * Sigla da UF, informar EX para operações com o exterior.
      *
-     * @param string $uF
+     * @param string $UF
      * @return self
      */
-    public function setUF($uF)
+    public function setUF($UF)
     {
-        $this->uF = $uF;
+        $this->UF = $UF;
         return $this;
     }
 
     /**
-     * Gets as cEP
+     * Gets as CEP
      *
      * CEP
      *
@@ -286,20 +286,20 @@ class TEndereco extends AbstractJsonSerializable
      */
     public function getCEP()
     {
-        return $this->cEP;
+        return $this->CEP;
     }
 
     /**
-     * Sets a new cEP
+     * Sets a new CEP
      *
      * CEP
      *
-     * @param string $cEP
+     * @param string $CEP
      * @return self
      */
-    public function setCEP($cEP)
+    public function setCEP($CEP)
     {
-        $this->cEP = $cEP;
+        $this->CEP = $CEP;
         return $this;
     }
 

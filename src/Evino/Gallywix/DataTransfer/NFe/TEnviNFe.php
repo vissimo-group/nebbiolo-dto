@@ -31,9 +31,9 @@ class TEnviNFe extends AbstractJsonSerializable
     protected $indSinc = null;
 
     /**
-     * @property TNFe[] $nFe
+     * @property TNFe[] $NFe
      */
-    protected $nFe = array(
+    protected $NFe = array(
 
     );
 
@@ -108,58 +108,58 @@ class TEnviNFe extends AbstractJsonSerializable
     }
 
     /**
-     * Adds as nFe
+     * Adds as NFe
      *
      * @return self
-     * @param TNFe $nFe
+     * @param TNFe $NFe
      */
-    public function addToNFe(TNFe $nFe)
+    public function addToNFe(TNFe $NFe)
     {
-        $this->nFe[] = $nFe;
+        $this->NFe[] = $NFe;
         return $this;
     }
 
     /**
-     * isset nFe
+     * isset NFe
      *
      * @param int $index
      * @return boolean
      */
     public function issetNFe($index)
     {
-        return isset($this->nFe[$index]);
+        return isset($this->NFe[$index]);
     }
 
     /**
-     * unset nFe
+     * unset NFe
      *
      * @param int $index
      * @return void
      */
     public function unsetNFe($index)
     {
-        unset($this->nFe[$index]);
+        unset($this->NFe[$index]);
     }
 
     /**
-     * Gets as nFe
+     * Gets as NFe
      *
      * @return TNFe[]
      */
     public function getNFe()
     {
-        return $this->nFe;
+        return $this->NFe;
     }
 
     /**
-     * Sets a new nFe
+     * Sets a new NFe
      *
-     * @param TNFe[] $nFe
+     * @param TNFe[] $NFe
      * @return self
      */
-    public function setNFe(array $nFe)
+    public function setNFe(array $NFe)
     {
-        $this->nFe = $nFe;
+        $this->NFe = $NFe;
         return $this;
     }
 

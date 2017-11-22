@@ -14,16 +14,16 @@ class Emit extends AbstractJsonSerializable
     /**
      * Número do CNPJ do emitente
      *
-     * @property string $cNPJ
+     * @property string $CNPJ
      */
-    protected $cNPJ = null;
+    protected $CNPJ = null;
 
     /**
      * Número do CPF do emitente
      *
-     * @property string $cPF
+     * @property string $CPF
      */
-    protected $cPF = null;
+    protected $CPF = null;
 
     /**
      * Razão Social ou Nome do emitente
@@ -49,30 +49,30 @@ class Emit extends AbstractJsonSerializable
     /**
      * Inscrição Estadual do Emitente
      *
-     * @property string $iE
+     * @property string $IE
      */
-    protected $iE = null;
+    protected $IE = null;
 
     /**
      * Inscricao Estadual do Substituto Tributário
      *
-     * @property string $iEST
+     * @property string $IEST
      */
-    protected $iEST = null;
+    protected $IEST = null;
 
     /**
      * Inscrição Municipal
      *
-     * @property string $iM
+     * @property string $IM
      */
-    protected $iM = null;
+    protected $IM = null;
 
     /**
      * CNAE Fiscal
      *
      * @property string $cNAE
      */
-    protected $cNAE = null;
+    protected $CNAE = null;
 
     /**
      * Código de Regime Tributário.
@@ -83,10 +83,10 @@ class Emit extends AbstractJsonSerializable
      *
      * @property string $cRT
      */
-    protected $cRT = null;
+    protected $CRT = null;
 
     /**
-     * Gets as cNPJ
+     * Gets as CNPJ
      *
      * Número do CNPJ do emitente
      *
@@ -94,25 +94,25 @@ class Emit extends AbstractJsonSerializable
      */
     public function getCNPJ()
     {
-        return $this->cNPJ;
+        return $this->CNPJ;
     }
 
     /**
-     * Sets a new cNPJ
+     * Sets a new CNPJ
      *
      * Número do CNPJ do emitente
      *
-     * @param string $cNPJ
+     * @param string $CNPJ
      * @return self
      */
-    public function setCNPJ($cNPJ)
+    public function setCNPJ($CNPJ)
     {
-        $this->cNPJ = $cNPJ;
+        $this->CNPJ = $CNPJ;
         return $this;
     }
 
     /**
-     * Gets as cPF
+     * Gets as CPF
      *
      * Número do CPF do emitente
      *
@@ -120,20 +120,20 @@ class Emit extends AbstractJsonSerializable
      */
     public function getCPF()
     {
-        return $this->cPF;
+        return $this->CPF;
     }
 
     /**
-     * Sets a new cPF
+     * Sets a new CPF
      *
      * Número do CPF do emitente
      *
-     * @param string $cPF
+     * @param string $CPF
      * @return self
      */
-    public function setCPF($cPF)
+    public function setCPF($CPF)
     {
-        $this->cPF = $cPF;
+        $this->CPF = $CPF;
         return $this;
     }
 
@@ -216,7 +216,7 @@ class Emit extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as iE
+     * Gets as IE
      *
      * Inscrição Estadual do Emitente
      *
@@ -224,25 +224,25 @@ class Emit extends AbstractJsonSerializable
      */
     public function getIE()
     {
-        return $this->iE;
+        return $this->IE;
     }
 
     /**
-     * Sets a new iE
+     * Sets a new IE
      *
      * Inscrição Estadual do Emitente
      *
-     * @param string $iE
+     * @param string $IE
      * @return self
      */
-    public function setIE($iE)
+    public function setIE($IE)
     {
-        $this->iE = $iE;
+        $this->IE = $IE;
         return $this;
     }
 
     /**
-     * Gets as iEST
+     * Gets as IEST
      *
      * Inscricao Estadual do Substituto Tributário
      *
@@ -250,25 +250,25 @@ class Emit extends AbstractJsonSerializable
      */
     public function getIEST()
     {
-        return $this->iEST;
+        return $this->IEST;
     }
 
     /**
-     * Sets a new iEST
+     * Sets a new IEST
      *
      * Inscricao Estadual do Substituto Tributário
      *
-     * @param string $iEST
+     * @param string $IEST
      * @return self
      */
-    public function setIEST($iEST)
+    public function setIEST($IEST)
     {
-        $this->iEST = $iEST;
+        $this->IEST = $IEST;
         return $this;
     }
 
     /**
-     * Gets as iM
+     * Gets as IM
      *
      * Inscrição Municipal
      *
@@ -276,25 +276,25 @@ class Emit extends AbstractJsonSerializable
      */
     public function getIM()
     {
-        return $this->iM;
+        return $this->IM;
     }
 
     /**
-     * Sets a new iM
+     * Sets a new IM
      *
      * Inscrição Municipal
      *
-     * @param string $iM
+     * @param string $IM
      * @return self
      */
-    public function setIM($iM)
+    public function setIM($IM)
     {
-        $this->iM = $iM;
+        $this->IM = $IM;
         return $this;
     }
 
     /**
-     * Gets as cNAE
+     * Gets as CNAE
      *
      * CNAE Fiscal
      *
@@ -302,25 +302,25 @@ class Emit extends AbstractJsonSerializable
      */
     public function getCNAE()
     {
-        return $this->cNAE;
+        return $this->CNAE;
     }
 
     /**
-     * Sets a new cNAE
+     * Sets a new CNAE
      *
      * CNAE Fiscal
      *
-     * @param string $cNAE
+     * @param string $CNAE
      * @return self
      */
-    public function setCNAE($cNAE)
+    public function setCNAE($CNAE)
     {
-        $this->cNAE = $cNAE;
+        $this->CNAE = $CNAE;
         return $this;
     }
 
     /**
-     * Gets as cRT
+     * Gets as CRT
      *
      * Código de Regime Tributário.
      * Este campo será obrigatoriamente preenchido com:
@@ -332,11 +332,11 @@ class Emit extends AbstractJsonSerializable
      */
     public function getCRT()
     {
-        return $this->cRT;
+        return $this->CRT;
     }
 
     /**
-     * Sets a new cRT
+     * Sets a new CRT
      *
      * Código de Regime Tributário.
      * Este campo será obrigatoriamente preenchido com:
@@ -344,15 +344,14 @@ class Emit extends AbstractJsonSerializable
      * 2 – Simples Nacional – excesso de sublimite de receita bruta;
      * 3 – Regime Normal.
      *
-     * @param string $cRT
+     * @param string $CRT
      * @return self
      */
-    public function setCRT($cRT)
+    public function setCRT($CRT)
     {
-        $this->cRT = $cRT;
+        $this->CRT = $CRT;
         return $this;
     }
-
 
 }
 

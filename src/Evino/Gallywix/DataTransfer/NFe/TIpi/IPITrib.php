@@ -17,9 +17,9 @@ class IPITrib extends AbstractJsonSerializable
      * 50-Saída tributada
      * 99-Outras saídas
      *
-     * @property string $cST
+     * @property string $CST
      */
-    protected $cST = null;
+    protected $CST = null;
 
     /**
      * Valor da BC do IPI
@@ -58,7 +58,7 @@ class IPITrib extends AbstractJsonSerializable
     protected $vIPI = null;
 
     /**
-     * Gets as cST
+     * Gets as CST
      *
      * Código da Situação Tributária do IPI:
      * 00-Entrada com recuperação de crédito
@@ -70,11 +70,11 @@ class IPITrib extends AbstractJsonSerializable
      */
     public function getCST()
     {
-        return $this->cST;
+        return $this->CST;
     }
 
     /**
-     * Sets a new cST
+     * Sets a new CST
      *
      * Código da Situação Tributária do IPI:
      * 00-Entrada com recuperação de crédito
@@ -82,12 +82,12 @@ class IPITrib extends AbstractJsonSerializable
      * 50-Saída tributada
      * 99-Outras saídas
      *
-     * @param string $cST
+     * @param string $CST
      * @return self
      */
-    public function setCST($cST)
+    public function setCST($CST)
     {
-        $this->cST = $cST;
+        $this->CST = $CST;
         return $this;
     }
 

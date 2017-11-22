@@ -15,9 +15,9 @@ class PISQtde extends AbstractJsonSerializable
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
      * por Unidade de Produto;
      *
-     * @property string $cST
+     * @property string $CST
      */
-    protected $cST = null;
+    protected $CST = null;
 
     /**
      * Quantidade Vendida (NT2011/004)
@@ -41,7 +41,7 @@ class PISQtde extends AbstractJsonSerializable
     protected $vPIS = null;
 
     /**
-     * Gets as cST
+     * Gets as CST
      *
      * Código de Situação Tributária do PIS.
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
@@ -51,22 +51,22 @@ class PISQtde extends AbstractJsonSerializable
      */
     public function getCST()
     {
-        return $this->cST;
+        return $this->CST;
     }
 
     /**
-     * Sets a new cST
+     * Sets a new CST
      *
      * Código de Situação Tributária do PIS.
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
      * por Unidade de Produto;
      *
-     * @param string $cST
+     * @param string $CST
      * @return self
      */
-    public function setCST($cST)
+    public function setCST($CST)
     {
-        $this->cST = $cST;
+        $this->CST = $CST;
         return $this;
     }
 

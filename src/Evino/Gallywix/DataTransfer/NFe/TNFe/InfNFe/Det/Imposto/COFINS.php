@@ -19,9 +19,9 @@ class COFINS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSAliq
-     * $cOFINSAliq
+     * $COFINSAliq
      */
-    protected $cOFINSAliq = null;
+    protected $COFINSAliq = null;
 
     /**
      * Código de Situação Tributária do COFINS.
@@ -30,9 +30,9 @@ class COFINS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSQtde
-     * $cOFINSQtde
+     * $COFINSQtde
      */
-    protected $cOFINSQtde = null;
+    protected $COFINSQtde = null;
 
     /**
      * Código de Situação Tributária do COFINS:
@@ -44,9 +44,9 @@ class COFINS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSNT
-     * $cOFINSNT
+     * $COFINSNT
      */
-    protected $cOFINSNT = null;
+    protected $COFINSNT = null;
 
     /**
      * Código de Situação Tributária do COFINS:
@@ -91,12 +91,12 @@ class COFINS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSOutr
-     * $cOFINSOutr
+     * $COFINSOutr
      */
-    protected $cOFINSOutr = null;
+    protected $COFINSOutr = null;
 
     /**
-     * Gets as cOFINSAliq
+     * Gets as COFINSAliq
      *
      * Código de Situação Tributária do COFINS.
      *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
@@ -109,11 +109,11 @@ class COFINS extends AbstractJsonSerializable
      */
     public function getCOFINSAliq()
     {
-        return $this->cOFINSAliq;
+        return $this->COFINSAliq;
     }
 
 	/**
-	 * Sets a new cOFINSAliq
+	 * Sets a new COFINSAliq
 	 *
 	 * Código de Situação Tributária do COFINS.
 	 *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
@@ -121,19 +121,19 @@ class COFINS extends AbstractJsonSerializable
 	 * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
 	 * Diferenciada);
 	 *
-	 * @param COFINS\COFINSAliq $cOFINSAliq
+	 * @param COFINS\COFINSAliq $COFINSAliq
 	 * @return COFINS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSAliq* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSAliq
-	 * $cOFINSAliq
+	 * $COFINSAliq
 	 */
-    public function setCOFINSAliq(COFINS\COFINSAliq $cOFINSAliq)
+    public function setCOFINSAliq(COFINS\COFINSAliq $COFINSAliq)
     {
-        $this->cOFINSAliq = $cOFINSAliq;
+        $this->COFINSAliq = $COFINSAliq;
         return $this;
     }
 
     /**
-     * Gets as cOFINSQtde
+     * Gets as COFINSQtde
      *
      * Código de Situação Tributária do COFINS.
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
@@ -144,29 +144,29 @@ class COFINS extends AbstractJsonSerializable
      */
     public function getCOFINSQtde()
     {
-        return $this->cOFINSQtde;
+        return $this->COFINSQtde;
     }
 
 	/**
-	 * Sets a new cOFINSQtde
+	 * Sets a new COFINSQtde
 	 *
 	 * Código de Situação Tributária do COFINS.
 	 * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
 	 * por Unidade de Produto;
 	 *
-	 * @param COFINS\COFINSQtde $cOFINSQtde
+	 * @param COFINS\COFINSQtde $COFINSQtde
 	 * @return COFINS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSQtde* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSQtde
-	 * $cOFINSQtde
+	 * $COFINSQtde
 	 */
-    public function setCOFINSQtde(COFINS\COFINSQtde $cOFINSQtde)
+    public function setCOFINSQtde(COFINS\COFINSQtde $COFINSQtde)
     {
-        $this->cOFINSQtde = $cOFINSQtde;
+        $this->COFINSQtde = $COFINSQtde;
         return $this;
     }
 
     /**
-     * Gets as cOFINSNT
+     * Gets as COFINSNT
      *
      * Código de Situação Tributária do COFINS:
      * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
@@ -180,11 +180,11 @@ class COFINS extends AbstractJsonSerializable
      */
     public function getCOFINSNT()
     {
-        return $this->cOFINSNT;
+        return $this->COFINSNT;
     }
 
 	/**
-	 * Sets a new cOFINSNT
+	 * Sets a new COFINSNT
 	 *
 	 * Código de Situação Tributária do COFINS:
 	 * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
@@ -193,19 +193,19 @@ class COFINS extends AbstractJsonSerializable
 	 * 08 - Operação Sem Incidência da contribuição;
 	 * 09 - Operação com suspensão da contribuição;
 	 *
-	 * @param COFINS\COFINSNT $cOFINSNT
+	 * @param COFINS\COFINSNT $COFINSNT
 	 * @return COFINS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSNT* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSNT
-	 * $cOFINSNT
+	 * $COFINSNT
 	 */
-    public function setCOFINSNT(COFINS\COFINSNT $cOFINSNT)
+    public function setCOFINSNT(COFINS\COFINSNT $COFINSNT)
     {
-        $this->cOFINSNT = $cOFINSNT;
+        $this->COFINSNT = $COFINSNT;
         return $this;
     }
 
     /**
-     * Gets as cOFINSOutr
+     * Gets as COFINSOutr
      *
      * Código de Situação Tributária do COFINS:
      * 49 - Outras Operações de Saída
@@ -252,11 +252,11 @@ class COFINS extends AbstractJsonSerializable
      */
     public function getCOFINSOutr()
     {
-        return $this->cOFINSOutr;
+        return $this->COFINSOutr;
     }
 
 	/**
-	 * Sets a new cOFINSOutr
+	 * Sets a new COFINSOutr
 	 *
 	 * Código de Situação Tributária do COFINS:
 	 * 49 - Outras Operações de Saída
@@ -298,14 +298,14 @@ class COFINS extends AbstractJsonSerializable
 	 * 98 - Outras Operações de Entrada
 	 * 99 - Outras Operações.
 	 *
-	 * @param COFINS\COFINSOutr $cOFINSOutr
+	 * @param COFINS\COFINSOutr $COFINSOutr
 	 * @return COFINS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSOutr* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS\COFINSOutr
-	 * $cOFINSOutr
+	 * $COFINSOutr
 	 */
-    public function setCOFINSOutr(COFINS\COFINSOutr $cOFINSOutr)
+    public function setCOFINSOutr(COFINS\COFINSOutr $COFINSOutr)
     {
-        $this->cOFINSOutr = $cOFINSOutr;
+        $this->COFINSOutr = $COFINSOutr;
         return $this;
     }
 

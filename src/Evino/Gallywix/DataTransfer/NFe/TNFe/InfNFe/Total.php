@@ -14,17 +14,17 @@ class Total extends AbstractJsonSerializable
      * Totais referentes ao ICMS
      *
      * @property Total\ICMSTot
-     * $iCMSTot
+     * $ICMSTot
      */
-    protected $iCMSTot = null;
+    protected $ICMSTot = null;
 
     /**
      * Totais referentes ao ISSQN
      *
      * @property Total\ISSQNtot
-     * $iSSQNtot
+     * $ISSQNtot
      */
-    protected $iSSQNtot = null;
+    protected $ISSQNtot = null;
 
     /**
      * Retenção de Tributos Federais
@@ -35,7 +35,7 @@ class Total extends AbstractJsonSerializable
     protected $retTrib = null;
 
     /**
-     * Gets as iCMSTot
+     * Gets as ICMSTot
      *
      * Totais referentes ao ICMS
      *
@@ -43,25 +43,25 @@ class Total extends AbstractJsonSerializable
      */
     public function getICMSTot()
     {
-        return $this->iCMSTot;
+        return $this->ICMSTot;
     }
 
     /**
-     * Sets a new iCMSTot
+     * Sets a new ICMSTot
      *
      * Totais referentes ao ICMS
      *
-     * @param Total\ICMSTot $iCMSTot
+     * @param Total\ICMSTot $ICMSTot
      * @return self
      */
-    public function setICMSTot(Total\ICMSTot $iCMSTot)
+    public function setICMSTot(Total\ICMSTot $ICMSTot)
     {
-        $this->iCMSTot = $iCMSTot;
+        $this->ICMSTot = $ICMSTot;
         return $this;
     }
 
     /**
-     * Gets as iSSQNtot
+     * Gets as ISSQNtot
      *
      * Totais referentes ao ISSQN
      *
@@ -69,20 +69,20 @@ class Total extends AbstractJsonSerializable
      */
     public function getISSQNtot()
     {
-        return $this->iSSQNtot;
+        return $this->ISSQNtot;
     }
 
     /**
-     * Sets a new iSSQNtot
+     * Sets a new ISSQNtot
      *
      * Totais referentes ao ISSQN
      *
-     * @param Total\ISSQNtot $iSSQNtot
+     * @param Total\ISSQNtot $ISSQNtot
      * @return self
      */
-    public function setISSQNtot(Total\ISSQNtot $iSSQNtot)
+    public function setISSQNtot(Total\ISSQNtot $ISSQNtot)
     {
-        $this->iSSQNtot = $iSSQNtot;
+        $this->ISSQNtot = $ISSQNtot;
         return $this;
     }
 

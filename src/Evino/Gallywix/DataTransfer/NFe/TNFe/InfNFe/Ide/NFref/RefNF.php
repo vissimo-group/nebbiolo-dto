@@ -27,9 +27,9 @@ class RefNF extends AbstractJsonSerializable
     /**
      * CNPJ do emitente do documento fiscal referenciado
      *
-     * @property string $cNPJ
+     * @property string $CNPJ
      */
-    protected $cNPJ = null;
+    protected $CNPJ = null;
 
     /**
      * Código do modelo do Documento Fiscal. Utilizar 01 para NF modelo 1/1A e 02 para
@@ -106,7 +106,7 @@ class RefNF extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cNPJ
+     * Gets as CNPJ
      *
      * CNPJ do emitente do documento fiscal referenciado
      *
@@ -114,20 +114,20 @@ class RefNF extends AbstractJsonSerializable
      */
     public function getCNPJ()
     {
-        return $this->cNPJ;
+        return $this->CNPJ;
     }
 
     /**
-     * Sets a new cNPJ
+     * Sets a new CNPJ
      *
      * CNPJ do emitente do documento fiscal referenciado
      *
-     * @param string $cNPJ
+     * @param string $CNPJ
      * @return self
      */
-    public function setCNPJ($cNPJ)
+    public function setCNPJ($CNPJ)
     {
-        $this->cNPJ = $cNPJ;
+        $this->CNPJ = $CNPJ;
         return $this;
     }
 

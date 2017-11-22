@@ -35,9 +35,9 @@ class DI extends AbstractJsonSerializable
     /**
      * UF onde ocorreu o desembaraço aduaneiro
      *
-     * @property string $uFDesemb
+     * @property string $UFDesemb
      */
-    protected $uFDesemb = null;
+    protected $UFDesemb = null;
 
     /**
      * Data do desembaraço aduaneiro (AAAA-MM-DD)
@@ -73,16 +73,16 @@ class DI extends AbstractJsonSerializable
     /**
      * CNPJ do adquirente ou do encomendante
      *
-     * @property string $cNPJ
+     * @property string $CNPJ
      */
-    protected $cNPJ = null;
+    protected $CNPJ = null;
 
     /**
      * Sigla da UF do adquirente ou do encomendante
      *
-     * @property string $uFTerceiro
+     * @property string $UFTerceiro
      */
-    protected $uFTerceiro = null;
+    protected $UFTerceiro = null;
 
     /**
      * Código do exportador (usado nos sistemas internos de informação do emitente
@@ -184,7 +184,7 @@ class DI extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as uFDesemb
+     * Gets as UFDesemb
      *
      * UF onde ocorreu o desembaraço aduaneiro
      *
@@ -192,20 +192,20 @@ class DI extends AbstractJsonSerializable
      */
     public function getUFDesemb()
     {
-        return $this->uFDesemb;
+        return $this->UFDesemb;
     }
 
     /**
-     * Sets a new uFDesemb
+     * Sets a new UFDesemb
      *
      * UF onde ocorreu o desembaraço aduaneiro
      *
-     * @param string $uFDesemb
+     * @param string $UFDesemb
      * @return self
      */
-    public function setUFDesemb($uFDesemb)
+    public function setUFDesemb($UFDesemb)
     {
-        $this->uFDesemb = $uFDesemb;
+        $this->UFDesemb = $UFDesemb;
         return $this;
     }
 
@@ -320,7 +320,7 @@ class DI extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cNPJ
+     * Gets as CNPJ
      *
      * CNPJ do adquirente ou do encomendante
      *
@@ -328,25 +328,25 @@ class DI extends AbstractJsonSerializable
      */
     public function getCNPJ()
     {
-        return $this->cNPJ;
+        return $this->CNPJ;
     }
 
     /**
-     * Sets a new cNPJ
+     * Sets a new CNPJ
      *
      * CNPJ do adquirente ou do encomendante
      *
-     * @param string $cNPJ
+     * @param string $CNPJ
      * @return self
      */
-    public function setCNPJ($cNPJ)
+    public function setCNPJ($CNPJ)
     {
-        $this->cNPJ = $cNPJ;
+        $this->CNPJ = $CNPJ;
         return $this;
     }
 
     /**
-     * Gets as uFTerceiro
+     * Gets as UFTerceiro
      *
      * Sigla da UF do adquirente ou do encomendante
      *
@@ -354,20 +354,20 @@ class DI extends AbstractJsonSerializable
      */
     public function getUFTerceiro()
     {
-        return $this->uFTerceiro;
+        return $this->UFTerceiro;
     }
 
     /**
-     * Sets a new uFTerceiro
+     * Sets a new UFTerceiro
      *
      * Sigla da UF do adquirente ou do encomendante
      *
-     * @param string $uFTerceiro
+     * @param string $UFTerceiro
      * @return self
      */
-    public function setUFTerceiro($uFTerceiro)
+    public function setUFTerceiro($UFTerceiro)
     {
-        $this->uFTerceiro = $uFTerceiro;
+        $this->UFTerceiro = $UFTerceiro;
         return $this;
     }
 

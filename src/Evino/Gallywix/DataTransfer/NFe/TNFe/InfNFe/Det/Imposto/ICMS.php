@@ -16,9 +16,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS00
-     * $iCMS00
+     * $ICMS00
      */
-    protected $iCMS00 = null;
+    protected $ICMS00 = null;
 
     /**
      * Tributação pelo ICMS
@@ -26,9 +26,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS10
-     * $iCMS10
+     * $ICMS10
      */
-    protected $iCMS10 = null;
+    protected $ICMS10 = null;
 
     /**
      * Tributção pelo ICMS
@@ -36,9 +36,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS20
-     * $iCMS20
+     * $ICMS20
      */
-    protected $iCMS20 = null;
+    protected $ICMS20 = null;
 
     /**
      * Tributação pelo ICMS
@@ -47,9 +47,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS30
-     * $iCMS30
+     * $ICMS30
      */
-    protected $iCMS30 = null;
+    protected $ICMS30 = null;
 
     /**
      * Tributação pelo ICMS
@@ -59,9 +59,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS40
-     * $iCMS40
+     * $ICMS40
      */
-    protected $iCMS40 = null;
+    protected $ICMS40 = null;
 
     /**
      * Tributção pelo ICMS
@@ -71,9 +71,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS51
-     * $iCMS51
+     * $ICMS51
      */
-    protected $iCMS51 = null;
+    protected $ICMS51 = null;
 
     /**
      * Tributação pelo ICMS
@@ -81,9 +81,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS60
-     * $iCMS60
+     * $ICMS60
      */
-    protected $iCMS60 = null;
+    protected $ICMS60 = null;
 
     /**
      * Tributação pelo ICMS
@@ -92,9 +92,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS70
-     * $iCMS70
+     * $ICMS70
      */
-    protected $iCMS70 = null;
+    protected $ICMS70 = null;
 
     /**
      * Tributação pelo ICMS
@@ -102,9 +102,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS90
-     * $iCMS90
+     * $ICMS90
      */
-    protected $iCMS90 = null;
+    protected $ICMS90 = null;
 
     /**
      * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na
@@ -115,9 +115,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSPart
-     * $iCMSPart
+     * $ICMSPart
      */
-    protected $iCMSPart = null;
+    protected $ICMSPart = null;
 
     /**
      * Grupo de informação do ICMSST devido para a UF de destino, nas operações
@@ -126,45 +126,45 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSST
-     * $iCMSST
+     * $ICMSST
      */
-    protected $iCMSST = null;
+    protected $ICMSST = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=101 (v.2.0)
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN101
-     * $iCMSSN101
+     * $ICMSSN101
      */
-    protected $iCMSSN101 = null;
+    protected $ICMSSN101 = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=102, 103, 300 ou 400 (v.2.0))
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN102
-     * $iCMSSN102
+     * $ICMSSN102
      */
-    protected $iCMSSN102 = null;
+    protected $ICMSSN102 = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=201 (v.2.0)
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN201
-     * $iCMSSN201
+     * $ICMSSN201
      */
-    protected $iCMSSN201 = null;
+    protected $ICMSSN201 = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=202 ou 203 (v.2.0)
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN202
-     * $iCMSSN202
+     * $ICMSSN202
      */
-    protected $iCMSSN202 = null;
+    protected $ICMSSN202 = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e
@@ -172,9 +172,9 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN500
-     * $iCMSSN500
+     * $ICMSSN500
      */
-    protected $iCMSSN500 = null;
+    protected $ICMSSN500 = null;
 
     /**
      * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e
@@ -182,12 +182,12 @@ class ICMS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN900
-     * $iCMSSN900
+     * $ICMSSN900
      */
-    protected $iCMSSN900 = null;
+    protected $ICMSSN900 = null;
 
     /**
-     * Gets as iCMS00
+     * Gets as ICMS00
      *
      * Tributação pelo ICMS
      * 00 - Tributada integralmente
@@ -197,28 +197,28 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMS00()
     {
-        return $this->iCMS00;
+        return $this->ICMS00;
     }
 
 	/**
-	 * Sets a new iCMS00
+	 * Sets a new ICMS00
 	 *
 	 * Tributação pelo ICMS
 	 * 00 - Tributada integralmente
 	 *
-	 * @param ICMS\ICMS00 $iCMS00
+	 * @param ICMS\ICMS00 $ICMS00
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS00* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS00
-	 * $iCMS00
+	 * $ICMS00
 	 */
-    public function setICMS00(ICMS\ICMS00 $iCMS00)
+    public function setICMS00(ICMS\ICMS00 $ICMS00)
     {
-        $this->iCMS00 = $iCMS00;
+        $this->ICMS00 = $ICMS00;
         return $this;
     }
 
     /**
-     * Gets as iCMS10
+     * Gets as ICMS10
      *
      * Tributação pelo ICMS
      * 10 - Tributada e com cobrança do ICMS por substituição tributária
@@ -228,28 +228,28 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMS10()
     {
-        return $this->iCMS10;
+        return $this->ICMS10;
     }
 
 	/**
-	 * Sets a new iCMS10
+	 * Sets a new ICMS10
 	 *
 	 * Tributação pelo ICMS
 	 * 10 - Tributada e com cobrança do ICMS por substituição tributária
 	 *
-	 * @param ICMS\ICMS10 $iCMS10
+	 * @param ICMS\ICMS10 $ICMS10
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS10* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS10
-	 * $iCMS10
+	 * $ICMS10
 	 */
-    public function setICMS10(ICMS\ICMS10 $iCMS10)
+    public function setICMS10(ICMS\ICMS10 $ICMS10)
     {
-        $this->iCMS10 = $iCMS10;
+        $this->ICMS10 = $ICMS10;
         return $this;
     }
 
     /**
-     * Gets as iCMS20
+     * Gets as ICMS20
      *
      * Tributção pelo ICMS
      * 20 - Com redução de base de cálculo
@@ -259,28 +259,28 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMS20()
     {
-        return $this->iCMS20;
+        return $this->ICMS20;
     }
 
 	/**
-	 * Sets a new iCMS20
+	 * Sets a new ICMS20
 	 *
 	 * Tributção pelo ICMS
 	 * 20 - Com redução de base de cálculo
 	 *
-	 * @param ICMS\ICMS20 $iCMS20
+	 * @param ICMS\ICMS20 $ICMS20
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS20* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS20
-	 * $iCMS20
+	 * $ICMS20
 	 */
-    public function setICMS20(ICMS\ICMS20 $iCMS20)
+    public function setICMS20(ICMS\ICMS20 $ICMS20)
     {
-        $this->iCMS20 = $iCMS20;
+        $this->ICMS20 = $ICMS20;
         return $this;
     }
 
     /**
-     * Gets as iCMS30
+     * Gets as ICMS30
      *
      * Tributação pelo ICMS
      * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
@@ -291,29 +291,29 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMS30()
     {
-        return $this->iCMS30;
+        return $this->ICMS30;
     }
 
 	/**
-	 * Sets a new iCMS30
+	 * Sets a new ICMS30
 	 *
 	 * Tributação pelo ICMS
 	 * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
 	 * tributária
 	 *
-	 * @param ICMS\ICMS30 $iCMS30
+	 * @param ICMS\ICMS30 $ICMS30
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS30* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS30
-	 * $iCMS30
+	 * $ICMS30
 	 */
-    public function setICMS30(ICMS\ICMS30 $iCMS30)
+    public function setICMS30(ICMS\ICMS30 $ICMS30)
     {
-        $this->iCMS30 = $iCMS30;
+        $this->ICMS30 = $ICMS30;
         return $this;
     }
 
     /**
-     * Gets as iCMS40
+     * Gets as ICMS40
      *
      * Tributação pelo ICMS
      * 40 - Isenta
@@ -325,30 +325,30 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMS40()
     {
-        return $this->iCMS40;
+        return $this->ICMS40;
     }
 
 	/**
-	 * Sets a new iCMS40
+	 * Sets a new ICMS40
 	 *
 	 * Tributação pelo ICMS
 	 * 40 - Isenta
 	 * 41 - Não tributada
 	 * 50 - Suspensão
 	 *
-	 * @param ICMS\ICMS40 $iCMS40
+	 * @param ICMS\ICMS40 $ICMS40
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS40* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS40
-	 * $iCMS40
+	 * $ICMS40
 	 */
-    public function setICMS40(ICMS\ICMS40 $iCMS40)
+    public function setICMS40(ICMS\ICMS40 $ICMS40)
     {
-        $this->iCMS40 = $iCMS40;
+        $this->ICMS40 = $ICMS40;
         return $this;
     }
 
     /**
-     * Gets as iCMS51
+     * Gets as ICMS51
      *
      * Tributção pelo ICMS
      * 51 - Diferimento
@@ -360,30 +360,30 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMS51()
     {
-        return $this->iCMS51;
+        return $this->ICMS51;
     }
 
 	/**
-	 * Sets a new iCMS51
+	 * Sets a new ICMS51
 	 *
 	 * Tributção pelo ICMS
 	 * 51 - Diferimento
 	 * A exigência do preenchimento das informações do ICMS diferido fica à
 	 * critério de cada UF.
 	 *
-	 * @param ICMS\ICMS51 $iCMS51
+	 * @param ICMS\ICMS51 $ICMS51
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS51* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS51
-	 * $iCMS51
+	 * $ICMS51
 	 */
-    public function setICMS51(ICMS\ICMS51 $iCMS51)
+    public function setICMS51(ICMS\ICMS51 $ICMS51)
     {
-        $this->iCMS51 = $iCMS51;
+        $this->ICMS51 = $ICMS51;
         return $this;
     }
 
     /**
-     * Gets as iCMS60
+     * Gets as ICMS60
      *
      * Tributação pelo ICMS
      * 60 - ICMS cobrado anteriormente por substituição tributária
@@ -393,28 +393,28 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMS60()
     {
-        return $this->iCMS60;
+        return $this->ICMS60;
     }
 
 	/**
-	 * Sets a new iCMS60
+	 * Sets a new ICMS60
 	 *
 	 * Tributação pelo ICMS
 	 * 60 - ICMS cobrado anteriormente por substituição tributária
 	 *
-	 * @param ICMS\ICMS60 $iCMS60
+	 * @param ICMS\ICMS60 $ICMS60
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS60* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS60
-	 * $iCMS60
+	 * $ICMS60
 	 */
-    public function setICMS60(ICMS\ICMS60 $iCMS60)
+    public function setICMS60(ICMS\ICMS60 $ICMS60)
     {
-        $this->iCMS60 = $iCMS60;
+        $this->ICMS60 = $ICMS60;
         return $this;
     }
 
     /**
-     * Gets as iCMS70
+     * Gets as ICMS70
      *
      * Tributação pelo ICMS
      * 70 - Com redução de base de cálculo e cobrança do ICMS por substituição
@@ -425,29 +425,29 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMS70()
     {
-        return $this->iCMS70;
+        return $this->ICMS70;
     }
 
 	/**
-	 * Sets a new iCMS70
+	 * Sets a new ICMS70
 	 *
 	 * Tributação pelo ICMS
 	 * 70 - Com redução de base de cálculo e cobrança do ICMS por substituição
 	 * tributária
 	 *
-	 * @param ICMS\ICMS70 $iCMS70
+	 * @param ICMS\ICMS70 $ICMS70
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS70* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS70
-	 * $iCMS70
+	 * $ICMS70
 	 */
-    public function setICMS70(ICMS\ICMS70 $iCMS70)
+    public function setICMS70(ICMS\ICMS70 $ICMS70)
     {
-        $this->iCMS70 = $iCMS70;
+        $this->ICMS70 = $ICMS70;
         return $this;
     }
 
     /**
-     * Gets as iCMS90
+     * Gets as ICMS90
      *
      * Tributação pelo ICMS
      * 90 - Outras
@@ -457,28 +457,28 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMS90()
     {
-        return $this->iCMS90;
+        return $this->ICMS90;
     }
 
 	/**
-	 * Sets a new iCMS90
+	 * Sets a new ICMS90
 	 *
 	 * Tributação pelo ICMS
 	 * 90 - Outras
 	 *
-	 * @param ICMS\ICMS90 $iCMS90
+	 * @param ICMS\ICMS90 $ICMS90
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS90* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMS90
-	 * $iCMS90
+	 * $ICMS90
 	 */
-    public function setICMS90(ICMS\ICMS90 $iCMS90)
+    public function setICMS90(ICMS\ICMS90 $ICMS90)
     {
-        $this->iCMS90 = $iCMS90;
+        $this->ICMS90 = $ICMS90;
         return $this;
     }
 
     /**
-     * Gets as iCMSPart
+     * Gets as ICMSPart
      *
      * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na
      * legislação
@@ -491,11 +491,11 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMSPart()
     {
-        return $this->iCMSPart;
+        return $this->ICMSPart;
     }
 
 	/**
-	 * Sets a new iCMSPart
+	 * Sets a new ICMSPart
 	 *
 	 * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na
 	 * legislação
@@ -503,19 +503,19 @@ class ICMS extends AbstractJsonSerializable
 	 * operação entre a UF de origem e a UF do destinatário ou ou a UF definida na
 	 * legislação. (Ex. UF da concessionária de entrega do veículos)
 	 *
-	 * @param ICMS\ICMSPart $iCMSPart
+	 * @param ICMS\ICMSPart $ICMSPart
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSPart* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSPart
-	 * $iCMSPart
+	 * $ICMSPart
 	 */
-    public function setICMSPart(ICMS\ICMSPart $iCMSPart)
+    public function setICMSPart(ICMS\ICMSPart $ICMSPart)
     {
-        $this->iCMSPart = $iCMSPart;
+        $this->ICMSPart = $ICMSPart;
         return $this;
     }
 
     /**
-     * Gets as iCMSST
+     * Gets as ICMSST
      *
      * Grupo de informação do ICMSST devido para a UF de destino, nas operações
      * interestaduais de produtos que tiveram retenção antecipada de ICMS por ST na
@@ -526,29 +526,29 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMSST()
     {
-        return $this->iCMSST;
+        return $this->ICMSST;
     }
 
 	/**
-	 * Sets a new iCMSST
+	 * Sets a new ICMSST
 	 *
 	 * Grupo de informação do ICMSST devido para a UF de destino, nas operações
 	 * interestaduais de produtos que tiveram retenção antecipada de ICMS por ST na
 	 * UF do remetente. Repasse via Substituto Tributário.
 	 *
-	 * @param ICMS\ICMSST $iCMSST
+	 * @param ICMS\ICMSST $ICMSST
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSST* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSST
-	 * $iCMSST
+	 * $ICMSST
 	 */
-    public function setICMSST(ICMS\ICMSST $iCMSST)
+    public function setICMSST(ICMS\ICMSST $ICMSST)
     {
-        $this->iCMSST = $iCMSST;
+        $this->ICMSST = $ICMSST;
         return $this;
     }
 
     /**
-     * Gets as iCMSSN101
+     * Gets as ICMSSN101
      *
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=101 (v.2.0)
      *
@@ -557,27 +557,27 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMSSN101()
     {
-        return $this->iCMSSN101;
+        return $this->ICMSSN101;
     }
 
 	/**
-	 * Sets a new iCMSSN101
+	 * Sets a new ICMSSN101
 	 *
 	 * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=101 (v.2.0)
 	 *
-	 * @param ICMS\ICMSSN101 $iCMSSN101
+	 * @param ICMS\ICMSSN101 $ICMSSN101
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN101* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN101
-	 * $iCMSSN101
+	 * $ICMSSN101
 	 */
-    public function setICMSSN101(ICMS\ICMSSN101 $iCMSSN101)
+    public function setICMSSN101(ICMS\ICMSSN101 $ICMSSN101)
     {
-        $this->iCMSSN101 = $iCMSSN101;
+        $this->ICMSSN101 = $ICMSSN101;
         return $this;
     }
 
     /**
-     * Gets as iCMSSN102
+     * Gets as ICMSSN102
      *
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=102, 103, 300 ou 400 (v.2.0))
      *
@@ -586,27 +586,27 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMSSN102()
     {
-        return $this->iCMSSN102;
+        return $this->ICMSSN102;
     }
 
 	/**
-	 * Sets a new iCMSSN102
+	 * Sets a new ICMSSN102
 	 *
 	 * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=102, 103, 300 ou 400 (v.2.0))
 	 *
-	 * @param ICMS\ICMSSN102 $iCMSSN102
+	 * @param ICMS\ICMSSN102 $ICMSSN102
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN102* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN102
-	 * $iCMSSN102
+	 * $ICMSSN102
 	 */
-    public function setICMSSN102(ICMS\ICMSSN102 $iCMSSN102)
+    public function setICMSSN102(ICMS\ICMSSN102 $ICMSSN102)
     {
-        $this->iCMSSN102 = $iCMSSN102;
+        $this->ICMSSN102 = $ICMSSN102;
         return $this;
     }
 
     /**
-     * Gets as iCMSSN201
+     * Gets as ICMSSN201
      *
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=201 (v.2.0)
      *
@@ -615,27 +615,27 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMSSN201()
     {
-        return $this->iCMSSN201;
+        return $this->ICMSSN201;
     }
 
 	/**
-	 * Sets a new iCMSSN201
+	 * Sets a new ICMSSN201
 	 *
 	 * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=201 (v.2.0)
 	 *
-	 * @param ICMS\ICMSSN201 $iCMSSN201
+	 * @param ICMS\ICMSSN201 $ICMSSN201
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN201* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN201
-	 * $iCMSSN201
+	 * $ICMSSN201
 	 */
-    public function setICMSSN201(ICMS\ICMSSN201 $iCMSSN201)
+    public function setICMSSN201(ICMS\ICMSSN201 $ICMSSN201)
     {
-        $this->iCMSSN201 = $iCMSSN201;
+        $this->ICMSSN201 = $ICMSSN201;
         return $this;
     }
 
     /**
-     * Gets as iCMSSN202
+     * Gets as ICMSSN202
      *
      * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=202 ou 203 (v.2.0)
      *
@@ -644,27 +644,27 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMSSN202()
     {
-        return $this->iCMSSN202;
+        return $this->ICMSSN202;
     }
 
 	/**
-	 * Sets a new iCMSSN202
+	 * Sets a new ICMSSN202
 	 *
 	 * Tributação do ICMS pelo SIMPLES NACIONAL e CSOSN=202 ou 203 (v.2.0)
 	 *
-	 * @param ICMS\ICMSSN202 $iCMSSN202
+	 * @param ICMS\ICMSSN202 $ICMSSN202
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN202* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN202
-	 * $iCMSSN202
+	 * $ICMSSN202
 	 */
-    public function setICMSSN202(ICMS\ICMSSN202 $iCMSSN202)
+    public function setICMSSN202(ICMS\ICMSSN202 $ICMSSN202)
     {
-        $this->iCMSSN202 = $iCMSSN202;
+        $this->ICMSSN202 = $ICMSSN202;
         return $this;
     }
 
     /**
-     * Gets as iCMSSN500
+     * Gets as ICMSSN500
      *
      * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e
      * CSOSN=500 (v.2.0)
@@ -674,28 +674,28 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMSSN500()
     {
-        return $this->iCMSSN500;
+        return $this->ICMSSN500;
     }
 
 	/**
-	 * Sets a new iCMSSN500
+	 * Sets a new ICMSSN500
 	 *
 	 * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e
 	 * CSOSN=500 (v.2.0)
 	 *
-	 * @param ICMS\ICMSSN500 $iCMSSN500
+	 * @param ICMS\ICMSSN500 $ICMSSN500
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN500* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN500
-	 * $iCMSSN500
+	 * $ICMSSN500
 	 */
-    public function setICMSSN500(ICMS\ICMSSN500 $iCMSSN500)
+    public function setICMSSN500(ICMS\ICMSSN500 $ICMSSN500)
     {
-        $this->iCMSSN500 = $iCMSSN500;
+        $this->ICMSSN500 = $ICMSSN500;
         return $this;
     }
 
     /**
-     * Gets as iCMSSN900
+     * Gets as ICMSSN900
      *
      * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e
      * CSOSN=900 (v2.0)
@@ -705,23 +705,23 @@ class ICMS extends AbstractJsonSerializable
      */
     public function getICMSSN900()
     {
-        return $this->iCMSSN900;
+        return $this->ICMSSN900;
     }
 
 	/**
-	 * Sets a new iCMSSN900
+	 * Sets a new ICMSSN900
 	 *
 	 * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e
 	 * CSOSN=900 (v2.0)
 	 *
-	 * @param ICMS\ICMSSN900 $iCMSSN900
+	 * @param ICMS\ICMSSN900 $ICMSSN900
 	 * @return ICMS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN900* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS\ICMSSN900
-	 * $iCMSSN900
+	 * $ICMSSN900
 	 */
-    public function setICMSSN900(ICMS\ICMSSN900 $iCMSSN900)
+    public function setICMSSN900(ICMS\ICMSSN900 $ICMSSN900)
     {
-        $this->iCMSSN900 = $iCMSSN900;
+        $this->ICMSSN900 = $ICMSSN900;
         return $this;
     }
 
