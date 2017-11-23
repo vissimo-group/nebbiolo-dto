@@ -8,10 +8,15 @@ abstract class BaseGallywixDataTransfer implements \JsonSerializable {
 
     /**
      * @param \stdClass $json
+     * @param bool $includeNullValues
      * @return BaseGallywixDataTransfer
      */
-    public static function fromJson(\stdClass $json): BaseGallywixDataTransfer {
+    public static function fromJson(\stdClass $json, bool $includeNullValues = false): BaseGallywixDataTransfer {
         $instance = new static();
+
+        if (!$includeNullValues) {
+            $json = (object)self::stripNullValuesFromArray((array)$json);
+        }
 
         $mapper = new JsonMapper();
         $mapper->bStrictNullTypes = false;
@@ -50,6 +55,25 @@ abstract class BaseGallywixDataTransfer implements \JsonSerializable {
         }
 
         return $stdClass;
+    }
+
+    /**
+     * @param array $array
+     * @return array
+     */
+    private static function stripNullValuesFromArray(array $array): array
+    {
+        foreach ($array as $key => $value) {
+            if (is_array($value)) {
+                $array[$key] = self::stripNullValuesFromArray($value);
+            } else if ($value instanceof \stdClass) {
+                $array[$key] = (object)self::stripNullValuesFromArray((array)$value);
+            } else if (is_null($value)) {
+                unset($array[$key]);
+            }
+        }
+
+        return $array;
     }
 
 }
