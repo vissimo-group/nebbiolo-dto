@@ -24,9 +24,9 @@ class Prod extends BaseGallywixDataTransfer
      * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de
      * barras
      *
-     * @property string $CEAN
+     * @property string $cEAN
      */
-    protected $CEAN = null;
+    protected $cEAN = null;
 
     /**
      * Descrição do produto ou serviço
@@ -43,9 +43,9 @@ class Prod extends BaseGallywixDataTransfer
      * crédito, crédito do ativo imobilizado, etc.), informar o código 00 (zeros)
      * (v2.0)
      *
-     * @property string $nCM
+     * @property string $NCM
      */
-    protected $nCM = null;
+    protected $NCM = null;
 
     /**
      * Nomenclatura de Valor aduaneio e Estatístico
@@ -131,9 +131,9 @@ class Prod extends BaseGallywixDataTransfer
      * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou
      * código de barras
      *
-     * @property string $CEANTrib
+     * @property string $cEANTrib
      */
-    protected $CEANTrib = null;
+    protected $cEANTrib = null;
 
     /**
      * Unidade Tributável
@@ -322,30 +322,30 @@ class Prod extends BaseGallywixDataTransfer
     }
 
     /**
-     * Gets as CEAN
+     * Gets as cEAN
      *
      * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de
      * barras
      *
      * @return string
      */
-    public function getCEAN()
+    public function getcEAN()
     {
-        return $this->CEAN;
+        return $this->cEAN;
     }
 
     /**
-     * Sets a new CEAN
+     * Sets a new cEAN
      *
      * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de
      * barras
      *
-     * @param string $CEAN
+     * @param string $cEAN
      * @return self
      */
-    public function setCEAN($CEAN)
+    public function setcEAN($cEAN)
     {
-        $this->CEAN = $CEAN;
+        $this->cEAN = $cEAN;
         return $this;
     }
 
@@ -376,7 +376,7 @@ class Prod extends BaseGallywixDataTransfer
     }
 
     /**
-     * Gets as nCM
+     * Gets as NCM
      *
      * Código NCM (8 posições), será permitida a informação do gênero (posição
      * do capítulo do NCM) quando a operação não for de comércio exterior
@@ -389,11 +389,11 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function getNCM()
     {
-        return $this->nCM;
+        return $this->NCM;
     }
 
     /**
-     * Sets a new nCM
+     * Sets a new NCM
      *
      * Código NCM (8 posições), será permitida a informação do gênero (posição
      * do capítulo do NCM) quando a operação não for de comércio exterior
@@ -402,12 +402,12 @@ class Prod extends BaseGallywixDataTransfer
      * crédito, crédito do ativo imobilizado, etc.), informar o código 00 (zeros)
      * (v2.0)
      *
-     * @param string $nCM
+     * @param string $NCM
      * @return self
      */
-    public function setNCM($nCM)
+    public function setNCM($NCM)
     {
-        $this->nCM = $nCM;
+        $this->NCM = $NCM;
         return $this;
     }
 
@@ -740,30 +740,30 @@ class Prod extends BaseGallywixDataTransfer
     }
 
     /**
-     * Gets as CEANTrib
+     * Gets as cEANTrib
      *
      * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou
      * código de barras
      *
      * @return string
      */
-    public function getCEANTrib()
+    public function getcEANTrib()
     {
-        return $this->CEANTrib;
+        return $this->cEANTrib;
     }
 
     /**
-     * Sets a new CEANTrib
+     * Sets a new cEANTrib
      *
      * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou
      * código de barras
      *
-     * @param string $CEANTrib
+     * @param string $cEANTrib
      * @return self
      */
-    public function setCEANTrib($CEANTrib)
+    public function setcEANTrib($cEANTrib)
     {
-        $this->CEANTrib = $CEANTrib;
+        $this->cEANTrib = $cEANTrib;
         return $this;
     }
 

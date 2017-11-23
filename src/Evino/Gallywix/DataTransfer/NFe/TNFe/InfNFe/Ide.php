@@ -68,9 +68,9 @@ class Ide extends BaseGallywixDataTransfer
      * Data e Hora da saída ou de entrada da mercadoria / produto
      * (AAAA-MM-DDTHH:mm:ssTZD)
      *
-     * @property string $dhSaIEnt
+     * @property string $dhSaiEnt
      */
-    protected $dhSaIEnt = null;
+    protected $dhSaiEnt = null;
 
     /**
      * Tipo do Documento Fiscal (0 - entrada; 1 - saída)
@@ -402,7 +402,7 @@ class Ide extends BaseGallywixDataTransfer
     }
 
     /**
-     * Gets as dhSaIEnt
+     * Gets as dhSaiEnt
      *
      * Data e Hora da saída ou de entrada da mercadoria / produto
      * (AAAA-MM-DDTHH:mm:ssTZD)
@@ -411,21 +411,21 @@ class Ide extends BaseGallywixDataTransfer
      */
     public function getDhSaIEnt()
     {
-        return $this->dhSaIEnt;
+        return $this->dhSaiEnt;
     }
 
     /**
-     * Sets a new dhSaIEnt
+     * Sets a new dhSaiEnt
      *
      * Data e Hora da saída ou de entrada da mercadoria / produto
      * (AAAA-MM-DDTHH:mm:ssTZD)
      *
-     * @param string $dhSaIEnt
+     * @param string $dhSaiEnt
      * @return self
      */
-    public function setDhSaIEnt($dhSaIEnt)
+    public function setDhSaIEnt($dhSaiEnt)
     {
-        $this->dhSaIEnt = $dhSaIEnt;
+        $this->dhSaiEnt = $dhSaiEnt;
         return $this;
     }
 
