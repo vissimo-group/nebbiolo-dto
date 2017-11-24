@@ -2,30 +2,30 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing AutXML
  */
-class AutXML extends AbstractJsonSerializable
+class AutXML extends BaseGallywixDataTransfer
 {
 
     /**
      * CNPJ Autorizado
      *
-     * @property string $cNPJ
+     * @property string $CNPJ
      */
-    protected $cNPJ = null;
+    protected $CNPJ = null;
 
     /**
      * CPF Autorizado
      *
-     * @property string $cPF
+     * @property string $CPF
      */
-    protected $cPF = null;
+    protected $CPF = null;
 
     /**
-     * Gets as cNPJ
+     * Gets as CNPJ
      *
      * CNPJ Autorizado
      *
@@ -33,25 +33,25 @@ class AutXML extends AbstractJsonSerializable
      */
     public function getCNPJ()
     {
-        return $this->cNPJ;
+        return $this->CNPJ;
     }
 
     /**
-     * Sets a new cNPJ
+     * Sets a new CNPJ
      *
      * CNPJ Autorizado
      *
-     * @param string $cNPJ
+     * @param string $CNPJ
      * @return self
      */
-    public function setCNPJ($cNPJ)
+    public function setCNPJ($CNPJ)
     {
-        $this->cNPJ = $cNPJ;
+        $this->CNPJ = $CNPJ;
         return $this;
     }
 
     /**
-     * Gets as cPF
+     * Gets as CPF
      *
      * CPF Autorizado
      *
@@ -59,20 +59,20 @@ class AutXML extends AbstractJsonSerializable
      */
     public function getCPF()
     {
-        return $this->cPF;
+        return $this->CPF;
     }
 
     /**
-     * Sets a new cPF
+     * Sets a new CPF
      *
      * CPF Autorizado
      *
-     * @param string $cPF
+     * @param string $CPF
      * @return self
      */
-    public function setCPF($cPF)
+    public function setCPF($CPF)
     {
-        $this->cPF = $cPF;
+        $this->CPF = $CPF;
         return $this;
     }
 

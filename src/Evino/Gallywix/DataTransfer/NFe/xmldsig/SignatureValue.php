@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\xmldsig;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing SignatureValue
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  *
  * XSD Type: SignatureValue
  */
-class SignatureValue extends AbstractJsonSerializable
+class SignatureValue extends BaseGallywixDataTransfer
 {
 
     /**

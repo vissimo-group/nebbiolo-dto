@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing Lacres
  */
-class Lacres extends AbstractJsonSerializable
+class Lacres extends BaseGallywixDataTransfer
 {
 
     /**

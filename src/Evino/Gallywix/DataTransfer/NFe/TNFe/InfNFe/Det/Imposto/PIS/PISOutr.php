@@ -2,21 +2,21 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing PISOutr
  */
-class PISOutr extends AbstractJsonSerializable
+class PISOutr extends BaseGallywixDataTransfer
 {
 
     /**
      * Código de Situação Tributária do PIS.
      * 99 - Outras Operações.
      *
-     * @property string $cST
+     * @property string $CST
      */
-    protected $cST = null;
+    protected $CST = null;
 
     /**
      * Valor da BC do PIS
@@ -54,7 +54,7 @@ class PISOutr extends AbstractJsonSerializable
     protected $vPIS = null;
 
     /**
-     * Gets as cST
+     * Gets as CST
      *
      * Código de Situação Tributária do PIS.
      * 99 - Outras Operações.
@@ -63,21 +63,21 @@ class PISOutr extends AbstractJsonSerializable
      */
     public function getCST()
     {
-        return $this->cST;
+        return $this->CST;
     }
 
     /**
-     * Sets a new cST
+     * Sets a new CST
      *
      * Código de Situação Tributária do PIS.
      * 99 - Outras Operações.
      *
-     * @param string $cST
+     * @param string $CST
      * @return self
      */
-    public function setCST($cST)
+    public function setCST($CST)
     {
-        $this->cST = $cST;
+        $this->CST = $CST;
         return $this;
     }
 

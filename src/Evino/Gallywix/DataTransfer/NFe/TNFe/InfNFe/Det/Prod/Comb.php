@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing Comb
  */
-class Comb extends AbstractJsonSerializable
+class Comb extends BaseGallywixDataTransfer
 {
 
     /**
@@ -87,18 +87,18 @@ class Comb extends AbstractJsonSerializable
     /**
      * Sigla da UF de Consumo
      *
-     * @property string $uFCons
+     * @property string $UFCons
      */
-    protected $uFCons = null;
+    protected $UFCons = null;
 
     /**
      * CIDE Combustíveis
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE
-     * $cIDE
+     * $CIDE
      */
-    protected $cIDE = null;
+    protected $CIDE = null;
 
     /**
      * Informações do grupo de "encerrante"
@@ -354,7 +354,7 @@ class Comb extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as uFCons
+     * Gets as UFCons
      *
      * Sigla da UF de Consumo
      *
@@ -362,25 +362,25 @@ class Comb extends AbstractJsonSerializable
      */
     public function getUFCons()
     {
-        return $this->uFCons;
+        return $this->UFCons;
     }
 
     /**
-     * Sets a new uFCons
+     * Sets a new UFCons
      *
      * Sigla da UF de Consumo
      *
-     * @param string $uFCons
+     * @param string $UFCons
      * @return self
      */
-    public function setUFCons($uFCons)
+    public function setUFCons($UFCons)
     {
-        $this->uFCons = $uFCons;
+        $this->UFCons = $UFCons;
         return $this;
     }
 
     /**
-     * Gets as cIDE
+     * Gets as CIDE
      *
      * CIDE Combustíveis
      *
@@ -389,22 +389,22 @@ class Comb extends AbstractJsonSerializable
      */
     public function getCIDE()
     {
-        return $this->cIDE;
+        return $this->CIDE;
     }
 
 	/**
-	 * Sets a new cIDE
+	 * Sets a new CIDE
 	 *
 	 * CIDE Combustíveis
 	 *
-	 * @param Comb\CIDE $cIDE
+	 * @param Comb\CIDE $CIDE
 	 * @return Comb
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE
-	 * $cIDE
+	 * $CIDE
 	 */
-    public function setCIDE(Comb\CIDE $cIDE)
+    public function setCIDE(Comb\CIDE $CIDE)
     {
-        $this->cIDE = $cIDE;
+        $this->CIDE = $CIDE;
         return $this;
     }
 

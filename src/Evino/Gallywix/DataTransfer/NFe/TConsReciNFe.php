@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TConsReciNFe
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo Pedido de Consulta do Recido do Lote de Notas Fiscais Eletrônicas
  * XSD Type: TConsReciNFe
  */
-class TConsReciNFe extends AbstractJsonSerializable
+class TConsReciNFe extends BaseGallywixDataTransfer
 {
 
     /**

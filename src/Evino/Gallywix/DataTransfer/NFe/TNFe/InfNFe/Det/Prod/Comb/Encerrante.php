@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing Encerrante
  */
-class Encerrante extends AbstractJsonSerializable
+class Encerrante extends BaseGallywixDataTransfer
 {
 
     /**

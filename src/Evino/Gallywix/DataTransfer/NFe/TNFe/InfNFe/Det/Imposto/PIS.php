@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing PIS
  */
-class PIS extends AbstractJsonSerializable
+class PIS extends BaseGallywixDataTransfer
 {
 
     /**
@@ -19,9 +19,9 @@ class PIS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq
-     * $pISAliq
+     * $PISAliq
      */
-    protected $pISAliq = null;
+    protected $PISAliq = null;
 
     /**
      * Código de Situação Tributária do PIS.
@@ -30,9 +30,9 @@ class PIS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde
-     * $pISQtde
+     * $PISQtde
      */
-    protected $pISQtde = null;
+    protected $PISQtde = null;
 
     /**
      * Código de Situação Tributária do PIS.
@@ -44,9 +44,9 @@ class PIS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT
-     * $pISNT
+     * $PISNT
      */
-    protected $pISNT = null;
+    protected $PISNT = null;
 
     /**
      * Código de Situação Tributária do PIS.
@@ -54,12 +54,12 @@ class PIS extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr
-     * $pISOutr
+     * $PISOutr
      */
-    protected $pISOutr = null;
+    protected $PISOutr = null;
 
     /**
-     * Gets as pISAliq
+     * Gets as PISAliq
      *
      * Código de Situação Tributária do PIS.
      *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
@@ -72,11 +72,11 @@ class PIS extends AbstractJsonSerializable
      */
     public function getPISAliq()
     {
-        return $this->pISAliq;
+        return $this->PISAliq;
     }
 
 	/**
-	 * Sets a new pISAliq
+	 * Sets a new PISAliq
 	 *
 	 * Código de Situação Tributária do PIS.
 	 *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
@@ -84,19 +84,19 @@ class PIS extends AbstractJsonSerializable
 	 * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
 	 * Diferenciada);
 	 *
-	 * @param PIS\PISAliq $pISAliq
+	 * @param PIS\PISAliq $PISAliq
 	 * @return PIS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq
-	 * $pISAliq
+	 * $PISAliq
 	 */
-    public function setPISAliq(PIS\PISAliq $pISAliq)
+    public function setPISAliq(PIS\PISAliq $PISAliq)
     {
-        $this->pISAliq = $pISAliq;
+        $this->PISAliq = $PISAliq;
         return $this;
     }
 
     /**
-     * Gets as pISQtde
+     * Gets as PISQtde
      *
      * Código de Situação Tributária do PIS.
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
@@ -107,29 +107,29 @@ class PIS extends AbstractJsonSerializable
      */
     public function getPISQtde()
     {
-        return $this->pISQtde;
+        return $this->PISQtde;
     }
 
 	/**
-	 * Sets a new pISQtde
+	 * Sets a new PISQtde
 	 *
 	 * Código de Situação Tributária do PIS.
 	 * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
 	 * por Unidade de Produto;
 	 *
-	 * @param PIS\PISQtde $pISQtde
+	 * @param PIS\PISQtde $PISQtde
 	 * @return PIS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde
-	 * $pISQtde
+	 * $PISQtde
 	 */
-    public function setPISQtde(PIS\PISQtde $pISQtde)
+    public function setPISQtde(PIS\PISQtde $PISQtde)
     {
-        $this->pISQtde = $pISQtde;
+        $this->PISQtde = $PISQtde;
         return $this;
     }
 
     /**
-     * Gets as pISNT
+     * Gets as PISNT
      *
      * Código de Situação Tributária do PIS.
      * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
@@ -143,11 +143,11 @@ class PIS extends AbstractJsonSerializable
      */
     public function getPISNT()
     {
-        return $this->pISNT;
+        return $this->PISNT;
     }
 
 	/**
-	 * Sets a new pISNT
+	 * Sets a new PISNT
 	 *
 	 * Código de Situação Tributária do PIS.
 	 * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
@@ -156,19 +156,19 @@ class PIS extends AbstractJsonSerializable
 	 * 08 - Operação Sem Incidência da contribuição;
 	 * 09 - Operação com suspensão da contribuição;
 	 *
-	 * @param PIS\PISNT $pISNT
+	 * @param PIS\PISNT $PISNT
 	 * @return PIS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT
-	 * $pISNT
+	 * $PISNT
 	 */
-    public function setPISNT(PIS\PISNT $pISNT)
+    public function setPISNT(PIS\PISNT $PISNT)
     {
-        $this->pISNT = $pISNT;
+        $this->PISNT = $PISNT;
         return $this;
     }
 
     /**
-     * Gets as pISOutr
+     * Gets as PISOutr
      *
      * Código de Situação Tributária do PIS.
      * 99 - Outras Operações.
@@ -178,23 +178,23 @@ class PIS extends AbstractJsonSerializable
      */
     public function getPISOutr()
     {
-        return $this->pISOutr;
+        return $this->PISOutr;
     }
 
 	/**
-	 * Sets a new pISOutr
+	 * Sets a new PISOutr
 	 *
 	 * Código de Situação Tributária do PIS.
 	 * 99 - Outras Operações.
 	 *
-	 * @param PIS\PISOutr $pISOutr
+	 * @param PIS\PISOutr $PISOutr
 	 * @return PIS
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr
-	 * $pISOutr
+	 * $PISOutr
 	 */
-    public function setPISOutr(PIS\PISOutr $pISOutr)
+    public function setPISOutr(PIS\PISOutr $PISOutr)
     {
-        $this->pISOutr = $pISOutr;
+        $this->PISOutr = $PISOutr;
         return $this;
     }
 

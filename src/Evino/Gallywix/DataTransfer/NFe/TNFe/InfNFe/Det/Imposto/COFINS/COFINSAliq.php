@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing COFINSAliq
  */
-class COFINSAliq extends AbstractJsonSerializable
+class COFINSAliq extends BaseGallywixDataTransfer
 {
 
     /**
@@ -17,9 +17,9 @@ class COFINSAliq extends AbstractJsonSerializable
      * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
      * Diferenciada);
      *
-     * @property string $cST
+     * @property string $CST
      */
-    protected $cST = null;
+    protected $CST = null;
 
     /**
      * Valor da BC do COFINS
@@ -43,7 +43,7 @@ class COFINSAliq extends AbstractJsonSerializable
     protected $vCOFINS = null;
 
     /**
-     * Gets as cST
+     * Gets as CST
      *
      * Código de Situação Tributária do COFINS.
      *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
@@ -55,11 +55,11 @@ class COFINSAliq extends AbstractJsonSerializable
      */
     public function getCST()
     {
-        return $this->cST;
+        return $this->CST;
     }
 
     /**
-     * Sets a new cST
+     * Sets a new CST
      *
      * Código de Situação Tributária do COFINS.
      *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
@@ -67,12 +67,12 @@ class COFINSAliq extends AbstractJsonSerializable
      * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
      * Diferenciada);
      *
-     * @param string $cST
+     * @param string $CST
      * @return self
      */
-    public function setCST($cST)
+    public function setCST($CST)
     {
-        $this->cST = $cST;
+        $this->CST = $CST;
         return $this;
     }
 

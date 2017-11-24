@@ -2,13 +2,13 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 use Evino\Gallywix\DataTransfer\Nfe\TLocal;
 
 /**
  * Class representing InfNFe
  */
-class InfNFe extends AbstractJsonSerializable
+class InfNFe extends BaseGallywixDataTransfer
 {
 
     /**

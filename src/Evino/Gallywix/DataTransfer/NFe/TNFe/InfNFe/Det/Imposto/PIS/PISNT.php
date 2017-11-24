@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing PISNT
  */
-class PISNT extends AbstractJsonSerializable
+class PISNT extends BaseGallywixDataTransfer
 {
 
     /**
@@ -19,12 +19,12 @@ class PISNT extends AbstractJsonSerializable
      * 08 - Operação Sem Incidência da contribuição;
      * 09 - Operação com suspensão da contribuição;
      *
-     * @property string $cST
+     * @property string $CST
      */
-    protected $cST = null;
+    protected $CST = null;
 
     /**
-     * Gets as cST
+     * Gets as CST
      *
      * Código de Situação Tributária do PIS.
      * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
@@ -38,11 +38,11 @@ class PISNT extends AbstractJsonSerializable
      */
     public function getCST()
     {
-        return $this->cST;
+        return $this->CST;
     }
 
     /**
-     * Sets a new cST
+     * Sets a new CST
      *
      * Código de Situação Tributária do PIS.
      * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
@@ -52,12 +52,12 @@ class PISNT extends AbstractJsonSerializable
      * 08 - Operação Sem Incidência da contribuição;
      * 09 - Operação com suspensão da contribuição;
      *
-     * @param string $cST
+     * @param string $CST
      * @return self
      */
-    public function setCST($cST)
+    public function setCST($CST)
     {
-        $this->cST = $cST;
+        $this->CST = $CST;
         return $this;
     }
 

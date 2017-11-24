@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing ImpostoDevol
  */
-class ImpostoDevol extends AbstractJsonSerializable
+class ImpostoDevol extends BaseGallywixDataTransfer
 {
 
     /**
@@ -21,9 +21,9 @@ class ImpostoDevol extends AbstractJsonSerializable
      * Informação de IPI devolvido
      *
      * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $iPI
+     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $IPI
      */
-    protected $iPI = null;
+    protected $IPI = null;
 
     /**
      * Gets as pDevol
@@ -52,7 +52,7 @@ class ImpostoDevol extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as iPI
+     * Gets as IPI
      *
      * Informação de IPI devolvido
      *
@@ -61,21 +61,21 @@ class ImpostoDevol extends AbstractJsonSerializable
      */
     public function getIPI()
     {
-        return $this->iPI;
+        return $this->IPI;
     }
 
 	/**
-	 * Sets a new iPI
+	 * Sets a new IPI
 	 *
 	 * Informação de IPI devolvido
 	 *
-	 * @param ImpostoDevol\IPI $iPI
+	 * @param ImpostoDevol\IPI $IPI
 	 * @return ImpostoDevol
-	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $iPI* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $iPI
+	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $IPI* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $IPI
 	 */
-    public function setIPI(ImpostoDevol\IPI $iPI)
+    public function setIPI(ImpostoDevol\IPI $IPI)
     {
-        $this->iPI = $iPI;
+        $this->IPI = $IPI;
         return $this;
     }
 

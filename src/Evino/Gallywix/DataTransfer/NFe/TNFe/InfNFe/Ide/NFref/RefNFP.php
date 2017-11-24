@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing RefNFP
  */
-class RefNFP extends AbstractJsonSerializable
+class RefNFP extends BaseGallywixDataTransfer
 {
 
     /**
@@ -28,23 +28,23 @@ class RefNFP extends AbstractJsonSerializable
     /**
      * CNPJ do emitente da NF de produtor
      *
-     * @property string $cNPJ
+     * @property string $CNPJ
      */
-    protected $cNPJ = null;
+    protected $CNPJ = null;
 
     /**
      * CPF do emitente da NF de produtor
      *
-     * @property string $cPF
+     * @property string $CPF
      */
-    protected $cPF = null;
+    protected $CPF = null;
 
     /**
      * IE do emitente da NF de Produtor
      *
-     * @property string $iE
+     * @property string $IE
      */
-    protected $iE = null;
+    protected $IE = null;
 
     /**
      * Código do modelo do Documento Fiscal - utilizar 04 para NF de produtor ou 01
@@ -123,7 +123,7 @@ class RefNFP extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cNPJ
+     * Gets as CNPJ
      *
      * CNPJ do emitente da NF de produtor
      *
@@ -131,25 +131,25 @@ class RefNFP extends AbstractJsonSerializable
      */
     public function getCNPJ()
     {
-        return $this->cNPJ;
+        return $this->CNPJ;
     }
 
     /**
-     * Sets a new cNPJ
+     * Sets a new CNPJ
      *
      * CNPJ do emitente da NF de produtor
      *
-     * @param string $cNPJ
+     * @param string $CNPJ
      * @return self
      */
-    public function setCNPJ($cNPJ)
+    public function setCNPJ($CNPJ)
     {
-        $this->cNPJ = $cNPJ;
+        $this->CNPJ = $CNPJ;
         return $this;
     }
 
     /**
-     * Gets as cPF
+     * Gets as CPF
      *
      * CPF do emitente da NF de produtor
      *
@@ -157,25 +157,25 @@ class RefNFP extends AbstractJsonSerializable
      */
     public function getCPF()
     {
-        return $this->cPF;
+        return $this->CPF;
     }
 
     /**
-     * Sets a new cPF
+     * Sets a new CPF
      *
      * CPF do emitente da NF de produtor
      *
-     * @param string $cPF
+     * @param string $CPF
      * @return self
      */
-    public function setCPF($cPF)
+    public function setCPF($CPF)
     {
-        $this->cPF = $cPF;
+        $this->CPF = $CPF;
         return $this;
     }
 
     /**
-     * Gets as iE
+     * Gets as IE
      *
      * IE do emitente da NF de Produtor
      *
@@ -183,20 +183,20 @@ class RefNFP extends AbstractJsonSerializable
      */
     public function getIE()
     {
-        return $this->iE;
+        return $this->IE;
     }
 
     /**
-     * Sets a new iE
+     * Sets a new IE
      *
      * IE do emitente da NF de Produtor
      *
-     * @param string $iE
+     * @param string $IE
      * @return self
      */
-    public function setIE($iE)
+    public function setIE($IE)
     {
-        $this->iE = $iE;
+        $this->IE = $IE;
         return $this;
     }
 

@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Pag\DetPag;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing Card
  */
-class Card extends AbstractJsonSerializable
+class Card extends BaseGallywixDataTransfer
 {
 
     /**
@@ -25,9 +25,9 @@ class Card extends AbstractJsonSerializable
     /**
      * CNPJ da credenciadora de cartão de crédito/débito
      *
-     * @property string $cNPJ
+     * @property string $CNPJ
      */
-    protected $cNPJ = null;
+    protected $CNPJ = null;
 
     /**
      * Bandeira da operadora de cartão de crédito/débito:01–Visa; 02–Mastercard;
@@ -82,7 +82,7 @@ class Card extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cNPJ
+     * Gets as CNPJ
      *
      * CNPJ da credenciadora de cartão de crédito/débito
      *
@@ -90,20 +90,20 @@ class Card extends AbstractJsonSerializable
      */
     public function getCNPJ()
     {
-        return $this->cNPJ;
+        return $this->CNPJ;
     }
 
     /**
-     * Sets a new cNPJ
+     * Sets a new CNPJ
      *
      * CNPJ da credenciadora de cartão de crédito/débito
      *
-     * @param string $cNPJ
+     * @param string $CNPJ
      * @return self
      */
-    public function setCNPJ($cNPJ)
+    public function setCNPJ($CNPJ)
     {
-        $this->cNPJ = $cNPJ;
+        $this->CNPJ = $CNPJ;
         return $this;
     }
 

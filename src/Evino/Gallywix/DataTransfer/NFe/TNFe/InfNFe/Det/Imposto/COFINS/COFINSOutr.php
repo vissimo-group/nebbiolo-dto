@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing COFINSOutr
  */
-class COFINSOutr extends AbstractJsonSerializable
+class COFINSOutr extends BaseGallywixDataTransfer
 {
 
     /**
@@ -51,9 +51,9 @@ class COFINSOutr extends AbstractJsonSerializable
      * 98 - Outras Operações de Entrada
      * 99 - Outras Operações.
      *
-     * @property string $cST
+     * @property string $CST
      */
-    protected $cST = null;
+    protected $CST = null;
 
     /**
      * Valor da BC do COFINS
@@ -91,7 +91,7 @@ class COFINSOutr extends AbstractJsonSerializable
     protected $vCOFINS = null;
 
     /**
-     * Gets as cST
+     * Gets as CST
      *
      * Código de Situação Tributária do COFINS:
      * 49 - Outras Operações de Saída
@@ -137,11 +137,11 @@ class COFINSOutr extends AbstractJsonSerializable
      */
     public function getCST()
     {
-        return $this->cST;
+        return $this->CST;
     }
 
     /**
-     * Sets a new cST
+     * Sets a new CST
      *
      * Código de Situação Tributária do COFINS:
      * 49 - Outras Operações de Saída
@@ -183,12 +183,12 @@ class COFINSOutr extends AbstractJsonSerializable
      * 98 - Outras Operações de Entrada
      * 99 - Outras Operações.
      *
-     * @param string $cST
+     * @param string $CST
      * @return self
      */
-    public function setCST($cST)
+    public function setCST($CST)
     {
-        $this->cST = $cST;
+        $this->CST = $CST;
         return $this;
     }
 

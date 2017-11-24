@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TRetEnviNFe
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo Retorno do Pedido de Autorização da Nota Fiscal Eletrônica
  * XSD Type: TRetEnviNFe
  */
-class TRetEnviNFe extends AbstractJsonSerializable
+class TRetEnviNFe extends BaseGallywixDataTransfer
 {
 
     /**

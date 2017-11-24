@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing ICMS30
  */
-class ICMS30 extends AbstractJsonSerializable
+class ICMS30 extends BaseGallywixDataTransfer
 {
 
     /**
@@ -24,9 +24,9 @@ class ICMS30 extends AbstractJsonSerializable
      * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
      * tributária
      *
-     * @property string $cST
+     * @property string $CST
      */
-    protected $cST = null;
+    protected $CST = null;
 
     /**
      * Modalidade de determinação da BC do ICMS ST:
@@ -143,7 +143,7 @@ class ICMS30 extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cST
+     * Gets as CST
      *
      * Tributção pelo ICMS
      * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
@@ -153,22 +153,22 @@ class ICMS30 extends AbstractJsonSerializable
      */
     public function getCST()
     {
-        return $this->cST;
+        return $this->CST;
     }
 
     /**
-     * Sets a new cST
+     * Sets a new CST
      *
      * Tributção pelo ICMS
      * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
      * tributária
      *
-     * @param string $cST
+     * @param string $CST
      * @return self
      */
-    public function setCST($cST)
+    public function setCST($CST)
     {
-        $this->cST = $cST;
+        $this->CST = $CST;
         return $this;
     }
 

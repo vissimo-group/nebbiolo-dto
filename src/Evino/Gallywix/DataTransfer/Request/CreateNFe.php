@@ -2,10 +2,10 @@
 
 namespace Evino\Gallywix\DataTransfer\Request;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 use Evino\Gallywix\DataTransfer\Nfe\NFe;
 
-class CreateNFe extends AbstractJsonSerializable
+class CreateNFe extends BaseGallywixDataTransfer
 {
 
     /**

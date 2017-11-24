@@ -2,20 +2,20 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing Exporta
  */
-class Exporta extends AbstractJsonSerializable
+class Exporta extends BaseGallywixDataTransfer
 {
 
     /**
      * Sigla da UF de Embarque ou de transposição de fronteira
      *
-     * @property string $uFSaidaPais
+     * @property string $UFSaidaPais
      */
-    protected $uFSaidaPais = null;
+    protected $UFSaidaPais = null;
 
     /**
      * Local de Embarque ou de transposição de fronteira
@@ -32,7 +32,7 @@ class Exporta extends AbstractJsonSerializable
     protected $xLocDespacho = null;
 
     /**
-     * Gets as uFSaidaPais
+     * Gets as UFSaidaPais
      *
      * Sigla da UF de Embarque ou de transposição de fronteira
      *
@@ -40,20 +40,20 @@ class Exporta extends AbstractJsonSerializable
      */
     public function getUFSaidaPais()
     {
-        return $this->uFSaidaPais;
+        return $this->UFSaidaPais;
     }
 
     /**
-     * Sets a new uFSaidaPais
+     * Sets a new UFSaidaPais
      *
      * Sigla da UF de Embarque ou de transposição de fronteira
      *
-     * @param string $uFSaidaPais
+     * @param string $UFSaidaPais
      * @return self
      */
-    public function setUFSaidaPais($uFSaidaPais)
+    public function setUFSaidaPais($UFSaidaPais)
     {
-        $this->uFSaidaPais = $uFSaidaPais;
+        $this->UFSaidaPais = $UFSaidaPais;
         return $this;
     }
 

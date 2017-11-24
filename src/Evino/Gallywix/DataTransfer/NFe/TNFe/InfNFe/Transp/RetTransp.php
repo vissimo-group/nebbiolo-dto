@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing RetTransp
  */
-class RetTransp extends AbstractJsonSerializable
+class RetTransp extends BaseGallywixDataTransfer
 {
 
     /**
@@ -41,9 +41,9 @@ class RetTransp extends AbstractJsonSerializable
     /**
      * Código Fiscal de Operações e Prestações
      *
-     * @property string $cFOP
+     * @property string $CFOP
      */
-    protected $cFOP = null;
+    protected $CFOP = null;
 
     /**
      * Código do Município de Ocorrência do Fato Gerador (utilizar a tabela do IBGE)
@@ -157,7 +157,7 @@ class RetTransp extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cFOP
+     * Gets as CFOP
      *
      * Código Fiscal de Operações e Prestações
      *
@@ -165,20 +165,20 @@ class RetTransp extends AbstractJsonSerializable
      */
     public function getCFOP()
     {
-        return $this->cFOP;
+        return $this->CFOP;
     }
 
     /**
-     * Sets a new cFOP
+     * Sets a new CFOP
      *
      * Código Fiscal de Operações e Prestações
      *
-     * @param string $cFOP
+     * @param string $CFOP
      * @return self
      */
-    public function setCFOP($cFOP)
+    public function setCFOP($CFOP)
     {
-        $this->cFOP = $cFOP;
+        $this->CFOP = $CFOP;
         return $this;
     }
 

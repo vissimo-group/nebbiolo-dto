@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing ICMSPart
  */
-class ICMSPart extends AbstractJsonSerializable
+class ICMSPart extends BaseGallywixDataTransfer
 {
 
     /**
@@ -24,9 +24,9 @@ class ICMSPart extends AbstractJsonSerializable
      * 10 - Tributada e com cobrança do ICMS por substituição tributária;
      * 90 – Outros.
      *
-     * @property string $cST
+     * @property string $CST
      */
-    protected $cST = null;
+    protected $CST = null;
 
     /**
      * Modalidade de determinação da BC do ICMS:
@@ -126,9 +126,9 @@ class ICMSPart extends AbstractJsonSerializable
     /**
      * Sigla da UF para qual é devido o ICMS ST da operação.
      *
-     * @property string $uFST
+     * @property string $UFST
      */
-    protected $uFST = null;
+    protected $UFST = null;
 
     /**
      * Gets as orig
@@ -161,7 +161,7 @@ class ICMSPart extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as cST
+     * Gets as CST
      *
      * Tributação pelo ICMS
      * 10 - Tributada e com cobrança do ICMS por substituição tributária;
@@ -171,22 +171,22 @@ class ICMSPart extends AbstractJsonSerializable
      */
     public function getCST()
     {
-        return $this->cST;
+        return $this->CST;
     }
 
     /**
-     * Sets a new cST
+     * Sets a new CST
      *
      * Tributação pelo ICMS
      * 10 - Tributada e com cobrança do ICMS por substituição tributária;
      * 90 – Outros.
      *
-     * @param string $cST
+     * @param string $CST
      * @return self
      */
-    public function setCST($cST)
+    public function setCST($CST)
     {
-        $this->cST = $cST;
+        $this->CST = $CST;
         return $this;
     }
 
@@ -525,7 +525,7 @@ class ICMSPart extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as uFST
+     * Gets as UFST
      *
      * Sigla da UF para qual é devido o ICMS ST da operação.
      *
@@ -533,20 +533,20 @@ class ICMSPart extends AbstractJsonSerializable
      */
     public function getUFST()
     {
-        return $this->uFST;
+        return $this->UFST;
     }
 
     /**
-     * Sets a new uFST
+     * Sets a new UFST
      *
      * Sigla da UF para qual é devido o ICMS ST da operação.
      *
-     * @param string $uFST
+     * @param string $UFST
      * @return self
      */
-    public function setUFST($uFST)
+    public function setUFST($UFST)
     {
-        $this->uFST = $uFST;
+        $this->UFST = $UFST;
         return $this;
     }
 

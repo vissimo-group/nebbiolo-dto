@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TLocal
@@ -10,22 +10,22 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo Dados do Local de Retirada ou Entrega // 24/10/08 - tamanho mínimo // v2.0
  * XSD Type: TLocal
  */
-class TLocal extends AbstractJsonSerializable
+class TLocal extends BaseGallywixDataTransfer
 {
 
     /**
      * CNPJ
      *
-     * @property string $cNPJ
+     * @property string $CNPJ
      */
-    protected $cNPJ = null;
+    protected $CNPJ = null;
 
     /**
      * CPF (v2.0)
      *
-     * @property string $cPF
+     * @property string $CPF
      */
-    protected $cPF = null;
+    protected $CPF = null;
 
     /**
      * Logradouro
@@ -72,12 +72,12 @@ class TLocal extends AbstractJsonSerializable
     /**
      * Sigla da UF
      *
-     * @property string $uF
+     * @property string $UF
      */
-    protected $uF = null;
+    protected $UF = null;
 
     /**
-     * Gets as cNPJ
+     * Gets as CNPJ
      *
      * CNPJ
      *
@@ -85,25 +85,25 @@ class TLocal extends AbstractJsonSerializable
      */
     public function getCNPJ()
     {
-        return $this->cNPJ;
+        return $this->CNPJ;
     }
 
     /**
-     * Sets a new cNPJ
+     * Sets a new CNPJ
      *
      * CNPJ
      *
-     * @param string $cNPJ
+     * @param string $CNPJ
      * @return self
      */
-    public function setCNPJ($cNPJ)
+    public function setCNPJ($CNPJ)
     {
-        $this->cNPJ = $cNPJ;
+        $this->CNPJ = $CNPJ;
         return $this;
     }
 
     /**
-     * Gets as cPF
+     * Gets as CPF
      *
      * CPF (v2.0)
      *
@@ -111,20 +111,20 @@ class TLocal extends AbstractJsonSerializable
      */
     public function getCPF()
     {
-        return $this->cPF;
+        return $this->CPF;
     }
 
     /**
-     * Sets a new cPF
+     * Sets a new CPF
      *
      * CPF (v2.0)
      *
-     * @param string $cPF
+     * @param string $CPF
      * @return self
      */
-    public function setCPF($cPF)
+    public function setCPF($CPF)
     {
-        $this->cPF = $cPF;
+        $this->CPF = $CPF;
         return $this;
     }
 
@@ -285,7 +285,7 @@ class TLocal extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as uF
+     * Gets as UF
      *
      * Sigla da UF
      *
@@ -293,20 +293,20 @@ class TLocal extends AbstractJsonSerializable
      */
     public function getUF()
     {
-        return $this->uF;
+        return $this->UF;
     }
 
     /**
-     * Sets a new uF
+     * Sets a new UF
      *
      * Sigla da UF
      *
-     * @param string $uF
+     * @param string $UF
      * @return self
      */
-    public function setUF($uF)
+    public function setUF($UF)
     {
-        $this->uF = $uF;
+        $this->UF = $UF;
         return $this;
     }
 

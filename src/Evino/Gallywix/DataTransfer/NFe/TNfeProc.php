@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TNfeProc
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo da NF-e processada
  * XSD Type: TNfeProc
  */
-class TNfeProc extends AbstractJsonSerializable
+class TNfeProc extends BaseGallywixDataTransfer
 {
 
     /**
@@ -19,9 +19,9 @@ class TNfeProc extends AbstractJsonSerializable
     protected $versao = null;
 
     /**
-     * @property TNFe $nFe
+     * @property TNFe $NFe
      */
-    protected $nFe = null;
+    protected $NFe = null;
 
     /**
      * @property TProtNFe $protNFe
@@ -51,24 +51,24 @@ class TNfeProc extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as nFe
+     * Gets as NFe
      *
      * @return TNFe
      */
     public function getNFe()
     {
-        return $this->nFe;
+        return $this->NFe;
     }
 
     /**
-     * Sets a new nFe
+     * Sets a new NFe
      *
-     * @param TNFe $nFe
+     * @param TNFe $NFe
      * @return self
      */
-    public function setNFe(TNFe $nFe)
+    public function setNFe(TNFe $NFe)
     {
-        $this->nFe = $nFe;
+        $this->NFe = $NFe;
         return $this;
     }
 

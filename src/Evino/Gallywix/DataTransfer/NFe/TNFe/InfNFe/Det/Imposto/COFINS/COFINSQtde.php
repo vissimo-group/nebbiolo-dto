@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing COFINSQtde
  */
-class COFINSQtde extends AbstractJsonSerializable
+class COFINSQtde extends BaseGallywixDataTransfer
 {
 
     /**
@@ -15,9 +15,9 @@ class COFINSQtde extends AbstractJsonSerializable
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
      * por Unidade de Produto;
      *
-     * @property string $cST
+     * @property string $CST
      */
-    protected $cST = null;
+    protected $CST = null;
 
     /**
      * Quantidade Vendida (NT2011/004)
@@ -41,7 +41,7 @@ class COFINSQtde extends AbstractJsonSerializable
     protected $vCOFINS = null;
 
     /**
-     * Gets as cST
+     * Gets as CST
      *
      * Código de Situação Tributária do COFINS.
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
@@ -51,22 +51,22 @@ class COFINSQtde extends AbstractJsonSerializable
      */
     public function getCST()
     {
-        return $this->cST;
+        return $this->CST;
     }
 
     /**
-     * Sets a new cST
+     * Sets a new CST
      *
      * Código de Situação Tributária do COFINS.
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
      * por Unidade de Produto;
      *
-     * @param string $cST
+     * @param string $CST
      * @return self
      */
-    public function setCST($cST)
+    public function setCST($CST)
     {
-        $this->cST = $cST;
+        $this->CST = $CST;
         return $this;
     }
 

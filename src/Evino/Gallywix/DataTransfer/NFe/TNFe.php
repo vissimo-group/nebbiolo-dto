@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TNFe
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo Nota Fiscal Eletrônica
  * XSD Type: TNFe
  */
-class TNFe extends AbstractJsonSerializable
+class TNFe extends BaseGallywixDataTransfer
 {
 
     /**

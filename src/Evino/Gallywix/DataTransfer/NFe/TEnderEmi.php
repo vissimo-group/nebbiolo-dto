@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TEnderEmi
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo Dados do Endereço do Emitente // 24/10/08 - desmembrado / tamanho mínimo
  * XSD Type: TEnderEmi
  */
-class TEnderEmi extends AbstractJsonSerializable
+class TEnderEmi extends BaseGallywixDataTransfer
 {
 
     /**
@@ -58,16 +58,16 @@ class TEnderEmi extends AbstractJsonSerializable
     /**
      * Sigla da UF
      *
-     * @property string $uF
+     * @property string $UF
      */
-    protected $uF = null;
+    protected $UF = null;
 
     /**
      * CEP - NT 2011/004
      *
-     * @property string $cEP
+     * @property string $CEP
      */
-    protected $cEP = null;
+    protected $CEP = null;
 
     /**
      * Código do país
@@ -247,7 +247,7 @@ class TEnderEmi extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as uF
+     * Gets as UF
      *
      * Sigla da UF
      *
@@ -255,25 +255,25 @@ class TEnderEmi extends AbstractJsonSerializable
      */
     public function getUF()
     {
-        return $this->uF;
+        return $this->UF;
     }
 
     /**
-     * Sets a new uF
+     * Sets a new UF
      *
      * Sigla da UF
      *
-     * @param string $uF
+     * @param string $UF
      * @return self
      */
-    public function setUF($uF)
+    public function setUF($UF)
     {
-        $this->uF = $uF;
+        $this->UF = $UF;
         return $this;
     }
 
     /**
-     * Gets as cEP
+     * Gets as CEP
      *
      * CEP - NT 2011/004
      *
@@ -281,20 +281,20 @@ class TEnderEmi extends AbstractJsonSerializable
      */
     public function getCEP()
     {
-        return $this->cEP;
+        return $this->CEP;
     }
 
     /**
-     * Sets a new cEP
+     * Sets a new CEP
      *
      * CEP - NT 2011/004
      *
-     * @param string $cEP
+     * @param string $CEP
      * @return self
      */
-    public function setCEP($cEP)
+    public function setCEP($CEP)
     {
-        $this->cEP = $cEP;
+        $this->CEP = $CEP;
         return $this;
     }
 

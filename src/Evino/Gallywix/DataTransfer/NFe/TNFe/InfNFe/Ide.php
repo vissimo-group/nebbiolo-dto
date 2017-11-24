@@ -2,12 +2,12 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing Ide
  */
-class Ide extends AbstractJsonSerializable
+class Ide extends BaseGallywixDataTransfer
 {
 
     /**
@@ -409,7 +409,7 @@ class Ide extends AbstractJsonSerializable
      *
      * @return string
      */
-    public function getDhSaiEnt()
+    public function getDhSaIEnt()
     {
         return $this->dhSaiEnt;
     }
@@ -423,7 +423,7 @@ class Ide extends AbstractJsonSerializable
      * @param string $dhSaiEnt
      * @return self
      */
-    public function setDhSaiEnt($dhSaiEnt)
+    public function setDhSaIEnt($dhSaiEnt)
     {
         $this->dhSaiEnt = $dhSaiEnt;
         return $this;

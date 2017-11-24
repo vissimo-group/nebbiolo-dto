@@ -2,27 +2,27 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing Transporta
  */
-class Transporta extends AbstractJsonSerializable
+class Transporta extends BaseGallywixDataTransfer
 {
 
     /**
      * CNPJ do transportador
      *
-     * @property string $cNPJ
+     * @property string $CNPJ
      */
-    protected $cNPJ = null;
+    protected $CNPJ = null;
 
     /**
      * CPF do transportador
      *
-     * @property string $cPF
+     * @property string $CPF
      */
-    protected $cPF = null;
+    protected $CPF = null;
 
     /**
      * Razão Social ou nome do transportador
@@ -34,9 +34,9 @@ class Transporta extends AbstractJsonSerializable
     /**
      * Inscrição Estadual (v2.0)
      *
-     * @property string $iE
+     * @property string $IE
      */
-    protected $iE = null;
+    protected $IE = null;
 
     /**
      * Endereço completo
@@ -55,12 +55,12 @@ class Transporta extends AbstractJsonSerializable
     /**
      * Sigla da UF
      *
-     * @property string $uF
+     * @property string $UF
      */
-    protected $uF = null;
+    protected $UF = null;
 
     /**
-     * Gets as cNPJ
+     * Gets as CNPJ
      *
      * CNPJ do transportador
      *
@@ -68,25 +68,25 @@ class Transporta extends AbstractJsonSerializable
      */
     public function getCNPJ()
     {
-        return $this->cNPJ;
+        return $this->CNPJ;
     }
 
     /**
-     * Sets a new cNPJ
+     * Sets a new CNPJ
      *
      * CNPJ do transportador
      *
-     * @param string $cNPJ
+     * @param string $CNPJ
      * @return self
      */
-    public function setCNPJ($cNPJ)
+    public function setCNPJ($CNPJ)
     {
-        $this->cNPJ = $cNPJ;
+        $this->CNPJ = $CNPJ;
         return $this;
     }
 
     /**
-     * Gets as cPF
+     * Gets as CPF
      *
      * CPF do transportador
      *
@@ -94,20 +94,20 @@ class Transporta extends AbstractJsonSerializable
      */
     public function getCPF()
     {
-        return $this->cPF;
+        return $this->CPF;
     }
 
     /**
-     * Sets a new cPF
+     * Sets a new CPF
      *
      * CPF do transportador
      *
-     * @param string $cPF
+     * @param string $CPF
      * @return self
      */
-    public function setCPF($cPF)
+    public function setCPF($CPF)
     {
-        $this->cPF = $cPF;
+        $this->CPF = $CPF;
         return $this;
     }
 
@@ -138,7 +138,7 @@ class Transporta extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as iE
+     * Gets as IE
      *
      * Inscrição Estadual (v2.0)
      *
@@ -146,20 +146,20 @@ class Transporta extends AbstractJsonSerializable
      */
     public function getIE()
     {
-        return $this->iE;
+        return $this->IE;
     }
 
     /**
-     * Sets a new iE
+     * Sets a new IE
      *
      * Inscrição Estadual (v2.0)
      *
-     * @param string $iE
+     * @param string $IE
      * @return self
      */
-    public function setIE($iE)
+    public function setIE($IE)
     {
-        $this->iE = $iE;
+        $this->IE = $IE;
         return $this;
     }
 
@@ -216,7 +216,7 @@ class Transporta extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as uF
+     * Gets as UF
      *
      * Sigla da UF
      *
@@ -224,20 +224,20 @@ class Transporta extends AbstractJsonSerializable
      */
     public function getUF()
     {
-        return $this->uF;
+        return $this->UF;
     }
 
     /**
-     * Sets a new uF
+     * Sets a new UF
      *
      * Sigla da UF
      *
-     * @param string $uF
+     * @param string $UF
      * @return self
      */
-    public function setUF($uF)
+    public function setUF($UF)
     {
-        $this->uF = $uF;
+        $this->UF = $UF;
         return $this;
     }
 

@@ -2,7 +2,7 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 
 /**
  * Class representing TVeiculo
@@ -10,7 +10,7 @@ use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
  * Tipo Dados do Veículo
  * XSD Type: TVeiculo
  */
-class TVeiculo extends AbstractJsonSerializable
+class TVeiculo extends BaseGallywixDataTransfer
 {
 
     /**
@@ -23,9 +23,9 @@ class TVeiculo extends AbstractJsonSerializable
     /**
      * Sigla da UF
      *
-     * @property string $uF
+     * @property string $UF
      */
-    protected $uF = null;
+    protected $UF = null;
 
     /**
      * Registro Nacional de Transportador de Carga (ANTT)
@@ -61,7 +61,7 @@ class TVeiculo extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as uF
+     * Gets as UF
      *
      * Sigla da UF
      *
@@ -69,20 +69,20 @@ class TVeiculo extends AbstractJsonSerializable
      */
     public function getUF()
     {
-        return $this->uF;
+        return $this->UF;
     }
 
     /**
-     * Sets a new uF
+     * Sets a new UF
      *
      * Sigla da UF
      *
-     * @param string $uF
+     * @param string $UF
      * @return self
      */
-    public function setUF($uF)
+    public function setUF($UF)
     {
-        $this->uF = $uF;
+        $this->UF = $UF;
         return $this;
     }
 

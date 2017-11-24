@@ -2,28 +2,28 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 use Evino\Gallywix\DataTransfer\Nfe\TEndereco;
 
 /**
  * Class representing Dest
  */
-class Dest extends AbstractJsonSerializable
+class Dest extends BaseGallywixDataTransfer
 {
 
     /**
      * Número do CNPJ
      *
-     * @property string $cNPJ
+     * @property string $CNPJ
      */
-    protected $cNPJ = null;
+    protected $CNPJ = null;
 
     /**
      * Número do CPF
      *
-     * @property string $cPF
+     * @property string $CPF
      */
-    protected $cPF = null;
+    protected $CPF = null;
 
     /**
      * Identificador do destinatário, em caso de comprador estrangeiro
@@ -59,9 +59,9 @@ class Dest extends AbstractJsonSerializable
     /**
      * Inscrição Estadual (obrigatório nas operações com contribuintes do ICMS)
      *
-     * @property string $iE
+     * @property string $IE
      */
-    protected $iE = null;
+    protected $IE = null;
 
     /**
      * Inscrição na SUFRAMA (Obrigatório nas operações com as áreas com
@@ -75,9 +75,9 @@ class Dest extends AbstractJsonSerializable
     /**
      * Inscrição Municipal do tomador do serviço
      *
-     * @property string $iM
+     * @property string $IM
      */
-    protected $iM = null;
+    protected $IM = null;
 
     /**
      * Informar o e-mail do destinatário. O campo pode ser utilizado para informar o
@@ -89,7 +89,7 @@ class Dest extends AbstractJsonSerializable
     protected $email = null;
 
     /**
-     * Gets as cNPJ
+     * Gets as CNPJ
      *
      * Número do CNPJ
      *
@@ -97,25 +97,25 @@ class Dest extends AbstractJsonSerializable
      */
     public function getCNPJ()
     {
-        return $this->cNPJ;
+        return $this->CNPJ;
     }
 
     /**
-     * Sets a new cNPJ
+     * Sets a new CNPJ
      *
      * Número do CNPJ
      *
-     * @param string $cNPJ
+     * @param string $CNPJ
      * @return self
      */
-    public function setCNPJ($cNPJ)
+    public function setCNPJ($CNPJ)
     {
-        $this->cNPJ = $cNPJ;
+        $this->CNPJ = $CNPJ;
         return $this;
     }
 
     /**
-     * Gets as cPF
+     * Gets as CPF
      *
      * Número do CPF
      *
@@ -123,20 +123,20 @@ class Dest extends AbstractJsonSerializable
      */
     public function getCPF()
     {
-        return $this->cPF;
+        return $this->CPF;
     }
 
     /**
-     * Sets a new cPF
+     * Sets a new CPF
      *
      * Número do CPF
      *
-     * @param string $cPF
+     * @param string $CPF
      * @return self
      */
-    public function setCPF($cPF)
+    public function setCPF($CPF)
     {
-        $this->cPF = $cPF;
+        $this->CPF = $CPF;
         return $this;
     }
 
@@ -251,7 +251,7 @@ class Dest extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as iE
+     * Gets as IE
      *
      * Inscrição Estadual (obrigatório nas operações com contribuintes do ICMS)
      *
@@ -259,20 +259,20 @@ class Dest extends AbstractJsonSerializable
      */
     public function getIE()
     {
-        return $this->iE;
+        return $this->IE;
     }
 
     /**
-     * Sets a new iE
+     * Sets a new IE
      *
      * Inscrição Estadual (obrigatório nas operações com contribuintes do ICMS)
      *
-     * @param string $iE
+     * @param string $IE
      * @return self
      */
-    public function setIE($iE)
+    public function setIE($IE)
     {
-        $this->iE = $iE;
+        $this->IE = $IE;
         return $this;
     }
 
@@ -307,7 +307,7 @@ class Dest extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as iM
+     * Gets as IM
      *
      * Inscrição Municipal do tomador do serviço
      *
@@ -315,20 +315,20 @@ class Dest extends AbstractJsonSerializable
      */
     public function getIM()
     {
-        return $this->iM;
+        return $this->IM;
     }
 
     /**
-     * Sets a new iM
+     * Sets a new IM
      *
      * Inscrição Municipal do tomador do serviço
      *
-     * @param string $iM
+     * @param string $IM
      * @return self
      */
-    public function setIM($iM)
+    public function setIM($IM)
     {
-        $this->iM = $iM;
+        $this->IM = $IM;
         return $this;
     }
 

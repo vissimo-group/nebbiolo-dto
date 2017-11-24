@@ -2,13 +2,13 @@
 
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det;
 
-use Evino\Gallywix\DataTransfer\Base\AbstractJsonSerializable;
+use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 use Evino\Gallywix\DataTransfer\Nfe\TIpi;
 
 /**
  * Class representing Imposto
  */
-class Imposto extends AbstractJsonSerializable
+class Imposto extends BaseGallywixDataTransfer
 {
 
     /**
@@ -22,54 +22,54 @@ class Imposto extends AbstractJsonSerializable
      * Dados do ICMS Normal e ST
      *
      * @property Imposto\ICMS
-     * $iCMS
+     * $ICMS
      */
-    protected $iCMS = null;
+    protected $ICMS = null;
 
     /**
-     * @property TIpi $iPI
+     * @property TIpi $IPI
      */
-    protected $iPI = null;
+    protected $IPI = null;
 
     /**
      * Dados do Imposto de Importação
      *
      * @property Imposto\II
-     * $iI
+     * $II
      */
-    protected $iI = null;
+    protected $II = null;
 
     /**
      * ISSQN
      *
      * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ISSQN $iSSQN
+     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ISSQN $ISSQN
      */
-    protected $iSSQN = null;
+    protected $ISSQN = null;
 
     /**
      * Dados do PIS
      *
      * @property Imposto\PIS
-     * $pIS
+     * $PIS
      */
-    protected $pIS = null;
+    protected $PIS = null;
 
     /**
      * Dados do PIS Substituição Tributária
      *
      * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PISST $pISST
+     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PISST $PISST
      */
-    protected $pISST = null;
+    protected $PISST = null;
 
     /**
      * Dados do COFINS
      *
      * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS $cOFINS
+     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS $COFINS
      */
-    protected $cOFINS = null;
+    protected $COFINS = null;
 
     /**
      * Dados do COFINS da
@@ -77,9 +77,9 @@ class Imposto extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST
-     * $cOFINSST
+     * $COFINSST
      */
-    protected $cOFINSST = null;
+    protected $COFINSST = null;
 
     /**
      * Grupo a ser informado nas vendas interestarduais para consumidor final, não
@@ -87,9 +87,9 @@ class Imposto extends AbstractJsonSerializable
      *
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest
-     * $iCMSUFDest
+     * $ICMSUFDest
      */
-    protected $iCMSUFDest = null;
+    protected $ICMSUFDest = null;
 
     /**
      * Gets as vTotTrib
@@ -118,7 +118,7 @@ class Imposto extends AbstractJsonSerializable
     }
 
     /**
-     * Gets as iCMS
+     * Gets as ICMS
      *
      * Dados do ICMS Normal e ST
      *
@@ -126,48 +126,48 @@ class Imposto extends AbstractJsonSerializable
      */
     public function getICMS()
     {
-        return $this->iCMS;
+        return $this->ICMS;
     }
 
     /**
-     * Sets a new iCMS
+     * Sets a new ICMS
      *
      * Dados do ICMS Normal e ST
      *
      * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS
-     * $iCMS
+     * $ICMS
      * @return self
      */
-    public function setICMS(Imposto\ICMS $iCMS)
+    public function setICMS(Imposto\ICMS $ICMS)
     {
-        $this->iCMS = $iCMS;
+        $this->ICMS = $ICMS;
         return $this;
     }
 
     /**
-     * Gets as iPI
+     * Gets as IPI
      *
      * @return TIpi
      */
     public function getIPI()
     {
-        return $this->iPI;
+        return $this->IPI;
     }
 
     /**
-     * Sets a new iPI
+     * Sets a new IPI
      *
-     * @param TIpi $iPI
+     * @param TIpi $IPI
      * @return self
      */
-    public function setIPI(TIpi $iPI)
+    public function setIPI(TIpi $IPI)
     {
-        $this->iPI = $iPI;
+        $this->IPI = $IPI;
         return $this;
     }
 
     /**
-     * Gets as iI
+     * Gets as II
      *
      * Dados do Imposto de Importação
      *
@@ -175,25 +175,25 @@ class Imposto extends AbstractJsonSerializable
      */
     public function getII()
     {
-        return $this->iI;
+        return $this->II;
     }
 
     /**
-     * Sets a new iI
+     * Sets a new II
      *
      * Dados do Imposto de Importação
      *
-     * @param Imposto\II $iI
+     * @param Imposto\II $II
      * @return self
      */
-    public function setII(Imposto\II $iI)
+    public function setII(Imposto\II $II)
     {
-        $this->iI = $iI;
+        $this->II = $II;
         return $this;
     }
 
     /**
-     * Gets as iSSQN
+     * Gets as ISSQN
      *
      * ISSQN
      *
@@ -201,26 +201,26 @@ class Imposto extends AbstractJsonSerializable
      */
     public function getISSQN()
     {
-        return $this->iSSQN;
+        return $this->ISSQN;
     }
 
     /**
-     * Sets a new iSSQN
+     * Sets a new ISSQN
      *
      * ISSQN
      *
      * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ISSQN
-     * $iSSQN
+     * $ISSQN
      * @return self
      */
-    public function setISSQN(Imposto\ISSQN $iSSQN)
+    public function setISSQN(Imposto\ISSQN $ISSQN)
     {
-        $this->iSSQN = $iSSQN;
+        $this->ISSQN = $ISSQN;
         return $this;
     }
 
     /**
-     * Gets as pIS
+     * Gets as PIS
      *
      * Dados do PIS
      *
@@ -228,26 +228,26 @@ class Imposto extends AbstractJsonSerializable
      */
     public function getPIS()
     {
-        return $this->pIS;
+        return $this->PIS;
     }
 
     /**
-     * Sets a new pIS
+     * Sets a new PIS
      *
      * Dados do PIS
      *
      * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS
-     * $pIS
+     * $PIS
      * @return self
      */
-    public function setPIS(Imposto\PIS $pIS)
+    public function setPIS(Imposto\PIS $PIS)
     {
-        $this->pIS = $pIS;
+        $this->PIS = $PIS;
         return $this;
     }
 
     /**
-     * Gets as pISST
+     * Gets as PISST
      *
      * Dados do PIS Substituição Tributária
      *
@@ -255,26 +255,26 @@ class Imposto extends AbstractJsonSerializable
      */
     public function getPISST()
     {
-        return $this->pISST;
+        return $this->PISST;
     }
 
     /**
-     * Sets a new pISST
+     * Sets a new PISST
      *
      * Dados do PIS Substituição Tributária
      *
      * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PISST
-     * $pISST
+     * $PISST
      * @return self
      */
-    public function setPISST(Imposto\PISST $pISST)
+    public function setPISST(Imposto\PISST $PISST)
     {
-        $this->pISST = $pISST;
+        $this->PISST = $PISST;
         return $this;
     }
 
     /**
-     * Gets as cOFINS
+     * Gets as COFINS
      *
      * Dados do COFINS
      *
@@ -282,26 +282,26 @@ class Imposto extends AbstractJsonSerializable
      */
     public function getCOFINS()
     {
-        return $this->cOFINS;
+        return $this->COFINS;
     }
 
     /**
-     * Sets a new cOFINS
+     * Sets a new COFINS
      *
      * Dados do COFINS
      *
      * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS
-     * $cOFINS
+     * $COFINS
      * @return self
      */
-    public function setCOFINS(Imposto\COFINS $cOFINS)
+    public function setCOFINS(Imposto\COFINS $COFINS)
     {
-        $this->cOFINS = $cOFINS;
+        $this->COFINS = $COFINS;
         return $this;
     }
 
     /**
-     * Gets as cOFINSST
+     * Gets as COFINSST
      *
      * Dados do COFINS da
      * Substituição Tributaria;
@@ -311,28 +311,28 @@ class Imposto extends AbstractJsonSerializable
      */
     public function getCOFINSST()
     {
-        return $this->cOFINSST;
+        return $this->COFINSST;
     }
 
 	/**
-	 * Sets a new cOFINSST
+	 * Sets a new COFINSST
 	 *
 	 * Dados do COFINS da
 	 * Substituição Tributaria;
 	 *
-	 * @param Imposto\COFINSST $cOFINSST
+	 * @param Imposto\COFINSST $COFINSST
 	 * @return Imposto
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST
-	 * $cOFINSST
+	 * $COFINSST
 	 */
-    public function setCOFINSST(Imposto\COFINSST $cOFINSST)
+    public function setCOFINSST(Imposto\COFINSST $COFINSST)
     {
-        $this->cOFINSST = $cOFINSST;
+        $this->COFINSST = $COFINSST;
         return $this;
     }
 
     /**
-     * Gets as iCMSUFDest
+     * Gets as ICMSUFDest
      *
      * Grupo a ser informado nas vendas interestarduais para consumidor final, não
      * contribuinte de ICMS
@@ -342,23 +342,23 @@ class Imposto extends AbstractJsonSerializable
      */
     public function getICMSUFDest()
     {
-        return $this->iCMSUFDest;
+        return $this->ICMSUFDest;
     }
 
 	/**
-	 * Sets a new iCMSUFDest
+	 * Sets a new ICMSUFDest
 	 *
 	 * Grupo a ser informado nas vendas interestarduais para consumidor final, não
 	 * contribuinte de ICMS
 	 *
-	 * @param Imposto\ICMSUFDest $iCMSUFDest
+	 * @param Imposto\ICMSUFDest $ICMSUFDest
 	 * @return Imposto
 	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest
-	 * $iCMSUFDest
+	 * $ICMSUFDest
 	 */
-    public function setICMSUFDest(Imposto\ICMSUFDest $iCMSUFDest)
+    public function setICMSUFDest(Imposto\ICMSUFDest $ICMSUFDest)
     {
-        $this->iCMSUFDest = $iCMSUFDest;
+        $this->ICMSUFDest = $ICMSUFDest;
         return $this;
     }
 
