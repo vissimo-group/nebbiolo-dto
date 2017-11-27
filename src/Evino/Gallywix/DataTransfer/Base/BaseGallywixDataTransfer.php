@@ -41,20 +41,11 @@ abstract class BaseGallywixDataTransfer implements \JsonSerializable {
     /**
      * @return \stdClass
      */
-    public function toStdClass(): \stdClass
+    public function toNFeTag(): \stdClass
     {
-        $attributes = get_object_vars($this);
-        $stdClass = new \stdClass();
-
-        foreach ($attributes as $key => $value) {
-            if ($value instanceof BaseGallywixDataTransfer) {
-                $stdClass->$key = $value->toStdClass();
-            } else {
-                $stdClass->$key = $value;
-            }
-        }
-
-        return $stdClass;
+        return (object)array_filter(get_object_vars($this), function($value) {
+            return !is_object($value);
+        });
     }
 
     /**
