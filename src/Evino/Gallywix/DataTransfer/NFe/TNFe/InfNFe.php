@@ -16,17 +16,24 @@ class InfNFe extends BaseGallywixDataTransfer
      *
      * @property string $versao
      */
-    protected $versao = "4.00";
+    protected $versao = '4.00';
 
     /**
      * PL_005d - 11/08/09 - validação do Id
      *
-     * @property string $id
+     * @property string $Id
      */
-    protected $id = null;
+    protected $Id = null;
 
     /**
-     * identificação da NF-e
+     * This should always be null
+     *
+     * @var null
+     */
+    protected $pk_nItem = null;
+
+    /**
+     * Identificação da NF-e
      *
      * @property InfNFe\Ide $ide
      */
@@ -178,7 +185,7 @@ class InfNFe extends BaseGallywixDataTransfer
      */
     public function getId()
     {
-        return $this->id;
+        return $this->Id;
     }
 
     /**
@@ -186,12 +193,12 @@ class InfNFe extends BaseGallywixDataTransfer
      *
      * PL_005d - 11/08/09 - validação do Id
      *
-     * @param string $id
+     * @param string $Id
      * @return self
      */
-    public function setId($id)
+    public function setId($Id)
     {
-        $this->id = $id;
+        $this->Id = $Id;
         return $this;
     }
 
