@@ -21,9 +21,9 @@ class RefNFP extends BaseGallywixDataTransfer
     /**
      * AAMM da emissão da NF de produtor
      *
-     * @property string $aAMM
+     * @property string $AAMM
      */
-    protected $aAMM = null;
+    protected $AAMM = null;
 
     /**
      * CNPJ do emitente da NF de produtor
@@ -105,7 +105,7 @@ class RefNFP extends BaseGallywixDataTransfer
      */
     public function getAAMM()
     {
-        return $this->aAMM;
+        return $this->AAMM;
     }
 
     /**
@@ -113,12 +113,12 @@ class RefNFP extends BaseGallywixDataTransfer
      *
      * AAMM da emissão da NF de produtor
      *
-     * @param string $aAMM
+     * @param string $AAMM
      * @return self
      */
-    public function setAAMM($aAMM)
+    public function setAAMM($AAMM)
     {
-        $this->aAMM = $aAMM;
+        $this->AAMM = $AAMM;
         return $this;
     }
 
