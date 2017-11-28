@@ -4,6 +4,7 @@ namespace Evino\Gallywix\DataTransfer\Nfe\TNFe;
 
 use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 use Evino\Gallywix\DataTransfer\Nfe\TLocal;
+use Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\AutXML;
 
 /**
  * Class representing InfNFe
@@ -81,18 +82,14 @@ class InfNFe extends BaseGallywixDataTransfer
      *
      * @property InfNFe\AutXML[] $autXML
      */
-    protected $autXML = array(
-
-    );
+    protected $autXML = array();
 
     /**
      * Dados dos detalhes da NF-e
      *
      * @property InfNFe\Det[] $det
      */
-    protected $det = array(
-
-    );
+    protected $det = array();
 
     /**
      * Dados dos totais da NF-e
@@ -149,6 +146,25 @@ class InfNFe extends BaseGallywixDataTransfer
      * @property InfNFe\Cana $cana
      */
     protected $cana = null;
+
+    /**
+     * @return array
+     */
+    public function getTagautXML()
+    {
+        if (count($this->autXML) == 0) {
+            return null;
+        }
+
+        $autXMLTags = array();
+
+        /** @var AutXML $autXML */
+        foreach ($this->autXML as $autXML) {
+            $autXMLTags[] = $autXML->toNFeTag();
+        }
+
+        return $autXMLTags;
+    }
 
     /**
      * Gets as versao
