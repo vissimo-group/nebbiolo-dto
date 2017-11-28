@@ -68,9 +68,9 @@ class Dest extends BaseGallywixDataTransfer
      * benefícios de incentivos fiscais sob controle da SUFRAMA) PL_005d - 11/08/09 -
      * alterado para aceitar 8 ou 9 dígitos
      *
-     * @property string $iSUF
+     * @property string $ISUF
      */
-    protected $iSUF = null;
+    protected $ISUF = null;
 
     /**
      * Inscrição Municipal do tomador do serviço
@@ -287,7 +287,7 @@ class Dest extends BaseGallywixDataTransfer
      */
     public function getISUF()
     {
-        return $this->iSUF;
+        return $this->ISUF;
     }
 
     /**
@@ -297,12 +297,12 @@ class Dest extends BaseGallywixDataTransfer
      * benefícios de incentivos fiscais sob controle da SUFRAMA) PL_005d - 11/08/09 -
      * alterado para aceitar 8 ou 9 dígitos
      *
-     * @param string $iSUF
+     * @param string $ISUF
      * @return self
      */
-    public function setISUF($iSUF)
+    public function setISUF($ISUF)
     {
-        $this->iSUF = $iSUF;
+        $this->ISUF = $ISUF;
         return $this;
     }
 
