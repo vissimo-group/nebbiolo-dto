@@ -3,6 +3,11 @@
 
 # Emacs
 *~
+\#*\#
+.\#*
+
+# ac-php @ emacs
+.ac-php-conf.json
 
 # Visual Studio Code
 .vscode/
