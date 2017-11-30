@@ -99,9 +99,7 @@ class DI extends BaseGallywixDataTransfer
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
      * $adi
      */
-    protected $adi = array(
-
-    );
+    protected $adi = array();
 
     /**
      * Gets as nDI

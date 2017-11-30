@@ -21,14 +21,11 @@ class DetExport extends BaseGallywixDataTransfer
      * Exportação indireta
      *
      * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd
-     * $exportInd
+     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd $exportInd
      */
     protected $exportInd = null;
 
-    /**
-     * Gets as nDraw
-     *
+     /**
      * Número do ato concessório de Drawback
      *
      * @return string
@@ -57,24 +54,23 @@ class DetExport extends BaseGallywixDataTransfer
      *
      * Exportação indireta
      *
-     * @return
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd
+     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd
      */
     public function getExportInd()
     {
         return $this->exportInd;
     }
 
-	/**
-	 * Sets a new exportInd
-	 *
-	 * Exportação indireta
-	 *
-	 * @param DetExport\ExportInd $exportInd
-	 * @return DetExport
-	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd
-	 * $exportInd
-	 */
+    /**
+     * Sets a new exportInd
+     *
+     * Exportação indireta
+     *
+     * @param DetExport\ExportInd $exportInd
+     * @return DetExport
+     * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd
+     * $exportInd
+     */
     public function setExportInd(DetExport\ExportInd $exportInd)
     {
         $this->exportInd = $exportInd;
