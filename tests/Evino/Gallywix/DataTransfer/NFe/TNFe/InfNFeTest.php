@@ -11,10 +11,10 @@ class InfNFeTest extends TestCase
     {
         $infNFe = new InfNFe();
 
-        $expectedTag = null;
-        $actualTag = $infNFe->getTagautXML();
+        $expectedTags = null;
+        $actualTags = $infNFe->getTagautXML();
 
-        $this->assertEquals($expectedTag, $actualTag);
+        $this->assertEquals($expectedTags, $actualTags);
     }
 
     public function testGetautXMLAutWithCPF(): void
@@ -29,9 +29,9 @@ class InfNFeTest extends TestCase
         $expectedTag->CPF = '21603316353';
         $expectedTag->CNPJ = null;
 
-        $actualTag = $infNFe->getTagautXML();
+        $actualTags = $infNFe->getTagautXML();
 
-        $this->assertEquals($expectedTag, $actualTag);
+        $this->assertEquals(array($expectedTag), $actualTags);
     }
 
     public function testGetautXMLAutWithCNPJ(): void
@@ -46,8 +46,33 @@ class InfNFeTest extends TestCase
         $expectedTag->CPF = null;
         $expectedTag->CNPJ = '12345678901234';
 
-        $actualTag = $infNFe->getTagautXML();
+        $actualTags = $infNFe->getTagautXML();
 
-        $this->assertEquals($expectedTag, $actualTag);
+        $this->assertEquals(array($expectedTag), $actualTags);
+    }
+
+    public function testGetautXMLAutWithBothCPFAndCNPJ(): void
+    {
+        $autXMLCPF = new InfNFe\AutXML();
+        $autXMLCPF->setCPF('21603316353');
+
+        $autXMLCNPJ = new InfNFe\AutXML();
+        $autXMLCNPJ->setCNPJ('12345678901234');
+
+        $infNFe = new InfNFe();
+        $infNFe->setAutXML(array($autXMLCPF, $autXMLCNPJ));
+
+        $tagCPF = new \stdClass();
+        $tagCPF->CPF = $autXMLCPF->getCPF();
+        $tagCPF->CNPJ = null;
+
+        $tagCNPJ = new \stdClass();
+        $tagCNPJ->CPF = null;
+        $tagCNPJ->CNPJ = $autXMLCNPJ->getCNPJ();
+
+        $expectedTags = array($tagCPF, $tagCNPJ);
+        $actualTags = $infNFe->getTagautXML();
+
+        $this->assertEquals($expectedTags, $actualTags);
     }
 }
