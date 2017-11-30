@@ -4,14 +4,15 @@ namespace Evino\Gallywix\DataTransfer\Base;
 
 use JsonMapper;
 
-abstract class BaseGallywixDataTransfer implements \JsonSerializable {
-
+abstract class BaseGallywixDataTransfer implements \JsonSerializable
+{
     /**
      * @param \stdClass $json
      * @param bool $includeNullValues
-     * @return BaseGallywixDataTransfer
+     * @return static
+     * @throws \JsonMapper_Exception
      */
-    public static function fromJsonObject(\stdClass $json, bool $includeNullValues = false): self
+    public static function fromJsonObject(\stdClass $json, $includeNullValues = false)
     {
         $instance = new static();
 
@@ -31,8 +32,9 @@ abstract class BaseGallywixDataTransfer implements \JsonSerializable {
      * @param string $json
      * @param bool $includeNullValues
      * @return BaseGallywixDataTransfer
+     * @throws \JsonMapper_Exception
      */
-    public static function fromJsonString(string $json, bool $includeNullValues = false): self
+    public static function fromJsonString($json, $includeNullValues = false)
     {
         return self::fromJsonObject(json_decode($json), $includeNullValues);
     }
@@ -50,9 +52,17 @@ abstract class BaseGallywixDataTransfer implements \JsonSerializable {
     }
 
     /**
+     * @return string
+     */
+    public function toJson()
+    {
+        return json_encode($this);
+    }
+
+    /**
      * @return \stdClass
      */
-    public function toNFeTag(): \stdClass
+    public function toNFeTag()
     {
         return (object)array_filter(get_object_vars($this), function($value) {
             return !is_object($value);
@@ -63,7 +73,7 @@ abstract class BaseGallywixDataTransfer implements \JsonSerializable {
      * @param array $array
      * @return array
      */
-    protected static function stripNullValuesFromArray(array $array): array
+    protected static function stripNullValuesFromArray($array)
     {
         foreach ($array as $key => $value) {
             if (is_array($value)) {
@@ -77,5 +87,4 @@ abstract class BaseGallywixDataTransfer implements \JsonSerializable {
 
         return $array;
     }
-
 }
