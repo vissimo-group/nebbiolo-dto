@@ -5,10 +5,17 @@ namespace Evino\Tests\Gallywix\DataTransfer\Base;
 use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * Class BaseGallywixDataTransferTest
+ * @package Evino\Tests\Gallywix\DataTransfer\Base
+ */
 final class BaseGallywixDataTransferTest extends TestCase
 {
-
-    public function testCanInstantiateFromValidJsonObject(): void
+    /**
+     * @return void
+     * @throws \JsonMapper_Exception
+     */
+    public function testCanInstantiateFromValidJsonObject()
     {
         $json = json_decode($this->sampleJsonString());
 
@@ -18,7 +25,11 @@ final class BaseGallywixDataTransferTest extends TestCase
         $this->assertEquals($this->sampleDT(), $dt);
     }
 
-    public function testCanInstantiateFromValidJsonString(): void
+    /**
+     * @return void
+     * @throws \JsonMapper_Exception
+     */
+    public function testCanInstantiateFromValidJsonString()
     {
         $json = $this->sampleJsonString();
 
@@ -28,21 +39,34 @@ final class BaseGallywixDataTransferTest extends TestCase
         $this->assertEquals($this->sampleDT(), $dt);
     }
 
-    public function testJsonSerialize(): void
+    /**
+     * @return void
+     */
+    public function testJsonSerialize()
     {
-        $expectedJsonSerialize = [
-            "stringAttribute" => "trade prince gallywix",
-            "numberAttribute" => 19,
-            "arrayAttribute" => ["trade", "prince", "gallywix"],
-            "objectAttribute" => $this->sampleObjectAttribute()
-        ];
+        $expectedToJson = $this->sampleJsonString();
 
-        $actualJsonSerialize = $this->sampleDT()->jsonSerialize();
+        $actualToJson = $this->sampleDT()->toJson();
 
-        $this->assertEquals($expectedJsonSerialize, $actualJsonSerialize);
+        $this->assertEquals($expectedToJson, $actualToJson);
     }
 
-    public function testToNFeTag(): void
+    /**
+     * @return void
+     */
+    public function testToJson()
+    {
+        $expectedToJson = $this->sampleJsonString();
+
+        $actualToJson = $this->sampleDT()->toJson();
+
+        $this->assertEquals($expectedToJson, $actualToJson);
+    }
+
+    /**
+     * @return void
+     */
+    public function testToNFeTag()
     {
         $expectedNFeTag = new \stdClass();
         $expectedNFeTag->stringAttribute = $this->sampleStringAttribute;
@@ -54,7 +78,10 @@ final class BaseGallywixDataTransferTest extends TestCase
         $this->assertEquals($expectedNFeTag, $actualNFeTag);
     }
 
-    public function testStripNullValuesFromArray(): void
+    /**
+     * @return void
+     */
+    public function testStripNullValuesFromArray()
     {
         $stdWithNull = new \stdClass();
         $stdWithNull->thisIsANumber = 1;
@@ -114,7 +141,7 @@ final class BaseGallywixDataTransferTest extends TestCase
     /**
      * @return \stdClass
      */
-    private function sampleObjectAttribute(): \stdClass
+    private function sampleObjectAttribute()
     {
         $obj = new \stdClass();
         $obj->name = "trade prince gallywix";
@@ -125,23 +152,26 @@ final class BaseGallywixDataTransferTest extends TestCase
     /**
      * @return string
      */
-    private function sampleJsonString(): string
+    private function sampleJsonString()
     {
-
-        return "{\"stringAttribute\": \"{$this->sampleStringAttribute}\",
-            \"numberAttribute\": {$this->sampleNumberAttribute},
-            \"arrayAttribute\": [
-                \"{$this->sampleArrayAttribute[0]}\",
-                \"{$this->sampleArrayAttribute[1]}\",
-                \"{$this->sampleArrayAttribute[2]}\"
-            ],
-            \"objectAttribute\": {\"name\": \"{$this->sampleObjectAttribute()->name}\"}}";
+        return "" .
+            "{\"stringAttribute\":\"{$this->sampleStringAttribute}\"," .
+                "\"numberAttribute\":{$this->sampleNumberAttribute}," .
+                "\"arrayAttribute\":[" .
+                    "\"{$this->sampleArrayAttribute[0]}\"," .
+                    "\"{$this->sampleArrayAttribute[1]}\"," .
+                    "\"{$this->sampleArrayAttribute[2]}\"" .
+                "]," .
+                "\"objectAttribute\":{" .
+                    "\"name\":\"{$this->sampleObjectAttribute()->name}\"" .
+                "}" .
+            "}";
     }
 
     /**
      * @return BaseGallywixDataTransferTestClass
      */
-    private function sampleDT(): BaseGallywixDataTransferTestClass
+    private function sampleDT()
     {
         $dt = new BaseGallywixDataTransferTestClass();
 
@@ -154,7 +184,12 @@ final class BaseGallywixDataTransferTest extends TestCase
     }
 }
 
-class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer {
+/**
+ * Class BaseGallywixDataTransferTestClass
+ * @package Evino\Tests\Gallywix\DataTransfer\Base
+ */
+class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer
+{
     /** @var string */
     protected $stringAttribute;
 
@@ -171,7 +206,7 @@ class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer {
      * @param array $array
      * @return array
      */
-    public static function stripNullValuesFromArray(array $array): array
+    public static function stripNullValuesFromArray($array)
     {
         return parent::stripNullValuesFromArray($array); // TODO: Change the autogenerated stub
     }
@@ -179,7 +214,7 @@ class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer {
     /**
      * @return string
      */
-    public function getStringAttribute(): string
+    public function getStringAttribute()
     {
         return $this->stringAttribute;
     }
@@ -188,7 +223,7 @@ class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer {
      * @param string $stringAttribute
      * @return BaseGallywixDataTransferTestClass
      */
-    public function setStringAttribute(string $stringAttribute): BaseGallywixDataTransferTestClass
+    public function setStringAttribute($stringAttribute)
     {
         $this->stringAttribute = $stringAttribute;
         return $this;
@@ -197,7 +232,7 @@ class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer {
     /**
      * @return int
      */
-    public function getNumberAttribute(): int
+    public function getNumberAttribute()
     {
         return $this->numberAttribute;
     }
@@ -206,7 +241,7 @@ class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer {
      * @param int $numberAttribute
      * @return BaseGallywixDataTransferTestClass
      */
-    public function setNumberAttribute(int $numberAttribute): BaseGallywixDataTransferTestClass
+    public function setNumberAttribute($numberAttribute)
     {
         $this->numberAttribute = $numberAttribute;
         return $this;
@@ -215,7 +250,7 @@ class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer {
     /**
      * @return array
      */
-    public function getArrayAttribute(): array
+    public function getArrayAttribute()
     {
         return $this->arrayAttribute;
     }
@@ -224,7 +259,7 @@ class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer {
      * @param array $arrayAttribute
      * @return BaseGallywixDataTransferTestClass
      */
-    public function setArrayAttribute(array $arrayAttribute): BaseGallywixDataTransferTestClass
+    public function setArrayAttribute($arrayAttribute)
     {
         $this->arrayAttribute = $arrayAttribute;
         return $this;
@@ -233,7 +268,7 @@ class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer {
     /**
      * @return \stdClass
      */
-    public function getObjectAttribute(): \stdClass
+    public function getObjectAttribute()
     {
         return $this->objectAttribute;
     }
@@ -242,7 +277,7 @@ class BaseGallywixDataTransferTestClass extends BaseGallywixDataTransfer {
      * @param \stdClass $objectAttribute
      * @return BaseGallywixDataTransferTestClass
      */
-    public function setObjectAttribute(\stdClass $objectAttribute): BaseGallywixDataTransferTestClass
+    public function setObjectAttribute(\stdClass $objectAttribute)
     {
         $this->objectAttribute = $objectAttribute;
         return $this;
