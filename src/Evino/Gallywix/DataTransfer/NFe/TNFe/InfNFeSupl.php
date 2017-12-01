@@ -15,7 +15,7 @@ class InfNFeSupl extends BaseGallywixDataTransfer
      *
      * @property string $qrCode
      */
-    protected $qrCode = null;
+    protected $qrcode = null;
 
     /**
      * Informar a URL da "Consulta por chave de acesso da NFC-e". A mesma URL que deve
@@ -32,9 +32,9 @@ class InfNFeSupl extends BaseGallywixDataTransfer
      *
      * @return string
      */
-    public function getQrCode()
+    public function getQrcode()
     {
-        return $this->qrCode;
+        return $this->qrcode;
     }
 
     /**
@@ -42,12 +42,12 @@ class InfNFeSupl extends BaseGallywixDataTransfer
      *
      * Texto com o QR-Code impresso no DANFE NFC-e
      *
-     * @param string $qrCode
+     * @param string $qrcode
      * @return self
      */
-    public function setQrCode($qrCode)
+    public function setQrcode($qrcode)
     {
-        $this->qrCode = $qrCode;
+        $this->qrcode = $qrcode;
         return $this;
     }
 

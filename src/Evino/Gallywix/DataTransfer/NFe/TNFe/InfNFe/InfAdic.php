@@ -32,9 +32,7 @@ class InfAdic extends BaseGallywixDataTransfer
      * @property InfAdic\ObsCont[]
      * $obsCont
      */
-    protected $obsCont = array(
-
-    );
+    protected $obsCont = array();
 
     /**
      * Campo de uso exclusivo do Fisco
@@ -44,9 +42,7 @@ class InfAdic extends BaseGallywixDataTransfer
      * @property InfAdic\ObsFisco[]
      * $obsFisco
      */
-    protected $obsFisco = array(
-
-    );
+    protected $obsFisco = array();
 
     /**
      * Grupo de informações do processo referenciado
@@ -54,9 +50,7 @@ class InfAdic extends BaseGallywixDataTransfer
      * @property InfAdic\ProcRef[]
      * $procRef
      */
-    protected $procRef = array(
-
-    );
+    protected $procRef = array();
 
     /**
      * Gets as infAdFisco
