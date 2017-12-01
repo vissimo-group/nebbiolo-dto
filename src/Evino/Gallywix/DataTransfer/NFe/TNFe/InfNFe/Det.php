@@ -51,21 +51,6 @@ class Det extends BaseGallywixDataTransfer
     /**
      * @return \stdClass|null
      */
-    public function getTagProd()
-    {
-        if (is_null($this->getProd())) {
-            return null;
-        }
-
-        $prod = $this->getProd()->toNFeTag();
-        $prod->item = $this->nItem;
-
-        return $prod;
-    }
-
-    /**
-     * @return \stdClass|null
-     */
     public function getTagInfAdProd()
     {
         if (is_null($this->getInfAdProd())) {
@@ -137,7 +122,7 @@ class Det extends BaseGallywixDataTransfer
     }
 
     /**
-     * @return array()|null
+     * @return array|null
      */
     public function getTagsDI()
     {
@@ -202,28 +187,6 @@ class Det extends BaseGallywixDataTransfer
     }
 
     /**
-     * @return null|\stdClass
-     */
-    public function getTagDetExportInd()
-    {
-        $prod = $this->getProd();
-        if (is_null($prod) || count($prod->getDetExport()) == 0) {
-            return null;
-        }
-
-        /** @var DetExport $det **/
-        $det = $prod->getDetExport()[0];
-        if ($det->getExportInd() == null) {
-            return null;
-        }
-
-        $tag = $det->getExportInd()->toNFeTag();
-        $tag->item = $this->getNItem();
-
-        return $tag;
-    }
-
-    /**
      * @return null|array
      */
     public function getTagRastro()
@@ -242,53 +205,6 @@ class Det extends BaseGallywixDataTransfer
         }
 
         return count($rastroTags) == 0 ? null : $rastroTags;
-    }
-
-    /**
-     * @return null|\stdClass
-     */
-    public function getTagVeicProd()
-    {
-        $prod = $this->getProd();
-        if (is_null($prod) || is_null($prod->getVeicProd())) {
-            return null;
-        }
-
-        $tag = $prod->getVeicProd()->toNFeTag();
-        $tag->item = $this->getNItem();
-
-        return $tag;
-    }
-
-    /**
-     * @return null|\stdClass
-     */
-    public function getTagMed()
-    {
-        $prod = $this->getProd();
-        if (is_null($prod) || is_null($prod->getMed())) {
-            return null;
-        }
-
-        $tag = $prod->getMed()->toNFeTag();
-        $tag->item = $this->getNItem();
-
-        return $tag;
-    }
-
-    /**
-     * @return null|\stdClass
-     */
-    public function getTagArma()
-    {
-        if (is_null($prod) || is_null($prod->getArma())) {
-            return null;
-        }
-
-        $tag = $prod->getArma()->toNFeTag();
-        $tag->item = $this->getNItem();
-
-        return $tag;
     }
 
     /**

@@ -67,9 +67,9 @@ class Comb extends BaseGallywixDataTransfer
      * utilizar o CODIF (Sistema de Controle do Diferimento do Imposto nas Operações
      * com AEAC - Álcool Etílico Anidro Combustível).
      *
-     * @property string $cODIF
+     * @property string $CODIF
      */
-    protected $cODIF = null;
+    protected $CODIF = null;
 
     /**
      * Quantidade de combustível
@@ -95,8 +95,7 @@ class Comb extends BaseGallywixDataTransfer
      * CIDE Combustíveis
      *
      * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE
-     * $CIDE
+     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE $CIDE
      */
     protected $CIDE = null;
 
@@ -104,11 +103,29 @@ class Comb extends BaseGallywixDataTransfer
      * Informações do grupo de "encerrante"
      *
      * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante
-     * $encerrante
+     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante $encerrante
      */
     protected $encerrante = null;
 
+    /**
+     * @return \stdClass
+     *
+     */
+    public function toNFeTag()
+    {
+        if (is_null($this->getCIDE())) {
+            return $this->toNFeTag();
+        }
+
+        $extras = [
+            'qBCProd' => $this->getCIDE()->getQBCProd(),
+            'vAliqProd' => $this->getCIDE()->getVAliqProd(),
+            'vCIDE' => $this->getCIDE()->getVCIDE()
+        ];
+        
+        return $this->toNFeTagWithExtras($extras);
+    }
+    
     /**
      * Gets as cProdANP
      *
@@ -286,7 +303,7 @@ class Comb extends BaseGallywixDataTransfer
     }
 
     /**
-     * Gets as cODIF
+     * Gets as CODIF
      *
      * Código de autorização / registro do CODIF. Informar apenas quando a UF
      * utilizar o CODIF (Sistema de Controle do Diferimento do Imposto nas Operações
@@ -296,22 +313,22 @@ class Comb extends BaseGallywixDataTransfer
      */
     public function getCODIF()
     {
-        return $this->cODIF;
+        return $this->CODIF;
     }
 
     /**
-     * Sets a new cODIF
+     * Sets a new CODIF
      *
      * Código de autorização / registro do CODIF. Informar apenas quando a UF
      * utilizar o CODIF (Sistema de Controle do Diferimento do Imposto nas Operações
      * com AEAC - Álcool Etílico Anidro Combustível).
      *
-     * @param string $cODIF
+     * @param string $CODIF
      * @return self
      */
-    public function setCODIF($cODIF)
+    public function setCODIF($CODIF)
     {
-        $this->cODIF = $cODIF;
+        $this->CODIF = $CODIF;
         return $this;
     }
 
@@ -384,8 +401,7 @@ class Comb extends BaseGallywixDataTransfer
      *
      * CIDE Combustíveis
      *
-     * @return
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE
+     * @return \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE
      */
     public function getCIDE()
     {

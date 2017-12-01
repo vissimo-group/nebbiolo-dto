@@ -187,6 +187,48 @@ class ICMS extends BaseGallywixDataTransfer
     protected $ICMSSN900 = null;
 
     /**
+     * @return \stdClass
+     */
+    public function toNFeTag()
+    {
+        $icmsArr = array($this->getICMS00(), $this->getICMS10(), $this->getICMS20(), $this->getICMS30(),
+                         $this->getICMS40(), $this->getICMS51(), $this->getICMS60(), $this->getICMS70(),
+                         $this->getICMS90());
+
+        /** @var BaseGallywixDataTransfer $icms **/
+        foreach ($icmsArr as $icms) {
+            if (!is_null($icms)) {
+                return $icms->toNFeTag();
+            }
+        }
+
+        return new \stdClass();
+    }
+
+    /**
+     * @return null|\stdClass
+     */
+    public function getTagICMSSN()
+    {
+        if (is_null($this->getICMSSN101()) && is_null($this->getICMSSN102()) && is_null($this->getICMSSN201()) &&
+            is_null($this->getICMSSN202()) && is_null($this->getICMSSN500()) && is_null($this->getICMSSN900())) {
+            return null;
+        }
+
+        $snArr = array($this->getICMSSN101(), $this->getICMSSN102(), $this->getICMSSN201(), $this->getICMSSN202(),
+                       $this->getICMSSN500(), $this->getICMSSN900());
+
+        /** @var BaseGallywixDataTransfer $sn **/
+        foreach ($snArr as $sn) {
+            if (!is_null($sn)) {
+                return $sn->toNFeTag();
+            }
+        }
+
+        return null;
+    }
+
+    /**
      * Gets as ICMS00
      *
      * Tributação pelo ICMS
