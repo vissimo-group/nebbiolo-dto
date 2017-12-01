@@ -53,13 +53,9 @@ class Vol extends BaseGallywixDataTransfer
     protected $pesoB = null;
 
     /**
-     * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres[]
-     * $lacres
+     * @property Vol\Lacres[] $lacres
      */
-    protected $lacres = array(
-
-    );
+    protected $lacres = array();
 
     /**
      * Gets as qVol
@@ -221,8 +217,7 @@ class Vol extends BaseGallywixDataTransfer
      * Adds as lacres
      *
      * @return self
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres
-     * $lacres
+     * @param Vol\Lacres $lacres
      */
     public function addToLacres(Vol\Lacres $lacres)
     {
@@ -252,11 +247,10 @@ class Vol extends BaseGallywixDataTransfer
         unset($this->lacres[$index]);
     }
 
-	/**
-	 * Gets as lacres
-	 * @return array \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres[]
-	 * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres[]
-	 */
+    /**
+     * Gets as lacres
+     * @return array Vol\Lacres[] Vol\Lacres[]
+     */
     public function getLacres()
     {
         return $this->lacres;
@@ -265,8 +259,7 @@ class Vol extends BaseGallywixDataTransfer
     /**
      * Sets a new lacres
      *
-     * @param \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Transp\Vol\Lacres[]
-     * $lacres
+     * @param Vol\Lacres[] $lacres
      * @return self
      */
     public function setLacres(array $lacres)
