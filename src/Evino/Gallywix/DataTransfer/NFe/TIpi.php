@@ -53,9 +53,9 @@ class TIpi extends BaseGallywixDataTransfer
         $extras = array();
 
         if (!is_null($this->getIPITrib())) {
-            $extras = array($this->getIPITrib()->toNFeTag());
+            $extras = (array)$this->getIPITrib()->toNFeTag();
         } else if (!is_null($this->getIPINT())) {
-            $extras = array($this->getIPINT()->toNFeTag());
+            $extras = (array)$this->getIPINT()->toNFeTag();
         }
 
         return $this->toNFeTagWithExtras($extras);

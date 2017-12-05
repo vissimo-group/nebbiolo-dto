@@ -68,8 +68,7 @@ class DetExport extends BaseGallywixDataTransfer
      *
      * @param DetExport\ExportInd $exportInd
      * @return DetExport
-     * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd
-     * $exportInd
+     * @internal param $ DetExport\ExportInd* DetExport\ExportInd $exportInd
      */
     public function setExportInd(DetExport\ExportInd $exportInd)
     {

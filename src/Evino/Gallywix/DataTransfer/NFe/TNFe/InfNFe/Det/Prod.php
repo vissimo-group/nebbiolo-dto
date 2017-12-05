@@ -50,9 +50,9 @@ class Prod extends BaseGallywixDataTransfer
     /**
      * Nomenclatura de Valor aduaneio e Estatístico
      *
-     * @property string[] $nVE
+     * @property string[] $NVE
      */
-    protected $nVE = array();
+    protected $NVE = array();
 
     /**
      * Codigo especificador da Substuicao Tributaria - CEST, que identifica a
@@ -402,21 +402,21 @@ class Prod extends BaseGallywixDataTransfer
     }
 
     /**
-     * Adds as nVE
+     * Adds as NVE
      *
      * Nomenclatura de Valor aduaneio e Estatístico
      *
      * @return self
-     * @param string $nVE
+     * @param string $NVE
      */
-    public function addToNVE($nVE)
+    public function addToNVE($NVE)
     {
-        $this->nVE[] = $nVE;
+        $this->NVE[] = $NVE;
         return $this;
     }
 
     /**
-     * isset nVE
+     * isset NVE
      *
      * Nomenclatura de Valor aduaneio e Estatístico
      *
@@ -425,11 +425,11 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function issetNVE($index)
     {
-        return isset($this->nVE[$index]);
+        return isset($this->NVE[$index]);
     }
 
     /**
-     * unset nVE
+     * unset NVE
      *
      * Nomenclatura de Valor aduaneio e Estatístico
      *
@@ -438,11 +438,11 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function unsetNVE($index)
     {
-        unset($this->nVE[$index]);
+        unset($this->NVE[$index]);
     }
 
     /**
-     * Gets as nVE
+     * Gets as NVE
      *
      * Nomenclatura de Valor aduaneio e Estatístico
      *
@@ -450,20 +450,20 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function getNVE()
     {
-        return $this->nVE;
+        return $this->NVE;
     }
 
 	/**
-	 * Sets a new nVE
+	 * Sets a new NVE
 	 *
 	 * Nomenclatura de Valor aduaneio e Estatístico
 	 *
-	 * @param array $nVE
+	 * @param array $NVE
 	 * @return Prod
 	 */
-    public function setNVE(array $nVE)
+    public function setNVE(array $NVE)
     {
-        $this->nVE = $nVE;
+        $this->NVE = $NVE;
         return $this;
     }
 

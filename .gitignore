@@ -9,6 +9,9 @@
 # ac-php @ emacs
 .ac-php-conf.json
 
+# Composer Phar
+/composer.phar
+
 # Visual Studio Code
 .vscode/
 

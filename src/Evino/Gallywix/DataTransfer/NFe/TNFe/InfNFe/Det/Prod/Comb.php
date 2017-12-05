@@ -114,7 +114,7 @@ class Comb extends BaseGallywixDataTransfer
     public function toNFeTag()
     {
         if (is_null($this->getCIDE())) {
-            return $this->toNFeTag();
+            return parent::toNFeTag();
         }
 
         $extras = [
@@ -122,10 +122,10 @@ class Comb extends BaseGallywixDataTransfer
             'vAliqProd' => $this->getCIDE()->getVAliqProd(),
             'vCIDE' => $this->getCIDE()->getVCIDE()
         ];
-        
+
         return $this->toNFeTagWithExtras($extras);
     }
-    
+
     /**
      * Gets as cProdANP
      *

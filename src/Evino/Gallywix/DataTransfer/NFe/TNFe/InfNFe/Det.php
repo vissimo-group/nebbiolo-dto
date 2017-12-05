@@ -161,7 +161,7 @@ class Det extends BaseGallywixDataTransfer
                 $tag->item = $this->getNItem();
                 $tag->nDI = $di->getNDI();
 
-                $adiTags[] = $adi;
+                $adiTags[] = $tag;
             }
         }
 
@@ -336,11 +336,5 @@ class Det extends BaseGallywixDataTransfer
         return $this;
     }
 
-    
-    
-    private function addItemToStdClass($std)
-    {
-        $std->item = $this->getNItem();
-    }
 }
 

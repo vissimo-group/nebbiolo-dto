@@ -71,7 +71,6 @@ final class BaseGallywixDataTransferTest extends TestCase
         $expectedNFeTag = new \stdClass();
         $expectedNFeTag->stringAttribute = $this->sampleStringAttribute;
         $expectedNFeTag->numberAttribute = $this->sampleNumberAttribute;
-        $expectedNFeTag->arrayAttribute = $this->sampleArrayAttribute;
 
         $actualNFeTag = $this->sampleDT()->toNFeTag();
 
@@ -86,11 +85,10 @@ final class BaseGallywixDataTransferTest extends TestCase
         $expectedNFeTag = new \stdClass();
         $expectedNFeTag->stringAttribute = $this->sampleStringAttribute;
         $expectedNFeTag->numberAttribute = $this->sampleNumberAttribute;
-        $expectedNFeTag->arrayAttribute = $this->sampleArrayAttribute;
 
         $actualNFeTag = $this->sampleDT()->toNFeTagWithItemNumber(1);
         $expectedNFeTag->item = 1;
-        
+
         $this->assertEquals($expectedNFeTag, $actualNFeTag);
     }
 
@@ -102,16 +100,15 @@ final class BaseGallywixDataTransferTest extends TestCase
         $expectedNFeTag = new \stdClass();
         $expectedNFeTag->stringAttribute = $this->sampleStringAttribute;
         $expectedNFeTag->numberAttribute = $this->sampleNumberAttribute;
-        $expectedNFeTag->arrayAttribute = $this->sampleArrayAttribute;
 
         $actualNFeTag = $this->sampleDT()->toNFeTagWithExtras(['item' => 1, 'key1' => 'value1', 'key2' => 19]);
         $expectedNFeTag->item = 1;
         $expectedNFeTag->key1 = 'value1';
         $expectedNFeTag->key2 = 19;
-        
+
         $this->assertEquals($expectedNFeTag, $actualNFeTag);
     }
-    
+
     /**
      * @return void
      */

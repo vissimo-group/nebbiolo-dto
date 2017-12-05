@@ -211,7 +211,7 @@ class Ide extends BaseGallywixDataTransfer
     /**
      * @return \stdClass|null
      */
-    public function getTagrefNFe(): \stdClass
+    public function getTagrefNFe()
     {
         /** @var NFref $nf */
         foreach ($this->nFref as $nf) {
@@ -228,7 +228,7 @@ class Ide extends BaseGallywixDataTransfer
     /**
      * @return \stdClass|null
      */
-    public function getTagrefNF(): \stdClass
+    public function getTagrefNF()
     {
         /** @var NFref $nf */
         foreach ($this->nFref as $nf) {
@@ -243,7 +243,7 @@ class Ide extends BaseGallywixDataTransfer
     /**
      * @return \stdClass|null
      */
-    public function getTagrefNFP(): \stdClass
+    public function getTagrefNFP()
     {
         /** @var NFref $nf */
         foreach ($this->nFref as $nf) {
@@ -258,7 +258,7 @@ class Ide extends BaseGallywixDataTransfer
     /**
      * @return \stdClass|null
      */
-    public function getTagrefCTe(): \stdClass
+    public function getTagrefCTe()
     {
         /** @var NFref $nf */
         foreach ($this->nFref as $nf) {
@@ -275,7 +275,7 @@ class Ide extends BaseGallywixDataTransfer
     /**
      * @return \stdClass|null
      */
-    public function getTagrefECF(): \stdClass
+    public function getTagrefECF()
     {
         /** @var NFref $nf */
         foreach ($this->nFref as $nf) {
@@ -939,7 +939,7 @@ class Ide extends BaseGallywixDataTransfer
      * @return self
      * @param Ide\NFref $nFref
      */
-    public function addToNFref(Ide\NFref $nFref)
+    public function addToNFref($nFref)
     {
         $this->nFref[] = $nFref;
         return $this;
@@ -991,7 +991,7 @@ class Ide extends BaseGallywixDataTransfer
      * @param Ide\NFref[] $nFref
      * @return self
      */
-    public function setNFref(array $nFref)
+    public function setNFref($nFref)
     {
         $this->nFref = $nFref;
         return $this;
