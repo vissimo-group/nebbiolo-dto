@@ -7,17 +7,18 @@ use PHPUnit\Framework\TestCase;
 
 class ICMSTest extends TestCase
 {
-    public function testToNFeTagWithoutAnyICMS()
+    public function testToNFeTagWithExtrasAndWithoutAnyICMS()
     {
         $icms = new ICMS();
 
         $expected = new \stdClass();
-        $actual = $icms->toNFeTag();
+        $expected->item = 1;
+        $actual = $icms->toNFeTagWithExtras(['item' => 1]);
 
         $this->assertEquals($expected, $actual);
     }
 
-    public function testToNFeTagWithICMS00()
+    public function testToNFeTagWithExtrasAndICMS00()
     {
         $icms00 = new ICMS\ICMS00();
         $icms00->setVBC('10');
@@ -33,6 +34,7 @@ class ICMSTest extends TestCase
         $icms->setICMS00($icms00);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->vBC = $icms00->getVBC();
         $expected->CST = $icms00->getCST();
         $expected->modBC = $icms00->getModBC();
@@ -42,12 +44,12 @@ class ICMSTest extends TestCase
         $expected->pICMS = $icms00->getPICMS();
         $expected->vICMS = $icms00->getVICMS();
 
-        $actual = $icms->toNFeTag();
+        $actual = $icms->toNFeTagWithExtras(['item' => 1]);
 
         $this->assertEquals($expected, $actual);
     }
 
-    public function testToNFeTagWithICMS10()
+    public function testToNFeTagWithExtrasAndICMS10()
     {
         $icms10 = new ICMS\ICMS10();
         $icms10->setVBC('10');
@@ -75,6 +77,7 @@ class ICMSTest extends TestCase
 
         $expected = new \stdClass();
 
+        $expected->item = 1;
         $expected->vBC = $icms10->getVBC();
         $expected->CST = $icms10->getCST();
         $expected->modBC = $icms10->getModBC();
@@ -95,12 +98,12 @@ class ICMSTest extends TestCase
         $expected->vFCPST = $icms10->getVFCPST();
         $expected->vICMSST = $icms10->getVICMSST();
 
-        $actual = $icms->toNFeTag();
+        $actual = $icms->toNFeTagWithExtras(['item' => 1]);
 
         $this->assertEquals($expected, $actual);
     }
 
-    public function testToNFeTagWithICMS20()
+    public function testToNFeTagWithExtrasAndICMS20()
     {
         $icms20 = new ICMS\ICMS20();
         $icms20->setVBC('10');
@@ -121,6 +124,7 @@ class ICMSTest extends TestCase
         $icms->setICMS20($icms20);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->vBC = $icms20->getVBC();
         $expected->CST = $icms20->getCST();
         $expected->modBC = $icms20->getModBC();
@@ -135,12 +139,12 @@ class ICMSTest extends TestCase
         $expected->pRedBC = $icms20->getPRedBC();
         $expected->vICMSDeson = $icms20->getVICMSDeson();
 
-        $actual = $icms->toNFeTag();
+        $actual = $icms->toNFeTagWithExtras(['item' => 1]);
 
         $this->assertEquals($expected, $actual);
     }
 
-    public function testToNFeTagWithICMS30()
+    public function testToNFeTagWithExtrasAndICMS30()
     {
         $icms30 = new ICMS\ICMS30();
         $icms30->setCST('00');
@@ -161,6 +165,7 @@ class ICMSTest extends TestCase
         $icms->setICMS30($icms30);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->CST = $icms30->getCST();
         $expected->orig = $icms30->getOrig();
         $expected->modBCST = $icms30->getModBCST();
@@ -175,12 +180,12 @@ class ICMSTest extends TestCase
         $expected->motDesICMS = $icms30->getMotDesICMS();
         $expected->vICMSDeson = $icms30->getVICMSDeson();
 
-        $actual = $icms->toNFeTag();
+        $actual = $icms->toNFeTagWithExtras(['item' => 1]);
 
         $this->assertEquals($expected, $actual);
     }
 
-    public function testToNFeTagWithICMS40()
+    public function testToNFeTagWithExtrasAndICMS40()
     {
         $icms40 = new ICMS\ICMS40();
         $icms40->setCST('00');
@@ -192,17 +197,18 @@ class ICMSTest extends TestCase
         $icms->setICMS40($icms40);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->CST = $icms40->getCST();
         $expected->orig = $icms40->getOrig();
         $expected->motDesICMS = $icms40->getMotDesICMS();
         $expected->vICMSDeson = $icms40->getVICMSDeson();
 
-        $actual = $icms->toNFeTag();
+        $actual = $icms->toNFeTagWithExtras(['item' => 1]);
 
         $this->assertEquals($expected, $actual);
     }
 
-    public function testToNFeTagWithICMS51()
+    public function testToNFeTagWithExtrasAndICMS51()
     {
         $icms51 = new ICMS\ICMS51();
         $icms51->setVBC('10');
@@ -224,6 +230,7 @@ class ICMSTest extends TestCase
         $icms->setICMS51($icms51);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->vBC = $icms51->getVBC();
         $expected->CST = $icms51->getCST();
         $expected->modBC = $icms51->getModBC();
@@ -239,12 +246,12 @@ class ICMSTest extends TestCase
         $expected->vICMSDif = $icms51->getVICMSDif();
         $expected->vICMSOp = $icms51->getVICMSOp();
 
-        $actual = $icms->toNFeTag();
+        $actual = $icms->toNFeTagWithExtras(['item' => 1]);
 
         $this->assertEquals($expected, $actual);
     }
 
-    public function testToNFeTagWithICMS60()
+    public function testToNFeTagWithExtrasAndICMS60()
     {
         $icms60 = new ICMS\ICMS60();
         $icms60->setCST('00');
@@ -260,6 +267,7 @@ class ICMSTest extends TestCase
         $icms->setICMS60($icms60);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->CST = $icms60->getCST();
         $expected->orig = $icms60->getOrig();
         $expected->pFCPSTRet = $icms60->getPFCPSTRet();
@@ -269,12 +277,12 @@ class ICMSTest extends TestCase
         $expected->vFCPSTRet = $icms60->getVFCPSTRet();
         $expected->vICMSSTRet = $icms60->getVICMSSTRet();
 
-        $actual = $icms->toNFeTag();
+        $actual = $icms->toNFeTagWithExtras(['item' => 1]);
 
         $this->assertEquals($expected, $actual);
     }
 
-    public function testToNFeTagWithICMS70()
+    public function testToNFeTagWithExtrasAndICMS70()
     {
         $icms70 = new ICMS\ICMS70();
         $icms70->setVBC('10');
@@ -304,6 +312,7 @@ class ICMSTest extends TestCase
         $icms->setICMS70($icms70);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->vBC = $icms70->getVBC();
         $expected->CST = $icms70->getCST();
         $expected->modBC = $icms70->getModBC();
@@ -327,12 +336,12 @@ class ICMSTest extends TestCase
         $expected->pRedBC = $icms70->getPRedBC();
         $expected->vICMSDeson = $icms70->getVICMSDeson();
 
-        $actual = $icms->toNFeTag();
+        $actual = $icms->toNFeTagWithExtras(['item' => 1]);
 
         $this->assertEquals($expected, $actual);
     }
 
-    public function testToNFeTagWithICMS90()
+    public function testToNFeTagWithExtrasAndICMS90()
     {
         $icms90 = new ICMS\ICMS90();
         $icms90->setVBC('10');
@@ -362,6 +371,7 @@ class ICMSTest extends TestCase
         $icms->setICMS90($icms90);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->vBC = $icms90->getVBC();
         $expected->CST = $icms90->getCST();
         $expected->modBC = $icms90->getModBC();
@@ -385,7 +395,7 @@ class ICMSTest extends TestCase
         $expected->pRedBC = $icms90->getPRedBC();
         $expected->vICMSDeson = $icms90->getVICMSDeson();
 
-        $actual = $icms->toNFeTag();
+        $actual = $icms->toNFeTagWithExtras(['item' => 1]);
 
         $this->assertEquals($expected, $actual);
     }
@@ -395,7 +405,7 @@ class ICMSTest extends TestCase
         $icms = new ICMS();
 
         $expected = null;
-        $actual = $icms->getTagICMSSN();
+        $actual = $icms->getTagICMSSNWithItemNumber(1);
 
         $this->assertEquals($expected, $actual);
     }
@@ -412,12 +422,13 @@ class ICMSTest extends TestCase
         $icms->setICMSSN101($icmssn101);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->orig = $icmssn101->getOrig();
         $expected->cSOSN = $icmssn101->getCSOSN();
         $expected->pCredSN = $icmssn101->getPCredSN();
         $expected->vCredICMSSN = $icmssn101->getVCredICMSSN();
 
-        $actual = $icms->getTagICMSSN();
+        $actual = $icms->getTagICMSSNWithItemNumber(1);
 
         $this->assertEquals($expected, $actual);
     }
@@ -432,10 +443,11 @@ class ICMSTest extends TestCase
         $icms->setICMSSN102($icmssn102);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->orig = $icmssn102->getOrig();
         $expected->cSOSN = $icmssn102->getCSOSN();
 
-        $actual = $icms->getTagICMSSN();
+        $actual = $icms->getTagICMSSNWithItemNumber(1);
 
         $this->assertEquals($expected, $actual);
     }
@@ -461,6 +473,7 @@ class ICMSTest extends TestCase
         $icms->setICMSSN201($icmssn201);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->orig = $icmssn201->getOrig();
         $expected->cSOSN = $icmssn201->getCSOSN();
         $expected->pCredSN = $icmssn201->getPCredSN();
@@ -475,7 +488,7 @@ class ICMSTest extends TestCase
         $expected->pFCPST = $icmssn201->getPFCPST();
         $expected->modBCST = $icmssn201->getModBCST();
 
-        $actual = $icms->getTagICMSSN();
+        $actual = $icms->getTagICMSSNWithItemNumber(1);
 
         $this->assertEquals($expected, $actual);
     }
@@ -499,6 +512,7 @@ class ICMSTest extends TestCase
         $icms->setICMSSN202($icmssn202);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->orig = $icmssn202->getOrig();
         $expected->cSOSN = $icmssn202->getCSOSN();
         $expected->vICMSST = $icmssn202->getVICMSST();
@@ -511,7 +525,7 @@ class ICMSTest extends TestCase
         $expected->pFCPST = $icmssn202->getPFCPST();
         $expected->modBCST = $icmssn202->getModBCST();
 
-        $actual = $icms->getTagICMSSN();
+        $actual = $icms->getTagICMSSNWithItemNumber(1);
 
         $this->assertEquals($expected, $actual);
     }
@@ -532,6 +546,7 @@ class ICMSTest extends TestCase
         $icms->setICMSSN500($icmssn500);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->orig = $icmssn500->getOrig();
         $expected->cSOSN = $icmssn500->getCSOSN();
         $expected->vICMSSTRet = $icmssn500->getVICMSSTRet();
@@ -541,7 +556,7 @@ class ICMSTest extends TestCase
         $expected->pST = $icmssn500->getPST();
         $expected->pFCPSTRet = $icmssn500->getPFCPSTRet();
 
-        $actual = $icms->getTagICMSSN();
+        $actual = $icms->getTagICMSSNWithItemNumber(1);
 
         $this->assertEquals($expected, $actual);
     }
@@ -567,6 +582,7 @@ class ICMSTest extends TestCase
         $icms->setICMSSN900($icmssn900);
 
         $expected = new \stdClass();
+        $expected->item = 1;
         $expected->orig = $icmssn900->getOrig();
         $expected->cSOSN = $icmssn900->getCSOSN();
         $expected->pCredSN = $icmssn900->getPCredSN();
@@ -581,7 +597,7 @@ class ICMSTest extends TestCase
         $expected->pFCPST = $icmssn900->getPFCPST();
         $expected->modBCST = $icmssn900->getModBCST();
 
-        $actual = $icms->getTagICMSSN();
+        $actual = $icms->getTagICMSSNWithItemNumber(1);
 
         $this->assertEquals($expected, $actual);
     }

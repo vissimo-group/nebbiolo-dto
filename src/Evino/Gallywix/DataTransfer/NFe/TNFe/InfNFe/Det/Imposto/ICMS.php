@@ -153,9 +153,10 @@ class ICMS extends BaseGallywixDataTransfer
     protected $ICMSSN900 = null;
 
     /**
+     * @param array $extras
      * @return \stdClass
      */
-    public function toNFeTag()
+    public function toNFeTagWithExtras($extras)
     {
         $icmsArr = array($this->getICMS00(), $this->getICMS10(), $this->getICMS20(), $this->getICMS30(),
                          $this->getICMS40(), $this->getICMS51(), $this->getICMS60(), $this->getICMS70(),
@@ -164,17 +165,18 @@ class ICMS extends BaseGallywixDataTransfer
         /** @var BaseGallywixDataTransfer $icms **/
         foreach ($icmsArr as $icms) {
             if (!is_null($icms)) {
-                return $icms->toNFeTag();
+                return $icms->toNFeTagWithExtras($extras);
             }
         }
 
-        return new \stdClass();
+        return parent::toNFeTagWithExtras($extras);
     }
 
     /**
+     * @param int $item
      * @return null|\stdClass
      */
-    public function getTagICMSSN()
+    public function getTagICMSSNWithItemNumber($item)
     {
         if (is_null($this->getICMSSN101()) && is_null($this->getICMSSN102()) && is_null($this->getICMSSN201()) &&
             is_null($this->getICMSSN202()) && is_null($this->getICMSSN500()) && is_null($this->getICMSSN900())) {
@@ -187,7 +189,7 @@ class ICMS extends BaseGallywixDataTransfer
         /** @var BaseGallywixDataTransfer $sn **/
         foreach ($snArr as $sn) {
             if (!is_null($sn)) {
-                return $sn->toNFeTag();
+                return $sn->toNFeTagWithItemNumber($item);
             }
         }
 
