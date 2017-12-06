@@ -20,9 +20,9 @@ class RefNF extends BaseGallywixDataTransfer
     /**
      * AAMM da emissão
      *
-     * @property string $aAMM
+     * @property string $AAMM
      */
-    protected $aAMM = null;
+    protected $AAMM = null;
 
     /**
      * CNPJ do emitente do documento fiscal referenciado
@@ -88,7 +88,7 @@ class RefNF extends BaseGallywixDataTransfer
      */
     public function getAAMM()
     {
-        return $this->aAMM;
+        return $this->AAMM;
     }
 
     /**
@@ -96,12 +96,12 @@ class RefNF extends BaseGallywixDataTransfer
      *
      * AAMM da emissão
      *
-     * @param string $aAMM
+     * @param string $AAMM
      * @return self
      */
-    public function setAAMM($aAMM)
+    public function setAAMM($AAMM)
     {
-        $this->aAMM = $aAMM;
+        $this->AAMM = $AAMM;
         return $this;
     }
 

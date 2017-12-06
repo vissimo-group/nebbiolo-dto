@@ -17,9 +17,7 @@ class PIS extends BaseGallywixDataTransfer
      * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
      * Diferenciada);
      *
-     * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq
-     * $PISAliq
+     * @property PIS\PISAliq $PISAliq
      */
     protected $PISAliq = null;
 
@@ -28,9 +26,7 @@ class PIS extends BaseGallywixDataTransfer
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
      * por Unidade de Produto;
      *
-     * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde
-     * $PISQtde
+     * @property PIS\PISQtde $PISQtde
      */
     protected $PISQtde = null;
 
@@ -42,9 +38,7 @@ class PIS extends BaseGallywixDataTransfer
      * 08 - Operação Sem Incidência da contribuição;
      * 09 - Operação com suspensão da contribuição;
      *
-     * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT
-     * $PISNT
+     * @property PIS\PISNT $PISNT
      */
     protected $PISNT = null;
 
@@ -52,11 +46,33 @@ class PIS extends BaseGallywixDataTransfer
      * Código de Situação Tributária do PIS.
      * 99 - Outras Operações.
      *
-     * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr
-     * $PISOutr
+     * @property PIS\PISOutr $PISOutr
      */
     protected $PISOutr = null;
+
+    /**
+     * @return \stdClass
+     */
+    public function toNFeTag()
+    {
+        if (!is_null($this->getPISAliq())) {
+            return $this->getPISAliq()->toNFeTag();
+        }
+
+        if (!is_null($this->getPISQtde())) {
+            return $this->getPISQtde()->toNFeTag();
+        }
+
+        if (!is_null($this->getPISNT())) {
+            return $this->getPISNT()->toNFeTag();
+        }
+
+        if (!is_null($this->getPISOutr())) {
+            return $this->getPISOutr()->toNFeTag();
+        }
+
+        return parent::toNFeTag();
+    }
 
     /**
      * Gets as PISAliq
@@ -67,32 +83,11 @@ class PIS extends BaseGallywixDataTransfer
      * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
      * Diferenciada);
      *
-     * @return
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq
+     * @return PIS\PISAliq
      */
     public function getPISAliq()
     {
         return $this->PISAliq;
-    }
-
-	/**
-	 * Sets a new PISAliq
-	 *
-	 * Código de Situação Tributária do PIS.
-	 *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-	 * Alíquota Normal (Cumulativo/Não Cumulativo);
-	 * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-	 * Diferenciada);
-	 *
-	 * @param PIS\PISAliq $PISAliq
-	 * @return PIS
-	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISAliq
-	 * $PISAliq
-	 */
-    public function setPISAliq(PIS\PISAliq $PISAliq)
-    {
-        $this->PISAliq = $PISAliq;
-        return $this;
     }
 
     /**
@@ -102,26 +97,43 @@ class PIS extends BaseGallywixDataTransfer
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
      * por Unidade de Produto;
      *
-     * @return
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde
+     * @return PIS\PISQtde
      */
     public function getPISQtde()
     {
         return $this->PISQtde;
     }
 
-	/**
-	 * Sets a new PISQtde
-	 *
-	 * Código de Situação Tributária do PIS.
-	 * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-	 * por Unidade de Produto;
-	 *
-	 * @param PIS\PISQtde $PISQtde
-	 * @return PIS
-	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISQtde
-	 * $PISQtde
-	 */
+    /**
+     * Sets a new PISAliq
+     *
+     * Código de Situação Tributária do PIS.
+     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
+     * Alíquota Normal (Cumulativo/Não Cumulativo);
+     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
+     * Diferenciada);
+     *
+     * @param PIS\PISAliq $PISAliq
+     * @return PIS
+     * @internal param $ PIS\PISAliq* PIS\PISAliq $PISAliq
+     */
+    public function setPISAliq(PIS\PISAliq $PISAliq)
+    {
+        $this->PISAliq = $PISAliq;
+        return $this;
+    }
+
+    /**
+     * Sets a new PISQtde
+     *
+     * Código de Situação Tributária do PIS.
+     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
+     * por Unidade de Produto;
+     *
+     * @param PIS\PISQtde $PISQtde
+     * @return PIS
+     * @internal param $ PIS\PISQtde* PIS\PISQtde $PISQtde
+     */
     public function setPISQtde(PIS\PISQtde $PISQtde)
     {
         $this->PISQtde = $PISQtde;
@@ -138,29 +150,27 @@ class PIS extends BaseGallywixDataTransfer
      * 08 - Operação Sem Incidência da contribuição;
      * 09 - Operação com suspensão da contribuição;
      *
-     * @return
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT
+     * @return PIS\PISNT
      */
     public function getPISNT()
     {
         return $this->PISNT;
     }
 
-	/**
-	 * Sets a new PISNT
-	 *
-	 * Código de Situação Tributária do PIS.
-	 * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
-	 * 06 - Operação Tributável - Alíquota Zero;
-	 * 07 - Operação Isenta da contribuição;
-	 * 08 - Operação Sem Incidência da contribuição;
-	 * 09 - Operação com suspensão da contribuição;
-	 *
-	 * @param PIS\PISNT $PISNT
-	 * @return PIS
-	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISNT
-	 * $PISNT
-	 */
+    /**
+     * Sets a new PISNT
+     *
+     * Código de Situação Tributária do PIS.
+     * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+     * 06 - Operação Tributável - Alíquota Zero;
+     * 07 - Operação Isenta da contribuição;
+     * 08 - Operação Sem Incidência da contribuição;
+     * 09 - Operação com suspensão da contribuição;
+     *
+     * @param PIS\PISNT $PISNT
+     * @return PIS
+     * @internal param $ PIS\PISNT* PIS\PISNT $PISNT
+     */
     public function setPISNT(PIS\PISNT $PISNT)
     {
         $this->PISNT = $PISNT;
@@ -173,25 +183,23 @@ class PIS extends BaseGallywixDataTransfer
      * Código de Situação Tributária do PIS.
      * 99 - Outras Operações.
      *
-     * @return
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr
+     * @return PIS\PISOutr
      */
     public function getPISOutr()
     {
         return $this->PISOutr;
     }
 
-	/**
-	 * Sets a new PISOutr
-	 *
-	 * Código de Situação Tributária do PIS.
-	 * 99 - Outras Operações.
-	 *
-	 * @param PIS\PISOutr $PISOutr
-	 * @return PIS
-	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS\PISOutr
-	 * $PISOutr
-	 */
+    /**
+     * Sets a new PISOutr
+     *
+     * Código de Situação Tributária do PIS.
+     * 99 - Outras Operações.
+     *
+     * @param PIS\PISOutr $PISOutr
+     * @return PIS
+     * @internal param $ PIS\PISOutr* PIS\PISOutr $PISOutr
+     */
     public function setPISOutr(PIS\PISOutr $PISOutr)
     {
         $this->PISOutr = $PISOutr;

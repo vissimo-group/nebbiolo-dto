@@ -4,6 +4,7 @@ namespace Evino\Gallywix\DataTransfer\Nfe\TNFe;
 
 use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
 use Evino\Gallywix\DataTransfer\Nfe\TLocal;
+use Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\AutXML;
 
 /**
  * Class representing InfNFe
@@ -16,17 +17,24 @@ class InfNFe extends BaseGallywixDataTransfer
      *
      * @property string $versao
      */
-    protected $versao = "4.00";
+    protected $versao = '4.00';
 
     /**
      * PL_005d - 11/08/09 - validação do Id
      *
-     * @property string $id
+     * @property string $Id
      */
-    protected $id = null;
+    protected $Id = null;
 
     /**
-     * identificação da NF-e
+     * This should always be null
+     *
+     * @var null
+     */
+    protected $pk_nItem = null;
+
+    /**
+     * Identificação da NF-e
      *
      * @property InfNFe\Ide $ide
      */
@@ -74,18 +82,14 @@ class InfNFe extends BaseGallywixDataTransfer
      *
      * @property InfNFe\AutXML[] $autXML
      */
-    protected $autXML = array(
-
-    );
+    protected $autXML = array();
 
     /**
      * Dados dos detalhes da NF-e
      *
      * @property InfNFe\Det[] $det
      */
-    protected $det = array(
-
-    );
+    protected $det = array();
 
     /**
      * Dados dos totais da NF-e
@@ -144,6 +148,25 @@ class InfNFe extends BaseGallywixDataTransfer
     protected $cana = null;
 
     /**
+     * @return array
+     */
+    public function getTagautXML()
+    {
+        if (count($this->autXML) == 0) {
+            return null;
+        }
+
+        $autXMLTags = array();
+
+        /** @var AutXML $autXML */
+        foreach ($this->autXML as $autXML) {
+            $autXMLTags[] = $autXML->toNFeTag();
+        }
+
+        return $autXMLTags;
+    }
+
+    /**
      * Gets as versao
      *
      * Versão do leiaute (v4.00)
@@ -178,7 +201,7 @@ class InfNFe extends BaseGallywixDataTransfer
      */
     public function getId()
     {
-        return $this->id;
+        return $this->Id;
     }
 
     /**
@@ -186,12 +209,12 @@ class InfNFe extends BaseGallywixDataTransfer
      *
      * PL_005d - 11/08/09 - validação do Id
      *
-     * @param string $id
+     * @param string $Id
      * @return self
      */
-    public function setId($id)
+    public function setId($Id)
     {
-        $this->id = $id;
+        $this->Id = $Id;
         return $this;
     }
 

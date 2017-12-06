@@ -65,8 +65,32 @@ abstract class BaseGallywixDataTransfer implements \JsonSerializable
     public function toNFeTag()
     {
         return (object)array_filter(get_object_vars($this), function($value) {
-            return !is_object($value);
+            return !is_null($value) && !is_object($value) && !is_array($value);
         });
+    }
+
+    /**
+     * @param integer $number
+     * @return \stdClass
+     */
+    public function toNFeTagWithItemNumber($number)
+    {
+        return $this->toNFeTagWithExtras(['item' => $number]);
+    }
+
+    /**
+     * @param array $extras
+     * @return \stdClass
+     */
+    public function toNFeTagWithExtras($extras)
+    {
+        $tag = self::toNFeTag();
+
+        foreach ($extras as $key => $value) {
+            $tag->$key = $value;
+        }
+
+        return $tag;
     }
 
     /**

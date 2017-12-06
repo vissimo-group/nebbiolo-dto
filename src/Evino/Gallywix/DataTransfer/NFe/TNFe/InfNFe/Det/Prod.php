@@ -50,11 +50,9 @@ class Prod extends BaseGallywixDataTransfer
     /**
      * Nomenclatura de Valor aduaneio e Estatístico
      *
-     * @property string[] $nVE
+     * @property string[] $NVE
      */
-    protected $nVE = array(
-
-    );
+    protected $NVE = array();
 
     /**
      * Codigo especificador da Substuicao Tributaria - CEST, que identifica a
@@ -86,9 +84,9 @@ class Prod extends BaseGallywixDataTransfer
     /**
      * Código EX TIPI (3 posições)
      *
-     * @property string $eXTIPI
+     * @property string $EXTIPI
      */
-    protected $eXTIPI = null;
+    protected $EXTIPI = null;
 
     /**
      * Cfop
@@ -200,11 +198,9 @@ class Prod extends BaseGallywixDataTransfer
      * (NT 2011/004)
      *
      * @property Prod\DI[]
-     * $dI
+     * $DI
      */
-    protected $dI = array(
-
-    );
+    protected $DI = array();
 
     /**
      * Detalhe da exportação
@@ -213,9 +209,7 @@ class Prod extends BaseGallywixDataTransfer
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
      * $detExport
      */
-    protected $detExport = array(
-
-    );
+    protected $detExport = array();
 
     /**
      * pedido de compra - Informação de interesse do emissor para controle do B2B.
@@ -243,9 +237,7 @@ class Prod extends BaseGallywixDataTransfer
      * @property
      * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Rastro[] $rastro
      */
-    protected $rastro = array(
-
-    );
+    protected $rastro = array();
 
     /**
      * Veículos novos
@@ -270,9 +262,7 @@ class Prod extends BaseGallywixDataTransfer
      * @property Prod\Arma[]
      * $arma
      */
-    protected $arma = array(
-
-    );
+    protected $arma = array();
 
     /**
      * Informar apenas para operações com combustíveis líquidos
@@ -412,21 +402,21 @@ class Prod extends BaseGallywixDataTransfer
     }
 
     /**
-     * Adds as nVE
+     * Adds as NVE
      *
      * Nomenclatura de Valor aduaneio e Estatístico
      *
      * @return self
-     * @param string $nVE
+     * @param string $NVE
      */
-    public function addToNVE($nVE)
+    public function addToNVE($NVE)
     {
-        $this->nVE[] = $nVE;
+        $this->NVE[] = $NVE;
         return $this;
     }
 
     /**
-     * isset nVE
+     * isset NVE
      *
      * Nomenclatura de Valor aduaneio e Estatístico
      *
@@ -435,11 +425,11 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function issetNVE($index)
     {
-        return isset($this->nVE[$index]);
+        return isset($this->NVE[$index]);
     }
 
     /**
-     * unset nVE
+     * unset NVE
      *
      * Nomenclatura de Valor aduaneio e Estatístico
      *
@@ -448,11 +438,11 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function unsetNVE($index)
     {
-        unset($this->nVE[$index]);
+        unset($this->NVE[$index]);
     }
 
     /**
-     * Gets as nVE
+     * Gets as NVE
      *
      * Nomenclatura de Valor aduaneio e Estatístico
      *
@@ -460,20 +450,20 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function getNVE()
     {
-        return $this->nVE;
+        return $this->NVE;
     }
 
 	/**
-	 * Sets a new nVE
+	 * Sets a new NVE
 	 *
 	 * Nomenclatura de Valor aduaneio e Estatístico
 	 *
-	 * @param array $nVE
+	 * @param array $NVE
 	 * @return Prod
 	 */
-    public function setNVE(array $nVE)
+    public function setNVE(array $NVE)
     {
-        $this->nVE = $nVE;
+        $this->NVE = $NVE;
         return $this;
     }
 
@@ -580,7 +570,7 @@ class Prod extends BaseGallywixDataTransfer
     }
 
     /**
-     * Gets as eXTIPI
+     * Gets as EXTIPI
      *
      * Código EX TIPI (3 posições)
      *
@@ -588,20 +578,20 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function getEXTIPI()
     {
-        return $this->eXTIPI;
+        return $this->EXTIPI;
     }
 
     /**
-     * Sets a new eXTIPI
+     * Sets a new EXTIPI
      *
      * Código EX TIPI (3 posições)
      *
-     * @param string $eXTIPI
+     * @param string $EXTIPI
      * @return self
      */
-    public function setEXTIPI($eXTIPI)
+    public function setEXTIPI($EXTIPI)
     {
-        $this->eXTIPI = $eXTIPI;
+        $this->EXTIPI = $EXTIPI;
         return $this;
     }
 
@@ -984,22 +974,22 @@ class Prod extends BaseGallywixDataTransfer
     }
 
     /**
-     * Adds as dI
+     * Adds as DI
      *
      * Delcaração de Importação
      * (NT 2011/004)
      *
      * @return self
-     * @param Prod\DI $dI
+     * @param Prod\DI $DI
      */
-    public function addToDI(Prod\DI $dI)
+    public function addToDI(Prod\DI $DI)
     {
-        $this->dI[] = $dI;
+        $this->DI[] = $DI;
         return $this;
     }
 
     /**
-     * isset dI
+     * isset DI
      *
      * Delcaração de Importação
      * (NT 2011/004)
@@ -1009,11 +999,11 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function issetDI($index)
     {
-        return isset($this->dI[$index]);
+        return isset($this->DI[$index]);
     }
 
     /**
-     * unset dI
+     * unset DI
      *
      * Delcaração de Importação
      * (NT 2011/004)
@@ -1023,11 +1013,11 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function unsetDI($index)
     {
-        unset($this->dI[$index]);
+        unset($this->DI[$index]);
     }
 
     /**
-     * Gets as dI
+     * Gets as DI
      *
      * Delcaração de Importação
      * (NT 2011/004)
@@ -1036,21 +1026,21 @@ class Prod extends BaseGallywixDataTransfer
      */
     public function getDI()
     {
-        return $this->dI;
+        return $this->DI;
     }
 
     /**
-     * Sets a new dI
+     * Sets a new DI
      *
      * Delcaração de Importação
      * (NT 2011/004)
      *
-     * @param Prod\DI[] $dI
+     * @param Prod\DI[] $DI
      * @return self
      */
-    public function setDI(array $dI)
+    public function setDI(array $DI)
     {
-        $this->dI = $dI;
+        $this->DI = $DI;
         return $this;
     }
 
@@ -1095,13 +1085,13 @@ class Prod extends BaseGallywixDataTransfer
         unset($this->detExport[$index]);
     }
 
-	/**
-	 * Gets as detExport
-	 *
-	 * Detalhe da exportação
-	 * @return array \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
-	 * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
-	 */
+    /**
+     * Gets as detExport
+     *
+     * Detalhe da exportação
+     * @return array \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
+     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
+     */
     public function getDetExport()
     {
         return $this->detExport;

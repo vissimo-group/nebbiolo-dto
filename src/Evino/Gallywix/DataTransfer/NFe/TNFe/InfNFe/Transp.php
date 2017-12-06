@@ -52,9 +52,7 @@ class Transp extends BaseGallywixDataTransfer
      *
      * @property TVeiculo[] $reboque
      */
-    protected $reboque = array(
-
-    );
+    protected $reboque = array();
 
     /**
      * Identificação do vagão (v2.0)
@@ -75,9 +73,46 @@ class Transp extends BaseGallywixDataTransfer
      *
      * @property Transp\Vol[] $vol
      */
-    protected $vol = array(
+    protected $vol = array();
 
-    );
+    /**
+     * @return null|\stdClass
+     */
+    public function getTagReboque()
+    {
+        if (count($this->getReboque()) == 0) {
+            return null;
+        }
+
+        $tag = $this->getReboque()[0]->toNFeTag();
+
+        if (!is_null($this->getVagao())) {
+            $tag->vagao = $this->getVagao();
+        }
+
+        if (!is_null($this->getBalsa())) {
+            $tag->balsa = $this->getBalsa();
+        }
+
+        return $tag;
+    }
+
+    /**
+     * @return array|null
+     */
+    public function getTagsVol()
+    {
+        if (count($this->getVol()) == 0) {
+            return null;
+        }
+
+        $tags = array();
+        foreach ($this->getVol() as $vol) {
+            $tags[] = $vol->toNFeTag();
+        }
+
+        return $tags;
+    }
 
     /**
      * Gets as modFrete

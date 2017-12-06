@@ -20,10 +20,23 @@ class ImpostoDevol extends BaseGallywixDataTransfer
     /**
      * Informação de IPI devolvido
      *
-     * @property
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $IPI
+     * @property ImpostoDevol\IPI $IPI
      */
     protected $IPI = null;
+
+    /**
+     * @return \stdClass
+     */
+    public function toNFeTag()
+    {
+        $tag = parent::toNFeTag();
+
+        if (!is_null($this->getIPI())) {
+            $tag->vIPIDevol = $this->getIPI()->getVIPIDevol();
+        }
+
+        return $tag;
+    }
 
     /**
      * Gets as pDevol
@@ -56,23 +69,22 @@ class ImpostoDevol extends BaseGallywixDataTransfer
      *
      * Informação de IPI devolvido
      *
-     * @return
-     * \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI
+     * @return ImpostoDevol\IPI
      */
     public function getIPI()
     {
         return $this->IPI;
     }
 
-	/**
-	 * Sets a new IPI
-	 *
-	 * Informação de IPI devolvido
-	 *
-	 * @param ImpostoDevol\IPI $IPI
-	 * @return ImpostoDevol
-	 * @internal param $ \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $IPI* \Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol\IPI $IPI
-	 */
+    /**
+     * Sets a new IPI
+     *
+     * Informação de IPI devolvido
+     *
+     * @param ImpostoDevol\IPI $IPI
+     * @return ImpostoDevol
+     * @internal param $ ImpostoDevol\IPI $IPI* ImpostoDevol\IPI $IPI
+     */
     public function setIPI(ImpostoDevol\IPI $IPI)
     {
         $this->IPI = $IPI;

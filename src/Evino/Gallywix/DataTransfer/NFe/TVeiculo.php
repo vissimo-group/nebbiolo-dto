@@ -30,9 +30,9 @@ class TVeiculo extends BaseGallywixDataTransfer
     /**
      * Registro Nacional de Transportador de Carga (ANTT)
      *
-     * @property string $rNTC
+     * @property string $RNTC
      */
-    protected $rNTC = null;
+    protected $RNTC = null;
 
     /**
      * Gets as placa
@@ -95,7 +95,7 @@ class TVeiculo extends BaseGallywixDataTransfer
      */
     public function getRNTC()
     {
-        return $this->rNTC;
+        return $this->RNTC;
     }
 
     /**
@@ -103,12 +103,12 @@ class TVeiculo extends BaseGallywixDataTransfer
      *
      * Registro Nacional de Transportador de Carga (ANTT)
      *
-     * @param string $rNTC
+     * @param string $RNTC
      * @return self
      */
-    public function setRNTC($rNTC)
+    public function setRNTC($RNTC)
     {
-        $this->rNTC = $rNTC;
+        $this->RNTC = $RNTC;
         return $this;
     }
 

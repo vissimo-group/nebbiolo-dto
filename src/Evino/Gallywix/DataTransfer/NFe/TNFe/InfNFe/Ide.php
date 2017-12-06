@@ -3,6 +3,7 @@
 namespace Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe;
 
 use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
+use Evino\Gallywix\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref;
 
 /**
  * Class representing Ide
@@ -205,9 +206,86 @@ class Ide extends BaseGallywixDataTransfer
      *
      * @property Ide\NFref[] $nFref
      */
-    protected $nFref = array(
+    protected $nFref = array();
 
-    );
+    /**
+     * @return \stdClass|null
+     */
+    public function getTagrefNFe()
+    {
+        /** @var NFref $nf */
+        foreach ($this->nFref as $nf) {
+            if (!is_null($nf->getRefNFe())) {
+                $tag = new \stdClass();
+                $tag->refNFe = $nf->getRefNFe();
+                return $tag;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * @return \stdClass|null
+     */
+    public function getTagrefNF()
+    {
+        /** @var NFref $nf */
+        foreach ($this->nFref as $nf) {
+            if (!is_null($nf->getRefNF())) {
+                return $nf->getRefNF()->toNFeTag();
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * @return \stdClass|null
+     */
+    public function getTagrefNFP()
+    {
+        /** @var NFref $nf */
+        foreach ($this->nFref as $nf) {
+            if (!is_null($nf->getRefNFP())) {
+                return $nf->getRefNFP()->toNFeTag();
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * @return \stdClass|null
+     */
+    public function getTagrefCTe()
+    {
+        /** @var NFref $nf */
+        foreach ($this->nFref as $nf) {
+            if (!is_null($nf->getRefCTe())) {
+                $tag = new \stdClass();
+                $tag->refCTe = $nf->getRefCTe();
+                return $tag;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * @return \stdClass|null
+     */
+    public function getTagrefECF()
+    {
+        /** @var NFref $nf */
+        foreach ($this->nFref as $nf) {
+            if (!is_null($nf->getRefECF())) {
+                return $nf->getRefECF()->toNFeTag();
+            }
+        }
+
+        return null;
+    }
 
     /**
      * Gets as cUF
@@ -861,7 +939,7 @@ class Ide extends BaseGallywixDataTransfer
      * @return self
      * @param Ide\NFref $nFref
      */
-    public function addToNFref(Ide\NFref $nFref)
+    public function addToNFref($nFref)
     {
         $this->nFref[] = $nFref;
         return $this;
@@ -913,7 +991,7 @@ class Ide extends BaseGallywixDataTransfer
      * @param Ide\NFref[] $nFref
      * @return self
      */
-    public function setNFref(array $nFref)
+    public function setNFref($nFref)
     {
         $this->nFref = $nFref;
         return $this;

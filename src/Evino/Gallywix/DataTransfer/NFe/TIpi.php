@@ -12,6 +12,12 @@ use Evino\Gallywix\DataTransfer\Base\BaseGallywixDataTransfer;
  */
 class TIpi extends BaseGallywixDataTransfer
 {
+    /**
+     * Classe de Enquadramento do IPI para Cigarros e Bebidas
+     *
+     * @property string $clEnq
+     */
+    protected $clEnq = null;
 
     /**
      * CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os
@@ -42,6 +48,19 @@ class TIpi extends BaseGallywixDataTransfer
      */
     protected $cEnq = null;
 
+    public function toNFeTag()
+    {
+        $extras = array();
+
+        if (!is_null($this->getIPITrib())) {
+            $extras = (array)$this->getIPITrib()->toNFeTag();
+        } else if (!is_null($this->getIPINT())) {
+            $extras = (array)$this->getIPINT()->toNFeTag();
+        }
+
+        return $this->toNFeTagWithExtras($extras);
+    }
+
     /**
      * @property TIpi\IPITrib $IPITrib
      */
@@ -51,6 +70,32 @@ class TIpi extends BaseGallywixDataTransfer
      * @property TIpi\IPINT $IPINT
      */
     protected $IPINT = null;
+
+    /**
+     * Gets as clEnq
+     *
+     * Classe de Enquadramento do IPI para Cigarros e Bebidas
+     *
+     * @return string
+     */
+    public function getClEnq()
+    {
+        return $this->clEnq;
+    }
+
+    /**
+     * Sets a new clEnq
+     *
+     * Classe de Enquadramento do IPI para Cigarros e Bebidas
+     *
+     * @param string $clEnq
+     * @return self
+     */
+    public function setClEnq($clEnq)
+    {
+        $this->clEnq = $clEnq;
+        return $this;
+    }
 
     /**
      * Gets as CNPJProd

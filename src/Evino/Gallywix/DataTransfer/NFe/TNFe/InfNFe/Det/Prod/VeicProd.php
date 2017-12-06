@@ -94,9 +94,9 @@ class VeicProd extends BaseGallywixDataTransfer
     /**
      * CMT-Capacidade Máxima de Tração - em Toneladas 4 casas decimais
      *
-     * @property string $cMT
+     * @property string $CMT
      */
-    protected $cMT = null;
+    protected $CMT = null;
 
     /**
      * Distância entre eixos
@@ -145,9 +145,9 @@ class VeicProd extends BaseGallywixDataTransfer
      * R-Remarcado
      * N-NormalVIN
      *
-     * @property string $vIN
+     * @property string $VIN
      */
-    protected $vIN = null;
+    protected $VIN = null;
 
     /**
      * Condição do veículo (1 - acabado; 2 - inacabado; 3 - semi-acabado)
@@ -171,7 +171,7 @@ class VeicProd extends BaseGallywixDataTransfer
      * @property string $cCorDENATRAN
      */
     protected $cCorDENATRAN = null;
-
+    
     /**
      * Quantidade máxima de permitida de passageiros sentados, inclusive motorista.
      *
@@ -487,7 +487,7 @@ class VeicProd extends BaseGallywixDataTransfer
     }
 
     /**
-     * Gets as cMT
+     * Gets as CMT
      *
      * CMT-Capacidade Máxima de Tração - em Toneladas 4 casas decimais
      *
@@ -495,20 +495,20 @@ class VeicProd extends BaseGallywixDataTransfer
      */
     public function getCMT()
     {
-        return $this->cMT;
+        return $this->CMT;
     }
 
     /**
-     * Sets a new cMT
+     * Sets a new CMT
      *
      * CMT-Capacidade Máxima de Tração - em Toneladas 4 casas decimais
      *
-     * @param string $cMT
+     * @param string $CMT
      * @return self
      */
-    public function setCMT($cMT)
+    public function setCMT($CMT)
     {
-        $this->cMT = $cMT;
+        $this->CMT = $CMT;
         return $this;
     }
 
@@ -669,7 +669,7 @@ class VeicProd extends BaseGallywixDataTransfer
     }
 
     /**
-     * Gets as vIN
+     * Gets as VIN
      *
      * Informa-se o veículo tem VIN (chassi) remarcado.
      * R-Remarcado
@@ -679,22 +679,22 @@ class VeicProd extends BaseGallywixDataTransfer
      */
     public function getVIN()
     {
-        return $this->vIN;
+        return $this->VIN;
     }
 
     /**
-     * Sets a new vIN
+     * Sets a new VIN
      *
      * Informa-se o veículo tem VIN (chassi) remarcado.
      * R-Remarcado
      * N-NormalVIN
      *
-     * @param string $vIN
+     * @param string $VIN
      * @return self
      */
-    public function setVIN($vIN)
+    public function setVIN($VIN)
     {
-        $this->vIN = $vIN;
+        $this->VIN = $VIN;
         return $this;
     }
 

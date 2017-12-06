@@ -29,9 +29,7 @@ class Cana extends BaseGallywixDataTransfer
      *
      * @property Cana\ForDia[] $forDia
      */
-    protected $forDia = array(
-
-    );
+    protected $forDia = array();
 
     /**
      * Total do mês
@@ -59,9 +57,7 @@ class Cana extends BaseGallywixDataTransfer
      *
      * @property Cana\Deduc[] $deduc
      */
-    protected $deduc = array(
-
-    );
+    protected $deduc = array();
 
     /**
      * Valor dos fornecimentos
@@ -83,6 +79,40 @@ class Cana extends BaseGallywixDataTransfer
      * @property string $vLiqFor
      */
     protected $vLiqFor = null;
+
+    /**
+     * @return array|null
+     */
+    public function getTagsForDia()
+    {
+        if (count($this->getForDia()) == 0) {
+            return null;
+        }
+
+        $tagsArray = array();
+        foreach ($this->getForDia() as $dia) {
+            $tagsArray[] = $dia->toNFeTag();
+        }
+
+        return $tagsArray;
+    }
+
+    /**
+     * @return array|null
+     */
+    public function getTagsDeduc()
+    {
+        if (count($this->getDeduc()) == 0) {
+            return null;
+        }
+
+        $tagsArray = array();
+        foreach ($this->getDeduc() as $dia) {
+            $tagsArray[] = $dia->toNFeTag();
+        }
+
+        return $tagsArray;
+    }
 
     /**
      * Gets as safra

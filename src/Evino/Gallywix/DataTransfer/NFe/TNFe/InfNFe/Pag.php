@@ -15,9 +15,7 @@ class Pag extends BaseGallywixDataTransfer
      *
      * @property Pag\DetPag[] $detPag
      */
-    protected $detPag = array(
-
-    );
+    protected $detPag = array();
 
     /**
      * Valor do Troco.

@@ -31,10 +31,27 @@ class DetPag extends BaseGallywixDataTransfer
     /**
      * Grupo de Cartões
      *
-     * @property DetPag\Card
-     * $card
+     * @property DetPag\Card $card
      */
     protected $card = null;
+
+    /**
+     * @return \stdClass
+     */
+    public function toNFeTag()
+    {
+        $tag = parent::toNFeTag();
+
+        $card = $this->getCard();
+        if (!is_null($card)) {
+            $tag->CNPJ = $card->getCNPJ();
+            $tag->tBand = $card->getTBand();
+            $tag->cAut = $card->getCAut();
+            $tag->tpIntegra = $card->getTpIntegra();
+        }
+
+        return $tag;
+    }
 
     /**
      * Gets as tPag
