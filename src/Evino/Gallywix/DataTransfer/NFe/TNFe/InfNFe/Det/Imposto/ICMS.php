@@ -153,23 +153,22 @@ class ICMS extends BaseGallywixDataTransfer
     protected $ICMSSN900 = null;
 
     /**
-     * @param array $extras
      * @return \stdClass
      */
-    public function toNFeTagWithExtras($extras)
+    public function toNFeTag()
     {
         $icmsArr = array($this->getICMS00(), $this->getICMS10(), $this->getICMS20(), $this->getICMS30(),
-                         $this->getICMS40(), $this->getICMS51(), $this->getICMS60(), $this->getICMS70(),
-                         $this->getICMS90());
+            $this->getICMS40(), $this->getICMS51(), $this->getICMS60(), $this->getICMS70(),
+            $this->getICMS90());
 
         /** @var BaseGallywixDataTransfer $icms **/
         foreach ($icmsArr as $icms) {
             if (!is_null($icms)) {
-                return $icms->toNFeTagWithExtras($extras);
+                return $icms->toNFeTag();
             }
         }
 
-        return parent::toNFeTagWithExtras($extras);
+        return parent::toNFeTag();
     }
 
     /**

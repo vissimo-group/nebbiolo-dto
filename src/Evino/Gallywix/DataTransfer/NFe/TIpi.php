@@ -48,8 +48,12 @@ class TIpi extends BaseGallywixDataTransfer
      */
     protected $cEnq = null;
 
+    /**
+     * @return \stdClass
+     */
     public function toNFeTag()
     {
+        $tag = parent::toNFeTag();
         $extras = array();
 
         if (!is_null($this->getIPITrib())) {
@@ -58,7 +62,11 @@ class TIpi extends BaseGallywixDataTransfer
             $extras = (array)$this->getIPINT()->toNFeTag();
         }
 
-        return $this->toNFeTagWithExtras($extras);
+        foreach ($extras as $key => $value) {
+            $tag->$key = $value;
+        }
+
+        return $tag;
     }
 
     /**

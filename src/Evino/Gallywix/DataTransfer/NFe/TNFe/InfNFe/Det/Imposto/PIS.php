@@ -50,29 +50,26 @@ class PIS extends BaseGallywixDataTransfer
      */
     protected $PISOutr = null;
 
-    /**
-     * @param array $extras
-     * @return \stdClass
-     */
-    public function toNFeTagWithExtras($extras)
+
+    public function toNFeTag()
     {
         if (!is_null($this->getPISAliq())) {
-            return $this->getPISAliq()->toNFeTagWithExtras($extras);
+            return $this->getPISAliq()->toNFeTag();
         }
 
         if (!is_null($this->getPISQtde())) {
-            return $this->getPISQtde()->toNFeTagWithExtras($extras);
+            return $this->getPISQtde()->toNFeTag();
         }
 
         if (!is_null($this->getPISNT())) {
-            return $this->getPISNT()->toNFeTagWithExtras($extras);
+            return $this->getPISNT()->toNFeTag();
         }
 
         if (!is_null($this->getPISOutr())) {
-            return $this->getPISOutr()->toNFeTagWithExtras($extras);
+            return $this->getPISOutr()->toNFeTag();
         }
 
-        return parent::toNFeTagWithExtras($extras);
+        return parent::toNFeTag();
     }
 
     /**
