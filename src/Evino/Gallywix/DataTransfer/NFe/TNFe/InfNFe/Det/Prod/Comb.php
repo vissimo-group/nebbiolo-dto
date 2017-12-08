@@ -113,17 +113,15 @@ class Comb extends BaseGallywixDataTransfer
      */
     public function toNFeTag()
     {
-        if (is_null($this->getCIDE())) {
-            return parent::toNFeTag();
+        $tag = parent::toNFeTag();
+
+        if (!is_null($this->getCIDE())) {
+            $tag->qBCProd = $this->getCIDE()->getQBCProd();
+            $tag->vAliqProd = $this->getCIDE()->getVAliqProd();
+            $tag->vCIDE = $this->getCIDE()->getVCIDE();
         }
 
-        $extras = [
-            'qBCProd' => $this->getCIDE()->getQBCProd(),
-            'vAliqProd' => $this->getCIDE()->getVAliqProd(),
-            'vCIDE' => $this->getCIDE()->getVCIDE()
-        ];
-
-        return $this->toNFeTagWithExtras($extras);
+        return $tag;
     }
 
     /**

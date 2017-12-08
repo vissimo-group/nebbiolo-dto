@@ -23,7 +23,7 @@ class TIpiTest extends TestCase
         $this->assertEquals($expected, $actual);
     }
 
-    public function testToNFeTagWithTrib()
+    public function testToNFeTagWithoutTribNorNTtestToNFeTagWithoutTribNorNT()
     {
         $sampleTribIPI = $this->sampleTribIPI();
 
@@ -65,6 +65,27 @@ class TIpiTest extends TestCase
         $expected->CST = $sampleNT->getCST();
 
         $actual = $sampleIPI->toNFeTag();
+
+        $this->assertEquals($expected, $actual);
+    }
+
+    public function testToNFeTagWithNTAndItemNumber()
+    {
+        $sampleNT = $this->sampleNT();
+
+        $sampleIPI = $this->sampleIPI();
+        $sampleIPI->setIPINT($sampleNT);
+
+        $expected = new \stdClass();
+        $expected->item = 1;
+        $expected->cEnq = $sampleIPI->getCEnq();
+        $expected->clEnq = $sampleIPI->getClEnq();
+        $expected->CNPJProd = $sampleIPI->getCNPJProd();
+        $expected->cSelo = $sampleIPI->getCSelo();
+        $expected->qSelo = $sampleIPI->getQSelo();
+        $expected->CST = $sampleNT->getCST();
+
+        $actual = $sampleIPI->toNFeTagWithItemNumber(1);
 
         $this->assertEquals($expected, $actual);
     }

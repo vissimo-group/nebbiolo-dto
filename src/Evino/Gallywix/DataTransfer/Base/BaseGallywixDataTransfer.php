@@ -84,7 +84,7 @@ abstract class BaseGallywixDataTransfer implements \JsonSerializable
      */
     public function toNFeTagWithExtras($extras)
     {
-        $tag = self::toNFeTag();
+        $tag = $this->toNFeTag();
 
         foreach ($extras as $key => $value) {
             $tag->$key = $value;
