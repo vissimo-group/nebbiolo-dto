@@ -26,7 +26,7 @@ class CreateNFe extends BaseGallywixDataTransfer
     /**
      * @return string
      */
-    public function getOrderReference(): string
+    public function getOrderReference()
     {
         return $this->orderReference;
     }
@@ -35,7 +35,7 @@ class CreateNFe extends BaseGallywixDataTransfer
      * @param string $orderReference
      * @return CreateNFe
      */
-    public function setOrderReference(string $orderReference): CreateNFe
+    public function setOrderReference($orderReference)
     {
         $this->orderReference = $orderReference;
         return $this;
@@ -44,7 +44,7 @@ class CreateNFe extends BaseGallywixDataTransfer
     /**
      * @return string
      */
-    public function getCallbackUrl(): string
+    public function getCallbackUrl()
     {
         return $this->callbackUrl;
     }
@@ -53,7 +53,7 @@ class CreateNFe extends BaseGallywixDataTransfer
      * @param string $callbackUrl
      * @return CreateNFe
      */
-    public function setCallbackUrl(string $callbackUrl): CreateNFe
+    public function setCallbackUrl($callbackUrl)
     {
         $this->callbackUrl = $callbackUrl;
         return $this;
@@ -62,7 +62,7 @@ class CreateNFe extends BaseGallywixDataTransfer
     /**
      * @return NFe
      */
-    public function getNfe(): NFe
+    public function getNfe()
     {
         return $this->nfe;
     }
@@ -71,7 +71,7 @@ class CreateNFe extends BaseGallywixDataTransfer
      * @param NFe $nfe
      * @return CreateNFe
      */
-    public function setNfe(NFe $nfe): CreateNFe
+    public function setNfe($nfe)
     {
         $this->nfe = $nfe;
         return $this;
