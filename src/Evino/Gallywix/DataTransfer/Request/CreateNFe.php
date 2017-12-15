@@ -71,7 +71,7 @@ class CreateNFe extends BaseGallywixDataTransfer
      * @param NFe $nfe
      * @return CreateNFe
      */
-    public function setNfe($nfe)
+    public function setNfe(NFe $nfe)
     {
         $this->nfe = $nfe;
         return $this;
