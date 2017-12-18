@@ -1,6 +1,6 @@
 {
-    "name": "evino/gallywix-dto",
-    "description": "Data transfer objects (DTO) for Gallywix (Brazilian electronic invoice - NFe gateway)",
+    "name": "evino/nebbiolo-dto",
+    "description": "Data transfer objects (DTO) for Nebbiolo (Brazilian electronic invoice - NFe gateway)",
     "authors": [
         {
             "name": "Evino",

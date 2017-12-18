@@ -11,7 +11,7 @@
     bootstrap="./vendor/autoload.php"
 >
     <testsuites>
-        <testsuite name="Evino Gallywix DTO Test Suite">
+        <testsuite name="Evino Nebbiolo DTO Test Suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
