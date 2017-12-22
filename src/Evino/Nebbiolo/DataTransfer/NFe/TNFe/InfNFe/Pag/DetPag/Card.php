@@ -11,12 +11,9 @@ class Card extends BaseDataTransfer
 {
 
     /**
-     * Tipo de Integração do processo de pagamento com o sistema de automação da
-     * empresa/
-     *  1=Pagamento integrado com o sistema de automação da empresa Ex. equipamento
-     * TEF , Comercio Eletronico
-     *  2=Pagamento não integrado com o sistema de automação da empresa Ex:
-     * equipamento POS
+     * Tipo de Integração do processo de pagamento com o sistema de automação da empresa:
+     *  1 => Pagamento integrado com o sistema de automação da empresa Ex. equipamento TEF, Comercio Eletronico
+     *  2 => Pagamento não integrado com o sistema de automação da empresa Ex: equipamento POS
      *
      * @property string $tpIntegra
      */
@@ -30,9 +27,17 @@ class Card extends BaseDataTransfer
     protected $CNPJ = null;
 
     /**
-     * Bandeira da operadora de cartão de crédito/débito:01–Visa; 02–Mastercard;
-     * 03–American Express; 04–Sorocred;05-Diners
-     * Club;06-Elo;07-Hipercard;08-Aura;09-Cabal;99–Outros
+     * Bandeira da operadora de cartão de crédito/débito:
+     * 01 => Visa
+     * 02 => Mastercard
+     * 03 => American Express
+     * 04 => Sorocred
+     * 05 => Diners Club
+     * 06 => Elo
+     * 07 => Hipercard
+     * 08 => Aura
+     * 09 => Cabal
+     * 99 => Outros
      *
      * @property string $tBand
      */
@@ -48,12 +53,9 @@ class Card extends BaseDataTransfer
     /**
      * Gets as tpIntegra
      *
-     * Tipo de Integração do processo de pagamento com o sistema de automação da
-     * empresa/
-     *  1=Pagamento integrado com o sistema de automação da empresa Ex. equipamento
-     * TEF , Comercio Eletronico
-     *  2=Pagamento não integrado com o sistema de automação da empresa Ex:
-     * equipamento POS
+     * Tipo de Integração do processo de pagamento com o sistema de automação da empresa:
+     *  1 => Pagamento integrado com o sistema de automação da empresa Ex. equipamento TEF, Comercio Eletronico
+     *  2 => Pagamento não integrado com o sistema de automação da empresa Ex: equipamento POS
      *
      * @return string
      */
@@ -65,12 +67,9 @@ class Card extends BaseDataTransfer
     /**
      * Sets a new tpIntegra
      *
-     * Tipo de Integração do processo de pagamento com o sistema de automação da
-     * empresa/
-     *  1=Pagamento integrado com o sistema de automação da empresa Ex. equipamento
-     * TEF , Comercio Eletronico
-     *  2=Pagamento não integrado com o sistema de automação da empresa Ex:
-     * equipamento POS
+     * Tipo de Integração do processo de pagamento com o sistema de automação da empresa:
+     *  1 => Pagamento integrado com o sistema de automação da empresa Ex. equipamento TEF, Comercio Eletronico
+     *  2 => Pagamento não integrado com o sistema de automação da empresa Ex: equipamento POS
      *
      * @param string $tpIntegra
      * @return self
@@ -110,9 +109,17 @@ class Card extends BaseDataTransfer
     /**
      * Gets as tBand
      *
-     * Bandeira da operadora de cartão de crédito/débito:01–Visa; 02–Mastercard;
-     * 03–American Express; 04–Sorocred;05-Diners
-     * Club;06-Elo;07-Hipercard;08-Aura;09-Cabal;99–Outros
+     * Bandeira da operadora de cartão de crédito/débito:
+     * 01 => Visa
+     * 02 => Mastercard
+     * 03 => American Express
+     * 04 => Sorocred
+     * 05 => Diners Club
+     * 06 => Elo
+     * 07 => Hipercard
+     * 08 => Aura
+     * 09 => Cabal
+     * 99 => Outros
      *
      * @return string
      */
@@ -124,9 +131,17 @@ class Card extends BaseDataTransfer
     /**
      * Sets a new tBand
      *
-     * Bandeira da operadora de cartão de crédito/débito:01–Visa; 02–Mastercard;
-     * 03–American Express; 04–Sorocred;05-Diners
-     * Club;06-Elo;07-Hipercard;08-Aura;09-Cabal;99–Outros
+     * Bandeira da operadora de cartão de crédito/débito:
+     * 01 => Visa
+     * 02 => Mastercard
+     * 03 => American Express
+     * 04 => Sorocred
+     * 05 => Diners Club
+     * 06 => Elo
+     * 07 => Hipercard
+     * 08 => Aura
+     * 09 => Cabal
+     * 99 => Outros
      *
      * @param string $tBand
      * @return self
@@ -163,6 +178,4 @@ class Card extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

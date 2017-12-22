@@ -25,8 +25,7 @@ class Adi extends BaseDataTransfer
     protected $nSeqAdic = null;
 
     /**
-     * Código do fabricante estrangeiro (usado nos sistemas internos de informação
-     * do emitente da NF-e)
+     * Código do fabricante estrangeiro (usado nos sistemas internos de informação do emitente da NF-e)
      *
      * @property string $cFabricante
      */
@@ -101,8 +100,7 @@ class Adi extends BaseDataTransfer
     /**
      * Gets as cFabricante
      *
-     * Código do fabricante estrangeiro (usado nos sistemas internos de informação
-     * do emitente da NF-e)
+     * Código do fabricante estrangeiro (usado nos sistemas internos de informação do emitente da NF-e)
      *
      * @return string
      */
@@ -114,8 +112,7 @@ class Adi extends BaseDataTransfer
     /**
      * Sets a new cFabricante
      *
-     * Código do fabricante estrangeiro (usado nos sistemas internos de informação
-     * do emitente da NF-e)
+     * Código do fabricante estrangeiro (usado nos sistemas internos de informação do emitente da NF-e)
      *
      * @param string $cFabricante
      * @return self
@@ -178,6 +175,4 @@ class Adi extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

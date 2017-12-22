@@ -39,8 +39,8 @@ class Callback extends BaseDataTransfer
     }
 
     /**
-     * @param string $nfeNumber
-     * @return Callback
+     * @param $nfeNumber
+     * @return static
      */
     public function setNfeNumber($nfeNumber)
     {
@@ -58,7 +58,7 @@ class Callback extends BaseDataTransfer
 
     /**
      * @param string $orderReference
-     * @return Callback
+     * @return static
      */
     public function setOrderReference($orderReference)
     {
@@ -76,7 +76,7 @@ class Callback extends BaseDataTransfer
 
     /**
      * @param string $nfeKey
-     * @return Callback
+     * @return static
      */
     public function setNfeKey($nfeKey)
     {
@@ -94,7 +94,7 @@ class Callback extends BaseDataTransfer
 
     /**
      * @param string $nfeXml
-     * @return Callback
+     * @return static
      */
     public function setNfeXml($nfeXml)
     {
@@ -112,7 +112,7 @@ class Callback extends BaseDataTransfer
 
     /**
      * @param string $sefazStatusCode
-     * @return Callback
+     * @return static
      */
     public function setSefazStatusCode($sefazStatusCode)
     {
@@ -130,7 +130,7 @@ class Callback extends BaseDataTransfer
 
     /**
      * @param string $sefazLastResponse
-     * @return Callback
+     * @return static
      */
     public function setSefazLastResponse($sefazLastResponse)
     {
@@ -148,7 +148,7 @@ class Callback extends BaseDataTransfer
 
     /**
      * @param string $nebbioloStatusCode
-     * @return Callback
+     * @return static
      */
     public function setNebbioloStatusCode($nebbioloStatusCode)
     {
@@ -166,7 +166,7 @@ class Callback extends BaseDataTransfer
 
     /**
      * @param string $nebbioloStatusDescription
-     * @return Callback
+     * @return static
      */
     public function setNebbioloStatusDescription($nebbioloStatusDescription)
     {

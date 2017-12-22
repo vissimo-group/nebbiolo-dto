@@ -37,6 +37,4 @@ class CanonicalizationMethod extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -22,9 +22,7 @@ class Cobr extends BaseDataTransfer
      *
      * @property Cobr\Dup[] $dup
      */
-    protected $dup = array(
-
-    );
+    protected $dup = array();
 
     /**
      * Gets as fat
@@ -118,6 +116,4 @@ class Cobr extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

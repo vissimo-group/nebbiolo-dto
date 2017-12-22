@@ -11,7 +11,9 @@ class Arma extends BaseDataTransfer
 {
 
     /**
-     * Indicador do tipo de arma de fogo (0 - Uso permitido; 1 - Uso restrito)
+     * Indicador do tipo de arma de fogo
+     * 0 => Uso permitido
+     * 1 => Uso restrito
      *
      * @property string $tpArma
      */
@@ -43,7 +45,9 @@ class Arma extends BaseDataTransfer
     /**
      * Gets as tpArma
      *
-     * Indicador do tipo de arma de fogo (0 - Uso permitido; 1 - Uso restrito)
+     * Indicador do tipo de arma de fogo
+     * 0 => Uso permitido
+     * 1 => Uso restrito
      *
      * @return string
      */
@@ -55,7 +59,9 @@ class Arma extends BaseDataTransfer
     /**
      * Sets a new tpArma
      *
-     * Indicador do tipo de arma de fogo (0 - Uso permitido; 1 - Uso restrito)
+     * Indicador do tipo de arma de fogo
+     * 0 => Uso permitido
+     * 1 => Uso restrito
      *
      * @param string $tpArma
      * @return self
@@ -148,6 +154,4 @@ class Arma extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -91,6 +91,4 @@ class ImpostoDevol extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

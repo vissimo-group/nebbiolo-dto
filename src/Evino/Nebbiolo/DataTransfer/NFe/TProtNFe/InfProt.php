@@ -58,8 +58,8 @@ class InfProt extends BaseDataTransfer
     protected $nProt = null;
 
     /**
-     * Digest Value da NF-e processada. Utilizado para conferir a integridade da NF-e
-     * original.
+     * Digest Value da NF-e processada.
+     * Utilizado para conferir a integridade da NF-e original.
      *
      * @property mixed $digVal
      */
@@ -105,8 +105,8 @@ class InfProt extends BaseDataTransfer
      * Gets as tpAmb
      *
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @return string
      */
@@ -119,8 +119,8 @@ class InfProt extends BaseDataTransfer
      * Sets a new tpAmb
      *
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @param string $tpAmb
      * @return self
@@ -248,8 +248,8 @@ class InfProt extends BaseDataTransfer
     /**
      * Gets as digVal
      *
-     * Digest Value da NF-e processada. Utilizado para conferir a integridade da NF-e
-     * original.
+     * Digest Value da NF-e processada.
+     * Utilizado para conferir a integridade da NF-e original.
      *
      * @return mixed
      */
@@ -261,8 +261,8 @@ class InfProt extends BaseDataTransfer
     /**
      * Sets a new digVal
      *
-     * Digest Value da NF-e processada. Utilizado para conferir a integridade da NF-e
-     * original.
+     * Digest Value da NF-e processada.
+     * Utilizado para conferir a integridade da NF-e original.
      *
      * @param mixed $digVal
      * @return self
@@ -325,6 +325,4 @@ class InfProt extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

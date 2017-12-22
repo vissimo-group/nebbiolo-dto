@@ -103,6 +103,4 @@ class Transform extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

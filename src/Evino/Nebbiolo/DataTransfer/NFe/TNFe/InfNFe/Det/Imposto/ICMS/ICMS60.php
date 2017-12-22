@@ -11,9 +11,10 @@ class ICMS60 extends BaseDataTransfer
 {
 
     /**
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @property string $orig
      */
@@ -21,7 +22,7 @@ class ICMS60 extends BaseDataTransfer
 
     /**
      * Tributação pelo ICMS
-     * 60 - ICMS cobrado anteriormente por substituição tributária
+     * 60 => ICMS cobrado anteriormente por substituição tributária
      *
      * @property string $CST
      */
@@ -72,9 +73,10 @@ class ICMS60 extends BaseDataTransfer
     /**
      * Gets as orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @return string
      */
@@ -86,9 +88,10 @@ class ICMS60 extends BaseDataTransfer
     /**
      * Sets a new orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @param string $orig
      * @return self
@@ -103,7 +106,7 @@ class ICMS60 extends BaseDataTransfer
      * Gets as CST
      *
      * Tributação pelo ICMS
-     * 60 - ICMS cobrado anteriormente por substituição tributária
+     * 60 => ICMS cobrado anteriormente por substituição tributária
      *
      * @return string
      */
@@ -116,7 +119,7 @@ class ICMS60 extends BaseDataTransfer
      * Sets a new CST
      *
      * Tributação pelo ICMS
-     * 60 - ICMS cobrado anteriormente por substituição tributária
+     * 60 => ICMS cobrado anteriormente por substituição tributária
      *
      * @param string $CST
      * @return self
@@ -283,6 +286,4 @@ class ICMS60 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

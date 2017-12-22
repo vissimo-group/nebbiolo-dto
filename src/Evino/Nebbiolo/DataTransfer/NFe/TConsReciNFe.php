@@ -20,8 +20,8 @@ class TConsReciNFe extends BaseDataTransfer
 
     /**
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @property string $tpAmb
      */
@@ -60,8 +60,8 @@ class TConsReciNFe extends BaseDataTransfer
      * Gets as tpAmb
      *
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @return string
      */
@@ -74,8 +74,8 @@ class TConsReciNFe extends BaseDataTransfer
      * Sets a new tpAmb
      *
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @param string $tpAmb
      * @return self
@@ -112,6 +112,4 @@ class TConsReciNFe extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

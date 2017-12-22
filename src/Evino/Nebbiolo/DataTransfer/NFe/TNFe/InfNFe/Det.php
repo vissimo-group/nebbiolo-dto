@@ -41,8 +41,7 @@ class Det extends BaseDataTransfer
     protected $impostoDevol = null;
 
     /**
-     * Informações adicionais do produto (norma referenciada, informações
-     * complementares, etc)
+     * Informações adicionais do produto (norma referenciada, informações complementares, etc)
      *
      * @property string $infAdProd
      */
@@ -298,8 +297,7 @@ class Det extends BaseDataTransfer
     /**
      * Sets a new impostoDevol
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\ImpostoDevol
-     * $impostoDevol
+     * @param Det\ImpostoDevol $impostoDevol
      * @return self
      */
     public function setImpostoDevol(Det\ImpostoDevol $impostoDevol)
@@ -311,8 +309,7 @@ class Det extends BaseDataTransfer
     /**
      * Gets as infAdProd
      *
-     * Informações adicionais do produto (norma referenciada, informações
-     * complementares, etc)
+     * Informações adicionais do produto (norma referenciada, informações complementares, etc)
      *
      * @return string
      */
@@ -324,8 +321,7 @@ class Det extends BaseDataTransfer
     /**
      * Sets a new infAdProd
      *
-     * Informações adicionais do produto (norma referenciada, informações
-     * complementares, etc)
+     * Informações adicionais do produto (norma referenciada, informações complementares, etc)
      *
      * @param string $infAdProd
      * @return self
@@ -337,4 +333,3 @@ class Det extends BaseDataTransfer
     }
 
 }
-

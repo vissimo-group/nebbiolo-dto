@@ -13,12 +13,12 @@ class Transp extends BaseDataTransfer
 
     /**
      * Modalidade do frete
-     * 0- Contratação do Frete por conta do Remetente (CIF);
-     * 1- Contratação do Frete por conta do destinatário/remetente (FOB);
-     * 2- Contratação do Frete por conta de terceiros;
-     * 3- Transporte próprio por conta do remetente;
-     * 4- Transporte próprio por conta do destinatário;
-     * 9- Sem Ocorrência de transporte.
+     * 0 => Contratação do Frete por conta do Remetente (CIF);
+     * 1 => Contratação do Frete por conta do destinatário/remetente (FOB);
+     * 2 => Contratação do Frete por conta de terceiros;
+     * 3 => Transporte próprio por conta do remetente;
+     * 4 => Transporte próprio por conta do destinatário;
+     * 9 => Sem Ocorrência de transporte.
      *
      * @property string $modFrete
      */
@@ -118,12 +118,12 @@ class Transp extends BaseDataTransfer
      * Gets as modFrete
      *
      * Modalidade do frete
-     * 0- Contratação do Frete por conta do Remetente (CIF);
-     * 1- Contratação do Frete por conta do destinatário/remetente (FOB);
-     * 2- Contratação do Frete por conta de terceiros;
-     * 3- Transporte próprio por conta do remetente;
-     * 4- Transporte próprio por conta do destinatário;
-     * 9- Sem Ocorrência de transporte.
+     * 0 => Contratação do Frete por conta do Remetente (CIF);
+     * 1 => Contratação do Frete por conta do destinatário/remetente (FOB);
+     * 2 => Contratação do Frete por conta de terceiros;
+     * 3 => Transporte próprio por conta do remetente;
+     * 4 => Transporte próprio por conta do destinatário;
+     * 9 => Sem Ocorrência de transporte.
      *
      * @return string
      */
@@ -136,12 +136,12 @@ class Transp extends BaseDataTransfer
      * Sets a new modFrete
      *
      * Modalidade do frete
-     * 0- Contratação do Frete por conta do Remetente (CIF);
-     * 1- Contratação do Frete por conta do destinatário/remetente (FOB);
-     * 2- Contratação do Frete por conta de terceiros;
-     * 3- Transporte próprio por conta do remetente;
-     * 4- Transporte próprio por conta do destinatário;
-     * 9- Sem Ocorrência de transporte.
+     * 0 => Contratação do Frete por conta do Remetente (CIF);
+     * 1 => Contratação do Frete por conta do destinatário/remetente (FOB);
+     * 2 => Contratação do Frete por conta de terceiros;
+     * 3 => Transporte próprio por conta do remetente;
+     * 4 => Transporte próprio por conta do destinatário;
+     * 9 => Sem Ocorrência de transporte.
      *
      * @param string $modFrete
      * @return self
@@ -169,8 +169,7 @@ class Transp extends BaseDataTransfer
      *
      * Dados do transportador
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Transp\Transporta
-     * $transporta
+     * @param Transp\Transporta $transporta
      * @return self
      */
     public function setTransporta(Transp\Transporta $transporta)
@@ -196,8 +195,7 @@ class Transp extends BaseDataTransfer
      *
      * Dados da retenção ICMS do Transporte
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Transp\RetTransp
-     * $retTransp
+     * @param Transp\RetTransp $retTransp
      * @return self
      */
     public function setRetTransp(Transp\RetTransp $retTransp)
@@ -416,6 +414,4 @@ class Transp extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

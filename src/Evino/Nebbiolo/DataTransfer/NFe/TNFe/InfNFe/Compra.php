@@ -109,6 +109,4 @@ class Compra extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

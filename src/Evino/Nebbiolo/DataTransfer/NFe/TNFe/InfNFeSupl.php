@@ -18,8 +18,8 @@ class InfNFeSupl extends BaseDataTransfer
     protected $qrcode = null;
 
     /**
-     * Informar a URL da "Consulta por chave de acesso da NFC-e". A mesma URL que deve
-     * estar informada no DANFE NFC-e para consulta por chave de acesso.
+     * Informar a URL da "Consulta por chave de acesso da NFC-e".
+     * A mesma URL que deve estar informada no DANFE NFC-e para consulta por chave de acesso.
      *
      * @property string $urlChave
      */
@@ -54,8 +54,8 @@ class InfNFeSupl extends BaseDataTransfer
     /**
      * Gets as urlChave
      *
-     * Informar a URL da "Consulta por chave de acesso da NFC-e". A mesma URL que deve
-     * estar informada no DANFE NFC-e para consulta por chave de acesso.
+     * Informar a URL da "Consulta por chave de acesso da NFC-e".
+     * A mesma URL que deve estar informada no DANFE NFC-e para consulta por chave de acesso.
      *
      * @return string
      */
@@ -67,8 +67,8 @@ class InfNFeSupl extends BaseDataTransfer
     /**
      * Sets a new urlChave
      *
-     * Informar a URL da "Consulta por chave de acesso da NFC-e". A mesma URL que deve
-     * estar informada no DANFE NFC-e para consulta por chave de acesso.
+     * Informar a URL da "Consulta por chave de acesso da NFC-e".
+     * A mesma URL que deve estar informada no DANFE NFC-e para consulta por chave de acesso.
      *
      * @param string $urlChave
      * @return self
@@ -79,6 +79,4 @@ class InfNFeSupl extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

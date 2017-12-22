@@ -175,6 +175,4 @@ class COFINSST extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

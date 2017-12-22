@@ -33,11 +33,11 @@ class SignatureValue extends BaseDataTransfer
         $this->value($value);
     }
 
-	/**
-	 * Gets or sets the inner value
-	 * @return mixed
-	 * @internal param mixed $value
-	 */
+    /**
+     * Gets or sets the inner value
+     * @return mixed
+     * @internal param mixed $value
+     */
     public function value()
     {
         if ($args = func_get_args()) {
@@ -78,6 +78,4 @@ class SignatureValue extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

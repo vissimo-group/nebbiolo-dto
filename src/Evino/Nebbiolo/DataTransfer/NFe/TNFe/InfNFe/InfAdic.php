@@ -25,9 +25,8 @@ class InfAdic extends BaseDataTransfer
     protected $infCpl = null;
 
     /**
-     * Campo de uso livre do contribuinte
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso livre do contribuinte informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
      * @property InfAdic\ObsCont[]
      * $obsCont
@@ -35,9 +34,8 @@ class InfAdic extends BaseDataTransfer
     protected $obsCont = array();
 
     /**
-     * Campo de uso exclusivo do Fisco
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso exclusivo do Fisco informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
      * @property InfAdic\ObsFisco[]
      * $obsFisco
@@ -107,9 +105,8 @@ class InfAdic extends BaseDataTransfer
     /**
      * Adds as obsCont
      *
-     * Campo de uso livre do contribuinte
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso livre do contribuinte informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
      * @return self
      * @param InfAdic\ObsCont $obsCont
@@ -123,9 +120,8 @@ class InfAdic extends BaseDataTransfer
     /**
      * isset obsCont
      *
-     * Campo de uso livre do contribuinte
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso livre do contribuinte informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
      * @param int $index
      * @return boolean
@@ -138,9 +134,8 @@ class InfAdic extends BaseDataTransfer
     /**
      * unset obsCont
      *
-     * Campo de uso livre do contribuinte
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso livre do contribuinte informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
      * @param int $index
      * @return void
@@ -153,9 +148,8 @@ class InfAdic extends BaseDataTransfer
     /**
      * Gets as obsCont
      *
-     * Campo de uso livre do contribuinte
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso livre do contribuinte informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
      * @return InfAdic\ObsCont[]
      */
@@ -167,12 +161,10 @@ class InfAdic extends BaseDataTransfer
     /**
      * Sets a new obsCont
      *
-     * Campo de uso livre do contribuinte
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso livre do contribuinte informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsCont[]
-     * $obsCont
+     * @param InfAdic\ObsCont[] $obsCont
      * @return self
      */
     public function setObsCont(array $obsCont)
@@ -184,13 +176,11 @@ class InfAdic extends BaseDataTransfer
     /**
      * Adds as obsFisco
      *
-     * Campo de uso exclusivo do Fisco
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso exclusivo do Fisco informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
      * @return self
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsFisco
-     * $obsFisco
+     * @param InfAdic\ObsFisco $obsFisco
      */
     public function addToObsFisco(InfAdic\ObsFisco $obsFisco)
     {
@@ -201,9 +191,8 @@ class InfAdic extends BaseDataTransfer
     /**
      * isset obsFisco
      *
-     * Campo de uso exclusivo do Fisco
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso exclusivo do Fisco informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
      * @param int $index
      * @return boolean
@@ -216,9 +205,8 @@ class InfAdic extends BaseDataTransfer
     /**
      * unset obsFisco
      *
-     * Campo de uso exclusivo do Fisco
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso exclusivo do Fisco informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
      * @param int $index
      * @return void
@@ -231,9 +219,8 @@ class InfAdic extends BaseDataTransfer
     /**
      * Gets as obsFisco
      *
-     * Campo de uso exclusivo do Fisco
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso exclusivo do Fisco informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
      * @return InfAdic\ObsFisco[]
      */
@@ -245,12 +232,10 @@ class InfAdic extends BaseDataTransfer
     /**
      * Sets a new obsFisco
      *
-     * Campo de uso exclusivo do Fisco
-     * informar o nome do campo no atributo xCampo
-     * e o conteúdo do campo no xTexto
+     * Campo de uso exclusivo do Fisco informar o nome do campo
+     * no atributo xCampo e o conteúdo do campo no xTexto
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ObsFisco[]
-     * $obsFisco
+     * @param InfAdic\ObsFisco[] $obsFisco
      * @return self
      */
     public function setObsFisco(array $obsFisco)
@@ -316,8 +301,7 @@ class InfAdic extends BaseDataTransfer
      *
      * Grupo de informações do processo referenciado
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\InfAdic\ProcRef[]
-     * $procRef
+     * @param InfAdic\ProcRef[] $procRef
      * @return self
      */
     public function setProcRef(array $procRef)
@@ -326,6 +310,4 @@ class InfAdic extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

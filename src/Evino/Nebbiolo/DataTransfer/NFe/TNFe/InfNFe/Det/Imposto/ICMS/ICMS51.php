@@ -11,9 +11,10 @@ class ICMS51 extends BaseDataTransfer
 {
 
     /**
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @property string $orig
      */
@@ -21,7 +22,7 @@ class ICMS51 extends BaseDataTransfer
 
     /**
      * Tributção pelo ICMS
-     * 20 - Com redução de base de cálculo
+     * 20 => Com redução de base de cálculo
      *
      * @property string $CST
      */
@@ -29,10 +30,10 @@ class ICMS51 extends BaseDataTransfer
 
     /**
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @property string $modBC
      */
@@ -111,9 +112,10 @@ class ICMS51 extends BaseDataTransfer
     /**
      * Gets as orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @return string
      */
@@ -125,9 +127,10 @@ class ICMS51 extends BaseDataTransfer
     /**
      * Sets a new orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @param string $orig
      * @return self
@@ -142,7 +145,7 @@ class ICMS51 extends BaseDataTransfer
      * Gets as CST
      *
      * Tributção pelo ICMS
-     * 20 - Com redução de base de cálculo
+     * 20 => Com redução de base de cálculo
      *
      * @return string
      */
@@ -155,7 +158,7 @@ class ICMS51 extends BaseDataTransfer
      * Sets a new CST
      *
      * Tributção pelo ICMS
-     * 20 - Com redução de base de cálculo
+     * 20 => Com redução de base de cálculo
      *
      * @param string $CST
      * @return self
@@ -170,10 +173,10 @@ class ICMS51 extends BaseDataTransfer
      * Gets as modBC
      *
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @return string
      */
@@ -186,10 +189,10 @@ class ICMS51 extends BaseDataTransfer
      * Sets a new modBC
      *
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @param string $modBC
      * @return self
@@ -460,6 +463,4 @@ class ICMS51 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

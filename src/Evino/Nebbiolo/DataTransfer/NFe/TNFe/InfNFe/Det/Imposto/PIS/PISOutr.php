@@ -12,7 +12,7 @@ class PISOutr extends BaseDataTransfer
 
     /**
      * Código de Situação Tributária do PIS.
-     * 99 - Outras Operações.
+     * 99 => Outras Operações.
      *
      * @property string $CST
      */
@@ -57,7 +57,7 @@ class PISOutr extends BaseDataTransfer
      * Gets as CST
      *
      * Código de Situação Tributária do PIS.
-     * 99 - Outras Operações.
+     * 99 => Outras Operações.
      *
      * @return string
      */
@@ -70,7 +70,7 @@ class PISOutr extends BaseDataTransfer
      * Sets a new CST
      *
      * Código de Situação Tributária do PIS.
-     * 99 - Outras Operações.
+     * 99 => Outras Operações.
      *
      * @param string $CST
      * @return self
@@ -211,6 +211,4 @@ class PISOutr extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

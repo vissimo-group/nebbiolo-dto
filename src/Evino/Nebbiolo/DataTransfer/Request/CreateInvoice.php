@@ -76,4 +76,5 @@ class CreateInvoice extends BaseDataTransfer
         $this->nfe = $nfe;
         return $this;
     }
+
 }

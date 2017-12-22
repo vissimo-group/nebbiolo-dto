@@ -37,6 +37,4 @@ class DigestMethod extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -11,9 +11,10 @@ class ICMS30 extends BaseDataTransfer
 {
 
     /**
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @property string $orig
      */
@@ -30,12 +31,12 @@ class ICMS30 extends BaseDataTransfer
 
     /**
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor).
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor).
      *
      * @property string $modBCST
      */
@@ -105,8 +106,10 @@ class ICMS30 extends BaseDataTransfer
     protected $vICMSDeson = null;
 
     /**
-     * Motivo da desoneração do ICMS:6-Utilitários Motocicleta AÁrea
-     * Livre;7-SUFRAMA;9-Outros
+     * Motivo da desoneração do ICMS:
+     * 6 => Utilitários Motocicleta Área Livre
+     * 7 => SUFRAMA
+     * 9 => Outros
      *
      * @property string $motDesICMS
      */
@@ -115,9 +118,10 @@ class ICMS30 extends BaseDataTransfer
     /**
      * Gets as orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @return string
      */
@@ -129,9 +133,10 @@ class ICMS30 extends BaseDataTransfer
     /**
      * Sets a new orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @param string $orig
      * @return self
@@ -146,8 +151,7 @@ class ICMS30 extends BaseDataTransfer
      * Gets as CST
      *
      * Tributção pelo ICMS
-     * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
-     * tributária
+     * 30 => Isenta ou não tributada e com cobrança do ICMS por substituição tributária
      *
      * @return string
      */
@@ -160,8 +164,7 @@ class ICMS30 extends BaseDataTransfer
      * Sets a new CST
      *
      * Tributção pelo ICMS
-     * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
-     * tributária
+     * 30 => Isenta ou não tributada e com cobrança do ICMS por substituição tributária
      *
      * @param string $CST
      * @return self
@@ -176,12 +179,12 @@ class ICMS30 extends BaseDataTransfer
      * Gets as modBCST
      *
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor).
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor).
      *
      * @return string
      */
@@ -194,12 +197,12 @@ class ICMS30 extends BaseDataTransfer
      * Sets a new modBCST
      *
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor).
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor).
      *
      * @param string $modBCST
      * @return self
@@ -447,8 +450,10 @@ class ICMS30 extends BaseDataTransfer
     /**
      * Gets as motDesICMS
      *
-     * Motivo da desoneração do ICMS:6-Utilitários Motocicleta AÁrea
-     * Livre;7-SUFRAMA;9-Outros
+     * Motivo da desoneração do ICMS:
+     * 6 => Utilitários Motocicleta Área Livre
+     * 7 => SUFRAMA
+     * 9 => Outros
      *
      * @return string
      */
@@ -460,8 +465,10 @@ class ICMS30 extends BaseDataTransfer
     /**
      * Sets a new motDesICMS
      *
-     * Motivo da desoneração do ICMS:6-Utilitários Motocicleta AÁrea
-     * Livre;7-SUFRAMA;9-Outros
+     * Motivo da desoneração do ICMS:
+     * 6 => Utilitários Motocicleta Área Livre
+     * 7 => SUFRAMA
+     * 9 => Outros
      *
      * @param string $motDesICMS
      * @return self
@@ -472,6 +479,4 @@ class ICMS30 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

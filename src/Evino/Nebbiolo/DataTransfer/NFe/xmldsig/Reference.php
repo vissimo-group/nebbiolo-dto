@@ -210,6 +210,4 @@ class Reference extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

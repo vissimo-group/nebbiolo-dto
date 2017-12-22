@@ -109,6 +109,4 @@ class ExportInd extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

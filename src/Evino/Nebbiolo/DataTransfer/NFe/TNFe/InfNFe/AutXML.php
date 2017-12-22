@@ -76,6 +76,4 @@ class AutXML extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

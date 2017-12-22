@@ -32,8 +32,7 @@ class Rastro extends BaseDataTransfer
     protected $dFab = null;
 
     /**
-     * Data de validade. Informar o último dia do mês caso a validade não
-     * especifique o dia. Formato "AAAA-MM-DD".
+     * Data de validade. Informar o último dia do mês caso a validade não especifique o dia. Formato "AAAA-MM-DD".
      *
      * @property string $dVal
      */
@@ -125,8 +124,7 @@ class Rastro extends BaseDataTransfer
     /**
      * Gets as dVal
      *
-     * Data de validade. Informar o último dia do mês caso a validade não
-     * especifique o dia. Formato "AAAA-MM-DD".
+     * Data de validade. Informar o último dia do mês caso a validade não especifique o dia. Formato "AAAA-MM-DD".
      *
      * @return string
      */
@@ -138,8 +136,7 @@ class Rastro extends BaseDataTransfer
     /**
      * Sets a new dVal
      *
-     * Data de validade. Informar o último dia do mês caso a validade não
-     * especifique o dia. Formato "AAAA-MM-DD".
+     * Data de validade. Informar o último dia do mês caso a validade não especifique o dia. Formato "AAAA-MM-DD".
      *
      * @param string $dVal
      * @return self
@@ -172,6 +169,4 @@ class Rastro extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

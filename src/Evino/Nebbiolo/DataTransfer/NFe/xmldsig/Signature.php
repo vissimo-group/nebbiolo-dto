@@ -121,6 +121,4 @@ class Signature extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

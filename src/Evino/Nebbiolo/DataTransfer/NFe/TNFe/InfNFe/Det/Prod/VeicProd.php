@@ -11,8 +11,11 @@ class VeicProd extends BaseDataTransfer
 {
 
     /**
-     * Tipo da Operação (1 - Venda concessionária; 2 - Faturamento direto; 3 - Venda
-     * direta; 0 - Outros)
+     * Tipo da Operação
+     * 1 => Venda concessionária
+     * 2 => Faturamento direto
+     * 3 => Venda direta
+     * 0 => Outros
      *
      * @property string $tpOp
      */
@@ -40,16 +43,14 @@ class VeicProd extends BaseDataTransfer
     protected $xCor = null;
 
     /**
-     * Potência máxima do motor do veículo em cavalo vapor (CV).
-     * (potência-veículo)
+     * Potência máxima do motor do veículo em cavalo vapor (CV). (potência-veículo)
      *
      * @property string $pot
      */
     protected $pot = null;
 
     /**
-     * Capacidade voluntária do motor expressa em centímetros cúbicos (CC).
-     * (cilindradas)
+     * Capacidade voluntária do motor expressa em centímetros cúbicos (CC). (cilindradas)
      *
      * @property string $cilin
      */
@@ -77,8 +78,13 @@ class VeicProd extends BaseDataTransfer
     protected $nSerie = null;
 
     /**
-     * Tipo de combustível-Tabela RENAVAM: 01-Álcool; 02-Gasolina; 03-Diesel;
-     * 16-Álcool/Gas.; 17-Gas./Álcool/GNV; 18-Gasolina/Elétrico
+     * Tipo de combustível-Tabela RENAVAM:
+     * 01 => Álcool
+     * 02 => Gasolina
+     * 03 => Diesel
+     * 16 => Álcool/Gas.
+     * 17 => Gas./Álcool/GNV
+     * 18 => Gasolina/Elétrico
      *
      * @property string $tpComb
      */
@@ -150,7 +156,10 @@ class VeicProd extends BaseDataTransfer
     protected $VIN = null;
 
     /**
-     * Condição do veículo (1 - acabado; 2 - inacabado; 3 - semi-acabado)
+     * Condição do veículo
+     * 1 => acabado
+     * 2 => inacabado
+     * 3 => semi-acabado
      *
      * @property string $condVeic
      */
@@ -165,13 +174,27 @@ class VeicProd extends BaseDataTransfer
 
     /**
      * Código da Cor Segundo as regras de pré-cadastro do DENATRAN:
-     * 01-AMARELO;02-AZUL;03-BEGE;04-BRANCA;05-CINZA;06-DOURADA;07-GRENA
-     * 08-LARANJA;09-MARROM;10-PRATA;11-PRETA;12-ROSA;13-ROXA;14-VERDE;15-VERMELHA;16-FANTASIA
+     * 01 => AMARELO
+     * 02 => AZUL
+     * 03 => BEGE
+     * 04 => BRANCA
+     * 05 => CINZA
+     * 06 => DOURADA
+     * 07 => GRENA
+     * 08 => LARANJA
+     * 09 => MARROM
+     * 10 => PRATA
+     * 11 => PRETA
+     * 12 => ROSA
+     * 13 => ROXA
+     * 14 => VERDE
+     * 15 => VERMELHA
+     * 16 => FANTASIA
      *
      * @property string $cCorDENATRAN
      */
     protected $cCorDENATRAN = null;
-    
+
     /**
      * Quantidade máxima de permitida de passageiros sentados, inclusive motorista.
      *
@@ -181,12 +204,12 @@ class VeicProd extends BaseDataTransfer
 
     /**
      * Restrição
-     * 0 - Não há;
-     * 1 - Alienação Fiduciária;
-     * 2 - Arrendamento Mercantil;
-     * 3 - Reserva de Domínio;
-     * 4 - Penhor de Veículos;
-     * 9 - outras.
+     * 0 => Não há
+     * 1 => Alienação Fiduciária
+     * 2 => Arrendamento Mercantil
+     * 3 => Reserva de Domínio
+     * 4 => Penhor de Veículos
+     * 9 => outras
      *
      * @property string $tpRest
      */
@@ -195,8 +218,11 @@ class VeicProd extends BaseDataTransfer
     /**
      * Gets as tpOp
      *
-     * Tipo da Operação (1 - Venda concessionária; 2 - Faturamento direto; 3 - Venda
-     * direta; 0 - Outros)
+     * Tipo da Operação
+     * 1 => Venda concessionária
+     * 2 => Faturamento direto
+     * 3 => Venda direta
+     * 0 => Outros
      *
      * @return string
      */
@@ -701,7 +727,10 @@ class VeicProd extends BaseDataTransfer
     /**
      * Gets as condVeic
      *
-     * Condição do veículo (1 - acabado; 2 - inacabado; 3 - semi-acabado)
+     * Condição do veículo
+     * 1 => acabado
+     * 2 => inacabado
+     * 3 => semi-acabado
      *
      * @return string
      */
@@ -713,7 +742,10 @@ class VeicProd extends BaseDataTransfer
     /**
      * Sets a new condVeic
      *
-     * Condição do veículo (1 - acabado; 2 - inacabado; 3 - semi-acabado)
+     * Condição do veículo
+     * 1 => acabado
+     * 2 => inacabado
+     * 3 => semi-acabado
      *
      * @param string $condVeic
      * @return self
@@ -754,8 +786,22 @@ class VeicProd extends BaseDataTransfer
      * Gets as cCorDENATRAN
      *
      * Código da Cor Segundo as regras de pré-cadastro do DENATRAN:
-     * 01-AMARELO;02-AZUL;03-BEGE;04-BRANCA;05-CINZA;06-DOURADA;07-GRENA
-     * 08-LARANJA;09-MARROM;10-PRATA;11-PRETA;12-ROSA;13-ROXA;14-VERDE;15-VERMELHA;16-FANTASIA
+     * 01 => AMARELO
+     * 02 => AZUL
+     * 03 => BEGE
+     * 04 => BRANCA
+     * 05 => CINZA
+     * 06 => DOURADA
+     * 07 => GRENA
+     * 08 => LARANJA
+     * 09 => MARROM
+     * 10 => PRATA
+     * 11 => PRETA
+     * 12 => ROSA
+     * 13 => ROXA
+     * 14 => VERDE
+     * 15 => VERMELHA
+     * 16 => FANTASIA
      *
      * @return string
      */
@@ -768,8 +814,22 @@ class VeicProd extends BaseDataTransfer
      * Sets a new cCorDENATRAN
      *
      * Código da Cor Segundo as regras de pré-cadastro do DENATRAN:
-     * 01-AMARELO;02-AZUL;03-BEGE;04-BRANCA;05-CINZA;06-DOURADA;07-GRENA
-     * 08-LARANJA;09-MARROM;10-PRATA;11-PRETA;12-ROSA;13-ROXA;14-VERDE;15-VERMELHA;16-FANTASIA
+     * 01 => AMARELO
+     * 02 => AZUL
+     * 03 => BEGE
+     * 04 => BRANCA
+     * 05 => CINZA
+     * 06 => DOURADA
+     * 07 => GRENA
+     * 08 => LARANJA
+     * 09 => MARROM
+     * 10 => PRATA
+     * 11 => PRETA
+     * 12 => ROSA
+     * 13 => ROXA
+     * 14 => VERDE
+     * 15 => VERMELHA
+     * 16 => FANTASIA
      *
      * @param string $cCorDENATRAN
      * @return self
@@ -810,12 +870,12 @@ class VeicProd extends BaseDataTransfer
      * Gets as tpRest
      *
      * Restrição
-     * 0 - Não há;
-     * 1 - Alienação Fiduciária;
-     * 2 - Arrendamento Mercantil;
-     * 3 - Reserva de Domínio;
-     * 4 - Penhor de Veículos;
-     * 9 - outras.
+     * 0 => Não há
+     * 1 => Alienação Fiduciária
+     * 2 => Arrendamento Mercantil
+     * 3 => Reserva de Domínio
+     * 4 => Penhor de Veículos
+     * 9 => outras
      *
      * @return string
      */
@@ -828,12 +888,12 @@ class VeicProd extends BaseDataTransfer
      * Sets a new tpRest
      *
      * Restrição
-     * 0 - Não há;
-     * 1 - Alienação Fiduciária;
-     * 2 - Arrendamento Mercantil;
-     * 3 - Reserva de Domínio;
-     * 4 - Penhor de Veículos;
-     * 9 - outras.
+     * 0 => Não há
+     * 1 => Alienação Fiduciária
+     * 2 => Arrendamento Mercantil
+     * 3 => Reserva de Domínio
+     * 4 => Penhor de Veículos
+     * 9 => outras
      *
      * @param string $tpRest
      * @return self
@@ -844,6 +904,4 @@ class VeicProd extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

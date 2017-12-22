@@ -11,9 +11,10 @@ class ICMSSN900 extends BaseDataTransfer
 {
 
     /**
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @property string $orig
      */
@@ -28,10 +29,10 @@ class ICMSSN900 extends BaseDataTransfer
 
     /**
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @property string $modBC
      */
@@ -67,12 +68,12 @@ class ICMSSN900 extends BaseDataTransfer
 
     /**
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor).
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor).
      *
      * @property string $modBCST
      */
@@ -152,9 +153,10 @@ class ICMSSN900 extends BaseDataTransfer
     /**
      * Gets as orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @return string
      */
@@ -166,9 +168,10 @@ class ICMSSN900 extends BaseDataTransfer
     /**
      * Sets a new orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @param string $orig
      * @return self
@@ -209,10 +212,10 @@ class ICMSSN900 extends BaseDataTransfer
      * Gets as modBC
      *
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @return string
      */
@@ -225,10 +228,10 @@ class ICMSSN900 extends BaseDataTransfer
      * Sets a new modBC
      *
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @param string $modBC
      * @return self
@@ -347,12 +350,12 @@ class ICMSSN900 extends BaseDataTransfer
      * Gets as modBCST
      *
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor).
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor).
      *
      * @return string
      */
@@ -365,12 +368,12 @@ class ICMSSN900 extends BaseDataTransfer
      * Sets a new modBCST
      *
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor).
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor).
      *
      * @param string $modBCST
      * @return self
@@ -643,6 +646,4 @@ class ICMSSN900 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

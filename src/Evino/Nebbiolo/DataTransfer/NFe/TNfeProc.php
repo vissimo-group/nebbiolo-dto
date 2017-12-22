@@ -94,6 +94,4 @@ class TNfeProc extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -19,8 +19,7 @@ class Ide extends BaseDataTransfer
     protected $cUF = null;
 
     /**
-     * Código numérico que compõe a Chave de Acesso. Número aleatório gerado pelo
-     * emitente para cada NF-e.
+     * Código numérico que compõe a Chave de Acesso. Número aleatório gerado pelo emitente para cada NF-e.
      *
      * @property string $cNF
      */
@@ -58,8 +57,8 @@ class Ide extends BaseDataTransfer
     protected $nNF = null;
 
     /**
-     * Data e Hora de emissão do Documento Fiscal (AAAA-MM-DDThh:mm:ssTZD) ex.:
-     * 2012-09-01T13:00:00-03:00
+     * Data e Hora de emissão do Documento Fiscal (AAAA-MM-DDThh:mm:ssTZD)
+     * ex.: 2012-09-01T13:00:00-03:00
      *
      * @property string $dhEmi
      */
@@ -74,7 +73,9 @@ class Ide extends BaseDataTransfer
     protected $dhSaiEnt = null;
 
     /**
-     * Tipo do Documento Fiscal (0 - entrada; 1 - saída)
+     * Tipo do Documento Fiscal
+     * 0 => entrada
+     * 1 => saída
      *
      * @property string $tpNF
      */
@@ -82,7 +83,9 @@ class Ide extends BaseDataTransfer
 
     /**
      * Identificador de Local de destino da operação
-     * (1-Interna;2-Interestadual;3-Exterior)
+     * 1 => Interna
+     * 2 => Interestadual
+     * 3 => Exterior
      *
      * @property string $idDest
      */
@@ -96,9 +99,13 @@ class Ide extends BaseDataTransfer
     protected $cMunFG = null;
 
     /**
-     * Formato de impressão do DANFE (0-sem DANFE;1-DANFe Retrato; 2-DANFe
-     * Paisagem;3-DANFe Simplificado;
-     *  4-DANFe NFC-e;5-DANFe NFC-e em mensagem eletrônica)
+     * Formato de impressão do DANFE
+     * 0 => sem DANFE
+     * 1 => DANFe Retrato
+     * 2 => DANFe Paisagem
+     * 3 => DANFe Simplificado
+     * 4 => DANFe NFC-e
+     * 5 => DANFe NFC-e em mensagem eletrônica
      *
      * @property string $tpImp
      */
@@ -106,14 +113,14 @@ class Ide extends BaseDataTransfer
 
     /**
      * Forma de emissão da NF-e
-     * 1 - Normal;
-     * 2 - Contingência FS
-     * 3 - Contingência SCAN
-     * 4 - Contingência DPEC
-     * 5 - Contingência FSDA
-     * 6 - Contingência SVC - AN
-     * 7 - Contingência SVC - RS
-     * 9 - Contingência off-line NFC-e
+     * 1 => Normal;
+     * 2 => Contingência FS
+     * 3 => Contingência SCAN
+     * 4 => Contingência DPEC
+     * 5 => Contingência FSDA
+     * 6 => Contingência SVC - AN
+     * 7 => Contingência SVC - RS
+     * 9 => Contingência off-line NFC-e
      *
      * @property string $tpEmis
      */
@@ -128,8 +135,8 @@ class Ide extends BaseDataTransfer
 
     /**
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @property string $tpAmb
      */
@@ -137,10 +144,10 @@ class Ide extends BaseDataTransfer
 
     /**
      * Finalidade da emissão da NF-e:
-     * 1 - NFe normal
-     * 2 - NFe complementar
-     * 3 - NFe de ajuste
-     * 4 - Devolução/Retorno
+     * 1 => NFe normal
+     * 2 => NFe complementar
+     * 3 => NFe de ajuste
+     * 4 => Devolução/Retorno
      *
      * @property string $finNFe
      */
@@ -154,12 +161,14 @@ class Ide extends BaseDataTransfer
     protected $indFinal = null;
 
     /**
-     * Indicador de presença do comprador no estabelecimento comercial no momento da
-     * oepração
-     *  (0-Não se aplica (ex.: Nota Fiscal complementar ou de ajuste;1-Operação
-     * presencial;2-Não presencial, internet;3-Não presencial,
-     * teleatendimento;4-NFC-e entrega em domicílio;5-Operação presencial, fora do
-     * estabelecimento;9-Não presencial, outros)
+     * Indicador de presença do comprador no estabelecimento comercial no momento da oepração
+     * 0 => Não se aplica (ex.: Nota Fiscal complementar ou de ajuste)
+     * 1 => Operação presencial
+     * 2 => Não presencial, internet
+     * 3 => Não presencial, teleatendimento
+     * 4 => NFC-e entrega em domicílio
+     * 5 => Operação presencial, fora do estabelecimento
+     * 9 => Não presencial, outros
      *
      * @property string $indPres
      */
@@ -167,20 +176,17 @@ class Ide extends BaseDataTransfer
 
     /**
      * Processo de emissão utilizado com a seguinte codificação:
-     * 0 - emissão de NF-e com aplicativo do contribuinte;
-     * 1 - emissão de NF-e avulsa pelo Fisco;
-     * 2 - emissão de NF-e avulsa, pelo contribuinte com seu certificado digital,
-     * através do site
-     * do Fisco;
-     * 3- emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.
+     * 0 => emissão de NF-e com aplicativo do contribuinte;
+     * 1 => emissão de NF-e avulsa pelo Fisco;
+     * 2 => emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, através do site do Fisco;
+     * 3 => emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.
      *
      * @property string $procEmi
      */
     protected $procEmi = null;
 
     /**
-     * versão do aplicativo utilizado no processo de
-     * emissão
+     * Versão do aplicativo utilizado no processo de emissão
      *
      * @property string $verProc
      */
@@ -454,8 +460,8 @@ class Ide extends BaseDataTransfer
     /**
      * Gets as dhEmi
      *
-     * Data e Hora de emissão do Documento Fiscal (AAAA-MM-DDThh:mm:ssTZD) ex.:
-     * 2012-09-01T13:00:00-03:00
+     * Data e Hora de emissão do Documento Fiscal (AAAA-MM-DDThh:mm:ssTZD)
+     * ex.: 2012-09-01T13:00:00-03:00
      *
      * @return string
      */
@@ -467,8 +473,8 @@ class Ide extends BaseDataTransfer
     /**
      * Sets a new dhEmi
      *
-     * Data e Hora de emissão do Documento Fiscal (AAAA-MM-DDThh:mm:ssTZD) ex.:
-     * 2012-09-01T13:00:00-03:00
+     * Data e Hora de emissão do Documento Fiscal (AAAA-MM-DDThh:mm:ssTZD)
+     * ex.: 2012-09-01T13:00:00-03:00
      *
      * @param string $dhEmi
      * @return self
@@ -510,7 +516,9 @@ class Ide extends BaseDataTransfer
     /**
      * Gets as tpNF
      *
-     * Tipo do Documento Fiscal (0 - entrada; 1 - saída)
+     * Tipo do Documento Fiscal
+     * 0 => entrada
+     * 1 => saída
      *
      * @return string
      */
@@ -522,7 +530,9 @@ class Ide extends BaseDataTransfer
     /**
      * Sets a new tpNF
      *
-     * Tipo do Documento Fiscal (0 - entrada; 1 - saída)
+     * Tipo do Documento Fiscal
+     * 0 => entrada
+     * 1 => saída
      *
      * @param string $tpNF
      * @return self
@@ -537,7 +547,9 @@ class Ide extends BaseDataTransfer
      * Gets as idDest
      *
      * Identificador de Local de destino da operação
-     * (1-Interna;2-Interestadual;3-Exterior)
+     * 1 => Interna
+     * 2 => Interestadual
+     * 3 => Exterior
      *
      * @return string
      */
@@ -550,7 +562,9 @@ class Ide extends BaseDataTransfer
      * Sets a new idDest
      *
      * Identificador de Local de destino da operação
-     * (1-Interna;2-Interestadual;3-Exterior)
+     * 1 => Interna
+     * 2 => Interestadual
+     * 3 => Exterior
      *
      * @param string $idDest
      * @return self
@@ -590,9 +604,13 @@ class Ide extends BaseDataTransfer
     /**
      * Gets as tpImp
      *
-     * Formato de impressão do DANFE (0-sem DANFE;1-DANFe Retrato; 2-DANFe
-     * Paisagem;3-DANFe Simplificado;
-     *  4-DANFe NFC-e;5-DANFe NFC-e em mensagem eletrônica)
+     * Formato de impressão do DANFE
+     * 0 => sem DANFE
+     * 1 => DANFe Retrato
+     * 2 => DANFe Paisagem
+     * 3 => DANFe Simplificado
+     * 4 => DANFe NFC-e
+     * 5 => DANFe NFC-e em mensagem eletrônica
      *
      * @return string
      */
@@ -604,9 +622,13 @@ class Ide extends BaseDataTransfer
     /**
      * Sets a new tpImp
      *
-     * Formato de impressão do DANFE (0-sem DANFE;1-DANFe Retrato; 2-DANFe
-     * Paisagem;3-DANFe Simplificado;
-     *  4-DANFe NFC-e;5-DANFe NFC-e em mensagem eletrônica)
+     * Formato de impressão do DANFE
+     * 0 => sem DANFE
+     * 1 => DANFe Retrato
+     * 2 => DANFe Paisagem
+     * 3 => DANFe Simplificado
+     * 4 => DANFe NFC-e
+     * 5 => DANFe NFC-e em mensagem eletrônica
      *
      * @param string $tpImp
      * @return self
@@ -621,14 +643,14 @@ class Ide extends BaseDataTransfer
      * Gets as tpEmis
      *
      * Forma de emissão da NF-e
-     * 1 - Normal;
-     * 2 - Contingência FS
-     * 3 - Contingência SCAN
-     * 4 - Contingência DPEC
-     * 5 - Contingência FSDA
-     * 6 - Contingência SVC - AN
-     * 7 - Contingência SVC - RS
-     * 9 - Contingência off-line NFC-e
+     * 1 => Normal;
+     * 2 => Contingência FS
+     * 3 => Contingência SCAN
+     * 4 => Contingência DPEC
+     * 5 => Contingência FSDA
+     * 6 => Contingência SVC - AN
+     * 7 => Contingência SVC - RS
+     * 9 => Contingência off-line NFC-e
      *
      * @return string
      */
@@ -641,14 +663,14 @@ class Ide extends BaseDataTransfer
      * Sets a new tpEmis
      *
      * Forma de emissão da NF-e
-     * 1 - Normal;
-     * 2 - Contingência FS
-     * 3 - Contingência SCAN
-     * 4 - Contingência DPEC
-     * 5 - Contingência FSDA
-     * 6 - Contingência SVC - AN
-     * 7 - Contingência SVC - RS
-     * 9 - Contingência off-line NFC-e
+     * 1 => Normal;
+     * 2 => Contingência FS
+     * 3 => Contingência SCAN
+     * 4 => Contingência DPEC
+     * 5 => Contingência FSDA
+     * 6 => Contingência SVC - AN
+     * 7 => Contingência SVC - RS
+     * 9 => Contingência off-line NFC-e
      *
      * @param string $tpEmis
      * @return self
@@ -689,8 +711,8 @@ class Ide extends BaseDataTransfer
      * Gets as tpAmb
      *
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @return string
      */
@@ -703,8 +725,8 @@ class Ide extends BaseDataTransfer
      * Sets a new tpAmb
      *
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @param string $tpAmb
      * @return self
@@ -719,10 +741,10 @@ class Ide extends BaseDataTransfer
      * Gets as finNFe
      *
      * Finalidade da emissão da NF-e:
-     * 1 - NFe normal
-     * 2 - NFe complementar
-     * 3 - NFe de ajuste
-     * 4 - Devolução/Retorno
+     * 1 => NFe normal
+     * 2 => NFe complementar
+     * 3 => NFe de ajuste
+     * 4 => Devolução/Retorno
      *
      * @return string
      */
@@ -735,10 +757,10 @@ class Ide extends BaseDataTransfer
      * Sets a new finNFe
      *
      * Finalidade da emissão da NF-e:
-     * 1 - NFe normal
-     * 2 - NFe complementar
-     * 3 - NFe de ajuste
-     * 4 - Devolução/Retorno
+     * 1 => NFe normal
+     * 2 => NFe complementar
+     * 3 => NFe de ajuste
+     * 4 => Devolução/Retorno
      *
      * @param string $finNFe
      * @return self
@@ -752,7 +774,9 @@ class Ide extends BaseDataTransfer
     /**
      * Gets as indFinal
      *
-     * Indica operação com consumidor final (0-Não;1-Consumidor Final)
+     * Indica operação com consumidor final
+     * 0 => Não
+     * 1 => Consumidor Final
      *
      * @return string
      */
@@ -764,7 +788,9 @@ class Ide extends BaseDataTransfer
     /**
      * Sets a new indFinal
      *
-     * Indica operação com consumidor final (0-Não;1-Consumidor Final)
+     * Indica operação com consumidor final
+     * 0 => Não
+     * 1 => Consumidor Final
      *
      * @param string $indFinal
      * @return self
@@ -778,12 +804,14 @@ class Ide extends BaseDataTransfer
     /**
      * Gets as indPres
      *
-     * Indicador de presença do comprador no estabelecimento comercial no momento da
-     * oepração
-     *  (0-Não se aplica (ex.: Nota Fiscal complementar ou de ajuste;1-Operação
-     * presencial;2-Não presencial, internet;3-Não presencial,
-     * teleatendimento;4-NFC-e entrega em domicílio;5-Operação presencial, fora do
-     * estabelecimento;9-Não presencial, outros)
+     * Indicador de presença do comprador no estabelecimento comercial no momento da oepração
+     * 0 => Não se aplica (ex.: Nota Fiscal complementar ou de ajuste)
+     * 1 => Operação presencial
+     * 2 => Não presencial, internet
+     * 3 => Não presencial, teleatendimento
+     * 4 => NFC-e entrega em domicílio
+     * 5 => Operação presencial, fora do estabelecimento
+     * 9 => Não presencial, outros
      *
      * @return string
      */
@@ -795,12 +823,14 @@ class Ide extends BaseDataTransfer
     /**
      * Sets a new indPres
      *
-     * Indicador de presença do comprador no estabelecimento comercial no momento da
-     * oepração
-     *  (0-Não se aplica (ex.: Nota Fiscal complementar ou de ajuste;1-Operação
-     * presencial;2-Não presencial, internet;3-Não presencial,
-     * teleatendimento;4-NFC-e entrega em domicílio;5-Operação presencial, fora do
-     * estabelecimento;9-Não presencial, outros)
+     * Indicador de presença do comprador no estabelecimento comercial no momento da oepração
+     * 0 => Não se aplica (ex.: Nota Fiscal complementar ou de ajuste)
+     * 1 => Operação presencial
+     * 2 => Não presencial, internet
+     * 3 => Não presencial, teleatendimento
+     * 4 => NFC-e entrega em domicílio
+     * 5 => Operação presencial, fora do estabelecimento
+     * 9 => Não presencial, outros
      *
      * @param string $indPres
      * @return self
@@ -815,12 +845,10 @@ class Ide extends BaseDataTransfer
      * Gets as procEmi
      *
      * Processo de emissão utilizado com a seguinte codificação:
-     * 0 - emissão de NF-e com aplicativo do contribuinte;
-     * 1 - emissão de NF-e avulsa pelo Fisco;
-     * 2 - emissão de NF-e avulsa, pelo contribuinte com seu certificado digital,
-     * através do site
-     * do Fisco;
-     * 3- emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.
+     * 0 => emissão de NF-e com aplicativo do contribuinte;
+     * 1 => emissão de NF-e avulsa pelo Fisco;
+     * 2 => emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, através do site do Fisco;
+     * 3 => emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.
      *
      * @return string
      */
@@ -833,12 +861,10 @@ class Ide extends BaseDataTransfer
      * Sets a new procEmi
      *
      * Processo de emissão utilizado com a seguinte codificação:
-     * 0 - emissão de NF-e com aplicativo do contribuinte;
-     * 1 - emissão de NF-e avulsa pelo Fisco;
-     * 2 - emissão de NF-e avulsa, pelo contribuinte com seu certificado digital,
-     * através do site
-     * do Fisco;
-     * 3- emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.
+     * 0 => emissão de NF-e com aplicativo do contribuinte;
+     * 1 => emissão de NF-e avulsa pelo Fisco;
+     * 2 => emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, através do site do Fisco;
+     * 3 => emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.
      *
      * @param string $procEmi
      * @return self
@@ -852,8 +878,7 @@ class Ide extends BaseDataTransfer
     /**
      * Gets as verProc
      *
-     * versão do aplicativo utilizado no processo de
-     * emissão
+     * Versão do aplicativo utilizado no processo de emissão
      *
      * @return string
      */
@@ -865,8 +890,7 @@ class Ide extends BaseDataTransfer
     /**
      * Sets a new verProc
      *
-     * versão do aplicativo utilizado no processo de
-     * emissão
+     * Versão do aplicativo utilizado no processo de emissão
      *
      * @param string $verProc
      * @return self
@@ -997,6 +1021,4 @@ class Ide extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

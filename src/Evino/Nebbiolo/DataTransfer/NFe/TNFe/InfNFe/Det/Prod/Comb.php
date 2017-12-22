@@ -3,6 +3,7 @@
 namespace Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod;
 
 use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
+use Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante;
 
 /**
  * Class representing Comb
@@ -94,16 +95,14 @@ class Comb extends BaseDataTransfer
     /**
      * CIDE Combustíveis
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE $CIDE
+     * @property Comb\CIDE $CIDE
      */
     protected $CIDE = null;
 
     /**
      * Informações do grupo de "encerrante"
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante $encerrante
+     * @property Comb\Encerrante $encerrante
      */
     protected $encerrante = null;
 
@@ -399,23 +398,22 @@ class Comb extends BaseDataTransfer
      *
      * CIDE Combustíveis
      *
-     * @return \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE
+     * @return Comb\CIDE
      */
     public function getCIDE()
     {
         return $this->CIDE;
     }
 
-	/**
-	 * Sets a new CIDE
-	 *
-	 * CIDE Combustíveis
-	 *
-	 * @param Comb\CIDE $CIDE
-	 * @return Comb
-	 * @internal param $ \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE* \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\CIDE
-	 * $CIDE
-	 */
+    /**
+     * Sets a new CIDE
+     *
+     * CIDE Combustíveis
+     *
+     * @param Comb\CIDE $CIDE
+     * @return Comb
+     * @internal param $ Comb\CIDE* Comb\CIDE$CIDE
+     */
     public function setCIDE(Comb\CIDE $CIDE)
     {
         $this->CIDE = $CIDE;
@@ -427,30 +425,26 @@ class Comb extends BaseDataTransfer
      *
      * Informações do grupo de "encerrante"
      *
-     * @return
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante
+     * @return Encerrante
      */
     public function getEncerrante()
     {
         return $this->encerrante;
     }
 
-	/**
-	 * Sets a new encerrante
-	 *
-	 * Informações do grupo de "encerrante"
-	 *
-	 * @param Comb\Encerrante $encerrante
-	 * @return Comb
-	 * @internal param $ \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante* \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante
-	 * $encerrante
-	 */
+    /**
+     * Sets a new encerrante
+     *
+     * Informações do grupo de "encerrante"
+     *
+     * @param Comb\Encerrante $encerrante
+     * @return Comb
+     * @internal param $ Comb\Encerrante* Comb\Encerrante $encerrante
+     */
     public function setEncerrante(Comb\Encerrante $encerrante)
     {
         $this->encerrante = $encerrante;
         return $this;
     }
 
-
 }
-

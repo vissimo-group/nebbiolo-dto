@@ -11,17 +11,17 @@ class ICMSSN500 extends BaseDataTransfer
 {
 
     /**
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @property string $orig
      */
     protected $orig = null;
 
     /**
-     * 500 – ICMS cobrado anterirmente por substituição tributária (substituído)
-     * ou por antecipação
+     * 500 => ICMS cobrado anterirmente por substituição tributária (substituído) ou por antecipação
      * (v.2.0)
      *
      * @property string $cSOSN
@@ -73,9 +73,10 @@ class ICMSSN500 extends BaseDataTransfer
     /**
      * Gets as orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @return string
      */
@@ -87,9 +88,10 @@ class ICMSSN500 extends BaseDataTransfer
     /**
      * Sets a new orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @param string $orig
      * @return self
@@ -103,8 +105,7 @@ class ICMSSN500 extends BaseDataTransfer
     /**
      * Gets as cSOSN
      *
-     * 500 – ICMS cobrado anterirmente por substituição tributária (substituído)
-     * ou por antecipação
+     * 500 => ICMS cobrado anterirmente por substituição tributária (substituído) ou por antecipação
      * (v.2.0)
      *
      * @return string
@@ -117,8 +118,7 @@ class ICMSSN500 extends BaseDataTransfer
     /**
      * Sets a new cSOSN
      *
-     * 500 – ICMS cobrado anterirmente por substituição tributária (substituído)
-     * ou por antecipação
+     * 500 => ICMS cobrado anterirmente por substituição tributária (substituído) ou por antecipação
      * (v.2.0)
      *
      * @param string $cSOSN
@@ -286,6 +286,4 @@ class ICMSSN500 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

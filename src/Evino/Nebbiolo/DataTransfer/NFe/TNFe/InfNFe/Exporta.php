@@ -109,6 +109,4 @@ class Exporta extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

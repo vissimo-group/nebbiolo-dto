@@ -12,16 +12,16 @@ class ICMSSN201 extends BaseDataTransfer
 
     /**
      * Origem da mercadoria:
-     * 0 – Nacional;
-     * 1 – Estrangeira – Importação direta;
-     * 2 – Estrangeira – Adquirida no mercado interno. (v2.0)
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno (v2.0)
      *
      * @property string $orig
      */
     protected $orig = null;
 
     /**
-     * 201- Tributada pelo Simples Nacional com permissão de crédito e com cobrança
+     * 201 => Tributada pelo Simples Nacional com permissão de crédito e com cobrança
      * do ICMS por Substituição Tributária (v.2.0)
      *
      * @property string $cSOSN
@@ -30,12 +30,12 @@ class ICMSSN201 extends BaseDataTransfer
 
     /**
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor). (v2.0)
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor). (v2.0)
      *
      * @property string $modBCST
      */
@@ -116,9 +116,9 @@ class ICMSSN201 extends BaseDataTransfer
      * Gets as orig
      *
      * Origem da mercadoria:
-     * 0 – Nacional;
-     * 1 – Estrangeira – Importação direta;
-     * 2 – Estrangeira – Adquirida no mercado interno. (v2.0)
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno (v2.0)
      *
      * @return string
      */
@@ -131,9 +131,9 @@ class ICMSSN201 extends BaseDataTransfer
      * Sets a new orig
      *
      * Origem da mercadoria:
-     * 0 – Nacional;
-     * 1 – Estrangeira – Importação direta;
-     * 2 – Estrangeira – Adquirida no mercado interno. (v2.0)
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno (v2.0)
      *
      * @param string $orig
      * @return self
@@ -147,7 +147,7 @@ class ICMSSN201 extends BaseDataTransfer
     /**
      * Gets as cSOSN
      *
-     * 201- Tributada pelo Simples Nacional com permissão de crédito e com cobrança
+     * 201 => Tributada pelo Simples Nacional com permissão de crédito e com cobrança
      * do ICMS por Substituição Tributária (v.2.0)
      *
      * @return string
@@ -160,7 +160,7 @@ class ICMSSN201 extends BaseDataTransfer
     /**
      * Sets a new cSOSN
      *
-     * 201- Tributada pelo Simples Nacional com permissão de crédito e com cobrança
+     * 201 => Tributada pelo Simples Nacional com permissão de crédito e com cobrança
      * do ICMS por Substituição Tributária (v.2.0)
      *
      * @param string $cSOSN
@@ -176,12 +176,12 @@ class ICMSSN201 extends BaseDataTransfer
      * Gets as modBCST
      *
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor). (v2.0)
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor). (v2.0)
      *
      * @return string
      */
@@ -194,12 +194,12 @@ class ICMSSN201 extends BaseDataTransfer
      * Sets a new modBCST
      *
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor). (v2.0)
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor). (v2.0)
      *
      * @param string $modBCST
      * @return self
@@ -472,6 +472,4 @@ class ICMSSN201 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

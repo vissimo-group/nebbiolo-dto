@@ -32,8 +32,7 @@ class RefNF extends BaseDataTransfer
     protected $CNPJ = null;
 
     /**
-     * Código do modelo do Documento Fiscal. Utilizar 01 para NF modelo 1/1A e 02 para
-     * NF modelo 02
+     * Código do modelo do Documento Fiscal. Utilizar 01 para NF modelo 1/1A e 02 para NF modelo 02
      *
      * @property string $mod
      */
@@ -134,8 +133,7 @@ class RefNF extends BaseDataTransfer
     /**
      * Gets as mod
      *
-     * Código do modelo do Documento Fiscal. Utilizar 01 para NF modelo 1/1A e 02 para
-     * NF modelo 02
+     * Código do modelo do Documento Fiscal. Utilizar 01 para NF modelo 1/1A e 02 para NF modelo 02
      *
      * @return string
      */
@@ -147,8 +145,7 @@ class RefNF extends BaseDataTransfer
     /**
      * Sets a new mod
      *
-     * Código do modelo do Documento Fiscal. Utilizar 01 para NF modelo 1/1A e 02 para
-     * NF modelo 02
+     * Código do modelo do Documento Fiscal. Utilizar 01 para NF modelo 1/1A e 02 para NF modelo 02
      *
      * @param string $mod
      * @return self
@@ -211,6 +208,4 @@ class RefNF extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

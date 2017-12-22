@@ -20,8 +20,7 @@ class DetExport extends BaseDataTransfer
     /**
      * Exportação indireta
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd $exportInd
+     * @property DetExport\ExportInd $exportInd
      */
     protected $exportInd = null;
 
@@ -54,7 +53,7 @@ class DetExport extends BaseDataTransfer
      *
      * Exportação indireta
      *
-     * @return \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport\ExportInd
+     * @return DetExport\ExportInd
      */
     public function getExportInd()
     {
@@ -76,6 +75,4 @@ class DetExport extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

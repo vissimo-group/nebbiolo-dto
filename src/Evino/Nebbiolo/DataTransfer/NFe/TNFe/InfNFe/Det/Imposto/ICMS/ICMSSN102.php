@@ -11,9 +11,10 @@ class ICMSSN102 extends BaseDataTransfer
 {
 
     /**
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      * (v2.0)
      *
      * @property string $orig
@@ -21,10 +22,10 @@ class ICMSSN102 extends BaseDataTransfer
     protected $orig = null;
 
     /**
-     * 102- Tributada pelo Simples Nacional sem permissão de crédito.
-     * 103 – Isenção do ICMS no Simples Nacional para faixa de receita bruta.
-     * 300 – Imune.
-     * 400 – Não tributda pelo Simples Nacional (v.2.0) (v.2.0)
+     * 102 => Tributada pelo Simples Nacional sem permissão de crédito.
+     * 103 => Isenção do ICMS no Simples Nacional para faixa de receita bruta.
+     * 300 => Imune.
+     * 400 => Não tributda pelo Simples Nacional (v.2.0) (v.2.0)
      *
      * @property string $cSOSN
      */
@@ -33,9 +34,10 @@ class ICMSSN102 extends BaseDataTransfer
     /**
      * Gets as orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      * (v2.0)
      *
      * @return string
@@ -48,9 +50,10 @@ class ICMSSN102 extends BaseDataTransfer
     /**
      * Sets a new orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      * (v2.0)
      *
      * @param string $orig
@@ -65,10 +68,10 @@ class ICMSSN102 extends BaseDataTransfer
     /**
      * Gets as cSOSN
      *
-     * 102- Tributada pelo Simples Nacional sem permissão de crédito.
-     * 103 – Isenção do ICMS no Simples Nacional para faixa de receita bruta.
-     * 300 – Imune.
-     * 400 – Não tributda pelo Simples Nacional (v.2.0) (v.2.0)
+     * 102 => Tributada pelo Simples Nacional sem permissão de crédito.
+     * 103 => Isenção do ICMS no Simples Nacional para faixa de receita bruta.
+     * 300 => Imune.
+     * 400 => Não tributda pelo Simples Nacional (v.2.0) (v.2.0)
      *
      * @return string
      */
@@ -80,10 +83,10 @@ class ICMSSN102 extends BaseDataTransfer
     /**
      * Sets a new cSOSN
      *
-     * 102- Tributada pelo Simples Nacional sem permissão de crédito.
-     * 103 – Isenção do ICMS no Simples Nacional para faixa de receita bruta.
-     * 300 – Imune.
-     * 400 – Não tributda pelo Simples Nacional (v.2.0) (v.2.0)
+     * 102 => Tributada pelo Simples Nacional sem permissão de crédito.
+     * 103 => Isenção do ICMS no Simples Nacional para faixa de receita bruta.
+     * 300 => Imune.
+     * 400 => Não tributda pelo Simples Nacional (v.2.0) (v.2.0)
      *
      * @param string $cSOSN
      * @return self
@@ -94,6 +97,4 @@ class ICMSSN102 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

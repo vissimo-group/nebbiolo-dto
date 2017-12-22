@@ -33,8 +33,7 @@ class ICMSUFDest extends BaseDataTransfer
     protected $pFCPUFDest = null;
 
     /**
-     * Alíquota adotada nas operações internas na UF do destinatário para o produto
-     * / mercadoria.
+     * Alíquota adotada nas operações internas na UF do destinatário para o produto/mercadoria.
      *
      * @property string $pICMSUFDest
      */
@@ -73,8 +72,7 @@ class ICMSUFDest extends BaseDataTransfer
     protected $vICMSUFDest = null;
 
     /**
-     * Valor do ICMS de partilha para a UF do remetente. Nota: A partir de 2019, este
-     * valor será zero.
+     * Valor do ICMS de partilha para a UF do remetente. Nota: A partir de 2019, este valor será zero.
      *
      * @property string $vICMSUFRemet
      */
@@ -163,8 +161,7 @@ class ICMSUFDest extends BaseDataTransfer
     /**
      * Gets as pICMSUFDest
      *
-     * Alíquota adotada nas operações internas na UF do destinatário para o produto
-     * / mercadoria.
+     * Alíquota adotada nas operações internas na UF do destinatário para o produto/mercadoria.
      *
      * @return string
      */
@@ -176,8 +173,7 @@ class ICMSUFDest extends BaseDataTransfer
     /**
      * Sets a new pICMSUFDest
      *
-     * Alíquota adotada nas operações internas na UF do destinatário para o produto
-     * / mercadoria.
+     * Alíquota adotada nas operações internas na UF do destinatário para o produto/mercadoria.
      *
      * @param string $pICMSUFDest
      * @return self
@@ -303,8 +299,7 @@ class ICMSUFDest extends BaseDataTransfer
     /**
      * Gets as vICMSUFRemet
      *
-     * Valor do ICMS de partilha para a UF do remetente. Nota: A partir de 2019, este
-     * valor será zero.
+     * Valor do ICMS de partilha para a UF do remetente. Nota: A partir de 2019, este valor será zero.
      *
      * @return string
      */
@@ -316,8 +311,7 @@ class ICMSUFDest extends BaseDataTransfer
     /**
      * Sets a new vICMSUFRemet
      *
-     * Valor do ICMS de partilha para a UF do remetente. Nota: A partir de 2019, este
-     * valor será zero.
+     * Valor do ICMS de partilha para a UF do remetente. Nota: A partir de 2019, este valor será zero.
      *
      * @param string $vICMSUFRemet
      * @return self
@@ -328,6 +322,4 @@ class ICMSUFDest extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

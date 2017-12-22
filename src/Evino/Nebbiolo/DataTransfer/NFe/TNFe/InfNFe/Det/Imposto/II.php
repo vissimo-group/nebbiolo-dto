@@ -142,6 +142,4 @@ class II extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

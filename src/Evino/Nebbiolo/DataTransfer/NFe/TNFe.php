@@ -106,6 +106,4 @@ class TNFe extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

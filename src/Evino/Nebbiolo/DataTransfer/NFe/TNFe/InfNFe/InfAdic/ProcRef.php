@@ -94,6 +94,4 @@ class ProcRef extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

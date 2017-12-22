@@ -12,8 +12,7 @@ class PISQtde extends BaseDataTransfer
 
     /**
      * Código de Situação Tributária do PIS.
-     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-     * por Unidade de Produto;
+     * 03 => Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
      *
      * @property string $CST
      */
@@ -44,8 +43,7 @@ class PISQtde extends BaseDataTransfer
      * Gets as CST
      *
      * Código de Situação Tributária do PIS.
-     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-     * por Unidade de Produto;
+     * 03 => Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
      *
      * @return string
      */
@@ -58,8 +56,7 @@ class PISQtde extends BaseDataTransfer
      * Sets a new CST
      *
      * Código de Situação Tributária do PIS.
-     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-     * por Unidade de Produto;
+     * 03 => Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
      *
      * @param string $CST
      * @return self
@@ -148,6 +145,4 @@ class PISQtde extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

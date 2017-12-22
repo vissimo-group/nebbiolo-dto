@@ -76,6 +76,4 @@ class ForDia extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

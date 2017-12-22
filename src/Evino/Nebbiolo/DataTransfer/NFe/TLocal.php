@@ -310,6 +310,4 @@ class TLocal extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

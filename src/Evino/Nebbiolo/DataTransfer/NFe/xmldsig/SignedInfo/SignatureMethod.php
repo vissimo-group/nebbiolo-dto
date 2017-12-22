@@ -37,6 +37,4 @@ class SignatureMethod extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -76,6 +76,4 @@ class InfRec extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

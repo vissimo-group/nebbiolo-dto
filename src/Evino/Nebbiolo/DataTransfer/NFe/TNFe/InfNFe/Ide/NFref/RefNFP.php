@@ -11,8 +11,8 @@ class RefNFP extends BaseDataTransfer
 {
 
     /**
-     * Código da UF do emitente do Documento FiscalUtilizar a Tabela do IBGE (Anexo IV
-     * - Tabela de UF, Município e País)
+     * Código da UF do emitente do Documento FiscalUtilizar a Tabela do IBGE
+     * (Anexo IV - Tabela de UF, Município e País)
      *
      * @property string $cUF
      */
@@ -47,8 +47,7 @@ class RefNFP extends BaseDataTransfer
     protected $IE = null;
 
     /**
-     * Código do modelo do Documento Fiscal - utilizar 04 para NF de produtor ou 01
-     * para NF Avulsa
+     * Código do modelo do Documento Fiscal - utilizar 04 para NF de produtor ou 01 para NF Avulsa
      *
      * @property string $mod
      */
@@ -71,8 +70,8 @@ class RefNFP extends BaseDataTransfer
     /**
      * Gets as cUF
      *
-     * Código da UF do emitente do Documento FiscalUtilizar a Tabela do IBGE (Anexo IV
-     * - Tabela de UF, Município e País)
+     * Código da UF do emitente do Documento FiscalUtilizar a Tabela do IBGE
+     * (Anexo IV - Tabela de UF, Município e País)
      *
      * @return string
      */
@@ -84,8 +83,8 @@ class RefNFP extends BaseDataTransfer
     /**
      * Sets a new cUF
      *
-     * Código da UF do emitente do Documento FiscalUtilizar a Tabela do IBGE (Anexo IV
-     * - Tabela de UF, Município e País)
+     * Código da UF do emitente do Documento FiscalUtilizar a Tabela do IBGE
+     * (Anexo IV - Tabela de UF, Município e País)
      *
      * @param string $cUF
      * @return self
@@ -203,8 +202,7 @@ class RefNFP extends BaseDataTransfer
     /**
      * Gets as mod
      *
-     * Código do modelo do Documento Fiscal - utilizar 04 para NF de produtor ou 01
-     * para NF Avulsa
+     * Código do modelo do Documento Fiscal - utilizar 04 para NF de produtor ou 01 para NF Avulsa
      *
      * @return string
      */
@@ -216,8 +214,7 @@ class RefNFP extends BaseDataTransfer
     /**
      * Sets a new mod
      *
-     * Código do modelo do Documento Fiscal - utilizar 04 para NF de produtor ou 01
-     * para NF Avulsa
+     * Código do modelo do Documento Fiscal - utilizar 04 para NF de produtor ou 01 para NF Avulsa
      *
      * @param string $mod
      * @return self
@@ -280,6 +277,4 @@ class RefNFP extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

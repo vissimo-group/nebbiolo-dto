@@ -175,6 +175,4 @@ class Encerrante extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

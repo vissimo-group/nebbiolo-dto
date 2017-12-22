@@ -11,11 +11,9 @@ class COFINSAliq extends BaseDataTransfer
 {
 
     /**
-     * Código de Situação Tributária do COFINS.
-     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-     * Alíquota Normal (Cumulativo/Não Cumulativo);
-     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-     * Diferenciada);
+     * Código de Situação Tributária do COFINS:
+     * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+     * 02 => Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
      *
      * @property string $CST
      */
@@ -45,11 +43,9 @@ class COFINSAliq extends BaseDataTransfer
     /**
      * Gets as CST
      *
-     * Código de Situação Tributária do COFINS.
-     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-     * Alíquota Normal (Cumulativo/Não Cumulativo);
-     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-     * Diferenciada);
+     * Código de Situação Tributária do COFINS:
+     * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+     * 02 => Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
      *
      * @return string
      */
@@ -61,11 +57,9 @@ class COFINSAliq extends BaseDataTransfer
     /**
      * Sets a new CST
      *
-     * Código de Situação Tributária do COFINS.
-     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-     * Alíquota Normal (Cumulativo/Não Cumulativo);
-     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-     * Diferenciada);
+     * Código de Situação Tributária do COFINS:
+     * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+     * 02 => Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
      *
      * @param string $CST
      * @return self
@@ -154,6 +148,4 @@ class COFINSAliq extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

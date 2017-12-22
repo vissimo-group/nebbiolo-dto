@@ -20,8 +20,8 @@ class TRetEnviNFe extends BaseDataTransfer
 
     /**
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @property string $tpAmb
      */
@@ -49,7 +49,7 @@ class TRetEnviNFe extends BaseDataTransfer
     protected $xMotivo = null;
 
     /**
-     * código da UF de atendimento
+     * Código da UF de atendimento
      *
      * @property string $cUF
      */
@@ -102,8 +102,8 @@ class TRetEnviNFe extends BaseDataTransfer
      * Gets as tpAmb
      *
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @return string
      */
@@ -116,8 +116,8 @@ class TRetEnviNFe extends BaseDataTransfer
      * Sets a new tpAmb
      *
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @param string $tpAmb
      * @return self
@@ -209,7 +209,7 @@ class TRetEnviNFe extends BaseDataTransfer
     /**
      * Gets as cUF
      *
-     * código da UF de atendimento
+     * Código da UF de atendimento
      *
      * @return string
      */
@@ -221,7 +221,7 @@ class TRetEnviNFe extends BaseDataTransfer
     /**
      * Sets a new cUF
      *
-     * código da UF de atendimento
+     * Código da UF de atendimento
      *
      * @param string $cUF
      * @return self
@@ -310,6 +310,4 @@ class TRetEnviNFe extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

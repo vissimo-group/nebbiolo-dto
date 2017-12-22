@@ -11,9 +11,10 @@ class ICMSSN101 extends BaseDataTransfer
 {
 
     /**
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      * (v2.0)
      *
      * @property string $orig
@@ -21,7 +22,7 @@ class ICMSSN101 extends BaseDataTransfer
     protected $orig = null;
 
     /**
-     * 101- Tributada pelo Simples Nacional com permissão de crédito. (v.2.0)
+     * 101 => Tributada pelo Simples Nacional com permissão de crédito. (v.2.0)
      *
      * @property string $cSOSN
      */
@@ -45,9 +46,10 @@ class ICMSSN101 extends BaseDataTransfer
     /**
      * Gets as orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      * (v2.0)
      *
      * @return string
@@ -60,9 +62,10 @@ class ICMSSN101 extends BaseDataTransfer
     /**
      * Sets a new orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      * (v2.0)
      *
      * @param string $orig
@@ -77,7 +80,7 @@ class ICMSSN101 extends BaseDataTransfer
     /**
      * Gets as cSOSN
      *
-     * 101- Tributada pelo Simples Nacional com permissão de crédito. (v.2.0)
+     * 101 => Tributada pelo Simples Nacional com permissão de crédito. (v.2.0)
      *
      * @return string
      */
@@ -89,7 +92,7 @@ class ICMSSN101 extends BaseDataTransfer
     /**
      * Sets a new cSOSN
      *
-     * 101- Tributada pelo Simples Nacional com permissão de crédito. (v.2.0)
+     * 101 => Tributada pelo Simples Nacional com permissão de crédito. (v.2.0)
      *
      * @param string $cSOSN
      * @return self
@@ -154,6 +157,4 @@ class ICMSSN101 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

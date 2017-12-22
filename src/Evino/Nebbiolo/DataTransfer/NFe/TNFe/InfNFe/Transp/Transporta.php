@@ -241,6 +241,4 @@ class Transporta extends BaseDataTransfer
         return $this;
     }
 
-
 }
-
