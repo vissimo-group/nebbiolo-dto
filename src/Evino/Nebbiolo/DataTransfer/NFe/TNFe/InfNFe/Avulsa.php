@@ -373,6 +373,4 @@ class Avulsa extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

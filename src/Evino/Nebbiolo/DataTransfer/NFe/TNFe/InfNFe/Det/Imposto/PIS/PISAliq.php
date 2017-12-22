@@ -12,10 +12,8 @@ class PISAliq extends BaseDataTransfer
 
     /**
      * Código de Situação Tributária do PIS.
-     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-     * Alíquota Normal (Cumulativo/Não Cumulativo);
-     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-     * Diferenciada);
+     * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+     * 02 => Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
      *
      * @property string $CST
      */
@@ -46,10 +44,8 @@ class PISAliq extends BaseDataTransfer
      * Gets as CST
      *
      * Código de Situação Tributária do PIS.
-     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-     * Alíquota Normal (Cumulativo/Não Cumulativo);
-     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-     * Diferenciada);
+     * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+     * 02 => Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
      *
      * @return string
      */
@@ -62,10 +58,8 @@ class PISAliq extends BaseDataTransfer
      * Sets a new CST
      *
      * Código de Situação Tributária do PIS.
-     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-     * Alíquota Normal (Cumulativo/Não Cumulativo);
-     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-     * Diferenciada);
+     * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+     * 02 => Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
      *
      * @param string $CST
      * @return self
@@ -154,6 +148,4 @@ class PISAliq extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

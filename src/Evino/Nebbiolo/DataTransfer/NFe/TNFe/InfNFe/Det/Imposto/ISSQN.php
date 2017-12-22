@@ -84,9 +84,14 @@ class ISSQN extends BaseDataTransfer
     protected $vISSRet = null;
 
     /**
-     * Exibilidade do ISS:1-Exigível;2-Não
-     * incidente;3-Isenção;4-Exportação;5-Imunidade;6-Exig.Susp.
-     * Judicial;7-Exig.Susp. ADM
+     * Exibilidade do ISS:
+     * 1 => Exigível
+     * 2 => Não incidente
+     * 3 => Isenção
+     * 4 => Exportação
+     * 5 => Imunidade
+     * 6 => Exig.Susp. Judicial
+     * 7 => Exig.Susp. ADM
      *
      * @property string $indISS
      */
@@ -121,7 +126,9 @@ class ISSQN extends BaseDataTransfer
     protected $nProcesso = null;
 
     /**
-     * Indicador de Incentivo Fiscal. 1=Sim; 2=Não
+     * Indicador de Incentivo Fiscal.
+     * 1 => Sim
+     * 2 => Não
      *
      * @property string $indIncentivo
      */
@@ -238,8 +245,7 @@ class ISSQN extends BaseDataTransfer
     /**
      * Gets as cListServ
      *
-     * Informar o Item da lista de serviços da LC 116/03 em que se classifica o
-     * serviço.
+     * Informar o Item da lista de serviços da LC 116/03 em que se classifica o serviço.
      *
      * @return string
      */
@@ -251,8 +257,7 @@ class ISSQN extends BaseDataTransfer
     /**
      * Sets a new cListServ
      *
-     * Informar o Item da lista de serviços da LC 116/03 em que se classifica o
-     * serviço.
+     * Informar o Item da lista de serviços da LC 116/03 em que se classifica o serviço.
      *
      * @param string $cListServ
      * @return self
@@ -396,9 +401,14 @@ class ISSQN extends BaseDataTransfer
     /**
      * Gets as indISS
      *
-     * Exibilidade do ISS:1-Exigível;2-Não
-     * incidente;3-Isenção;4-Exportação;5-Imunidade;6-Exig.Susp.
-     * Judicial;7-Exig.Susp. ADM
+     * Exibilidade do ISS:
+     * 1 => Exigível
+     * 2 => Não incidente
+     * 3 => Isenção
+     * 4 => Exportação
+     * 5 => Imunidade
+     * 6 => Exig.Susp. Judicial
+     * 7 => Exig.Susp. ADM
      *
      * @return string
      */
@@ -410,9 +420,14 @@ class ISSQN extends BaseDataTransfer
     /**
      * Sets a new indISS
      *
-     * Exibilidade do ISS:1-Exigível;2-Não
-     * incidente;3-Isenção;4-Exportação;5-Imunidade;6-Exig.Susp.
-     * Judicial;7-Exig.Susp. ADM
+     * Exibilidade do ISS:
+     * 1 => Exigível
+     * 2 => Não incidente
+     * 3 => Isenção
+     * 4 => Exportação
+     * 5 => Imunidade
+     * 6 => Exig.Susp. Judicial
+     * 7 => Exig.Susp. ADM
      *
      * @param string $indISS
      * @return self
@@ -530,7 +545,9 @@ class ISSQN extends BaseDataTransfer
     /**
      * Gets as indIncentivo
      *
-     * Indicador de Incentivo Fiscal. 1=Sim; 2=Não
+     * Indicador de Incentivo Fiscal.
+     * 1 => Sim
+     * 2 => Não
      *
      * @return string
      */
@@ -542,7 +559,9 @@ class ISSQN extends BaseDataTransfer
     /**
      * Sets a new indIncentivo
      *
-     * Indicador de Incentivo Fiscal. 1=Sim; 2=Não
+     * Indicador de Incentivo Fiscal.
+     * 1 => Sim
+     * 2 => Não
      *
      * @param string $indIncentivo
      * @return self
@@ -553,6 +572,4 @@ class ISSQN extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

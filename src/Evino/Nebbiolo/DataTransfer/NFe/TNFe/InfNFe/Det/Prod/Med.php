@@ -79,6 +79,4 @@ class Med extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

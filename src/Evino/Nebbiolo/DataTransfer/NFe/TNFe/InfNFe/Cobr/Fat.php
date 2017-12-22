@@ -142,6 +142,4 @@ class Fat extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

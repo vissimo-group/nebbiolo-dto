@@ -64,6 +64,4 @@ class ObsFisco extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -40,6 +40,4 @@ class X509Data extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

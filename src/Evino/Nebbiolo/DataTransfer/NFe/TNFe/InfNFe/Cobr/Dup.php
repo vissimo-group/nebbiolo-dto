@@ -109,6 +109,4 @@ class Dup extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

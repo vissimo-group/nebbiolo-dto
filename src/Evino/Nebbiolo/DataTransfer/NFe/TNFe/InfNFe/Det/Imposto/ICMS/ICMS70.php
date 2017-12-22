@@ -11,9 +11,10 @@ class ICMS70 extends BaseDataTransfer
 {
 
     /**
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @property string $orig
      */
@@ -21,8 +22,7 @@ class ICMS70 extends BaseDataTransfer
 
     /**
      * Tributção pelo ICMS
-     * 70 - Com redução de base de cálculo e cobrança do ICMS por substituição
-     * tributária
+     * 70 => Com redução de base de cálculo e cobrança do ICMS por substituição tributária
      *
      * @property string $CST
      */
@@ -30,10 +30,10 @@ class ICMS70 extends BaseDataTransfer
 
     /**
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @property string $modBC
      */
@@ -90,12 +90,12 @@ class ICMS70 extends BaseDataTransfer
 
     /**
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor).
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor).
      *
      * @property string $modBCST
      */
@@ -165,8 +165,10 @@ class ICMS70 extends BaseDataTransfer
     protected $vICMSDeson = null;
 
     /**
-     * Motivo da desoneração do ICMS:3-Uso na agropecuária;9-Outros;12-Fomento
-     * agropecuário
+     * Motivo da desoneração do ICMS:
+     * 3  => Uso na agropecuária
+     * 9  => Outros
+     * 12 => Fomento agropecuário
      *
      * @property string $motDesICMS
      */
@@ -175,9 +177,10 @@ class ICMS70 extends BaseDataTransfer
     /**
      * Gets as orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @return string
      */
@@ -189,9 +192,10 @@ class ICMS70 extends BaseDataTransfer
     /**
      * Sets a new orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @param string $orig
      * @return self
@@ -206,8 +210,7 @@ class ICMS70 extends BaseDataTransfer
      * Gets as CST
      *
      * Tributção pelo ICMS
-     * 70 - Com redução de base de cálculo e cobrança do ICMS por substituição
-     * tributária
+     * 70 => Com redução de base de cálculo e cobrança do ICMS por substituição tributária
      *
      * @return string
      */
@@ -220,8 +223,7 @@ class ICMS70 extends BaseDataTransfer
      * Sets a new CST
      *
      * Tributção pelo ICMS
-     * 70 - Com redução de base de cálculo e cobrança do ICMS por substituição
-     * tributária
+     * 70 => Com redução de base de cálculo e cobrança do ICMS por substituição tributária
      *
      * @param string $CST
      * @return self
@@ -236,10 +238,10 @@ class ICMS70 extends BaseDataTransfer
      * Gets as modBC
      *
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @return string
      */
@@ -252,10 +254,10 @@ class ICMS70 extends BaseDataTransfer
      * Sets a new modBC
      *
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @param string $modBC
      * @return self
@@ -452,12 +454,12 @@ class ICMS70 extends BaseDataTransfer
      * Gets as modBCST
      *
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor).
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor).
      *
      * @return string
      */
@@ -470,12 +472,12 @@ class ICMS70 extends BaseDataTransfer
      * Sets a new modBCST
      *
      * Modalidade de determinação da BC do ICMS ST:
-     * 0 – Preço tabelado ou máximo sugerido;
-     * 1 - Lista Negativa (valor);
-     * 2 - Lista Positiva (valor);
-     * 3 - Lista Neutra (valor);
-     * 4 - Margem Valor Agregado (%);
-     * 5 - Pauta (valor).
+     * 0 => Preço tabelado ou máximo sugerido;
+     * 1 => Lista Negativa (valor);
+     * 2 => Lista Positiva (valor);
+     * 3 => Lista Neutra (valor);
+     * 4 => Margem Valor Agregado (%);
+     * 5 => Pauta (valor).
      *
      * @param string $modBCST
      * @return self
@@ -723,8 +725,10 @@ class ICMS70 extends BaseDataTransfer
     /**
      * Gets as motDesICMS
      *
-     * Motivo da desoneração do ICMS:3-Uso na agropecuária;9-Outros;12-Fomento
-     * agropecuário
+     * Motivo da desoneração do ICMS:
+     * 3  => Uso na agropecuária
+     * 9  => Outros
+     * 12 => Fomento agropecuário
      *
      * @return string
      */
@@ -736,8 +740,10 @@ class ICMS70 extends BaseDataTransfer
     /**
      * Sets a new motDesICMS
      *
-     * Motivo da desoneração do ICMS:3-Uso na agropecuária;9-Outros;12-Fomento
-     * agropecuário
+     * Motivo da desoneração do ICMS:
+     * 3  => Uso na agropecuária
+     * 9  => Outros
+     * 12 => Fomento agropecuário
      *
      * @param string $motDesICMS
      * @return self
@@ -748,6 +754,4 @@ class ICMS70 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

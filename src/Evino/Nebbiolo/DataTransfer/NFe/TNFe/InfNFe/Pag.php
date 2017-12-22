@@ -116,6 +116,4 @@ class Pag extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

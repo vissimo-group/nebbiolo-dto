@@ -208,6 +208,4 @@ class RetTransp extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -109,6 +109,4 @@ class CIDE extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -67,6 +67,4 @@ class KeyInfo extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -42,8 +42,7 @@ class TEndereco extends BaseDataTransfer
     protected $xBairro = null;
 
     /**
-     * Código do município (utilizar a tabela do IBGE), informar 9999999 para
-     * operações com o exterior.
+     * Código do município (utilizar a tabela do IBGE), informar 9999999 para operações com o exterior.
      *
      * @property string $cMun
      */
@@ -86,8 +85,7 @@ class TEndereco extends BaseDataTransfer
 
     /**
      * Telefone, preencher com Código DDD + número do telefone , nas operações com
-     * exterior é permtido informar o código do país + código da localidade +
-     * número do telefone
+     * exterior é permtido informar o código do país + código da localidade + número do telefone
      *
      * @property string $fone
      */
@@ -200,8 +198,7 @@ class TEndereco extends BaseDataTransfer
     /**
      * Gets as cMun
      *
-     * Código do município (utilizar a tabela do IBGE), informar 9999999 para
-     * operações com o exterior.
+     * Código do município (utilizar a tabela do IBGE), informar 9999999 para operações com o exterior.
      *
      * @return string
      */
@@ -213,8 +210,7 @@ class TEndereco extends BaseDataTransfer
     /**
      * Sets a new cMun
      *
-     * Código do município (utilizar a tabela do IBGE), informar 9999999 para
-     * operações com o exterior.
+     * Código do município (utilizar a tabela do IBGE), informar 9999999 para operações com o exterior.
      *
      * @param string $cMun
      * @return self
@@ -359,8 +355,7 @@ class TEndereco extends BaseDataTransfer
      * Gets as fone
      *
      * Telefone, preencher com Código DDD + número do telefone , nas operações com
-     * exterior é permtido informar o código do país + código da localidade +
-     * número do telefone
+     * exterior é permtido informar o código do país + código da localidade + número do telefone
      *
      * @return string
      */
@@ -373,8 +368,7 @@ class TEndereco extends BaseDataTransfer
      * Sets a new fone
      *
      * Telefone, preencher com Código DDD + número do telefone , nas operações com
-     * exterior é permtido informar o código do país + código da localidade +
-     * número do telefone
+     * exterior é permtido informar o código do país + código da localidade + número do telefone
      *
      * @param string $fone
      * @return self
@@ -385,6 +379,4 @@ class TEndereco extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

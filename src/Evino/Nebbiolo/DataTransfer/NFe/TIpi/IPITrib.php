@@ -12,10 +12,10 @@ class IPITrib extends BaseDataTransfer
 
     /**
      * Código da Situação Tributária do IPI:
-     * 00-Entrada com recuperação de crédito
-     * 49 - Outras entradas
-     * 50-Saída tributada
-     * 99-Outras saídas
+     * 00 => Entrada com recuperação de crédito
+     * 49 => Outras entradas
+     * 50 => Saída tributada
+     * 99 => Outras saídas
      *
      * @property string $CST
      */
@@ -43,8 +43,7 @@ class IPITrib extends BaseDataTransfer
     protected $qUnid = null;
 
     /**
-     * Valor por Unidade Tributável. Informar o valor do imposto Pauta por unidade de
-     * medida.
+     * Valor por Unidade Tributável. Informar o valor do imposto Pauta por unidade de medida.
      *
      * @property string $vUnid
      */
@@ -61,10 +60,10 @@ class IPITrib extends BaseDataTransfer
      * Gets as CST
      *
      * Código da Situação Tributária do IPI:
-     * 00-Entrada com recuperação de crédito
-     * 49 - Outras entradas
-     * 50-Saída tributada
-     * 99-Outras saídas
+     * 00 => Entrada com recuperação de crédito
+     * 49 => Outras entradas
+     * 50 => Saída tributada
+     * 99 => Outras saídas
      *
      * @return string
      */
@@ -77,10 +76,10 @@ class IPITrib extends BaseDataTransfer
      * Sets a new CST
      *
      * Código da Situação Tributária do IPI:
-     * 00-Entrada com recuperação de crédito
-     * 49 - Outras entradas
-     * 50-Saída tributada
-     * 99-Outras saídas
+     * 00 => Entrada com recuperação de crédito
+     * 49 => Outras entradas
+     * 50 => Saída tributada
+     * 99 => Outras saídas
      *
      * @param string $CST
      * @return self
@@ -172,8 +171,7 @@ class IPITrib extends BaseDataTransfer
     /**
      * Gets as vUnid
      *
-     * Valor por Unidade Tributável. Informar o valor do imposto Pauta por unidade de
-     * medida.
+     * Valor por Unidade Tributável. Informar o valor do imposto Pauta por unidade de medida.
      *
      * @return string
      */
@@ -185,8 +183,7 @@ class IPITrib extends BaseDataTransfer
     /**
      * Sets a new vUnid
      *
-     * Valor por Unidade Tributável. Informar o valor do imposto Pauta por unidade de
-     * medida.
+     * Valor por Unidade Tributável. Informar o valor do imposto Pauta por unidade de medida.
      *
      * @param string $vUnid
      * @return self
@@ -223,6 +220,4 @@ class IPITrib extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

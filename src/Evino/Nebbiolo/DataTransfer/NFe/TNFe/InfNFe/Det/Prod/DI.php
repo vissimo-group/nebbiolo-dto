@@ -48,8 +48,16 @@ class DI extends BaseDataTransfer
 
     /**
      * Via de transporte internacional informada na DI
-     *  1-Maritima;2-Fluvial;3-Lacustre;4-Aerea;5-Postal;6-Ferroviaria;7-Rodoviaria;8-Conduto;9-Meios
-     * Proprios;10-Entrada/Saida Ficta.
+     * 1  => Maritima
+     * 2  => Fluvial
+     * 3  => Lacustre
+     * 4  => Aerea
+     * 5  => Postal
+     * 6  => Ferroviaria
+     * 7  => Rodoviaria
+     * 8  => Conduto
+     * 9  => Meios Proprios
+     * 10 => Entrada/Saida Ficta.
      *
      * @property string $tpViaTransp
      */
@@ -64,7 +72,9 @@ class DI extends BaseDataTransfer
 
     /**
      * Forma de Importação quanto a intermediação
-     *  1-por conta propria;2-por conta e ordem;3-encomenda
+     * 1 => por conta propria
+     * 2 => por conta e ordem
+     * 3 => encomenda
      *
      * @property string $tpIntermedio
      */
@@ -85,8 +95,7 @@ class DI extends BaseDataTransfer
     protected $UFTerceiro = null;
 
     /**
-     * Código do exportador (usado nos sistemas internos de informação do emitente
-     * da NF-e)
+     * Código do exportador (usado nos sistemas internos de informação do emitente da NF-e)
      *
      * @property string $cExportador
      */
@@ -95,17 +104,14 @@ class DI extends BaseDataTransfer
     /**
      * Adições (NT 2011/004)
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
-     * $adi
+     * @property DI\Adi[]  $adi
      */
     protected $adi = array();
 
     /**
      * Gets as nDI
      *
-     * Numero do Documento de Importação DI/DSI/DA/DRI-E (DI/DSI/DA/DRI-E)
-     * (NT2011/004)
+     * Numero do Documento de Importação DI/DSI/DA/DRI-E (DI/DSI/DA/DRI-E) (NT2011/004)
      *
      * @return string
      */
@@ -117,8 +123,7 @@ class DI extends BaseDataTransfer
     /**
      * Sets a new nDI
      *
-     * Numero do Documento de Importação DI/DSI/DA/DRI-E (DI/DSI/DA/DRI-E)
-     * (NT2011/004)
+     * Numero do Documento de Importação DI/DSI/DA/DRI-E (DI/DSI/DA/DRI-E) (NT2011/004)
      *
      * @param string $nDI
      * @return self
@@ -237,8 +242,16 @@ class DI extends BaseDataTransfer
      * Gets as tpViaTransp
      *
      * Via de transporte internacional informada na DI
-     *  1-Maritima;2-Fluvial;3-Lacustre;4-Aerea;5-Postal;6-Ferroviaria;7-Rodoviaria;8-Conduto;9-Meios
-     * Proprios;10-Entrada/Saida Ficta.
+     * 1  => Maritima
+     * 2  => Fluvial
+     * 3  => Lacustre
+     * 4  => Aerea
+     * 5  => Postal
+     * 6  => Ferroviaria
+     * 7  => Rodoviaria
+     * 8  => Conduto
+     * 9  => Meios Proprios
+     * 10 => Entrada/Saida Ficta.
      *
      * @return string
      */
@@ -251,8 +264,16 @@ class DI extends BaseDataTransfer
      * Sets a new tpViaTransp
      *
      * Via de transporte internacional informada na DI
-     *  1-Maritima;2-Fluvial;3-Lacustre;4-Aerea;5-Postal;6-Ferroviaria;7-Rodoviaria;8-Conduto;9-Meios
-     * Proprios;10-Entrada/Saida Ficta.
+     * 1  => Maritima
+     * 2  => Fluvial
+     * 3  => Lacustre
+     * 4  => Aerea
+     * 5  => Postal
+     * 6  => Ferroviaria
+     * 7  => Rodoviaria
+     * 8  => Conduto
+     * 9  => Meios Proprios
+     * 10 => Entrada/Saida Ficta.
      *
      * @param string $tpViaTransp
      * @return self
@@ -293,7 +314,9 @@ class DI extends BaseDataTransfer
      * Gets as tpIntermedio
      *
      * Forma de Importação quanto a intermediação
-     *  1-por conta propria;2-por conta e ordem;3-encomenda
+     * 1 => por conta propria
+     * 2 => por conta e ordem
+     * 3 => encomenda
      *
      * @return string
      */
@@ -306,7 +329,9 @@ class DI extends BaseDataTransfer
      * Sets a new tpIntermedio
      *
      * Forma de Importação quanto a intermediação
-     *  1-por conta propria;2-por conta e ordem;3-encomenda
+     * 1 => por conta propria
+     * 2 => por conta e ordem
+     * 3 => encomenda
      *
      * @param string $tpIntermedio
      * @return self
@@ -372,8 +397,7 @@ class DI extends BaseDataTransfer
     /**
      * Gets as cExportador
      *
-     * Código do exportador (usado nos sistemas internos de informação do emitente
-     * da NF-e)
+     * Código do exportador (usado nos sistemas internos de informação do emitente da NF-e)
      *
      * @return string
      */
@@ -385,8 +409,7 @@ class DI extends BaseDataTransfer
     /**
      * Sets a new cExportador
      *
-     * Código do exportador (usado nos sistemas internos de informação do emitente
-     * da NF-e)
+     * Código do exportador (usado nos sistemas internos de informação do emitente da NF-e)
      *
      * @param string $cExportador
      * @return self
@@ -397,16 +420,15 @@ class DI extends BaseDataTransfer
         return $this;
     }
 
-	/**
-	 * Adds as adi
-	 *
-	 * Adições (NT 2011/004)
-	 *
-	 *
-	 * @param DI\Adi $adi
-	 * @return DI
-	 * @internal param $ \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi $adi* \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi $adi
-	 */
+    /**
+     * Adds as adi
+     *
+     * Adições (NT 2011/004)
+     *
+     * @param DI\Adi $adi
+     * @return DI
+     * @internal param $ DI\Adi $adi* DI\Adi $adi
+     */
     public function addToAdi(DI\Adi $adi)
     {
         $this->adi[] = $adi;
@@ -439,34 +461,30 @@ class DI extends BaseDataTransfer
         unset($this->adi[$index]);
     }
 
-	/**
-	 * Gets as adi
-	 *
-	 * Adições (NT 2011/004)
-	 * @return array \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
-	 * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
-	 */
+    /**
+     * Gets as adi
+     *
+     * Adições (NT 2011/004)
+     * @return array DI\Adi[] DI\Adi[]
+     */
     public function getAdi()
     {
         return $this->adi;
     }
 
-	/**
-	 * Sets a new adi
-	 *
-	 * Adições (NT 2011/004)
-	 *
-	 * @param array $adi
-	 * @return DI
-	 * @internal param $ \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]* \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DI\Adi[]
-	 * $adi
-	 */
+    /**
+     * Sets a new adi
+     *
+     * Adições (NT 2011/004)
+     *
+     * @param array $adi
+     * @return DI
+     * @internal param $ DI\Adi[]* DI\Adi[] $adi
+     */
     public function setAdi(array $adi)
     {
         $this->adi = $adi;
         return $this;
     }
 
-
 }
-

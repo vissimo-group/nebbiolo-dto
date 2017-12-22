@@ -11,9 +11,10 @@ class ICMS20 extends BaseDataTransfer
 {
 
     /**
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @property string $orig
      */
@@ -21,7 +22,7 @@ class ICMS20 extends BaseDataTransfer
 
     /**
      * Tributção pelo ICMS
-     * 20 - Com redução de base de cálculo
+     * 20 => Com redução de base de cálculo
      *
      * @property string $CST
      */
@@ -29,10 +30,10 @@ class ICMS20 extends BaseDataTransfer
 
     /**
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @property string $modBC
      */
@@ -95,8 +96,10 @@ class ICMS20 extends BaseDataTransfer
     protected $vICMSDeson = null;
 
     /**
-     * Motivo da desoneração do ICMS:3-Uso na agropecuária;9-Outros;12-Fomento
-     * agropecuário
+     * Motivo da desoneração do ICMS:
+     * 3  => Uso na agropecuária
+     * 9  => Outros
+     * 12 => Fomento agropecuário
      *
      * @property string $motDesICMS
      */
@@ -105,9 +108,10 @@ class ICMS20 extends BaseDataTransfer
     /**
      * Gets as orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @return string
      */
@@ -119,9 +123,10 @@ class ICMS20 extends BaseDataTransfer
     /**
      * Sets a new orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @param string $orig
      * @return self
@@ -136,7 +141,7 @@ class ICMS20 extends BaseDataTransfer
      * Gets as CST
      *
      * Tributção pelo ICMS
-     * 20 - Com redução de base de cálculo
+     * 20 => Com redução de base de cálculo
      *
      * @return string
      */
@@ -149,7 +154,7 @@ class ICMS20 extends BaseDataTransfer
      * Sets a new CST
      *
      * Tributção pelo ICMS
-     * 20 - Com redução de base de cálculo
+     * 20 => Com redução de base de cálculo
      *
      * @param string $CST
      * @return self
@@ -164,10 +169,10 @@ class ICMS20 extends BaseDataTransfer
      * Gets as modBC
      *
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @return string
      */
@@ -180,10 +185,10 @@ class ICMS20 extends BaseDataTransfer
      * Sets a new modBC
      *
      * Modalidade de determinação da BC do ICMS:
-     * 0 - Margem Valor Agregado (%);
-     * 1 - Pauta (valor);
-     * 2 - Preço Tabelado Máximo (valor);
-     * 3 - Valor da Operação.
+     * 0 => Margem Valor Agregado (%);
+     * 1 => Pauta (valor);
+     * 2 => Preço Tabelado Máximo (valor);
+     * 3 => Valor da Operação.
      *
      * @param string $modBC
      * @return self
@@ -405,8 +410,10 @@ class ICMS20 extends BaseDataTransfer
     /**
      * Gets as motDesICMS
      *
-     * Motivo da desoneração do ICMS:3-Uso na agropecuária;9-Outros;12-Fomento
-     * agropecuário
+     * Motivo da desoneração do ICMS:
+     * 3  => Uso na agropecuária
+     * 9  => Outros
+     * 12 => Fomento agropecuário
      *
      * @return string
      */
@@ -418,8 +425,10 @@ class ICMS20 extends BaseDataTransfer
     /**
      * Sets a new motDesICMS
      *
-     * Motivo da desoneração do ICMS:3-Uso na agropecuária;9-Outros;12-Fomento
-     * agropecuário
+     * Motivo da desoneração do ICMS:
+     * 3  => Uso na agropecuária
+     * 9  => Outros
+     * 12 => Fomento agropecuário
      *
      * @param string $motDesICMS
      * @return self
@@ -430,6 +439,4 @@ class ICMS20 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

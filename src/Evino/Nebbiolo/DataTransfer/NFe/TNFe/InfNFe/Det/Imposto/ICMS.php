@@ -12,7 +12,7 @@ class ICMS extends BaseDataTransfer
 
     /**
      * Tributação pelo ICMS
-     * 00 - Tributada integralmente
+     * 00 => Tributada integralmente
      *
      * @property ICMS\ICMS00 $ICMS00
      */
@@ -20,7 +20,7 @@ class ICMS extends BaseDataTransfer
 
     /**
      * Tributação pelo ICMS
-     * 10 - Tributada e com cobrança do ICMS por substituição tributária
+     * 10 => Tributada e com cobrança do ICMS por substituição tributária
      *
      * @property ICMS\ICMS10 $ICMS10
      */
@@ -28,7 +28,7 @@ class ICMS extends BaseDataTransfer
 
     /**
      * Tributção pelo ICMS
-     * 20 - Com redução de base de cálculo
+     * 20 => Com redução de base de cálculo
      *
      * @property ICMS\ICMS20 $ICMS20
      */
@@ -36,8 +36,7 @@ class ICMS extends BaseDataTransfer
 
     /**
      * Tributação pelo ICMS
-     * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
-     * tributária
+     * 30 => Isenta ou não tributada e com cobrança do ICMS por substituição tributária
      *
      * @property ICMS\ICMS30 $ICMS30
      */
@@ -45,9 +44,9 @@ class ICMS extends BaseDataTransfer
 
     /**
      * Tributação pelo ICMS
-     * 40 - Isenta
-     * 41 - Não tributada
-     * 50 - Suspensão
+     * 40 => Isenta
+     * 41 => Não tributada
+     * 50 => Suspensão
      *
      * @property ICMS\ICMS40 $ICMS40
      */
@@ -55,9 +54,8 @@ class ICMS extends BaseDataTransfer
 
     /**
      * Tributção pelo ICMS
-     * 51 - Diferimento
-     * A exigência do preenchimento das informações do ICMS diferido fica à
-     * critério de cada UF.
+     * 51 => Diferimento
+     * A exigência do preenchimento das informações do ICMS diferido fica à critério de cada UF.
      *
      * @property ICMS\ICMS51 $ICMS51
      */
@@ -65,7 +63,7 @@ class ICMS extends BaseDataTransfer
 
     /**
      * Tributação pelo ICMS
-     * 60 - ICMS cobrado anteriormente por substituição tributária
+     * 60 => ICMS cobrado anteriormente por substituição tributária
      *
      * @property ICMS\ICMS60 $ICMS60
      */
@@ -73,8 +71,7 @@ class ICMS extends BaseDataTransfer
 
     /**
      * Tributação pelo ICMS
-     * 70 - Com redução de base de cálculo e cobrança do ICMS por substituição
-     * tributária
+     * 70 => Com redução de base de cálculo e cobrança do ICMS por substituição tributária
      *
      * @property ICMS\ICMS70 $ICMS70
      */
@@ -82,15 +79,14 @@ class ICMS extends BaseDataTransfer
 
     /**
      * Tributação pelo ICMS
-     * 90 - Outras
+     * 90 => Outras
      *
      * @property ICMS\ICMS90 $ICMS90
      */
     protected $ICMS90 = null;
 
     /**
-     * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na
-     * legislação
+     * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na legislação
      * Operação interestadual para consumidor final com partilha do ICMS devido na
      * operação entre a UF de origem e a UF do destinatário ou ou a UF definida na
      * legislação. (Ex. UF da concessionária de entrega do veículos)
@@ -137,16 +133,14 @@ class ICMS extends BaseDataTransfer
     protected $ICMSSN202 = null;
 
     /**
-     * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e
-     * CSOSN=500 (v.2.0)
+     * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e CSOSN=500 (v.2.0)
      *
      * @property ICMS\ICMSSN500 $ICMSSN500
      */
     protected $ICMSSN500 = null;
 
     /**
-     * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e
-     * CSOSN=900 (v2.0)
+     * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e CSOSN=900 (v2.0)
      *
      * @property ICMS\ICMSSN900 $ICMSSN900
      */
@@ -199,7 +193,7 @@ class ICMS extends BaseDataTransfer
      * Gets as ICMS00
      *
      * Tributação pelo ICMS
-     * 00 - Tributada integralmente
+     * 00 => Tributada integralmente
      *
      * @return ICMS\ICMS00
      */
@@ -212,7 +206,7 @@ class ICMS extends BaseDataTransfer
      * Sets a new ICMS00
      *
      * Tributação pelo ICMS
-     * 00 - Tributada integralmente
+     * 00 => Tributada integralmente
      *
      * @param ICMS\ICMS00 $ICMS00
      * @return ICMS
@@ -228,7 +222,7 @@ class ICMS extends BaseDataTransfer
      * Gets as ICMS10
      *
      * Tributação pelo ICMS
-     * 10 - Tributada e com cobrança do ICMS por substituição tributária
+     * 10 => Tributada e com cobrança do ICMS por substituição tributária
      *
      * @return ICMS\ICMS10
      */
@@ -241,7 +235,7 @@ class ICMS extends BaseDataTransfer
      * Sets a new ICMS10
      *
      * Tributação pelo ICMS
-     * 10 - Tributada e com cobrança do ICMS por substituição tributária
+     * 10 => Tributada e com cobrança do ICMS por substituição tributária
      *
      * @param ICMS\ICMS10 $ICMS10
      * @return ICMS
@@ -257,7 +251,7 @@ class ICMS extends BaseDataTransfer
      * Gets as ICMS20
      *
      * Tributção pelo ICMS
-     * 20 - Com redução de base de cálculo
+     * 20 => Com redução de base de cálculo
      *
      * @return ICMS\ICMS20
      */
@@ -270,7 +264,7 @@ class ICMS extends BaseDataTransfer
      * Sets a new ICMS20
      *
      * Tributção pelo ICMS
-     * 20 - Com redução de base de cálculo
+     * 20 => Com redução de base de cálculo
      *
      * @param ICMS\ICMS20 $ICMS20
      * @return ICMS
@@ -286,8 +280,7 @@ class ICMS extends BaseDataTransfer
      * Gets as ICMS30
      *
      * Tributação pelo ICMS
-     * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
-     * tributária
+     * 30 => Isenta ou não tributada e com cobrança do ICMS por substituição tributária
      *
      * @return ICMS\ICMS30
      */
@@ -300,8 +293,7 @@ class ICMS extends BaseDataTransfer
      * Sets a new ICMS30
      *
      * Tributação pelo ICMS
-     * 30 - Isenta ou não tributada e com cobrança do ICMS por substituição
-     * tributária
+     * 30 => Isenta ou não tributada e com cobrança do ICMS por substituição tributária
      *
      * @param ICMS\ICMS30 $ICMS30
      * @return ICMS
@@ -317,9 +309,9 @@ class ICMS extends BaseDataTransfer
      * Gets as ICMS40
      *
      * Tributação pelo ICMS
-     * 40 - Isenta
-     * 41 - Não tributada
-     * 50 - Suspensão
+     * 40 => Isenta
+     * 41 => Não tributada
+     * 50 => Suspensão
      *
      * @return ICMS\ICMS40
      */
@@ -332,9 +324,9 @@ class ICMS extends BaseDataTransfer
      * Sets a new ICMS40
      *
      * Tributação pelo ICMS
-     * 40 - Isenta
-     * 41 - Não tributada
-     * 50 - Suspensão
+     * 40 => Isenta
+     * 41 => Não tributada
+     * 50 => Suspensão
      *
      * @param ICMS\ICMS40 $ICMS40
      * @return ICMS
@@ -350,9 +342,8 @@ class ICMS extends BaseDataTransfer
      * Gets as ICMS51
      *
      * Tributção pelo ICMS
-     * 51 - Diferimento
-     * A exigência do preenchimento das informações do ICMS diferido fica à
-     * critério de cada UF.
+     * 51 => Diferimento
+     * A exigência do preenchimento das informações do ICMS diferido fica à critério de cada UF.
      *
      * @return ICMS\ICMS51
      */
@@ -365,9 +356,8 @@ class ICMS extends BaseDataTransfer
      * Sets a new ICMS51
      *
      * Tributção pelo ICMS
-     * 51 - Diferimento
-     * A exigência do preenchimento das informações do ICMS diferido fica à
-     * critério de cada UF.
+     * 51 => Diferimento
+     * A exigência do preenchimento das informações do ICMS diferido fica à critério de cada UF.
      *
      * @param ICMS\ICMS51 $ICMS51
      * @return ICMS
@@ -383,7 +373,7 @@ class ICMS extends BaseDataTransfer
      * Gets as ICMS60
      *
      * Tributação pelo ICMS
-     * 60 - ICMS cobrado anteriormente por substituição tributária
+     * 60 => ICMS cobrado anteriormente por substituição tributária
      *
      * @return ICMS\ICMS60
      */
@@ -396,7 +386,7 @@ class ICMS extends BaseDataTransfer
      * Sets a new ICMS60
      *
      * Tributação pelo ICMS
-     * 60 - ICMS cobrado anteriormente por substituição tributária
+     * 60 => ICMS cobrado anteriormente por substituição tributária
      *
      * @param ICMS\ICMS60 $ICMS60
      * @return ICMS
@@ -412,8 +402,7 @@ class ICMS extends BaseDataTransfer
      * Gets as ICMS70
      *
      * Tributação pelo ICMS
-     * 70 - Com redução de base de cálculo e cobrança do ICMS por substituição
-     * tributária
+     * 70 => Com redução de base de cálculo e cobrança do ICMS por substituição tributária
      *
      * @return ICMS\ICMS70
      */
@@ -426,8 +415,7 @@ class ICMS extends BaseDataTransfer
      * Sets a new ICMS70
      *
      * Tributação pelo ICMS
-     * 70 - Com redução de base de cálculo e cobrança do ICMS por substituição
-     * tributária
+     * 70 => Com redução de base de cálculo e cobrança do ICMS por substituição tributária
      *
      * @param ICMS\ICMS70 $ICMS70
      * @return ICMS
@@ -443,7 +431,7 @@ class ICMS extends BaseDataTransfer
      * Gets as ICMS90
      *
      * Tributação pelo ICMS
-     * 90 - Outras
+     * 90 => Outras
      *
      * @return ICMS\ICMS90
      */
@@ -456,7 +444,7 @@ class ICMS extends BaseDataTransfer
      * Sets a new ICMS90
      *
      * Tributação pelo ICMS
-     * 90 - Outras
+     * 90 => Outras
      *
      * @param ICMS\ICMS90 $ICMS90
      * @return ICMS
@@ -471,8 +459,7 @@ class ICMS extends BaseDataTransfer
     /**
      * Gets as ICMSPart
      *
-     * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na
-     * legislação
+     * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na legislação
      * Operação interestadual para consumidor final com partilha do ICMS devido na
      * operação entre a UF de origem e a UF do destinatário ou ou a UF definida na
      * legislação. (Ex. UF da concessionária de entrega do veículos)
@@ -487,8 +474,7 @@ class ICMS extends BaseDataTransfer
     /**
      * Sets a new ICMSPart
      *
-     * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na
-     * legislação
+     * Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na legislação
      * Operação interestadual para consumidor final com partilha do ICMS devido na
      * operação entre a UF de origem e a UF do destinatário ou ou a UF definida na
      * legislação. (Ex. UF da concessionária de entrega do veículos)
@@ -645,8 +631,7 @@ class ICMS extends BaseDataTransfer
     /**
      * Gets as ICMSSN500
      *
-     * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e
-     * CSOSN=500 (v.2.0)
+     * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e CSOSN=500 (v.2.0)
      *
      * @return ICMS\ICMSSN500
      */
@@ -658,8 +643,7 @@ class ICMS extends BaseDataTransfer
     /**
      * Sets a new ICMSSN500
      *
-     * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e
-     * CSOSN=500 (v.2.0)
+     * Tributação do ICMS pelo SIMPLES NACIONAL,CRT=1 – Simples Nacional e CSOSN=500 (v.2.0)
      *
      * @param ICMS\ICMSSN500 $ICMSSN500
      * @return ICMS
@@ -675,8 +659,7 @@ class ICMS extends BaseDataTransfer
     /**
      * Gets as ICMSSN900
      *
-     * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e
-     * CSOSN=900 (v2.0)
+     * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e CSOSN=900 (v2.0)
      *
      * @return ICMS\ICMSSN900
      */
@@ -688,8 +671,7 @@ class ICMS extends BaseDataTransfer
     /**
      * Sets a new ICMSSN900
      *
-     * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e
-     * CSOSN=900 (v2.0)
+     * Tributação do ICMS pelo SIMPLES NACIONAL, CRT=1 – Simples Nacional e CSOSN=900 (v2.0)
      *
      * @param ICMS\ICMSSN900 $ICMSSN900
      * @return ICMS
@@ -701,6 +683,4 @@ class ICMS extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

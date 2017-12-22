@@ -406,6 +406,4 @@ class ISSQNtot extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

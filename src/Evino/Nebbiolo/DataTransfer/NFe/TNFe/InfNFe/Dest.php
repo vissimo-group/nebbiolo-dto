@@ -48,9 +48,9 @@ class Dest extends BaseDataTransfer
 
     /**
      * Indicador da IE do destinatário:
-     * 1 – Contribuinte ICMSpagamento à vista;
-     * 2 – Contribuinte isento de inscrição;
-     * 9 – Não Contribuinte
+     * 1 => Contribuinte ICMSpagamento à vista;
+     * 2 => Contribuinte isento de inscrição;
+     * 9 => Não Contribuinte
      *
      * @property string $indIEDest
      */
@@ -81,8 +81,7 @@ class Dest extends BaseDataTransfer
 
     /**
      * Informar o e-mail do destinatário. O campo pode ser utilizado para informar o
-     * e-mail
-     * de recepção da NF-e indicada pelo destinatário
+     * e-mail de recepção da NF-e indicada pelo destinatário
      *
      * @property string $email
      */
@@ -222,9 +221,9 @@ class Dest extends BaseDataTransfer
      * Gets as indIEDest
      *
      * Indicador da IE do destinatário:
-     * 1 – Contribuinte ICMSpagamento à vista;
-     * 2 – Contribuinte isento de inscrição;
-     * 9 – Não Contribuinte
+     * 1 => Contribuinte ICMSpagamento à vista;
+     * 2 => Contribuinte isento de inscrição;
+     * 9 => Não Contribuinte
      *
      * @return string
      */
@@ -237,9 +236,9 @@ class Dest extends BaseDataTransfer
      * Sets a new indIEDest
      *
      * Indicador da IE do destinatário:
-     * 1 – Contribuinte ICMSpagamento à vista;
-     * 2 – Contribuinte isento de inscrição;
-     * 9 – Não Contribuinte
+     * 1 => Contribuinte ICMSpagamento à vista;
+     * 2 => Contribuinte isento de inscrição;
+     * 9 => Não Contribuinte
      *
      * @param string $indIEDest
      * @return self
@@ -336,8 +335,7 @@ class Dest extends BaseDataTransfer
      * Gets as email
      *
      * Informar o e-mail do destinatário. O campo pode ser utilizado para informar o
-     * e-mail
-     * de recepção da NF-e indicada pelo destinatário
+     * e-mail de recepção da NF-e indicada pelo destinatário
      *
      * @return string
      */
@@ -350,8 +348,7 @@ class Dest extends BaseDataTransfer
      * Sets a new email
      *
      * Informar o e-mail do destinatário. O campo pode ser utilizado para informar o
-     * e-mail
-     * de recepção da NF-e indicada pelo destinatário
+     * e-mail de recepção da NF-e indicada pelo destinatário
      *
      * @param string $email
      * @return self
@@ -362,6 +359,4 @@ class Dest extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

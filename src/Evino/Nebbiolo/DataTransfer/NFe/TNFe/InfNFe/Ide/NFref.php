@@ -36,8 +36,7 @@ class NFref extends BaseDataTransfer
     protected $refNFP = null;
 
     /**
-     * Utilizar esta TAG para referenciar um CT-e emitido anteriormente, vinculada a
-     * NF-e atual
+     * Utilizar esta TAG para referenciar um CT-e emitido anteriormente, vinculada a NF-e atual
      *
      * @property string $refCTe
      */
@@ -98,8 +97,7 @@ class NFref extends BaseDataTransfer
      *
      * Dados da NF modelo 1/1A referenciada ou NF modelo 2 referenciada
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefNF
-     * $refNF
+     * @param NFref\RefNF $refNF
      * @return self
      */
     public function setRefNF(NFref\RefNF $refNF)
@@ -125,8 +123,7 @@ class NFref extends BaseDataTransfer
      *
      * Grupo com as informações NF de produtor referenciada
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefNFP
-     * $refNFP
+     * @param NFref\RefNFP $refNFP
      * @return self
      */
     public function setRefNFP(NFref\RefNFP $refNFP)
@@ -138,8 +135,7 @@ class NFref extends BaseDataTransfer
     /**
      * Gets as refCTe
      *
-     * Utilizar esta TAG para referenciar um CT-e emitido anteriormente, vinculada a
-     * NF-e atual
+     * Utilizar esta TAG para referenciar um CT-e emitido anteriormente, vinculada a NF-e atual
      *
      * @return string
      */
@@ -151,8 +147,7 @@ class NFref extends BaseDataTransfer
     /**
      * Sets a new refCTe
      *
-     * Utilizar esta TAG para referenciar um CT-e emitido anteriormente, vinculada a
-     * NF-e atual
+     * Utilizar esta TAG para referenciar um CT-e emitido anteriormente, vinculada a NF-e atual
      *
      * @param string $refCTe
      * @return self
@@ -180,8 +175,7 @@ class NFref extends BaseDataTransfer
      *
      * Grupo do Cupom Fiscal vinculado à NF-e
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref\RefECF
-     * $refECF
+     * @param NFref\RefECF $refECF
      * @return self
      */
     public function setRefECF(NFref\RefECF $refECF)
@@ -190,6 +184,4 @@ class NFref extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

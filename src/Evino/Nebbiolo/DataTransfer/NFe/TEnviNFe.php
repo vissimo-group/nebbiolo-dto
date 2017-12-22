@@ -24,7 +24,9 @@ class TEnviNFe extends BaseDataTransfer
     protected $idLote = null;
 
     /**
-     * Indicador de processamento síncrono. 0=NÃO; 1=SIM=Síncrono
+     * Indicador de processamento síncrono.
+     * 0 => NÃO
+     * 1 => SIM=Síncrono
      *
      * @property string $indSinc
      */
@@ -84,7 +86,9 @@ class TEnviNFe extends BaseDataTransfer
     /**
      * Gets as indSinc
      *
-     * Indicador de processamento síncrono. 0=NÃO; 1=SIM=Síncrono
+     * Indicador de processamento síncrono.
+     * 0 => NÃO
+     * 1 => SIM=Síncrono
      *
      * @return string
      */
@@ -96,7 +100,9 @@ class TEnviNFe extends BaseDataTransfer
     /**
      * Sets a new indSinc
      *
-     * Indicador de processamento síncrono. 0=NÃO; 1=SIM=Síncrono
+     * Indicador de processamento síncrono.
+     * 0 => NÃO
+     * 1 => SIM=Síncrono
      *
      * @param string $indSinc
      * @return self
@@ -163,6 +169,4 @@ class TEnviNFe extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

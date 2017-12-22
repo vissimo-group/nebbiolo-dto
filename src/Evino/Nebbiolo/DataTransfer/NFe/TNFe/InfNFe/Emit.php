@@ -77,9 +77,9 @@ class Emit extends BaseDataTransfer
     /**
      * Código de Regime Tributário.
      * Este campo será obrigatoriamente preenchido com:
-     * 1 – Simples Nacional;
-     * 2 – Simples Nacional – excesso de sublimite de receita bruta;
-     * 3 – Regime Normal.
+     * 1 => Simples Nacional;
+     * 2 => Simples Nacional – excesso de sublimite de receita bruta;
+     * 3 => Regime Normal.
      *
      * @property string $cRT
      */
@@ -324,9 +324,9 @@ class Emit extends BaseDataTransfer
      *
      * Código de Regime Tributário.
      * Este campo será obrigatoriamente preenchido com:
-     * 1 – Simples Nacional;
-     * 2 – Simples Nacional – excesso de sublimite de receita bruta;
-     * 3 – Regime Normal.
+     * 1 => Simples Nacional;
+     * 2 => Simples Nacional – excesso de sublimite de receita bruta;
+     * 3 => Regime Normal.
      *
      * @return string
      */
@@ -340,9 +340,9 @@ class Emit extends BaseDataTransfer
      *
      * Código de Regime Tributário.
      * Este campo será obrigatoriamente preenchido com:
-     * 1 – Simples Nacional;
-     * 2 – Simples Nacional – excesso de sublimite de receita bruta;
-     * 3 – Regime Normal.
+     * 1 => Simples Nacional;
+     * 2 => Simples Nacional – excesso de sublimite de receita bruta;
+     * 3 => Regime Normal.
      *
      * @param string $CRT
      * @return self
@@ -354,4 +354,3 @@ class Emit extends BaseDataTransfer
     }
 
 }
-

@@ -21,8 +21,8 @@ class TRetConsReciNFe extends BaseDataTransfer
 
     /**
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @property string $tpAmb
      */
@@ -64,16 +64,15 @@ class TRetConsReciNFe extends BaseDataTransfer
     protected $cUF = null;
 
     /**
-     * Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SSTZD. Em caso de
-     * Rejeição, com data e hora do recebimento do Lote de NF-e enviado.
+     * Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SSTZD.
+     * Em caso de Rejeição, com data e hora do recebimento do Lote de NF-e enviado.
      *
      * @property string $dhRecbto
      */
     protected $dhRecbto = null;
 
     /**
-     * Código da Mensagem (v2.0)
-     * alterado para tamanho variavel 1-4. (NT2011/004)
+     * Código da Mensagem (v2.0) alterado para tamanho variavel 1-4. (NT2011/004)
      *
      * @property string $cMsg
      */
@@ -121,8 +120,8 @@ class TRetConsReciNFe extends BaseDataTransfer
      * Gets as tpAmb
      *
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @return string
      */
@@ -135,8 +134,8 @@ class TRetConsReciNFe extends BaseDataTransfer
      * Sets a new tpAmb
      *
      * Identificação do Ambiente:
-     * 1 - Produção
-     * 2 - Homologação
+     * 1 => Produção
+     * 2 => Homologação
      *
      * @param string $tpAmb
      * @return self
@@ -280,8 +279,8 @@ class TRetConsReciNFe extends BaseDataTransfer
     /**
      * Gets as dhRecbto
      *
-     * Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SSTZD. Em caso de
-     * Rejeição, com data e hora do recebimento do Lote de NF-e enviado.
+     * Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SSTZD.
+     * Em caso de Rejeição, com data e hora do recebimento do Lote de NF-e enviado.
      *
      * @return string
      */
@@ -293,8 +292,8 @@ class TRetConsReciNFe extends BaseDataTransfer
     /**
      * Sets a new dhRecbto
      *
-     * Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SSTZD. Em caso de
-     * Rejeição, com data e hora do recebimento do Lote de NF-e enviado.
+     * Data e hora de processamento, no formato AAAA-MM-DDTHH:MM:SSTZD.
+     * Em caso de Rejeição, com data e hora do recebimento do Lote de NF-e enviado.
      *
      * @param string $dhRecbto
      * @return self
@@ -308,8 +307,7 @@ class TRetConsReciNFe extends BaseDataTransfer
     /**
      * Gets as cMsg
      *
-     * Código da Mensagem (v2.0)
-     * alterado para tamanho variavel 1-4. (NT2011/004)
+     * Código da Mensagem (v2.0) alterado para tamanho variavel 1-4. (NT2011/004)
      *
      * @return string
      */
@@ -321,8 +319,7 @@ class TRetConsReciNFe extends BaseDataTransfer
     /**
      * Sets a new cMsg
      *
-     * Código da Mensagem (v2.0)
-     * alterado para tamanho variavel 1-4. (NT2011/004)
+     * Código da Mensagem (v2.0) alterado para tamanho variavel 1-4. (NT2011/004)
      *
      * @param string $cMsg
      * @return self
@@ -425,6 +422,4 @@ class TRetConsReciNFe extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

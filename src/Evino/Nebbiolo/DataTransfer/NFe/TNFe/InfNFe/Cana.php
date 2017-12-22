@@ -454,6 +454,4 @@ class Cana extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

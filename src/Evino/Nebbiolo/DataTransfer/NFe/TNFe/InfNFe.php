@@ -62,16 +62,16 @@ class InfNFe extends BaseDataTransfer
     protected $dest = null;
 
     /**
-     * Identificação do Local de Retirada (informar apenas quando for diferente do
-     * endereço do remetente)
+     * Identificação do Local de Retirada
+     * (informar apenas quando for diferente do endereço do remetente)
      *
      * @property TLocal $retirada
      */
     protected $retirada = null;
 
     /**
-     * Identificação do Local de Entrega (informar apenas quando for diferente do
-     * endereço do destinatário)
+     * Identificação do Local de Entrega
+     * (informar apenas quando for diferente do endereço do destinatário)
      *
      * @property TLocal $entrega
      */
@@ -325,8 +325,8 @@ class InfNFe extends BaseDataTransfer
     /**
      * Gets as retirada
      *
-     * Identificação do Local de Retirada (informar apenas quando for diferente do
-     * endereço do remetente)
+     * Identificação do Local de Retirada
+     * (informar apenas quando for diferente do endereço do remetente)
      *
      * @return TLocal
      */
@@ -338,8 +338,8 @@ class InfNFe extends BaseDataTransfer
     /**
      * Sets a new retirada
      *
-     * Identificação do Local de Retirada (informar apenas quando for diferente do
-     * endereço do remetente)
+     * Identificação do Local de Retirada
+     * (informar apenas quando for diferente do endereço do remetente)
      *
      * @param TLocal $retirada
      * @return self
@@ -353,8 +353,8 @@ class InfNFe extends BaseDataTransfer
     /**
      * Gets as entrega
      *
-     * Identificação do Local de Entrega (informar apenas quando for diferente do
-     * endereço do destinatário)
+     * Identificação do Local de Entrega
+     * (informar apenas quando for diferente do endereço do destinatário)
      *
      * @return TLocal
      */
@@ -366,8 +366,8 @@ class InfNFe extends BaseDataTransfer
     /**
      * Sets a new entrega
      *
-     * Identificação do Local de Entrega (informar apenas quando for diferente do
-     * endereço do destinatário)
+     * Identificação do Local de Entrega
+     * (informar apenas quando for diferente do endereço do destinatário)
      *
      * @param TLocal $entrega
      * @return self
@@ -718,6 +718,4 @@ class InfNFe extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

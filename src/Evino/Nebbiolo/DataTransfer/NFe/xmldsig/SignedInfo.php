@@ -19,8 +19,7 @@ class SignedInfo extends BaseDataTransfer
     protected $id = null;
 
     /**
-     * @property SignedInfo\CanonicalizationMethod
-     * $canonicalizationMethod
+     * @property SignedInfo\CanonicalizationMethod $canonicalizationMethod
      */
     protected $canonicalizationMethod = null;
 
@@ -70,8 +69,7 @@ class SignedInfo extends BaseDataTransfer
     /**
      * Sets a new canonicalizationMethod
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\xmldsig\SignedInfo\CanonicalizationMethod
-     * $canonicalizationMethod
+     * @param SignedInfo\CanonicalizationMethod $canonicalizationMethod
      * @return self
      */
     public function setCanonicalizationMethod(SignedInfo\CanonicalizationMethod $canonicalizationMethod)
@@ -93,8 +91,7 @@ class SignedInfo extends BaseDataTransfer
     /**
      * Sets a new signatureMethod
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\xmldsig\SignedInfo\SignatureMethod
-     * $signatureMethod
+     * @param SignedInfo\SignatureMethod $signatureMethod
      * @return self
      */
     public function setSignatureMethod(SignedInfo\SignatureMethod $signatureMethod)
@@ -125,6 +122,4 @@ class SignedInfo extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

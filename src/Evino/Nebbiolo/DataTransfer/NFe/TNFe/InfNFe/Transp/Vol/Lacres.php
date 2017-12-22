@@ -43,6 +43,4 @@ class Lacres extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -11,9 +11,10 @@ class ICMS40 extends BaseDataTransfer
 {
 
     /**
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @property string $orig
      */
@@ -21,10 +22,10 @@ class ICMS40 extends BaseDataTransfer
 
     /**
      * Tributação pelo ICMS
-     * 40 - Isenta
-     * 41 - Não tributada
-     * 50 - Suspensão
-     * 51 - Diferimento
+     * 40 => Isenta
+     * 41 => Não tributada
+     * 50 => Suspensão
+     * 51 => Diferimento
      *
      * @property string $CST
      */
@@ -41,18 +42,18 @@ class ICMS40 extends BaseDataTransfer
     /**
      * Este campo será preenchido quando o campo anterior estiver preenchido.
      * Informar o motivo da desoneração:
-     * 1 – Táxi;
-     * 3 – Produtor Agropecuário;
-     * 4 – Frotista/Locadora;
-     * 5 – Diplomático/Consular;
-     * 6 – Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre
-     * Comércio (Resolução 714/88 e 790/94 – CONTRAN e suas alterações);
-     * 7 – SUFRAMA;
-     * 8 - Venda a órgão Público;
-     * 9 – Outros
-     * 10- Deficiente Condutor
-     * 11- Deficiente não condutor
-     * 16 - Olimpíadas Rio 2016
+     * 1  => Táxi
+     * 3  => Produtor Agropecuário
+     * 4  => Frotista/Locadora
+     * 5  => Diplomático/Consular
+     * 6  => Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre
+     *          Comércio (Resolução 714/88 e 790/94 – CONTRAN e suas alterações)
+     * 7  => SUFRAMA
+     * 8  => Venda a órgão Público
+     * 9  => Outros
+     * 10 => Deficiente Condutor
+     * 11 => Deficiente não condutor
+     * 16 => Olimpíadas Rio 2016
      *
      * @property string $motDesICMS
      */
@@ -61,9 +62,10 @@ class ICMS40 extends BaseDataTransfer
     /**
      * Gets as orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @return string
      */
@@ -75,9 +77,10 @@ class ICMS40 extends BaseDataTransfer
     /**
      * Sets a new orig
      *
-     * origem da mercadoria: 0 - Nacional
-     * 1 - Estrangeira - Importação direta
-     * 2 - Estrangeira - Adquirida no mercado interno
+     * Origem da mercadoria:
+     * 0 => Nacional
+     * 1 => Estrangeira - Importação direta
+     * 2 => Estrangeira - Adquirida no mercado interno
      *
      * @param string $orig
      * @return self
@@ -92,10 +95,10 @@ class ICMS40 extends BaseDataTransfer
      * Gets as CST
      *
      * Tributação pelo ICMS
-     * 40 - Isenta
-     * 41 - Não tributada
-     * 50 - Suspensão
-     * 51 - Diferimento
+     * 40 => Isenta
+     * 41 => Não tributada
+     * 50 => Suspensão
+     * 51 => Diferimento
      *
      * @return string
      */
@@ -108,10 +111,10 @@ class ICMS40 extends BaseDataTransfer
      * Sets a new CST
      *
      * Tributação pelo ICMS
-     * 40 - Isenta
-     * 41 - Não tributada
-     * 50 - Suspensão
-     * 51 - Diferimento
+     * 40 => Isenta
+     * 41 => Não tributada
+     * 50 => Suspensão
+     * 51 => Diferimento
      *
      * @param string $CST
      * @return self
@@ -155,18 +158,18 @@ class ICMS40 extends BaseDataTransfer
      *
      * Este campo será preenchido quando o campo anterior estiver preenchido.
      * Informar o motivo da desoneração:
-     * 1 – Táxi;
-     * 3 – Produtor Agropecuário;
-     * 4 – Frotista/Locadora;
-     * 5 – Diplomático/Consular;
-     * 6 – Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre
-     * Comércio (Resolução 714/88 e 790/94 – CONTRAN e suas alterações);
-     * 7 – SUFRAMA;
-     * 8 - Venda a órgão Público;
-     * 9 – Outros
-     * 10- Deficiente Condutor
-     * 11- Deficiente não condutor
-     * 16 - Olimpíadas Rio 2016
+     * 1  => Táxi
+     * 3  => Produtor Agropecuário
+     * 4  => Frotista/Locadora
+     * 5  => Diplomático/Consular
+     * 6  => Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre
+     *          Comércio (Resolução 714/88 e 790/94 – CONTRAN e suas alterações)
+     * 7  => SUFRAMA
+     * 8  => Venda a órgão Público
+     * 9  => Outros
+     * 10 => Deficiente Condutor
+     * 11 => Deficiente não condutor
+     * 16 => Olimpíadas Rio 2016
      *
      * @return string
      */
@@ -180,18 +183,18 @@ class ICMS40 extends BaseDataTransfer
      *
      * Este campo será preenchido quando o campo anterior estiver preenchido.
      * Informar o motivo da desoneração:
-     * 1 – Táxi;
-     * 3 – Produtor Agropecuário;
-     * 4 – Frotista/Locadora;
-     * 5 – Diplomático/Consular;
-     * 6 – Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre
-     * Comércio (Resolução 714/88 e 790/94 – CONTRAN e suas alterações);
-     * 7 – SUFRAMA;
-     * 8 - Venda a órgão Público;
-     * 9 – Outros
-     * 10- Deficiente Condutor
-     * 11- Deficiente não condutor
-     * 16 - Olimpíadas Rio 2016
+     * 1  => Táxi
+     * 3  => Produtor Agropecuário
+     * 4  => Frotista/Locadora
+     * 5  => Diplomático/Consular
+     * 6  => Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre
+     *          Comércio (Resolução 714/88 e 790/94 – CONTRAN e suas alterações)
+     * 7  => SUFRAMA
+     * 8  => Venda a órgão Público
+     * 9  => Outros
+     * 10 => Deficiente Condutor
+     * 11 => Deficiente não condutor
+     * 16 => Olimpíadas Rio 2016
      *
      * @param string $motDesICMS
      * @return self
@@ -202,6 +205,4 @@ class ICMS40 extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -76,6 +76,4 @@ class Deduc extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

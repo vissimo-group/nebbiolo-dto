@@ -64,6 +64,4 @@ class ObsCont extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

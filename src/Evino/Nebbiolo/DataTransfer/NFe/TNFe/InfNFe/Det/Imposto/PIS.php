@@ -12,10 +12,8 @@ class PIS extends BaseDataTransfer
 
     /**
      * Código de Situação Tributária do PIS.
-     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-     * Alíquota Normal (Cumulativo/Não Cumulativo);
-     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-     * Diferenciada);
+     * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+     * 02 => Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
      *
      * @property PIS\PISAliq $PISAliq
      */
@@ -23,8 +21,7 @@ class PIS extends BaseDataTransfer
 
     /**
      * Código de Situação Tributária do PIS.
-     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-     * por Unidade de Produto;
+     * 03 => Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
      *
      * @property PIS\PISQtde $PISQtde
      */
@@ -32,11 +29,11 @@ class PIS extends BaseDataTransfer
 
     /**
      * Código de Situação Tributária do PIS.
-     * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
-     * 06 - Operação Tributável - Alíquota Zero;
-     * 07 - Operação Isenta da contribuição;
-     * 08 - Operação Sem Incidência da contribuição;
-     * 09 - Operação com suspensão da contribuição;
+     * 04 => Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+     * 06 => Operação Tributável - Alíquota Zero;
+     * 07 => Operação Isenta da contribuição;
+     * 08 => Operação Sem Incidência da contribuição;
+     * 09 => Operação com suspensão da contribuição;
      *
      * @property PIS\PISNT $PISNT
      */
@@ -44,13 +41,16 @@ class PIS extends BaseDataTransfer
 
     /**
      * Código de Situação Tributária do PIS.
-     * 99 - Outras Operações.
+     * 99 => Outras Operações.
      *
      * @property PIS\PISOutr $PISOutr
      */
     protected $PISOutr = null;
 
 
+    /**
+     * @return \stdClass
+     */
     public function toNFeTag()
     {
         if (!is_null($this->getPISAliq())) {
@@ -76,10 +76,8 @@ class PIS extends BaseDataTransfer
      * Gets as PISAliq
      *
      * Código de Situação Tributária do PIS.
-     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-     * Alíquota Normal (Cumulativo/Não Cumulativo);
-     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-     * Diferenciada);
+     * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+     * 02 => Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
      *
      * @return PIS\PISAliq
      */
@@ -92,8 +90,7 @@ class PIS extends BaseDataTransfer
      * Gets as PISQtde
      *
      * Código de Situação Tributária do PIS.
-     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-     * por Unidade de Produto;
+     * 03 => Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
      *
      * @return PIS\PISQtde
      */
@@ -106,10 +103,8 @@ class PIS extends BaseDataTransfer
      * Sets a new PISAliq
      *
      * Código de Situação Tributária do PIS.
-     *  01 – Operação Tributável - Base de Cálculo = Valor da Operação
-     * Alíquota Normal (Cumulativo/Não Cumulativo);
-     * 02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota
-     * Diferenciada);
+     * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+     * 02 => Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
      *
      * @param PIS\PISAliq $PISAliq
      * @return PIS
@@ -125,8 +120,7 @@ class PIS extends BaseDataTransfer
      * Sets a new PISQtde
      *
      * Código de Situação Tributária do PIS.
-     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-     * por Unidade de Produto;
+     * 03 => Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
      *
      * @param PIS\PISQtde $PISQtde
      * @return PIS
@@ -142,11 +136,11 @@ class PIS extends BaseDataTransfer
      * Gets as PISNT
      *
      * Código de Situação Tributária do PIS.
-     * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
-     * 06 - Operação Tributável - Alíquota Zero;
-     * 07 - Operação Isenta da contribuição;
-     * 08 - Operação Sem Incidência da contribuição;
-     * 09 - Operação com suspensão da contribuição;
+     * 04 => Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+     * 06 => Operação Tributável - Alíquota Zero;
+     * 07 => Operação Isenta da contribuição;
+     * 08 => Operação Sem Incidência da contribuição;
+     * 09 => Operação com suspensão da contribuição;
      *
      * @return PIS\PISNT
      */
@@ -159,11 +153,11 @@ class PIS extends BaseDataTransfer
      * Sets a new PISNT
      *
      * Código de Situação Tributária do PIS.
-     * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
-     * 06 - Operação Tributável - Alíquota Zero;
-     * 07 - Operação Isenta da contribuição;
-     * 08 - Operação Sem Incidência da contribuição;
-     * 09 - Operação com suspensão da contribuição;
+     * 04 => Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+     * 06 => Operação Tributável - Alíquota Zero;
+     * 07 => Operação Isenta da contribuição;
+     * 08 => Operação Sem Incidência da contribuição;
+     * 09 => Operação com suspensão da contribuição;
      *
      * @param PIS\PISNT $PISNT
      * @return PIS
@@ -179,7 +173,7 @@ class PIS extends BaseDataTransfer
      * Gets as PISOutr
      *
      * Código de Situação Tributária do PIS.
-     * 99 - Outras Operações.
+     * 99 => Outras Operações.
      *
      * @return PIS\PISOutr
      */
@@ -192,7 +186,7 @@ class PIS extends BaseDataTransfer
      * Sets a new PISOutr
      *
      * Código de Situação Tributária do PIS.
-     * 99 - Outras Operações.
+     * 99 => Outras Operações.
      *
      * @param PIS\PISOutr $PISOutr
      * @return PIS
@@ -204,6 +198,4 @@ class PIS extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

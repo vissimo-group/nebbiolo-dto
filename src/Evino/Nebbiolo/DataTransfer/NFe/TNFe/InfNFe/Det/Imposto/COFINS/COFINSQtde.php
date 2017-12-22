@@ -11,9 +11,8 @@ class COFINSQtde extends BaseDataTransfer
 {
 
     /**
-     * Código de Situação Tributária do COFINS.
-     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-     * por Unidade de Produto;
+     * Código de Situação Tributária do COFINS
+     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
      *
      * @property string $CST
      */
@@ -43,9 +42,8 @@ class COFINSQtde extends BaseDataTransfer
     /**
      * Gets as CST
      *
-     * Código de Situação Tributária do COFINS.
-     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-     * por Unidade de Produto;
+     * Código de Situação Tributária do COFINS
+     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
      *
      * @return string
      */
@@ -57,9 +55,8 @@ class COFINSQtde extends BaseDataTransfer
     /**
      * Sets a new CST
      *
-     * Código de Situação Tributária do COFINS.
-     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota
-     * por Unidade de Produto;
+     * Código de Situação Tributária do COFINS
+     * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
      *
      * @param string $CST
      * @return self
@@ -148,6 +145,4 @@ class COFINSQtde extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

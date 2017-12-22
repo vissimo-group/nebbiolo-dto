@@ -12,16 +12,16 @@ class IPINT extends BaseDataTransfer
 
     /**
      * Código da Situação Tributária do IPI:
-     * 01-Entrada tributada com alíquota zero
-     * 02-Entrada isenta
-     * 03-Entrada não-tributada
-     * 04-Entrada imune
-     * 05-Entrada com suspensão
-     * 51-Saída tributada com alíquota zero
-     * 52-Saída isenta
-     * 53-Saída não-tributada
-     * 54-Saída imune
-     * 55-Saída com suspensão
+     * 01 => Entrada tributada com alíquota zero
+     * 02 => Entrada isenta
+     * 03 => Entrada não-tributada
+     * 04 => Entrada imune
+     * 05 => Entrada com suspensão
+     * 51 => Saída tributada com alíquota zero
+     * 52 => Saída isenta
+     * 53 => Saída não-tributada
+     * 54 => Saída imune
+     * 55 => Saída com suspensão
      *
      * @property string $CST
      */
@@ -31,16 +31,16 @@ class IPINT extends BaseDataTransfer
      * Gets as CST
      *
      * Código da Situação Tributária do IPI:
-     * 01-Entrada tributada com alíquota zero
-     * 02-Entrada isenta
-     * 03-Entrada não-tributada
-     * 04-Entrada imune
-     * 05-Entrada com suspensão
-     * 51-Saída tributada com alíquota zero
-     * 52-Saída isenta
-     * 53-Saída não-tributada
-     * 54-Saída imune
-     * 55-Saída com suspensão
+     * 01 => Entrada tributada com alíquota zero
+     * 02 => Entrada isenta
+     * 03 => Entrada não-tributada
+     * 04 => Entrada imune
+     * 05 => Entrada com suspensão
+     * 51 => Saída tributada com alíquota zero
+     * 52 => Saída isenta
+     * 53 => Saída não-tributada
+     * 54 => Saída imune
+     * 55 => Saída com suspensão
      *
      * @return string
      */
@@ -53,16 +53,16 @@ class IPINT extends BaseDataTransfer
      * Sets a new CST
      *
      * Código da Situação Tributária do IPI:
-     * 01-Entrada tributada com alíquota zero
-     * 02-Entrada isenta
-     * 03-Entrada não-tributada
-     * 04-Entrada imune
-     * 05-Entrada com suspensão
-     * 51-Saída tributada com alíquota zero
-     * 52-Saída isenta
-     * 53-Saída não-tributada
-     * 54-Saída imune
-     * 55-Saída com suspensão
+     * 01 => Entrada tributada com alíquota zero
+     * 02 => Entrada isenta
+     * 03 => Entrada não-tributada
+     * 04 => Entrada imune
+     * 05 => Entrada com suspensão
+     * 51 => Saída tributada com alíquota zero
+     * 52 => Saída isenta
+     * 53 => Saída não-tributada
+     * 54 => Saída imune
+     * 55 => Saída com suspensão
      *
      * @param string $CST
      * @return self
@@ -73,6 +73,4 @@ class IPINT extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -32,8 +32,7 @@ class ICMSTot extends BaseDataTransfer
     protected $vICMSDeson = null;
 
     /**
-     * Valor total do ICMS relativo ao Fundo de Combate à Pobreza (FCP) para a UF de
-     * destino.
+     * Valor total do ICMS relativo ao Fundo de Combate à Pobreza (FCP) para a UF de destino.
      *
      * @property string $vFCPUFDest
      */
@@ -75,16 +74,14 @@ class ICMSTot extends BaseDataTransfer
     protected $vST = null;
 
     /**
-     * Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição
-     * tributária.
+     * Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição tributária.
      *
      * @property string $vFCPST
      */
     protected $vFCPST = null;
 
     /**
-     * Valor Total do FCP (Fundo de Combate à Pobreza) retido anteriormente por
-     * substituição tributária.
+     * Valor Total do FCP (Fundo de Combate à Pobreza) retido anteriormente por substituição tributária.
      *
      * @property string $vFCPSTRet
      */
@@ -257,8 +254,7 @@ class ICMSTot extends BaseDataTransfer
     /**
      * Gets as vFCPUFDest
      *
-     * Valor total do ICMS relativo ao Fundo de Combate à Pobreza (FCP) para a UF de
-     * destino.
+     * Valor total do ICMS relativo ao Fundo de Combate à Pobreza (FCP) para a UF de destino.
      *
      * @return string
      */
@@ -270,8 +266,7 @@ class ICMSTot extends BaseDataTransfer
     /**
      * Sets a new vFCPUFDest
      *
-     * Valor total do ICMS relativo ao Fundo de Combate à Pobreza (FCP) para a UF de
-     * destino.
+     * Valor total do ICMS relativo ao Fundo de Combate à Pobreza (FCP) para a UF de destino.
      *
      * @param string $vFCPUFDest
      * @return self
@@ -415,8 +410,7 @@ class ICMSTot extends BaseDataTransfer
     /**
      * Gets as vFCPST
      *
-     * Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição
-     * tributária.
+     * Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição tributária.
      *
      * @return string
      */
@@ -428,8 +422,7 @@ class ICMSTot extends BaseDataTransfer
     /**
      * Sets a new vFCPST
      *
-     * Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição
-     * tributária.
+     * Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição tributária.
      *
      * @param string $vFCPST
      * @return self
@@ -443,8 +436,7 @@ class ICMSTot extends BaseDataTransfer
     /**
      * Gets as vFCPSTRet
      *
-     * Valor Total do FCP (Fundo de Combate à Pobreza) retido anteriormente por
-     * substituição tributária.
+     * Valor Total do FCP (Fundo de Combate à Pobreza) retido anteriormente por substituição tributária.
      *
      * @return string
      */
@@ -456,8 +448,7 @@ class ICMSTot extends BaseDataTransfer
     /**
      * Sets a new vFCPSTRet
      *
-     * Valor Total do FCP (Fundo de Combate à Pobreza) retido anteriormente por
-     * substituição tributária.
+     * Valor Total do FCP (Fundo de Combate à Pobreza) retido anteriormente por substituição tributária.
      *
      * @param string $vFCPSTRet
      * @return self
@@ -784,6 +775,4 @@ class ICMSTot extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

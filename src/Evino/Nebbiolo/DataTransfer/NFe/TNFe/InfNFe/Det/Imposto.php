@@ -42,8 +42,7 @@ class Imposto extends BaseDataTransfer
     /**
      * ISSQN
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ISSQN $ISSQN
+     * @property Imposto\ISSQN $ISSQN
      */
     protected $ISSQN = null;
 
@@ -58,36 +57,28 @@ class Imposto extends BaseDataTransfer
     /**
      * Dados do PIS Substituição Tributária
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PISST $PISST
+     * @property Imposto\PISST $PISST
      */
     protected $PISST = null;
 
     /**
      * Dados do COFINS
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS $COFINS
+     * @property Imposto\COFINS $COFINS
      */
     protected $COFINS = null;
 
     /**
-     * Dados do COFINS da
-     * Substituição Tributaria;
+     * Dados do COFINS da Substituição Tributaria;
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST
-     * $COFINSST
+     * @property Imposto\COFINSST $COFINSST
      */
     protected $COFINSST = null;
 
     /**
-     * Grupo a ser informado nas vendas interestarduais para consumidor final, não
-     * contribuinte de ICMS
+     * Grupo a ser informado nas vendas interestarduais para consumidor final, não contribuinte de ICMS
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest
-     * $ICMSUFDest
+     * @property Imposto\ICMSUFDest $ICMSUFDest
      */
     protected $ICMSUFDest = null;
 
@@ -134,8 +125,7 @@ class Imposto extends BaseDataTransfer
      *
      * Dados do ICMS Normal e ST
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMS
-     * $ICMS
+     * @param Imposto\ICMS $ICMS
      * @return self
      */
     public function setICMS(Imposto\ICMS $ICMS)
@@ -209,8 +199,7 @@ class Imposto extends BaseDataTransfer
      *
      * ISSQN
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ISSQN
-     * $ISSQN
+     * @param Imposto\ISSQN $ISSQN
      * @return self
      */
     public function setISSQN(Imposto\ISSQN $ISSQN)
@@ -236,8 +225,7 @@ class Imposto extends BaseDataTransfer
      *
      * Dados do PIS
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PIS
-     * $PIS
+     * @param Imposto\PIS $PIS
      * @return self
      */
     public function setPIS(Imposto\PIS $PIS)
@@ -263,8 +251,7 @@ class Imposto extends BaseDataTransfer
      *
      * Dados do PIS Substituição Tributária
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\PISST
-     * $PISST
+     * @param Imposto\PISST $PISST
      * @return self
      */
     public function setPISST(Imposto\PISST $PISST)
@@ -290,8 +277,7 @@ class Imposto extends BaseDataTransfer
      *
      * Dados do COFINS
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINS
-     * $COFINS
+     * @param Imposto\COFINS $COFINS
      * @return self
      */
     public function setCOFINS(Imposto\COFINS $COFINS)
@@ -303,28 +289,24 @@ class Imposto extends BaseDataTransfer
     /**
      * Gets as COFINSST
      *
-     * Dados do COFINS da
-     * Substituição Tributaria;
+     * Dados do COFINS da Substituição Tributaria;
      *
-     * @return
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST
+     * @return Imposto\COFINSST
      */
     public function getCOFINSST()
     {
         return $this->COFINSST;
     }
 
-	/**
-	 * Sets a new COFINSST
-	 *
-	 * Dados do COFINS da
-	 * Substituição Tributaria;
-	 *
-	 * @param Imposto\COFINSST $COFINSST
-	 * @return Imposto
-	 * @internal param $ \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST* \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\COFINSST
-	 * $COFINSST
-	 */
+    /**
+     * Sets a new COFINSST
+     *
+     * Dados do COFINS da Substituição Tributaria;
+     *
+     * @param Imposto\COFINSST $COFINSST
+     * @return Imposto
+     * @internal param $ Imposto\COFINSST* Imposto\COFINSST $COFINSST
+     */
     public function setCOFINSST(Imposto\COFINSST $COFINSST)
     {
         $this->COFINSST = $COFINSST;
@@ -334,34 +316,28 @@ class Imposto extends BaseDataTransfer
     /**
      * Gets as ICMSUFDest
      *
-     * Grupo a ser informado nas vendas interestarduais para consumidor final, não
-     * contribuinte de ICMS
+     * Grupo a ser informado nas vendas interestarduais para consumidor final, não contribuinte de ICMS
      *
-     * @return
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest
+     * @return Imposto\ICMSUFDest
      */
     public function getICMSUFDest()
     {
         return $this->ICMSUFDest;
     }
 
-	/**
-	 * Sets a new ICMSUFDest
-	 *
-	 * Grupo a ser informado nas vendas interestarduais para consumidor final, não
-	 * contribuinte de ICMS
-	 *
-	 * @param Imposto\ICMSUFDest $ICMSUFDest
-	 * @return Imposto
-	 * @internal param $ \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest* \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Imposto\ICMSUFDest
-	 * $ICMSUFDest
-	 */
+    /**
+     * Sets a new ICMSUFDest
+     *
+     * Grupo a ser informado nas vendas interestarduais para consumidor final, não contribuinte de ICMS
+     *
+     * @param Imposto\ICMSUFDest $ICMSUFDest
+     * @return Imposto
+     * @internal param $ Imposto\ICMSUFDest* Imposto\ICMSUFDest $ICMSUFDest
+     */
     public function setICMSUFDest(Imposto\ICMSUFDest $ICMSUFDest)
     {
         $this->ICMSUFDest = $ICMSUFDest;
         return $this;
     }
 
-
 }
-

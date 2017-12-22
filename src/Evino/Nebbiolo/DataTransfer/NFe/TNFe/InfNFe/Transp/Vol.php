@@ -268,6 +268,4 @@ class Vol extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -69,8 +69,7 @@ class Prod extends BaseDataTransfer
     protected $indEscala = null;
 
     /**
-     * CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO
-     * relevante.
+     * CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO relevante.
      *
      * @property string $CNPJFab
      */
@@ -103,16 +102,14 @@ class Prod extends BaseDataTransfer
     protected $uCom = null;
 
     /**
-     * Quantidade Comercial do produto, alterado para aceitar de 0 a 4 casas decimais e
-     * 11 inteiros.
+     * Quantidade Comercial do produto, alterado para aceitar de 0 a 4 casas decimais e 11 inteiros.
      *
      * @property string $qCom
      */
     protected $qCom = null;
 
     /**
-     * Valor unitário de comercialização - alterado para aceitar 0 a 10 casas
-     * decimais e 11 inteiros
+     * Valor unitário de comercialização - alterado para aceitar 0 a 10 casas decimais e 11 inteiros
      *
      * @property string $vUnCom
      */
@@ -126,8 +123,7 @@ class Prod extends BaseDataTransfer
     protected $vProd = null;
 
     /**
-     * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou
-     * código de barras
+     * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou código de barras
      *
      * @property string $cEANTrib
      */
@@ -141,16 +137,14 @@ class Prod extends BaseDataTransfer
     protected $uTrib = null;
 
     /**
-     * Quantidade Tributável - alterado para aceitar de 0 a 4 casas decimais e 11
-     * inteiros
+     * Quantidade Tributável - alterado para aceitar de 0 a 4 casas decimais e 11 inteiros
      *
      * @property string $qTrib
      */
     protected $qTrib = null;
 
     /**
-     * Valor unitário de tributação - - alterado para aceitar 0 a 10 casas decimais
-     * e 11 inteiros
+     * Valor unitário de tributação - - alterado para aceitar 0 a 10 casas decimais e 11 inteiros
      *
      * @property string $vUnTrib
      */
@@ -186,8 +180,8 @@ class Prod extends BaseDataTransfer
 
     /**
      * Este campo deverá ser preenchido com:
-     *  0 – o valor do item (vProd) não compõe o valor total da NF-e (vProd)
-     *  1 – o valor do item (vProd) compõe o valor total da NF-e (vProd)
+     *  0 => o valor do item (vProd) não compõe o valor total da NF-e (vProd)
+     *  1 => o valor do item (vProd) compõe o valor total da NF-e (vProd)
      *
      * @property string $indTot
      */
@@ -205,22 +199,19 @@ class Prod extends BaseDataTransfer
     /**
      * Detalhe da exportação
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
-     * $detExport
+     * @property Prod\DetExport[] $detExport
      */
     protected $detExport = array();
 
     /**
-     * pedido de compra - Informação de interesse do emissor para controle do B2B.
+     * Pedido de compra - Informação de interesse do emissor para controle do B2B.
      *
      * @property string $xPed
      */
     protected $xPed = null;
 
     /**
-     * Número do Item do Pedido de Compra - Identificação do número do item do
-     * pedido de Compra
+     * Número do Item do Pedido de Compra - Identificação do número do item do pedido de Compra
      *
      * @property string $nItemPed
      */
@@ -234,41 +225,35 @@ class Prod extends BaseDataTransfer
     protected $nFCI = null;
 
     /**
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Rastro[] $rastro
+     * @property Prod\Rastro[] $rastro
      */
     protected $rastro = array();
 
     /**
      * Veículos novos
      *
-     * @property
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\VeicProd
-     * $veicProd
+     * @property Prod\VeicProd $veicProd
      */
     protected $veicProd = null;
 
     /**
      * grupo do detalhamento de Medicamentos e de matérias-primas farmacêuticas
      *
-     * @property Prod\Med
-     * $med
+     * @property Prod\Med $med
      */
     protected $med = null;
 
     /**
      * Armamentos
      *
-     * @property Prod\Arma[]
-     * $arma
+     * @property Prod\Arma[] $arma
      */
     protected $arma = array();
 
     /**
      * Informar apenas para operações com combustíveis líquidos
      *
-     * @property Prod\Comb
-     * $comb
+     * @property Prod\Comb $comb
      */
     protected $comb = null;
 
@@ -314,8 +299,7 @@ class Prod extends BaseDataTransfer
     /**
      * Gets as cEAN
      *
-     * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de
-     * barras
+     * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de barras
      *
      * @return string
      */
@@ -327,8 +311,7 @@ class Prod extends BaseDataTransfer
     /**
      * Sets a new cEAN
      *
-     * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de
-     * barras
+     * GTIN (Global Trade Item Number) do produto, antigo código EAN ou código de barras
      *
      * @param string $cEAN
      * @return self
@@ -453,14 +436,14 @@ class Prod extends BaseDataTransfer
         return $this->NVE;
     }
 
-	/**
-	 * Sets a new NVE
-	 *
-	 * Nomenclatura de Valor aduaneio e Estatístico
-	 *
-	 * @param array $NVE
-	 * @return Prod
-	 */
+    /**
+     * Sets a new NVE
+     *
+     * Nomenclatura de Valor aduaneio e Estatístico
+     *
+     * @param array $NVE
+     * @return Prod
+     */
     public function setNVE(array $NVE)
     {
         $this->NVE = $NVE;
@@ -522,8 +505,7 @@ class Prod extends BaseDataTransfer
     /**
      * Gets as CNPJFab
      *
-     * CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO
-     * relevante.
+     * CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO relevante.
      *
      * @return string
      */
@@ -535,8 +517,7 @@ class Prod extends BaseDataTransfer
     /**
      * Sets a new CNPJFab
      *
-     * CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO
-     * relevante.
+     * CNPJ do Fabricante da Mercadoria, obrigatório para produto em escala NÃO relevante.
      *
      * @param string $CNPJFab
      * @return self
@@ -650,8 +631,7 @@ class Prod extends BaseDataTransfer
     /**
      * Gets as qCom
      *
-     * Quantidade Comercial do produto, alterado para aceitar de 0 a 4 casas decimais e
-     * 11 inteiros.
+     * Quantidade Comercial do produto, alterado para aceitar de 0 a 4 casas decimais e 11 inteiros.
      *
      * @return string
      */
@@ -663,8 +643,7 @@ class Prod extends BaseDataTransfer
     /**
      * Sets a new qCom
      *
-     * Quantidade Comercial do produto, alterado para aceitar de 0 a 4 casas decimais e
-     * 11 inteiros.
+     * Quantidade Comercial do produto, alterado para aceitar de 0 a 4 casas decimais e 11 inteiros.
      *
      * @param string $qCom
      * @return self
@@ -678,8 +657,7 @@ class Prod extends BaseDataTransfer
     /**
      * Gets as vUnCom
      *
-     * Valor unitário de comercialização - alterado para aceitar 0 a 10 casas
-     * decimais e 11 inteiros
+     * Valor unitário de comercialização - alterado para aceitar 0 a 10 casas decimais e 11 inteiros
      *
      * @return string
      */
@@ -691,8 +669,7 @@ class Prod extends BaseDataTransfer
     /**
      * Sets a new vUnCom
      *
-     * Valor unitário de comercialização - alterado para aceitar 0 a 10 casas
-     * decimais e 11 inteiros
+     * Valor unitário de comercialização - alterado para aceitar 0 a 10 casas decimais e 11 inteiros
      *
      * @param string $vUnCom
      * @return self
@@ -732,8 +709,7 @@ class Prod extends BaseDataTransfer
     /**
      * Gets as cEANTrib
      *
-     * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou
-     * código de barras
+     * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou código de barras
      *
      * @return string
      */
@@ -745,8 +721,7 @@ class Prod extends BaseDataTransfer
     /**
      * Sets a new cEANTrib
      *
-     * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou
-     * código de barras
+     * GTIN (Global Trade Item Number) da unidade tributável, antigo código EAN ou código de barras
      *
      * @param string $cEANTrib
      * @return self
@@ -786,8 +761,7 @@ class Prod extends BaseDataTransfer
     /**
      * Gets as qTrib
      *
-     * Quantidade Tributável - alterado para aceitar de 0 a 4 casas decimais e 11
-     * inteiros
+     * Quantidade Tributável - alterado para aceitar de 0 a 4 casas decimais e 11 inteiros
      *
      * @return string
      */
@@ -799,8 +773,7 @@ class Prod extends BaseDataTransfer
     /**
      * Sets a new qTrib
      *
-     * Quantidade Tributável - alterado para aceitar de 0 a 4 casas decimais e 11
-     * inteiros
+     * Quantidade Tributável - alterado para aceitar de 0 a 4 casas decimais e 11 inteiros
      *
      * @param string $qTrib
      * @return self
@@ -814,8 +787,7 @@ class Prod extends BaseDataTransfer
     /**
      * Gets as vUnTrib
      *
-     * Valor unitário de tributação - - alterado para aceitar 0 a 10 casas decimais
-     * e 11 inteiros
+     * Valor unitário de tributação - - alterado para aceitar 0 a 10 casas decimais e 11 inteiros
      *
      * @return string
      */
@@ -827,8 +799,7 @@ class Prod extends BaseDataTransfer
     /**
      * Sets a new vUnTrib
      *
-     * Valor unitário de tributação - - alterado para aceitar 0 a 10 casas decimais
-     * e 11 inteiros
+     * Valor unitário de tributação - - alterado para aceitar 0 a 10 casas decimais e 11 inteiros
      *
      * @param string $vUnTrib
      * @return self
@@ -947,8 +918,8 @@ class Prod extends BaseDataTransfer
      * Gets as indTot
      *
      * Este campo deverá ser preenchido com:
-     *  0 – o valor do item (vProd) não compõe o valor total da NF-e (vProd)
-     *  1 – o valor do item (vProd) compõe o valor total da NF-e (vProd)
+     *  0 => o valor do item (vProd) não compõe o valor total da NF-e (vProd)
+     *  1 => o valor do item (vProd) compõe o valor total da NF-e (vProd)
      *
      * @return string
      */
@@ -961,8 +932,8 @@ class Prod extends BaseDataTransfer
      * Sets a new indTot
      *
      * Este campo deverá ser preenchido com:
-     *  0 – o valor do item (vProd) não compõe o valor total da NF-e (vProd)
-     *  1 – o valor do item (vProd) compõe o valor total da NF-e (vProd)
+     *  0 => o valor do item (vProd) não compõe o valor total da NF-e (vProd)
+     *  1 => o valor do item (vProd) compõe o valor total da NF-e (vProd)
      *
      * @param string $indTot
      * @return self
@@ -1050,8 +1021,7 @@ class Prod extends BaseDataTransfer
      * Detalhe da exportação
      *
      * @return self
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport
-     * $detExport
+     * @param Prod\DetExport $detExport
      */
     public function addToDetExport(Prod\DetExport $detExport)
     {
@@ -1089,24 +1059,23 @@ class Prod extends BaseDataTransfer
      * Gets as detExport
      *
      * Detalhe da exportação
-     * @return array \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
-     * \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
+     *
+     * @return Prod\DetExport[] Prod\DetExport[]
      */
     public function getDetExport()
     {
         return $this->detExport;
     }
 
-	/**
-	 * Sets a new detExport
-	 *
-	 * Detalhe da exportação
-	 *
-	 * @param array $detExport
-	 * @return Prod
-	 * @internal param $ \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]* \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\DetExport[]
-	 * $detExport
-	 */
+    /**
+     * Sets a new detExport
+     *
+     * Detalhe da exportação
+     *
+     * @param array $detExport
+     * @return Prod
+     * @internal param $ Prod\DetExport[]* Prod\DetExport[] $detExport
+     */
     public function setDetExport(array $detExport)
     {
         $this->detExport = $detExport;
@@ -1116,7 +1085,7 @@ class Prod extends BaseDataTransfer
     /**
      * Gets as xPed
      *
-     * pedido de compra - Informação de interesse do emissor para controle do B2B.
+     * Pedido de compra - Informação de interesse do emissor para controle do B2B.
      *
      * @return string
      */
@@ -1128,7 +1097,7 @@ class Prod extends BaseDataTransfer
     /**
      * Sets a new xPed
      *
-     * pedido de compra - Informação de interesse do emissor para controle do B2B.
+     * Pedido de compra - Informação de interesse do emissor para controle do B2B.
      *
      * @param string $xPed
      * @return self
@@ -1142,8 +1111,7 @@ class Prod extends BaseDataTransfer
     /**
      * Gets as nItemPed
      *
-     * Número do Item do Pedido de Compra - Identificação do número do item do
-     * pedido de Compra
+     * Número do Item do Pedido de Compra - Identificação do número do item do pedido de Compra
      *
      * @return string
      */
@@ -1155,8 +1123,7 @@ class Prod extends BaseDataTransfer
     /**
      * Sets a new nItemPed
      *
-     * Número do Item do Pedido de Compra - Identificação do número do item do
-     * pedido de Compra
+     * Número do Item do Pedido de Compra - Identificação do número do item do pedido de Compra
      *
      * @param string $nItemPed
      * @return self
@@ -1197,8 +1164,7 @@ class Prod extends BaseDataTransfer
      * Adds as rastro
      *
      * @return self
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Rastro
-     * $rastro
+     * @param Prod\Rastro $rastro
      */
     public function addToRastro(Prod\Rastro $rastro)
     {
@@ -1241,8 +1207,7 @@ class Prod extends BaseDataTransfer
     /**
      * Sets a new rastro
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Rastro[]
-     * $rastro
+     * @param Prod\Rastro[] $rastro
      * @return self
      */
     public function setRastro(array $rastro)
@@ -1268,8 +1233,7 @@ class Prod extends BaseDataTransfer
      *
      * Veículos novos
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\VeicProd
-     * $veicProd
+     * @param Prod\VeicProd $veicProd
      * @return self
      */
     public function setVeicProd(Prod\VeicProd $veicProd)
@@ -1361,8 +1325,7 @@ class Prod extends BaseDataTransfer
      *
      * Armamentos
      *
-     * @param \Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Arma[]
-     * $arma
+     * @param Prod\Arma[] $arma
      * @return self
      */
     public function setArma(array $arma)
@@ -1423,6 +1386,4 @@ class Prod extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

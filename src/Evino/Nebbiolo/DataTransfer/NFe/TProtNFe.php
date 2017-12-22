@@ -100,6 +100,4 @@ class TProtNFe extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -112,6 +112,4 @@ class TVeiculo extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

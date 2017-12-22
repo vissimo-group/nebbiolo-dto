@@ -376,6 +376,4 @@ class TEnderEmi extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

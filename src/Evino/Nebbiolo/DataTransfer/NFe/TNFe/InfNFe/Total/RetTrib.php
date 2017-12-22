@@ -241,6 +241,4 @@ class RetTrib extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

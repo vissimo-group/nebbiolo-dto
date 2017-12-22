@@ -70,8 +70,7 @@ class RefECF extends BaseDataTransfer
     /**
      * Gets as nECF
      *
-     * Informar o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal
-     * vinculado à NF-e
+     * Informar o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal vinculado à NF-e
      *
      * @return string
      */
@@ -83,8 +82,7 @@ class RefECF extends BaseDataTransfer
     /**
      * Sets a new nECF
      *
-     * Informar o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal
-     * vinculado à NF-e
+     * Informar o número de ordem seqüencial do ECF que emitiu o Cupom Fiscal vinculado à NF-e
      *
      * @param string $nECF
      * @return self
@@ -121,6 +119,4 @@ class RefECF extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

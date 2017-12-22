@@ -20,8 +20,8 @@ class TIpi extends BaseDataTransfer
     protected $clEnq = null;
 
     /**
-     * CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os
-     * casos de exportação direta ou indireta.
+     * CNPJ do produtor da mercadoria, quando diferente do emitente.
+     * Somente para os casos de exportação direta ou indireta.
      *
      * @property string $CNPJProd
      */
@@ -108,8 +108,8 @@ class TIpi extends BaseDataTransfer
     /**
      * Gets as CNPJProd
      *
-     * CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os
-     * casos de exportação direta ou indireta.
+     * CNPJ do produtor da mercadoria, quando diferente do emitente.
+     * Somente para os casos de exportação direta ou indireta.
      *
      * @return string
      */
@@ -121,8 +121,8 @@ class TIpi extends BaseDataTransfer
     /**
      * Sets a new CNPJProd
      *
-     * CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os
-     * casos de exportação direta ou indireta.
+     * CNPJ do produtor da mercadoria, quando diferente do emitente.
+     * Somente para os casos de exportação direta ou indireta.
      *
      * @param string $CNPJProd
      * @return self
@@ -255,6 +255,4 @@ class TIpi extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

@@ -12,12 +12,12 @@ class PISNT extends BaseDataTransfer
 
     /**
      * Código de Situação Tributária do PIS.
-     * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
-     * 05 - Operação Tributável (ST);
-     * 06 - Operação Tributável - Alíquota Zero;
-     * 07 - Operação Isenta da contribuição;
-     * 08 - Operação Sem Incidência da contribuição;
-     * 09 - Operação com suspensão da contribuição;
+     * 04 => Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+     * 05 => Operação Tributável (ST);
+     * 06 => Operação Tributável - Alíquota Zero;
+     * 07 => Operação Isenta da contribuição;
+     * 08 => Operação Sem Incidência da contribuição;
+     * 09 => Operação com suspensão da contribuição;
      *
      * @property string $CST
      */
@@ -27,12 +27,12 @@ class PISNT extends BaseDataTransfer
      * Gets as CST
      *
      * Código de Situação Tributária do PIS.
-     * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
-     * 05 - Operação Tributável (ST);
-     * 06 - Operação Tributável - Alíquota Zero;
-     * 07 - Operação Isenta da contribuição;
-     * 08 - Operação Sem Incidência da contribuição;
-     * 09 - Operação com suspensão da contribuição;
+     * 04 => Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+     * 05 => Operação Tributável (ST);
+     * 06 => Operação Tributável - Alíquota Zero;
+     * 07 => Operação Isenta da contribuição;
+     * 08 => Operação Sem Incidência da contribuição;
+     * 09 => Operação com suspensão da contribuição;
      *
      * @return string
      */
@@ -45,12 +45,12 @@ class PISNT extends BaseDataTransfer
      * Sets a new CST
      *
      * Código de Situação Tributária do PIS.
-     * 04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
-     * 05 - Operação Tributável (ST);
-     * 06 - Operação Tributável - Alíquota Zero;
-     * 07 - Operação Isenta da contribuição;
-     * 08 - Operação Sem Incidência da contribuição;
-     * 09 - Operação com suspensão da contribuição;
+     * 04 => Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+     * 05 => Operação Tributável (ST);
+     * 06 => Operação Tributável - Alíquota Zero;
+     * 07 => Operação Isenta da contribuição;
+     * 08 => Operação Sem Incidência da contribuição;
+     * 09 => Operação com suspensão da contribuição;
      *
      * @param string $CST
      * @return self
@@ -61,6 +61,4 @@ class PISNT extends BaseDataTransfer
         return $this;
     }
 
-
 }
-

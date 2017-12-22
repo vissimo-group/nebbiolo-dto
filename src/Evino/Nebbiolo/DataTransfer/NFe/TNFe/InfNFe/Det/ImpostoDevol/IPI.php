@@ -43,6 +43,4 @@ class IPI extends BaseDataTransfer
         return $this;
     }
 
-
 }
-
