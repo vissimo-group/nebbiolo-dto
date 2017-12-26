@@ -1,6 +1,6 @@
 <?php
 
-namespace Evino\Nebbiolo\DataTransfer\Request;
+namespace Evino\Nebbiolo\DataTransfer\Invoice;
 
 use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
 use Evino\Nebbiolo\DataTransfer\Nfe\NFe;

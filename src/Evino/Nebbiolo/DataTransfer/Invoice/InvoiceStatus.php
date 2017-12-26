@@ -1,10 +1,10 @@
 <?php
 
-namespace Evino\Nebbiolo\DataTransfer\Callback;
+namespace Evino\Nebbiolo\DataTransfer\Invoice;
 
 use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
 
-class Callback extends BaseDataTransfer
+class InvoiceStatus extends BaseDataTransfer
 {
     /** @var string */
     protected $nfeNumber;
