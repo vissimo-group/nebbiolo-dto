@@ -22,6 +22,9 @@ class InvoiceStatus extends BaseDataTransfer
     protected $sefazStatusCode;
 
     /** @var string */
+    protected $sefazStatusDescription;
+
+    /** @var string */
     protected $sefazLastResponse;
 
     /** @var string */
@@ -117,6 +120,24 @@ class InvoiceStatus extends BaseDataTransfer
     public function setSefazStatusCode($sefazStatusCode)
     {
         $this->sefazStatusCode = $sefazStatusCode;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSefazStatusDescription()
+    {
+        return $this->sefazStatusDescription;
+    }
+
+    /**
+     * @param string $sefazStatusDescription
+     * @return static
+     */
+    public function setSefazStatusDescription($sefazStatusDescription)
+    {
+        $this->sefazStatusDescription = $sefazStatusDescription;
         return $this;
     }
 
