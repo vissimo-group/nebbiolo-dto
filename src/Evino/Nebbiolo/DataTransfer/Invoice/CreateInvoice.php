@@ -7,7 +7,6 @@ use Evino\Nebbiolo\DataTransfer\Nfe\NFe;
 
 class CreateInvoice extends BaseDataTransfer
 {
-
     /**
      * @var string
      */
@@ -76,5 +75,4 @@ class CreateInvoice extends BaseDataTransfer
         $this->nfe = $nfe;
         return $this;
     }
-
 }

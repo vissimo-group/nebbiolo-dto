@@ -42,8 +42,8 @@ class InvoiceStatus extends BaseDataTransfer
     }
 
     /**
-     * @param $nfeNumber
-     * @return static
+     * @param string $nfeNumber
+     * @return InvoiceStatus
      */
     public function setNfeNumber($nfeNumber)
     {
@@ -61,7 +61,7 @@ class InvoiceStatus extends BaseDataTransfer
 
     /**
      * @param string $orderReference
-     * @return static
+     * @return InvoiceStatus
      */
     public function setOrderReference($orderReference)
     {
@@ -79,7 +79,7 @@ class InvoiceStatus extends BaseDataTransfer
 
     /**
      * @param string $nfeKey
-     * @return static
+     * @return InvoiceStatus
      */
     public function setNfeKey($nfeKey)
     {
@@ -97,7 +97,7 @@ class InvoiceStatus extends BaseDataTransfer
 
     /**
      * @param string $nfeXml
-     * @return static
+     * @return InvoiceStatus
      */
     public function setNfeXml($nfeXml)
     {
@@ -115,7 +115,7 @@ class InvoiceStatus extends BaseDataTransfer
 
     /**
      * @param string $sefazStatusCode
-     * @return static
+     * @return InvoiceStatus
      */
     public function setSefazStatusCode($sefazStatusCode)
     {
@@ -133,7 +133,7 @@ class InvoiceStatus extends BaseDataTransfer
 
     /**
      * @param string $sefazStatusDescription
-     * @return static
+     * @return InvoiceStatus
      */
     public function setSefazStatusDescription($sefazStatusDescription)
     {
@@ -151,7 +151,7 @@ class InvoiceStatus extends BaseDataTransfer
 
     /**
      * @param string $sefazLastResponse
-     * @return static
+     * @return InvoiceStatus
      */
     public function setSefazLastResponse($sefazLastResponse)
     {
@@ -169,7 +169,7 @@ class InvoiceStatus extends BaseDataTransfer
 
     /**
      * @param string $nebbioloStatusCode
-     * @return static
+     * @return InvoiceStatus
      */
     public function setNebbioloStatusCode($nebbioloStatusCode)
     {
@@ -187,12 +187,11 @@ class InvoiceStatus extends BaseDataTransfer
 
     /**
      * @param string $nebbioloStatusDescription
-     * @return static
+     * @return InvoiceStatus
      */
     public function setNebbioloStatusDescription($nebbioloStatusDescription)
     {
         $this->nebbioloStatusDescription = $nebbioloStatusDescription;
         return $this;
     }
-
 }
