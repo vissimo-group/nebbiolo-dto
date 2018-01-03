@@ -28,7 +28,7 @@ class SignatureValue extends BaseDataTransfer
      *
      * @param mixed $value
      */
-    public function __construct($value)
+    public function __construct($value = null)
     {
         $this->value($value);
     }
