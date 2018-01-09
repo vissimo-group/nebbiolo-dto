@@ -10,10 +10,10 @@ class InvoiceStatus extends BaseDataTransfer
     protected $orderReference;
 
     /** @var string */
-    protected $nfSeries;
+    protected $series;
 
     /** @var string */
-    protected $nfNumber;
+    protected $number;
 
     /** @var string */
     protected $nfeKey;
@@ -57,36 +57,36 @@ class InvoiceStatus extends BaseDataTransfer
     /**
      * @return string
      */
-    public function getNfSeries()
+    public function getSeries()
     {
-        return $this->nfSeries;
+        return $this->series;
     }
 
     /**
-     * @param string $nfSeries
+     * @param string $series
      * @return InvoiceStatus
      */
-    public function setNfSeries($nfSeries)
+    public function setSeries($series)
     {
-        $this->nfSeries = $nfSeries;
+        $this->series = $series;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getNfNumber()
+    public function getNumber()
     {
-        return $this->nfNumber;
+        return $this->number;
     }
 
     /**
-     * @param string $nfNumber
+     * @param string $number
      * @return InvoiceStatus
      */
-    public function setNfNumber($nfNumber)
+    public function setNumber($number)
     {
-        $this->nfNumber = $nfNumber;
+        $this->number = $number;
         return $this;
     }
 
