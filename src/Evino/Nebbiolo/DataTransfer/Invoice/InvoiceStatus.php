@@ -7,10 +7,13 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
 class InvoiceStatus extends BaseDataTransfer
 {
     /** @var string */
-    protected $nfNumber;
+    protected $orderReference;
 
     /** @var string */
-    protected $orderReference;
+    protected $nfSeries;
+
+    /** @var string */
+    protected $nfNumber;
 
     /** @var string */
     protected $nfeKey;
@@ -36,24 +39,6 @@ class InvoiceStatus extends BaseDataTransfer
     /**
      * @return string
      */
-    public function getNfNumber()
-    {
-        return $this->nfNumber;
-    }
-
-    /**
-     * @param string $nfNumber
-     * @return InvoiceStatus
-     */
-    public function setNfNumber($nfNumber)
-    {
-        $this->nfNumber = $nfNumber;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
     public function getOrderReference()
     {
         return $this->orderReference;
@@ -66,6 +51,42 @@ class InvoiceStatus extends BaseDataTransfer
     public function setOrderReference($orderReference)
     {
         $this->orderReference = $orderReference;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNfSeries()
+    {
+        return $this->nfSeries;
+    }
+
+    /**
+     * @param string $nfSeries
+     * @return InvoiceStatus
+     */
+    public function setNfSeries($nfSeries)
+    {
+        $this->nfSeries = $nfSeries;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNfNumber()
+    {
+        return $this->nfNumber;
+    }
+
+    /**
+     * @param string $nfNumber
+     * @return InvoiceStatus
+     */
+    public function setNfNumber($nfNumber)
+    {
+        $this->nfNumber = $nfNumber;
         return $this;
     }
 
