@@ -7,7 +7,7 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
 class InvoiceStatus extends BaseDataTransfer
 {
     /** @var string */
-    protected $nfeNumber;
+    protected $nfNumber;
 
     /** @var string */
     protected $orderReference;
@@ -36,18 +36,18 @@ class InvoiceStatus extends BaseDataTransfer
     /**
      * @return string
      */
-    public function getNfeNumber()
+    public function getNfNumber()
     {
-        return $this->nfeNumber;
+        return $this->nfNumber;
     }
 
     /**
-     * @param string $nfeNumber
+     * @param string $nfNumber
      * @return InvoiceStatus
      */
-    public function setNfeNumber($nfeNumber)
+    public function setNfNumber($nfNumber)
     {
-        $this->nfeNumber = $nfeNumber;
+        $this->nfNumber = $nfNumber;
         return $this;
     }
 
