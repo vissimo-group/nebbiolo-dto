@@ -139,6 +139,14 @@ class InvoiceStatus extends BaseDataTransfer
     }
 
     /**
+     * @param SefazInteraction $sefazInteraction
+     */
+    public function appendSefazInteraction($sefazInteraction)
+    {
+        $this->sefazInteractions[] = $sefazInteraction;
+    }
+
+    /**
      * @return string
      */
     public function getNebbioloStatusCode()

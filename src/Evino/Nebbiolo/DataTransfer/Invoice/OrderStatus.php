@@ -26,4 +26,12 @@ class OrderStatus extends BaseDataTransfer
         $this->invoices = $invoices;
         return $this;
     }
+
+    /**
+     * @param InvoiceStatus $invoice
+     */
+    public function appendInvoice($invoice)
+    {
+        $this->invoices[] = $invoice;
+    }
 }
