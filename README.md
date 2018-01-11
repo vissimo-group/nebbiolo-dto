@@ -12,7 +12,7 @@ Edit your composer.json:
 "repositories": [
     {
         "type": "vcs",
-        "url": "git@gitlab.evino.io:finances/nebbiolo-dto"
+        "url": "git@github.com:Evino/nebbiolo-dto.git"
     }
 ]
 ```
