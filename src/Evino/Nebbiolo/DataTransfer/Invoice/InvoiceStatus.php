@@ -21,14 +21,8 @@ class InvoiceStatus extends BaseDataTransfer
     /** @var string */
     protected $nfeXml;
 
-    /** @var string */
-    protected $sefazStatusCode;
-
-    /** @var string */
-    protected $sefazStatusDescription;
-
-    /** @var string */
-    protected $sefazLastResponse;
+    /** @var SefazInteraction[] */
+    protected $sefazInteractions;
 
     /** @var string */
     protected $nebbioloStatusCode;
@@ -127,57 +121,29 @@ class InvoiceStatus extends BaseDataTransfer
     }
 
     /**
-     * @return string
+     * @return SefazInteraction[]
      */
-    public function getSefazStatusCode()
+    public function getSefazInteractions()
     {
-        return $this->sefazStatusCode;
+        return $this->sefazInteractions;
     }
 
     /**
-     * @param string $sefazStatusCode
-     * @return InvoiceStatus
+     * @param array $sefazInteractions
+     * @return $this
      */
-    public function setSefazStatusCode($sefazStatusCode)
+    public function setSefazInteractions(array $sefazInteractions)
     {
-        $this->sefazStatusCode = $sefazStatusCode;
+        $this->sefazInteractions = $sefazInteractions;
         return $this;
     }
 
     /**
-     * @return string
+     * @param SefazInteraction $sefazInteraction
      */
-    public function getSefazStatusDescription()
+    public function appendSefazInteraction($sefazInteraction)
     {
-        return $this->sefazStatusDescription;
-    }
-
-    /**
-     * @param string $sefazStatusDescription
-     * @return InvoiceStatus
-     */
-    public function setSefazStatusDescription($sefazStatusDescription)
-    {
-        $this->sefazStatusDescription = $sefazStatusDescription;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function getSefazLastResponse()
-    {
-        return $this->sefazLastResponse;
-    }
-
-    /**
-     * @param string $sefazLastResponse
-     * @return InvoiceStatus
-     */
-    public function setSefazLastResponse($sefazLastResponse)
-    {
-        $this->sefazLastResponse = $sefazLastResponse;
-        return $this;
+        $this->sefazInteractions[] = $sefazInteraction;
     }
 
     /**
