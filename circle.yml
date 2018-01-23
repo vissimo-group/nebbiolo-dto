@@ -1,0 +1,8 @@
+machine:
+  php:
+    version: 5.5.31
+
+test:
+  override:
+    - composer install
+    - composer test
