@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "php": "^5.4.45",
+        "php": ">=5.4.45",
         "netresearch/jsonmapper": "1.2.0"
     },
     "require-dev": {

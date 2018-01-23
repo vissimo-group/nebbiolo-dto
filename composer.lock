@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "53e206b16b2fdbb4ac0a0ce59aa37237",
+    "content-hash": "05f2cc35753b114bda29bf595bc67d53",
     "packages": [
         {
             "name": "netresearch/jsonmapper",
@@ -1017,7 +1017,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^5.4.45"
+        "php": ">=5.4.45"
     },
     "platform-dev": []
 }
