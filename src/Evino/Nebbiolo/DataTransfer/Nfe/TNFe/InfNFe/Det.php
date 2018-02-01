@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Rastro;
  */
 class Det extends BaseDataTransfer
 {
-
     /**
      * Número do item do NF
      *
@@ -331,5 +330,4 @@ class Det extends BaseDataTransfer
         $this->infAdProd = $infAdProd;
         return $this;
     }
-
 }

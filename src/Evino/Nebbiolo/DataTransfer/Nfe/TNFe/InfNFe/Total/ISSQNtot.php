@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ISSQNtot extends BaseDataTransfer
 {
-
     /**
      * Valor Total dos Serviços sob não-incidência ou não tributados pelo ICMS
      *
@@ -405,5 +404,4 @@ class ISSQNtot extends BaseDataTransfer
         $this->cRegTrib = $cRegTrib;
         return $this;
     }
-
 }

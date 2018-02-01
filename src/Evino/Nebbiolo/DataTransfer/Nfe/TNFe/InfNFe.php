@@ -11,7 +11,6 @@ use Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\AutXML;
  */
 class InfNFe extends BaseDataTransfer
 {
-
     /**
      * Versão do leiaute (v4.00)
      *
@@ -717,5 +716,4 @@ class InfNFe extends BaseDataTransfer
         $this->cana = $cana;
         return $this;
     }
-
 }

@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class TNFe extends BaseDataTransfer
 {
-
     /**
      * Informações da Nota Fiscal eletrônica
      *
@@ -105,5 +104,4 @@ class TNFe extends BaseDataTransfer
         $this->signature = $signature;
         return $this;
     }
-
 }

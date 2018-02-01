@@ -7,7 +7,6 @@ use PHPUnit\Framework\TestCase;
 
 final class DetPagTest extends TestCase
 {
-
     public function testToNFeTagWithoutCard()
     {
         $detPag = new DetPag();
@@ -48,5 +47,4 @@ final class DetPagTest extends TestCase
 
         $this->assertEquals($expected, $actual);
     }
-
 }

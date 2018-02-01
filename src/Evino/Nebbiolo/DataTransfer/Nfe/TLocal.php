@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class TLocal extends BaseDataTransfer
 {
-
     /**
      * CNPJ
      *
@@ -309,5 +308,4 @@ class TLocal extends BaseDataTransfer
         $this->UF = $UF;
         return $this;
     }
-
 }

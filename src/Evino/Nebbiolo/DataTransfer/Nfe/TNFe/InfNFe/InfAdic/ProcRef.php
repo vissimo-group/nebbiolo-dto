@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ProcRef extends BaseDataTransfer
 {
-
     /**
      * Indentificador do processo ou ato
      * concessório
@@ -93,5 +92,4 @@ class ProcRef extends BaseDataTransfer
         $this->indProc = $indProc;
         return $this;
     }
-
 }

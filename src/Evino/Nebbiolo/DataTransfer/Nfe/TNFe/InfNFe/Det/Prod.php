@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Prod extends BaseDataTransfer
 {
-
     /**
      * Código do produto ou serviço. Preencher com CFOP caso se trate de itens não
      * relacionados com mercadorias/produto e que o contribuinte não possua
@@ -1385,5 +1384,4 @@ class Prod extends BaseDataTransfer
         $this->nRECOPI = $nRECOPI;
         return $this;
     }
-
 }

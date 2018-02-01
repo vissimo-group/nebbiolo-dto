@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class RetTrib extends BaseDataTransfer
 {
-
     /**
      * Valor Retido de PIS
      *
@@ -240,5 +239,4 @@ class RetTrib extends BaseDataTransfer
         $this->vRetPrev = $vRetPrev;
         return $this;
     }
-
 }

@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class SignatureValue extends BaseDataTransfer
 {
-
     /**
      * @property mixed $__value
      */
@@ -77,5 +76,4 @@ class SignatureValue extends BaseDataTransfer
         $this->id = $id;
         return $this;
     }
-
 }

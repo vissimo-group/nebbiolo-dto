@@ -7,7 +7,6 @@ use PHPUnit\Framework\TestCase;
 
 class COFINSTest extends TestCase
 {
-
     public function testToNFeTagWithRootValues()
     {
         $cofins = new COFINS();
@@ -103,5 +102,4 @@ class COFINSTest extends TestCase
 
         $this->assertEquals($expected, $actual);
     }
-
 }

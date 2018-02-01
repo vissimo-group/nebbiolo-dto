@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Compra extends BaseDataTransfer
 {
-
     /**
      * Informação da Nota de Empenho de compras públicas (NT2011/004)
      *
@@ -108,5 +107,4 @@ class Compra extends BaseDataTransfer
         $this->xCont = $xCont;
         return $this;
     }
-
 }

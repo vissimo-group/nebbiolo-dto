@@ -4,6 +4,10 @@ namespace Evino\Nebbiolo\DataTransfer\Invoice;
 
 use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
 
+/**
+ * Data transfer used to represent an invoice status
+ * @package Evino\Nebbiolo\DataTransfer\Invoice
+ */
 class InvoiceStatus extends BaseDataTransfer
 {
     /** @var string */

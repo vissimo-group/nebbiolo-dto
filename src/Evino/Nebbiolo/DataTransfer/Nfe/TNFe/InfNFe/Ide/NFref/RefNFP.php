@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class RefNFP extends BaseDataTransfer
 {
-
     /**
      * Código da UF do emitente do Documento FiscalUtilizar a Tabela do IBGE
      * (Anexo IV - Tabela de UF, Município e País)
@@ -276,5 +275,4 @@ class RefNFP extends BaseDataTransfer
         $this->nNF = $nNF;
         return $this;
     }
-
 }

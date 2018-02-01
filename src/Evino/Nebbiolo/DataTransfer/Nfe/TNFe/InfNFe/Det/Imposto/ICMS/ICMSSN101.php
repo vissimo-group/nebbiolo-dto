@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ICMSSN101 extends BaseDataTransfer
 {
-
     /**
      * Origem da mercadoria:
      * 0 => Nacional
@@ -156,5 +155,4 @@ class ICMSSN101 extends BaseDataTransfer
         $this->vCredICMSSN = $vCredICMSSN;
         return $this;
     }
-
 }

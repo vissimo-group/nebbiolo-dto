@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Exporta extends BaseDataTransfer
 {
-
     /**
      * Sigla da UF de Embarque ou de transposição de fronteira
      *
@@ -108,5 +107,4 @@ class Exporta extends BaseDataTransfer
         $this->xLocDespacho = $xLocDespacho;
         return $this;
     }
-
 }

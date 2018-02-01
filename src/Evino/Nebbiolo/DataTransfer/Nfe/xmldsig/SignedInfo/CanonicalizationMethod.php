@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class CanonicalizationMethod extends BaseDataTransfer
 {
-
     /**
      * @property string $algorithm
      */
@@ -36,5 +35,4 @@ class CanonicalizationMethod extends BaseDataTransfer
         $this->algorithm = $algorithm;
         return $this;
     }
-
 }

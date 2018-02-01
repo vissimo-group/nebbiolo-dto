@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class TVeiculo extends BaseDataTransfer
 {
-
     /**
      * Placa do veículo (NT2011/004)
      *
@@ -111,5 +110,4 @@ class TVeiculo extends BaseDataTransfer
         $this->RNTC = $RNTC;
         return $this;
     }
-
 }

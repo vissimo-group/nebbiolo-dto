@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Card extends BaseDataTransfer
 {
-
     /**
      * Tipo de Integração do processo de pagamento com o sistema de automação da empresa:
      *  1 => Pagamento integrado com o sistema de automação da empresa Ex. equipamento TEF, Comercio Eletronico
@@ -177,5 +176,4 @@ class Card extends BaseDataTransfer
         $this->cAut = $cAut;
         return $this;
     }
-
 }

@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class IPITrib extends BaseDataTransfer
 {
-
     /**
      * Código da Situação Tributária do IPI:
      * 00 => Entrada com recuperação de crédito
@@ -219,5 +218,4 @@ class IPITrib extends BaseDataTransfer
         $this->vIPI = $vIPI;
         return $this;
     }
-
 }

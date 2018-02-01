@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class IPINT extends BaseDataTransfer
 {
-
     /**
      * Código da Situação Tributária do IPI:
      * 01 => Entrada tributada com alíquota zero
@@ -72,5 +71,4 @@ class IPINT extends BaseDataTransfer
         $this->CST = $CST;
         return $this;
     }
-
 }

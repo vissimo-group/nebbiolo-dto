@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Rastro extends BaseDataTransfer
 {
-
     /**
      * Número do lote do produto.
      *
@@ -168,5 +167,4 @@ class Rastro extends BaseDataTransfer
         $this->cAgreg = $cAgreg;
         return $this;
     }
-
 }

@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class CIDE extends BaseDataTransfer
 {
-
     /**
      * BC do CIDE ( Quantidade comercializada)
      *
@@ -108,5 +107,4 @@ class CIDE extends BaseDataTransfer
         $this->vCIDE = $vCIDE;
         return $this;
     }
-
 }

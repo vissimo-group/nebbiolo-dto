@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class RetTransp extends BaseDataTransfer
 {
-
     /**
      * Valor do Serviço
      *
@@ -207,5 +206,4 @@ class RetTransp extends BaseDataTransfer
         $this->cMunFG = $cMunFG;
         return $this;
     }
-
 }

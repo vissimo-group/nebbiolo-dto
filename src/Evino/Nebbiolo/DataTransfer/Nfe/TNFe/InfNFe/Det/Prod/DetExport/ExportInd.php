@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ExportInd extends BaseDataTransfer
 {
-
     /**
      * Registro de exportação
      *
@@ -108,5 +107,4 @@ class ExportInd extends BaseDataTransfer
         $this->qExport = $qExport;
         return $this;
     }
-
 }

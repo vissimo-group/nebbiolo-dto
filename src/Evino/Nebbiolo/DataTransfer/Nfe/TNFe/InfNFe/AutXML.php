@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class AutXML extends BaseDataTransfer
 {
-
     /**
      * CNPJ Autorizado
      *
@@ -75,5 +74,4 @@ class AutXML extends BaseDataTransfer
         $this->CPF = $CPF;
         return $this;
     }
-
 }

@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class PISST extends BaseDataTransfer
 {
-
     /**
      * Valor da BC do PIS ST
      *
@@ -174,5 +173,4 @@ class PISST extends BaseDataTransfer
         $this->vPIS = $vPIS;
         return $this;
     }
-
 }

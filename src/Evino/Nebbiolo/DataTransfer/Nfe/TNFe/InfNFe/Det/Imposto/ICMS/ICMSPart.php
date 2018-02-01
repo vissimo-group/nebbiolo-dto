@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ICMSPart extends BaseDataTransfer
 {
-
     /**
      * Origem da mercadoria:
      * 0 => Nacional
@@ -552,5 +551,4 @@ class ICMSPart extends BaseDataTransfer
         $this->UFST = $UFST;
         return $this;
     }
-
 }

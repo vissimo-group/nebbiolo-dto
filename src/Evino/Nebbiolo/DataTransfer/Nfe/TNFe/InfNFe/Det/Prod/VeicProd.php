@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class VeicProd extends BaseDataTransfer
 {
-
     /**
      * Tipo da Operação
      * 1 => Venda concessionária
@@ -903,5 +902,4 @@ class VeicProd extends BaseDataTransfer
         $this->tpRest = $tpRest;
         return $this;
     }
-
 }

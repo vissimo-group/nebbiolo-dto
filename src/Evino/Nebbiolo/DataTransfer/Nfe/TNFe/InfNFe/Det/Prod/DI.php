@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class DI extends BaseDataTransfer
 {
-
     /**
      * Numero do Documento de Importação DI/DSI/DA/DRI-E (DI/DSI/DA/DRI-E)
      * (NT2011/004)
@@ -486,5 +485,4 @@ class DI extends BaseDataTransfer
         $this->adi = $adi;
         return $this;
     }
-
 }

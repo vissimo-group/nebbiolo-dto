@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ImpostoDevol extends BaseDataTransfer
 {
-
     /**
      * Percentual de mercadoria devolvida
      *
@@ -90,5 +89,4 @@ class ImpostoDevol extends BaseDataTransfer
         $this->IPI = $IPI;
         return $this;
     }
-
 }

@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ICMS40 extends BaseDataTransfer
 {
-
     /**
      * Origem da mercadoria:
      * 0 => Nacional
@@ -204,5 +203,4 @@ class ICMS40 extends BaseDataTransfer
         $this->motDesICMS = $motDesICMS;
         return $this;
     }
-
 }

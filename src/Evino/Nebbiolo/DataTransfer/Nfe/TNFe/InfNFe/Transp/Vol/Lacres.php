@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Lacres extends BaseDataTransfer
 {
-
     /**
      * Número dos Lacres
      *
@@ -42,5 +41,4 @@ class Lacres extends BaseDataTransfer
         $this->nLacre = $nLacre;
         return $this;
     }
-
 }

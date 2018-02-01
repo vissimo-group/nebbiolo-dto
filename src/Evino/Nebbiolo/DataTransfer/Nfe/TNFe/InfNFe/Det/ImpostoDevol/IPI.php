@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class IPI extends BaseDataTransfer
 {
-
     /**
      * Valor do IPI devolvido
      *
@@ -42,5 +41,4 @@ class IPI extends BaseDataTransfer
         $this->vIPIDevol = $vIPIDevol;
         return $this;
     }
-
 }

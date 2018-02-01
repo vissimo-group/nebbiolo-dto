@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class COFINSNT extends BaseDataTransfer
 {
-
     /**
      * Código de Situação Tributária do COFINS:
      * 04 => Operação Tributável - Tributação Monofásica - (Alíquota Zero);
@@ -60,5 +59,4 @@ class COFINSNT extends BaseDataTransfer
         $this->CST = $CST;
         return $this;
     }
-
 }

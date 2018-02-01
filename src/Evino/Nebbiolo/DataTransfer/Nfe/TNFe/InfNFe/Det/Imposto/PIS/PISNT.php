@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class PISNT extends BaseDataTransfer
 {
-
     /**
      * Código de Situação Tributária do PIS.
      * 04 => Operação Tributável - Tributação Monofásica - (Alíquota Zero);
@@ -60,5 +59,4 @@ class PISNT extends BaseDataTransfer
         $this->CST = $CST;
         return $this;
     }
-
 }

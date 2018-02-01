@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Med extends BaseDataTransfer
 {
-
     /**
      * Código de Produto da ANVISA. Utilizar o número do registro do produto da
      * Câmara de Regulação do Mercado de Medicamento – CMED.
@@ -78,5 +77,4 @@ class Med extends BaseDataTransfer
         $this->vPMC = $vPMC;
         return $this;
     }
-
 }

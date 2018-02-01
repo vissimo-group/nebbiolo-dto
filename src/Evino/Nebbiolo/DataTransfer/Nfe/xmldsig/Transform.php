@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Transform extends BaseDataTransfer
 {
-
     /**
      * @property string $algorithm
      */
@@ -102,5 +101,4 @@ class Transform extends BaseDataTransfer
         $this->xPath = $xPath;
         return $this;
     }
-
 }

@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class InfAdic extends BaseDataTransfer
 {
-
     /**
      * Informações adicionais de interesse do Fisco (v2.0)
      *
@@ -309,5 +308,4 @@ class InfAdic extends BaseDataTransfer
         $this->procRef = $procRef;
         return $this;
     }
-
 }

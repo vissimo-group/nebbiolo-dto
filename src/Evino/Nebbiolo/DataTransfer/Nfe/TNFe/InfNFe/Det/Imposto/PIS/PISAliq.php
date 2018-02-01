@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class PISAliq extends BaseDataTransfer
 {
-
     /**
      * Código de Situação Tributária do PIS.
      * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
@@ -147,5 +146,4 @@ class PISAliq extends BaseDataTransfer
         $this->vPIS = $vPIS;
         return $this;
     }
-
 }

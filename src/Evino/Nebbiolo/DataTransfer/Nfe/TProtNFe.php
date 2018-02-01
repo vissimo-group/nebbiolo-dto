@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class TProtNFe extends BaseDataTransfer
 {
-
     /**
      * @property string $versao
      */
@@ -99,5 +98,4 @@ class TProtNFe extends BaseDataTransfer
         $this->signature = $signature;
         return $this;
     }
-
 }

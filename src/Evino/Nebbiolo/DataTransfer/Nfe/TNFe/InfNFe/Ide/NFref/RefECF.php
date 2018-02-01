@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class RefECF extends BaseDataTransfer
 {
-
     /**
      * Código do modelo do Documento Fiscal
      * Preencher com "2B", quando se tratar de Cupom Fiscal emitido por máquina
@@ -118,5 +117,4 @@ class RefECF extends BaseDataTransfer
         $this->nCOO = $nCOO;
         return $this;
     }
-
 }

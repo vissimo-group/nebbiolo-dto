@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class X509Data extends BaseDataTransfer
 {
-
     /**
      * @property mixed $x509Certificate
      */
@@ -39,5 +38,4 @@ class X509Data extends BaseDataTransfer
         $this->x509Certificate = $x509Certificate;
         return $this;
     }
-
 }

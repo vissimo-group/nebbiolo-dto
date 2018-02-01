@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Total extends BaseDataTransfer
 {
-
     /**
      * Totais referentes ao ICMS
      *
@@ -111,5 +110,4 @@ class Total extends BaseDataTransfer
         $this->retTrib = $retTrib;
         return $this;
     }
-
 }

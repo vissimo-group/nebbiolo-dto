@@ -13,7 +13,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class TRetConsReciNFe extends BaseDataTransfer
 {
-
     /**
      * @property string $versao
      */
@@ -421,5 +420,4 @@ class TRetConsReciNFe extends BaseDataTransfer
         $this->protNFe = $protNFe;
         return $this;
     }
-
 }

@@ -10,7 +10,6 @@ use Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref;
  */
 class Ide extends BaseDataTransfer
 {
-
     /**
      * Código da UF do emitente do Documento Fiscal. Utilizar a Tabela do IBGE.
      *
@@ -1020,5 +1019,4 @@ class Ide extends BaseDataTransfer
         $this->nFref = $nFref;
         return $this;
     }
-
 }

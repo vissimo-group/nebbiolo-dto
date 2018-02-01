@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class COFINSQtde extends BaseDataTransfer
 {
-
     /**
      * Código de Situação Tributária do COFINS
      * 03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
@@ -144,5 +143,4 @@ class COFINSQtde extends BaseDataTransfer
         $this->vCOFINS = $vCOFINS;
         return $this;
     }
-
 }

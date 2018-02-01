@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ICMS51 extends BaseDataTransfer
 {
-
     /**
      * Origem da mercadoria:
      * 0 => Nacional
@@ -462,5 +461,4 @@ class ICMS51 extends BaseDataTransfer
         $this->vFCP = $vFCP;
         return $this;
     }
-
 }

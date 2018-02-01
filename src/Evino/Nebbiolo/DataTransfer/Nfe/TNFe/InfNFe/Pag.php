@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Pag extends BaseDataTransfer
 {
-
     /**
      * Grupo de detalhamento da forma de pagamento.
      *
@@ -115,5 +114,4 @@ class Pag extends BaseDataTransfer
         $this->vTroco = $vTroco;
         return $this;
     }
-
 }

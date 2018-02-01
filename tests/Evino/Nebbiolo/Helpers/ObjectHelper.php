@@ -15,9 +15,9 @@ final class ObjectHelper
         foreach ($array as $key => $value) {
             if (is_array($value)) {
                 $array[$key] = self::stripNullValuesFromArray($value);
-            } else if ($value instanceof \stdClass) {
+            } elseif ($value instanceof \stdClass) {
                 $array[$key] = (object)self::stripNullValuesFromArray((array)$value);
-            } else if (is_null($value)) {
+            } elseif (is_null($value)) {
                 unset($array[$key]);
             }
         }

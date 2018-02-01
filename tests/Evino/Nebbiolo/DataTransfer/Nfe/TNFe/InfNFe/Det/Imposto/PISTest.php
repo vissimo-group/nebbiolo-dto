@@ -7,7 +7,6 @@ use PHPUnit\Framework\TestCase;
 
 class PISTest extends TestCase
 {
-
     public function testToNFeTagWithExtrasAndWithoutAnyPIS()
     {
         $pis = new PIS();
@@ -108,5 +107,4 @@ class PISTest extends TestCase
 
         $this->assertEquals($expected, $actual);
     }
-
 }

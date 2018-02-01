@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class TEnderEmi extends BaseDataTransfer
 {
-
     /**
      * Logradouro
      *
@@ -375,5 +374,4 @@ class TEnderEmi extends BaseDataTransfer
         $this->fone = $fone;
         return $this;
     }
-
 }

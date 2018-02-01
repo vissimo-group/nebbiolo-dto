@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class KeyInfo extends BaseDataTransfer
 {
-
     /**
      * @property string $id
      */
@@ -66,5 +65,4 @@ class KeyInfo extends BaseDataTransfer
         $this->x509Data = $x509Data;
         return $this;
     }
-
 }
