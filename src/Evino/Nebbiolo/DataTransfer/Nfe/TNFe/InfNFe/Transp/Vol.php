@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Vol extends BaseDataTransfer
 {
-
     /**
      * Quantidade de volumes transportados
      *
@@ -267,5 +266,4 @@ class Vol extends BaseDataTransfer
         $this->lacres = $lacres;
         return $this;
     }
-
 }

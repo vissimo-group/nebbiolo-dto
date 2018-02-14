@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class DigestMethod extends BaseDataTransfer
 {
-
     /**
      * @property string $algorithm
      */
@@ -36,5 +35,4 @@ class DigestMethod extends BaseDataTransfer
         $this->algorithm = $algorithm;
         return $this;
     }
-
 }

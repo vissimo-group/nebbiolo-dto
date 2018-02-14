@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class II extends BaseDataTransfer
 {
-
     /**
      * Base da BC do Imposto de Importação
      *
@@ -141,5 +140,4 @@ class II extends BaseDataTransfer
         $this->vIOF = $vIOF;
         return $this;
     }
-
 }

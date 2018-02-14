@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class NFref extends BaseDataTransfer
 {
-
     /**
      * Chave de acesso das NF-e referenciadas. Chave de acesso compostas por Código da
      * UF (tabela do IBGE) + AAMM da emissão + CNPJ do Emitente + modelo, série e
@@ -183,5 +182,4 @@ class NFref extends BaseDataTransfer
         $this->refECF = $refECF;
         return $this;
     }
-
 }

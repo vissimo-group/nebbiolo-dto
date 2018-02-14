@@ -4,6 +4,10 @@ namespace Evino\Nebbiolo\DataTransfer\Callback;
 
 use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
 
+/**
+ * Data transfer used to inform that an invoice has been processed by SEFAZ
+ * @package Evino\Nebbiolo\DataTransfer\Callback
+ */
 class InvoiceProcessedBySefaz extends BaseDataTransfer
 {
     /** @var string */

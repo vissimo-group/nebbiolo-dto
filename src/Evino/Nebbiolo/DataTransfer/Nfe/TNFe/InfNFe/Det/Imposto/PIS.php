@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class PIS extends BaseDataTransfer
 {
-
     /**
      * Código de Situação Tributária do PIS.
      * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
@@ -197,5 +196,4 @@ class PIS extends BaseDataTransfer
         $this->PISOutr = $PISOutr;
         return $this;
     }
-
 }

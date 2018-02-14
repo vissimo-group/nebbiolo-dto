@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class COFINSST extends BaseDataTransfer
 {
-
     /**
      * Valor da BC do COFINS ST
      *
@@ -174,5 +173,4 @@ class COFINSST extends BaseDataTransfer
         $this->vCOFINS = $vCOFINS;
         return $this;
     }
-
 }

@@ -8,7 +8,6 @@ use PHPUnit\Framework\TestCase;
 
 final class TranspTest extends TestCase
 {
-
     public function testGetTagReboqueWithoutInfo()
     {
         $transp = new Transp();
@@ -100,5 +99,4 @@ final class TranspTest extends TestCase
 
         $this->assertEquals($expected, $actual);
     }
-
 }

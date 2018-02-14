@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Fat extends BaseDataTransfer
 {
-
     /**
      * Número da fatura
      *
@@ -141,5 +140,4 @@ class Fat extends BaseDataTransfer
         $this->vLiq = $vLiq;
         return $this;
     }
-
 }

@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class InfProt extends BaseDataTransfer
 {
-
     /**
      * @property string $id
      */
@@ -324,5 +323,4 @@ class InfProt extends BaseDataTransfer
         $this->xMotivo = $xMotivo;
         return $this;
     }
-
 }

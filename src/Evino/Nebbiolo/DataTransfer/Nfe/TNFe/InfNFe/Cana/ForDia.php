@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ForDia extends BaseDataTransfer
 {
-
     /**
      * Número do dia
      *
@@ -75,5 +74,4 @@ class ForDia extends BaseDataTransfer
         $this->qtde = $qtde;
         return $this;
     }
-
 }

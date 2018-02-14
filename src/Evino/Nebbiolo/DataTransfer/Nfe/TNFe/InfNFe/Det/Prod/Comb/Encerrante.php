@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Encerrante extends BaseDataTransfer
 {
-
     /**
      * Numero de identificação do Bico utilizado no abastecimento
      *
@@ -174,5 +173,4 @@ class Encerrante extends BaseDataTransfer
         $this->vEncFin = $vEncFin;
         return $this;
     }
-
 }

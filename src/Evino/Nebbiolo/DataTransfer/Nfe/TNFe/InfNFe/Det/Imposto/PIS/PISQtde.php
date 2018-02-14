@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class PISQtde extends BaseDataTransfer
 {
-
     /**
      * Código de Situação Tributária do PIS.
      * 03 => Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
@@ -144,5 +143,4 @@ class PISQtde extends BaseDataTransfer
         $this->vPIS = $vPIS;
         return $this;
     }
-
 }

@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class PISOutr extends BaseDataTransfer
 {
-
     /**
      * Código de Situação Tributária do PIS.
      * 99 => Outras Operações.
@@ -210,5 +209,4 @@ class PISOutr extends BaseDataTransfer
         $this->vPIS = $vPIS;
         return $this;
     }
-
 }

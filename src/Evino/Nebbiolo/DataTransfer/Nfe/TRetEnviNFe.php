@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class TRetEnviNFe extends BaseDataTransfer
 {
-
     /**
      * @property string $versao
      */
@@ -309,5 +308,4 @@ class TRetEnviNFe extends BaseDataTransfer
         $this->protNFe = $protNFe;
         return $this;
     }
-
 }

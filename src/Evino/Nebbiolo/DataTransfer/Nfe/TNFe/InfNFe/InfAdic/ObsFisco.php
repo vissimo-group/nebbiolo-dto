@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ObsFisco extends BaseDataTransfer
 {
-
     /**
      * @property string $xCampo
      */
@@ -63,5 +62,4 @@ class ObsFisco extends BaseDataTransfer
         $this->xTexto = $xTexto;
         return $this;
     }
-
 }

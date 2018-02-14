@@ -8,4 +8,3 @@ namespace Evino\Nebbiolo\DataTransfer\Nfe;
 class NFe extends TNFe
 {
 }
-

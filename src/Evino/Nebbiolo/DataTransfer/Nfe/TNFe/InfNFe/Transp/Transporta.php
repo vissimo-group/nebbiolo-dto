@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Transporta extends BaseDataTransfer
 {
-
     /**
      * CNPJ do transportador
      *
@@ -240,5 +239,4 @@ class Transporta extends BaseDataTransfer
         $this->UF = $UF;
         return $this;
     }
-
 }

@@ -4,13 +4,21 @@ namespace Evino\Nebbiolo\DataTransfer\Base;
 
 use JsonMapper;
 
+/**
+ * Base data transfer class; extended by all data transfers in this project
+ * @package Evino\Nebbiolo\DataTransfer\Base
+ */
 abstract class BaseDataTransfer implements \JsonSerializable
 {
     /**
+     * Instantiate the DTO from a JSON object
+     *
      * @param \stdClass $json
      * @param bool $includeNullValues
-     * @return static
+     *
      * @throws \JsonMapper_Exception
+     *
+     * @return static
      */
     public static function fromJsonObject(\stdClass $json, $includeNullValues = false)
     {
@@ -29,10 +37,14 @@ abstract class BaseDataTransfer implements \JsonSerializable
     }
 
     /**
+     * Instantiate the DTO from a JSON string
+     *
      * @param string $json
      * @param bool $includeNullValues
-     * @return BaseDataTransfer
+     *
      * @throws \JsonMapper_Exception
+     *
+     * @return BaseDataTransfer
      */
     public static function fromJsonString($json, $includeNullValues = false)
     {
@@ -52,6 +64,8 @@ abstract class BaseDataTransfer implements \JsonSerializable
     }
 
     /**
+     * Converts DTO to JSON string
+     *
      * @return string
      */
     public function toJson()
@@ -60,17 +74,24 @@ abstract class BaseDataTransfer implements \JsonSerializable
     }
 
     /**
+     * Converts DTO to a NFe tag
+     * This is the format used by NFe-PHP libraries
+     *
      * @return \stdClass
      */
     public function toNFeTag()
     {
-        return (object)array_filter(get_object_vars($this), function($value) {
+        return (object)array_filter(get_object_vars($this), function ($value) {
             return !is_null($value) && !is_object($value) && !is_array($value);
         });
     }
 
     /**
+     * Converts DTO to a NFe tag with `item` property
+     * This is the format used by NFe-PHP libraries
+     *
      * @param integer $number
+     *
      * @return \stdClass
      */
     public function toNFeTagWithItemNumber($number)
@@ -79,7 +100,11 @@ abstract class BaseDataTransfer implements \JsonSerializable
     }
 
     /**
+     * Converts DTO to a NFe tag with given extra properties
+     * This is the format used by NFe-PHP libraries
+     *
      * @param array $extras
+     *
      * @return \stdClass
      */
     public function toNFeTagWithExtras($extras)
@@ -95,6 +120,7 @@ abstract class BaseDataTransfer implements \JsonSerializable
 
     /**
      * @param array $array
+     *
      * @return array
      */
     protected static function stripNullValuesFromArray($array)

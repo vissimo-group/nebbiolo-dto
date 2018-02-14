@@ -10,7 +10,6 @@ use Evino\Nebbiolo\DataTransfer\Nfe\TIpi;
  */
 class Imposto extends BaseDataTransfer
 {
-
     /**
      * Valor estimado total de impostos federais, estaduais e municipais
      *
@@ -339,5 +338,4 @@ class Imposto extends BaseDataTransfer
         $this->ICMSUFDest = $ICMSUFDest;
         return $this;
     }
-
 }

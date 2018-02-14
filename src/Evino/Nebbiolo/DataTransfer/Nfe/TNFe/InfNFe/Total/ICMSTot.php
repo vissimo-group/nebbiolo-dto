@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ICMSTot extends BaseDataTransfer
 {
-
     /**
      * BC do ICMS
      *
@@ -774,5 +773,4 @@ class ICMSTot extends BaseDataTransfer
         $this->vTotTrib = $vTotTrib;
         return $this;
     }
-
 }

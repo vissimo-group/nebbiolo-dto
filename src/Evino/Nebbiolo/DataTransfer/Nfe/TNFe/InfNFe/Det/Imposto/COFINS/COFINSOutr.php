@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class COFINSOutr extends BaseDataTransfer
 {
-
     /**
      * Código de Situação Tributária do COFINS:
      * 49 => Outras Operações de Saída
@@ -279,5 +278,4 @@ class COFINSOutr extends BaseDataTransfer
         $this->vCOFINS = $vCOFINS;
         return $this;
     }
-
 }

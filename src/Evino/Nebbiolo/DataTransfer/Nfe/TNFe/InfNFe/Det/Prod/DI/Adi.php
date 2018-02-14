@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Adi extends BaseDataTransfer
 {
-
     /**
      * Número da Adição
      *
@@ -174,5 +173,4 @@ class Adi extends BaseDataTransfer
         $this->nDraw = $nDraw;
         return $this;
     }
-
 }

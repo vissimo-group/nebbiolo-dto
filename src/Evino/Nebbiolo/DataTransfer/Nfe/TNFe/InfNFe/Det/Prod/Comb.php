@@ -10,7 +10,6 @@ use Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Det\Prod\Comb\Encerrante;
  */
 class Comb extends BaseDataTransfer
 {
-
     /**
      * Código de produto da ANP. codificação de produtos do SIMP
      * (http://www.anp.gov.br)
@@ -446,5 +445,4 @@ class Comb extends BaseDataTransfer
         $this->encerrante = $encerrante;
         return $this;
     }
-
 }

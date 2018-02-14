@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ObsCont extends BaseDataTransfer
 {
-
     /**
      * @property string $xCampo
      */
@@ -63,5 +62,4 @@ class ObsCont extends BaseDataTransfer
         $this->xTexto = $xTexto;
         return $this;
     }
-
 }

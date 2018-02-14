@@ -10,7 +10,6 @@ use Evino\Nebbiolo\DataTransfer\Nfe\TVeiculo;
  */
 class Transp extends BaseDataTransfer
 {
-
     /**
      * Modalidade do frete
      * 0 => Contratação do Frete por conta do Remetente (CIF);
@@ -413,5 +412,4 @@ class Transp extends BaseDataTransfer
         $this->vol = $vol;
         return $this;
     }
-
 }

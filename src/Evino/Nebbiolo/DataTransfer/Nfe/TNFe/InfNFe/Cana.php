@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Cana extends BaseDataTransfer
 {
-
     /**
      * Identificação da safra
      *
@@ -453,5 +452,4 @@ class Cana extends BaseDataTransfer
         $this->vLiqFor = $vLiqFor;
         return $this;
     }
-
 }

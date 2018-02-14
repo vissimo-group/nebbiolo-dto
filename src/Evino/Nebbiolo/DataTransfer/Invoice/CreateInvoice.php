@@ -5,6 +5,10 @@ namespace Evino\Nebbiolo\DataTransfer\Invoice;
 use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
 use Evino\Nebbiolo\DataTransfer\Nfe\NFe;
 
+/**
+ * Data transfer used to request invoice creation
+ * @package Evino\Nebbiolo\DataTransfer\Invoice
+ */
 class CreateInvoice extends BaseDataTransfer
 {
     /**

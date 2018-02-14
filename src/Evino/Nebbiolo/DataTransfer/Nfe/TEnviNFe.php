@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class TEnviNFe extends BaseDataTransfer
 {
-
     /**
      * @property string $versao
      */
@@ -168,5 +167,4 @@ class TEnviNFe extends BaseDataTransfer
         $this->NFe = $NFe;
         return $this;
     }
-
 }

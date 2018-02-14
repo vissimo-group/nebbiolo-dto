@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class TConsReciNFe extends BaseDataTransfer
 {
-
     /**
      * @property string $versao
      */
@@ -111,5 +110,4 @@ class TConsReciNFe extends BaseDataTransfer
         $this->nRec = $nRec;
         return $this;
     }
-
 }

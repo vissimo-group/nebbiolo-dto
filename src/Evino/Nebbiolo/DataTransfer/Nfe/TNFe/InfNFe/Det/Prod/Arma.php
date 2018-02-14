@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Arma extends BaseDataTransfer
 {
-
     /**
      * Indicador do tipo de arma de fogo
      * 0 => Uso permitido
@@ -153,5 +152,4 @@ class Arma extends BaseDataTransfer
         $this->descr = $descr;
         return $this;
     }
-
 }

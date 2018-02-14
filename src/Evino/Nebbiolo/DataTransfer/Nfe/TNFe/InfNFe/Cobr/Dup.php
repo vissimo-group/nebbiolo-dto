@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Dup extends BaseDataTransfer
 {
-
     /**
      * Número da duplicata
      *
@@ -108,5 +107,4 @@ class Dup extends BaseDataTransfer
         $this->vDup = $vDup;
         return $this;
     }
-
 }

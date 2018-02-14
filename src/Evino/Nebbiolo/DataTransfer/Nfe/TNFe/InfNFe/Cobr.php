@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Cobr extends BaseDataTransfer
 {
-
     /**
      * Dados da fatura
      *
@@ -115,5 +114,4 @@ class Cobr extends BaseDataTransfer
         $this->dup = $dup;
         return $this;
     }
-
 }

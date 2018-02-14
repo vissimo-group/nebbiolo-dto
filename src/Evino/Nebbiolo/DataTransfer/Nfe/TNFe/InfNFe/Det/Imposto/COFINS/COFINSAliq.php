@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class COFINSAliq extends BaseDataTransfer
 {
-
     /**
      * Código de Situação Tributária do COFINS:
      * 01 => Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
@@ -147,5 +146,4 @@ class COFINSAliq extends BaseDataTransfer
         $this->vCOFINS = $vCOFINS;
         return $this;
     }
-
 }

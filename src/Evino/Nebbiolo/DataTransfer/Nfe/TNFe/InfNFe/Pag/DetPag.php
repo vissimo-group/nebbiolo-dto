@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class DetPag extends BaseDataTransfer
 {
-
     /**
      * Forma de Pagamento:
      * 01 => Dinheiro
@@ -168,5 +167,4 @@ class DetPag extends BaseDataTransfer
         $this->card = $card;
         return $this;
     }
-
 }

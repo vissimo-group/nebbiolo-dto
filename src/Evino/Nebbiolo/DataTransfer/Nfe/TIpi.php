@@ -254,5 +254,4 @@ class TIpi extends BaseDataTransfer
         $this->IPINT = $IPINT;
         return $this;
     }
-
 }

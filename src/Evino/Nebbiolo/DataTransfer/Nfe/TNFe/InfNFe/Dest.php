@@ -10,7 +10,6 @@ use Evino\Nebbiolo\DataTransfer\Nfe\TEndereco;
  */
 class Dest extends BaseDataTransfer
 {
-
     /**
      * Número do CNPJ
      *
@@ -358,5 +357,4 @@ class Dest extends BaseDataTransfer
         $this->email = $email;
         return $this;
     }
-
 }

@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Reference extends BaseDataTransfer
 {
-
     /**
      * @property string $id
      */
@@ -209,5 +208,4 @@ class Reference extends BaseDataTransfer
         $this->digestValue = $digestValue;
         return $this;
     }
-
 }

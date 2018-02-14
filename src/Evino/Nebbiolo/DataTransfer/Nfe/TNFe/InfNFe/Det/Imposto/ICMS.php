@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ICMS extends BaseDataTransfer
 {
-
     /**
      * Tributação pelo ICMS
      * 00 => Tributada integralmente
@@ -682,5 +681,4 @@ class ICMS extends BaseDataTransfer
         $this->ICMSSN900 = $ICMSSN900;
         return $this;
     }
-
 }

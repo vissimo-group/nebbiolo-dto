@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ISSQN extends BaseDataTransfer
 {
-
     /**
      * Valor da BC do ISSQN
      *
@@ -571,5 +570,4 @@ class ISSQN extends BaseDataTransfer
         $this->indIncentivo = $indIncentivo;
         return $this;
     }
-
 }

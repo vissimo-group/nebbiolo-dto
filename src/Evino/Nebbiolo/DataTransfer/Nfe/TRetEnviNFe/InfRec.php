@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class InfRec extends BaseDataTransfer
 {
-
     /**
      * Número do Recibo
      *
@@ -75,5 +74,4 @@ class InfRec extends BaseDataTransfer
         $this->tMed = $tMed;
         return $this;
     }
-
 }

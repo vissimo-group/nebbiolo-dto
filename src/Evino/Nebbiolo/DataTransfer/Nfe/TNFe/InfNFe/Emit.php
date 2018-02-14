@@ -10,7 +10,6 @@ use Evino\Nebbiolo\DataTransfer\Nfe\TEnderEmi;
  */
 class Emit extends BaseDataTransfer
 {
-
     /**
      * Número do CNPJ do emitente
      *
@@ -352,5 +351,4 @@ class Emit extends BaseDataTransfer
         $this->CRT = $CRT;
         return $this;
     }
-
 }

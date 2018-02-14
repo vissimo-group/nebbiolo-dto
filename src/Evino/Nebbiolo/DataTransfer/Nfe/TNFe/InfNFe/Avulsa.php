@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Avulsa extends BaseDataTransfer
 {
-
     /**
      * CNPJ do Órgão emissor
      *
@@ -372,5 +371,4 @@ class Avulsa extends BaseDataTransfer
         $this->dPag = $dPag;
         return $this;
     }
-
 }

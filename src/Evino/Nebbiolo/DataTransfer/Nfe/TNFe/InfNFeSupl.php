@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class InfNFeSupl extends BaseDataTransfer
 {
-
     /**
      * Texto com o QR-Code impresso no DANFE NFC-e
      *
@@ -78,5 +77,4 @@ class InfNFeSupl extends BaseDataTransfer
         $this->urlChave = $urlChave;
         return $this;
     }
-
 }

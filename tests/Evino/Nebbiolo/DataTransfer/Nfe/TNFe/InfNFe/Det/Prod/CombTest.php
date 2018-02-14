@@ -7,7 +7,6 @@ use PHPUnit\Framework\TestCase;
 
 final class CombTest extends TestCase
 {
-
     public function testToNFeTagWithoutCIDE()
     {
         $comb = new Comb();
@@ -74,5 +73,4 @@ final class CombTest extends TestCase
 
         $this->assertEquals($expected, $actual);
     }
-
 }

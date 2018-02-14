@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class Deduc extends BaseDataTransfer
 {
-
     /**
      * Descrição da Dedução
      *
@@ -75,5 +74,4 @@ class Deduc extends BaseDataTransfer
         $this->vDed = $vDed;
         return $this;
     }
-
 }

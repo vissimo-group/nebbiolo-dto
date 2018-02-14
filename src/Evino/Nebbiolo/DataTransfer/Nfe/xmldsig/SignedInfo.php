@@ -12,7 +12,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class SignedInfo extends BaseDataTransfer
 {
-
     /**
      * @property string $id
      */
@@ -121,5 +120,4 @@ class SignedInfo extends BaseDataTransfer
         $this->reference = $reference;
         return $this;
     }
-
 }

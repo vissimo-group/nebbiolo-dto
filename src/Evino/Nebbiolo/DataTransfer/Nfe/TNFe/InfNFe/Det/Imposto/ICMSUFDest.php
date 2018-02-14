@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class ICMSUFDest extends BaseDataTransfer
 {
-
     /**
      * Valor da Base de Cálculo do ICMS na UF do destinatário.
      *
@@ -321,5 +320,4 @@ class ICMSUFDest extends BaseDataTransfer
         $this->vICMSUFRemet = $vICMSUFRemet;
         return $this;
     }
-
 }

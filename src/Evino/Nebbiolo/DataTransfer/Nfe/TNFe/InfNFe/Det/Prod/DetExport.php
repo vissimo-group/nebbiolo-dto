@@ -9,7 +9,6 @@ use Evino\Nebbiolo\DataTransfer\Base\BaseDataTransfer;
  */
 class DetExport extends BaseDataTransfer
 {
-
     /**
      * Número do ato concessório de Drawback
      *
@@ -74,5 +73,4 @@ class DetExport extends BaseDataTransfer
         $this->exportInd = $exportInd;
         return $this;
     }
-
 }
