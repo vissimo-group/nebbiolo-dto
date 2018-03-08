@@ -66,11 +66,18 @@ abstract class BaseDataTransfer implements \JsonSerializable
     /**
      * Converts DTO to JSON string
      *
+     * @param bool $includeNullValues
      * @return string
      */
-    public function toJson()
+    public function toJson($includeNullValues = false)
     {
-        return json_encode($this);
+        $encoded = json_encode($this);
+
+        if (!$includeNullValues) {
+            $encoded = preg_replace('/,\s*"[^"]+":null|"[^"]+":null,?/', '', $encoded);
+        }
+
+        return $encoded;
     }
 
     /**
