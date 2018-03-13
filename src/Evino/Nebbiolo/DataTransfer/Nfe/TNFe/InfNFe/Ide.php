@@ -10,6 +10,8 @@ use Evino\Nebbiolo\DataTransfer\Nfe\TNFe\InfNFe\Ide\NFref;
  */
 class Ide extends BaseDataTransfer
 {
+
+
     /**
      * Código da UF do emitente do Documento Fiscal. Utilizar a Tabela do IBGE.
      *
@@ -30,6 +32,16 @@ class Ide extends BaseDataTransfer
      * @property string $natOp
      */
     protected $natOp = null;
+
+    /**
+     * Indicador da forma de pagamento:
+     * 0 => pagamento à vista
+     * 1 => pagamento à prazo
+     * 2 => outros
+     *
+     * @property string $indPag
+     */
+    protected $indPag = null;
 
     /**
      * Código do modelo do Documento Fiscal. 55 = NF-e; 65 = NFC-e.
@@ -369,6 +381,32 @@ class Ide extends BaseDataTransfer
     public function setNatOp($natOp)
     {
         $this->natOp = $natOp;
+        return $this;
+    }
+
+    /**
+     * Gets as indPag
+     *
+     * Indicador da forma de pagamento
+     *
+     * @return string
+     */
+    public function getIndPag()
+    {
+        return $this->indPag;
+    }
+
+    /**
+     * Sets a new indPag
+     *
+     * Indicador da forma de pagamento
+     *
+     * @param string $indPag
+     * @return self
+     */
+    public function setIndPag($indPag)
+    {
+        $this->indPag = $indPag;
         return $this;
     }
 

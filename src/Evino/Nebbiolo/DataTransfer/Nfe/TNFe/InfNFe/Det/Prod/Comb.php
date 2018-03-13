@@ -55,6 +55,13 @@ class Comb extends BaseDataTransfer
     protected $pGNi = null;
 
     /**
+     * Percentual de gas natural para o produto GLP
+     *
+     * @property string $pMixGN
+     */
+    protected $pMixGN = null;
+
+    /**
      * Valor de partida (cProdANP=210203001). Deve ser informado neste campo o valor
      * por quilograma sem ICMS.
      *
@@ -267,6 +274,32 @@ class Comb extends BaseDataTransfer
     public function setPGNi($pGNi)
     {
         $this->pGNi = $pGNi;
+        return $this;
+    }
+
+    /**
+     * Gets as pMixGN
+     *
+     * Percentual de gas natural para o produto GLP
+     *
+     * @return string
+     */
+    public function getPMixGN()
+    {
+        return $this->pMixGN;
+    }
+
+    /**
+     * Sets a new pMixGN
+     *
+     * Percentual de gas natural para o produto GLP
+     *
+     * @param $pMixGN
+     * @return self
+     */
+    public function setPMixGN($pMixGN)
+    {
+        $this->pMixGN = $pMixGN;
         return $this;
     }
 
